@@ -23,7 +23,7 @@
     <meta name="description" content="Meaningless things.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ruccccc">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/page/2/index.html">
 <meta property="og:site_name" content="Ruccccc">
 <meta property="og:description" content="Meaningless things.">
 <meta property="og:locale" content="en_US">
@@ -31,11 +31,11 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/page/2/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"page/2/index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Ruccccc</title>
@@ -190,7 +190,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/23/index/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/24/Github-Page-with-Hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -208,10 +208,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-              <span class="post-sticky-flag" title="Sticky">
-                <i class="fa fa-thumbtack"></i>
-              </span><a href="/2022/09/23/index/" class="post-title-link" itemprop="url">Hello</a>
+          <a href="/2022/09/24/Github-Page-with-Hexo/" class="post-title-link" itemprop="url">Github Page with Hexo</a>
         </h2>
 
         <div class="post-meta-container">
@@ -222,14 +219,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2022-09-23 20:02:04" itemprop="dateCreated datePublished" datetime="2022-09-23T20:02:04+08:00">2022-09-23</time>
+      <time title="Created: 2022-09-24 14:19:00" itemprop="dateCreated datePublished" datetime="2022-09-24T14:19:00+08:00">2022-09-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-09-25 19:58:20" itemprop="dateModified" datetime="2022-09-25T19:58:20+08:00">2022-09-25</time>
+      <time title="Modified: 2022-09-25 17:19:36" itemprop="dateModified" datetime="2022-09-25T17:19:36+08:00">2022-09-25</time>
     </span>
 
   
@@ -242,11 +239,76 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Hello, welcome to my page.<br>Here mainly puts some notes and sundries.</p>
-<!--- [Posts](./) <!--waiting for fixing-->
+          <p>A note about how I create this page.</p>
+<h2 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h2><h3 id="requrements"><a href="#requrements" class="headerlink" title="requrements"></a>requrements</h3><ul>
+<li>git<br>  mac : <code>brew install git</code></li>
+<li>node.js<br>  mac : <code>brew install node</code></li>
+</ul>
+<h3 id="install-Hexo-with-npm"><a href="#install-Hexo-with-npm" class="headerlink" title="install Hexo with npm"></a>install Hexo with npm</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><h3 id="Initialize"><a href="#Initialize" class="headerlink" title="Initialize"></a>Initialize</h3><pre class="line-numbers language-none"><code class="language-none">hexo init [folder]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <ul>
-<li><a href="../note/">Notes</a></li>
-<li><a href="../links/">Links</a></li>
+<li>_config.yml<br>  Site configuration file.</li>
+<li>package.json<br>  Application data.</li>
+</ul>
+<h3 id="Change-theme"><a href="#Change-theme" class="headerlink" title="Change theme"></a>Change theme</h3><p>I use <a target="_blank" rel="noopener" href="https://github.com/Ruffianjiang/hexo-theme-dawn"><strong>NexT</strong></a> as the theme of this site.</p>
+<h4 id="download"><a href="#download" class="headerlink" title="download"></a>download</h4><ul>
+<li><p>though npm</p>
+  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-theme-next<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>though git</p>
+  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/next-theme/hexo-theme-next themes/next<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ul>
+<h4 id="Set-theme"><a href="#Set-theme" class="headerlink" title="Set theme"></a>Set theme</h4><p>edit <code>_config.yml</code></p>
+<pre class="line-numbers language-none"><code class="language-none">theme: next<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="configurations"><a href="#configurations" class="headerlink" title="configurations"></a>configurations</h4><h4 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-theme-next@latest<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="Add-new-post"><a href="#Add-new-post" class="headerlink" title="Add new post"></a>Add new post</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token operator">&lt;</span>title<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="Deploy-with-Github-Page"><a href="#Deploy-with-Github-Page" class="headerlink" title="Deploy with Github Page"></a>Deploy with Github Page</h2><h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><ol>
+<li>create a repository named <code>&lt;username&gt;.github.io</code></li>
+<li>In <code>Settings &gt; page</code> set <code>branch</code> to <code>master</code>(or <code>gh-pages</code>)</li>
+</ol>
+<h3 id="Local"><a href="#Local" class="headerlink" title="Local"></a>Local</h3><ol>
+<li>Edit <code>_config.yml</code><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Deployment</span>
+<span class="token comment">## Docs: https://hexo.io/docs/one-command-deployment</span>
+deploy:
+  type: <span class="token function">git</span>
+  repo: https://github.com/<span class="token operator">&lt;</span>username<span class="token operator">></span>/<span class="token operator">&lt;</span>username<span class="token operator">></span>.github.io.git
+  branch: master
+  message: <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<h2 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h2><ol>
+<li><p>clean the cache file and generated files.</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean
+hexo cl        <span class="token comment"># short version</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>gernerate static files.</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo gernerate
+hexo g         <span class="token comment"># short version</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>deploy the website.</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo deploy
+hexo d         <span class="token comment"># short version</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+</ol>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://chanchandev.com/note/Hexo/hexo-introduction/2335841689/">架設部落格第一次就上手 Hexo + Github + 自訂網域</a></li>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/@Heidi-Liu/note-hexo-github#Hexo-%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE">【學習筆記】如何使用 Hexo + GitHub Pages 架設個人網誌</a></li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Offical</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/">NexT</a></li>
+</ul>
+<h2 id="Useful-sites"><a href="#Useful-sites" class="headerlink" title="Useful sites"></a>Useful sites</h2><ul>
+<li>Icons<ul>
+<li><a target="_blank" rel="noopener" href="https://fontawesome.com/">Fontawesome</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.flaticon.com/">flation</a></li>
+</ul>
+</li>
+<li>Fraction generator<ul>
+<li><a target="_blank" rel="noopener" href="https://www.favicon-generator.org/">favicon-generator</a></li>
+</ul>
+</li>
 </ul>
 
       
@@ -267,7 +329,7 @@
 
 
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
   </nav>
 
 </div>

@@ -1,0 +1,21 @@
+{
+	"name": "generated.hw2",
+	"author": "generator",
+	"date": 1664447738,
+	"files": [{
+	"name": "75665112/3fe2/11ed/b531/000c29a00e3c",
+	"type": "file",
+	"data": "UEVYR0RZClZYVQpIVk9RTVFCV1FUTEZRCllXQ1FVSFpXQkVOQgpOUQpRCkNCTQpDVwpHSk9WTUNWT0pICkhLCgpSVUgKSApFClVRQgpNTUhTClBQVEtOUApLWQpYCgpTUlFPS0oKVlE9Cg==",
+	"hash": {"md5": "8c6a71a7da037c6dc71adb6634942a0f", "sha-1": "125f0c4cdf6f0564760a2f9cf8577a35dc9e277e"}
+},{
+	"name": "756e7359/3fe2/11ed/b531/000c29a00e3c",
+	"type": "file",
+	"data": "ClVSCk0KRVNSClRVUApFR1oKSlhMTU9GRElHUFZCCkhVVgpLQ1lUVVhSTEIKUklZCklNClcKU1EKClpUVApBCgpDTVVUQwpJR1NWRgpPCkxJCgpJU0JLVFhIQgpXCk9OVERCQ1FFUFk9Cg==",
+	"hash": {"md5": "1c7aa5ec8cff627c94173aadb44c34ff", "sha-1": "7abd5b6ca032c927237f27bd6e8eec7a69ab29a7"}
+},{
+	"name": "757af820/3fe2/11ed/b531/000c29a00e3c",
+	"type": "file",
+	"data": "UEVDSEhUClpaVFdZSldURFFXU1RMUUZYRENGQkhHTFFCCkNWQ0xVR0lERklMUVJXWENPR0dRRwpKS0xPCgpEWQpCS0JHClhWU0JRCgpDSVAKCgpCCklZCklBUVhECkNDREVQU0VPCkk9Cg==",
+	"hash": {"md5": "93ba06515c88fb0e0d218c7a62207678", "sha-1": "3a7707083f8c2eef6819e9ff0cd422a637a10ec2"}
+}]
+}

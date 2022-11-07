@@ -20,27 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Back to content Cancellation Law  Let \(G\) be a group. Then the left and right cancellation laws hold in G. That is, \(ab &#x3D; ac\) implies \(b &#x3D; c\), and \(ba &#x3D; ca\) implies \(b &#x3D; c\) for all \(a, b, c">
+    <meta name="description" content="Unix Kernel and Shell  Shell is the interface to communication with kernel  Unix Shells    Shell System Name      Bourne Shell &#x2F;bin&#x2F;sh In FreeBSD base   C Shell &#x2F;bin&#x2F;csh In FreeBSD base, default for r">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Elementary properties of Group">
-<meta property="og:url" content="http://example.com/Algebra/Chp8.html">
+<meta property="og:title" content="Shell">
+<meta property="og:url" content="http://example.com/Computer-System-Administration/Shell.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Back to content Cancellation Law  Let \(G\) be a group. Then the left and right cancellation laws hold in G. That is, \(ab &#x3D; ac\) implies \(b &#x3D; c\), and \(ba &#x3D; ca\) implies \(b &#x3D; c\) for all \(a, b, c">
+<meta property="og:description" content="Unix Kernel and Shell  Shell is the interface to communication with kernel  Unix Shells    Shell System Name      Bourne Shell &#x2F;bin&#x2F;sh In FreeBSD base   C Shell &#x2F;bin&#x2F;csh In FreeBSD base, default for r">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-10-16T04:30:32.722Z">
-<meta property="article:modified_time" content="2022-10-03T14:05:50.862Z">
+<meta property="article:published_time" content="2022-11-01T17:26:31.082Z">
+<meta property="article:modified_time" content="2022-11-01T17:26:31.082Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/Algebra/Chp8">
+<link rel="canonical" href="http://example.com/Computer-System-Administration/Shell">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Algebra/Chp8.html","path":"Algebra/Chp8.html","title":"Elementary properties of Group"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Computer-System-Administration/Shell.html","path":"Computer-System-Administration/Shell.html","title":"Shell"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Elementary properties of Group | Ruccccc
+<title>Shell | Ruccccc
 </title>
   
 
@@ -119,7 +119,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cancellation-law"><span class="nav-number">1.</span> <span class="nav-text">Cancellation Law</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#unix-kernel-and-shell"><span class="nav-number">1.</span> <span class="nav-text">Unix Kernel and Shell</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#unix-shells"><span class="nav-number">1.1.</span> <span class="nav-text">Unix Shells</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#environment-variable"><span class="nav-number">2.</span> <span class="nav-text">Environment Variable</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#get-environment-variable"><span class="nav-number">2.1.</span> <span class="nav-text">Get Environment Variable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#some-useful-variables"><span class="nav-number">2.2.</span> <span class="nav-text">Some Useful Variables</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -169,7 +169,7 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Elementary properties of Group
+<h1 class="post-title" itemprop="name headline">Shell
 </h1>
 
 <div class="post-meta-container">
@@ -180,17 +180,76 @@
       
       
       <div class="post-body">
-          <p><a href="index">Back to content</a></p>
-<h2 id="cancellation-law">Cancellation Law</h2>
+          <h2 id="unix-kernel-and-shell">Unix Kernel and Shell</h2>
 <blockquote>
-<p>Let <span class="math inline">\(G\)</span> be a group. Then the
-<strong>left and right cancellation laws</strong> hold in G. That is,
-<span class="math inline">\(ab = ac\)</span> implies <span
-class="math inline">\(b = c\)</span>, and <span class="math inline">\(ba
-= ca\)</span> implies <span class="math inline">\(b = c\)</span> for all
-<span class="math inline">\(a, b, c \in G\)</span></p>
+<p>Shell is the interface to communication with kernel</p>
 </blockquote>
-<p>Suppose thatt $ab = ac $</p>
+<h3 id="unix-shells">Unix Shells</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Shell</th>
+<th>System Name</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bourne Shell</td>
+<td>/bin/sh</td>
+<td>In FreeBSD base</td>
+</tr>
+<tr class="even">
+<td>C Shell</td>
+<td>/bin/csh</td>
+<td>In FreeBSD base, default for root</td>
+</tr>
+<tr class="odd">
+<td>TENEX C Shell</td>
+<td>/bin/tcsh</td>
+<td>In FreeBSD base</td>
+</tr>
+<tr class="even">
+<td>Bourne-Again Shell</td>
+<td>shells/bash</td>
+<td>widely used</td>
+</tr>
+<tr class="odd">
+<td>Z Shell</td>
+<td>shells/zsh</td>
+<td>macOS default, often with Oh-my-zsh</td>
+</tr>
+</tbody>
+</table>
+<h2 id="environment-variable">Environment Variable</h2>
+<blockquote>
+<p>Controlling shell behaviors</p>
+</blockquote>
+<h3 id="get-environment-variable">Get Environment Variable</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">env</span> <span class="comment"># dumping all</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;VARIABLE_NAME&#125;</span> <span class="comment"># get value of variable</span></span><br></pre></td></tr></table></figure>
+<h3 id="some-useful-variables">Some Useful Variables</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variable naem</th>
+<th>Descirption</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">HOME</td>
+<td>User's home directory</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">MAIL</td>
+<td>User's mailbox</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">PATH</td>
+<td>Command search path</td>
+</tr>
+</tbody>
+</table>
 
       </div>
       
@@ -240,7 +299,7 @@ class="math inline">\(b = c\)</span>, and <span class="math inline">\(ba
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 

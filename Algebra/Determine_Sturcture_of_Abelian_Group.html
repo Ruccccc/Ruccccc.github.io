@@ -20,27 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Back to content Cancellation Law  Let \(G\) be a group. Then the left and right cancellation laws hold in G. That is, \(ab &#x3D; ac\) implies \(b &#x3D; c\), and \(ba &#x3D; ca\) implies \(b &#x3D; c\) for all \(a, b, c">
+    <meta name="description" content="The fundamental theorem of finitel abelian groups Theorem  Suppose that \(G\) is a finite abelian group. Then \(G\) is isomorphic to a direct product of finite cyclic groups in the form \[\mathbb{Z}_{">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Elementary properties of Group">
-<meta property="og:url" content="http://example.com/Algebra/Chp8.html">
+<meta property="og:title" content="Determine Structure of Abelian Groups">
+<meta property="og:url" content="http://example.com/Algebra/Determine_Sturcture_of_Abelian_Group.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Back to content Cancellation Law  Let \(G\) be a group. Then the left and right cancellation laws hold in G. That is, \(ab &#x3D; ac\) implies \(b &#x3D; c\), and \(ba &#x3D; ca\) implies \(b &#x3D; c\) for all \(a, b, c">
+<meta property="og:description" content="The fundamental theorem of finitel abelian groups Theorem  Suppose that \(G\) is a finite abelian group. Then \(G\) is isomorphic to a direct product of finite cyclic groups in the form \[\mathbb{Z}_{">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-10-16T04:30:32.722Z">
-<meta property="article:modified_time" content="2022-10-03T14:05:50.862Z">
+<meta property="article:published_time" content="2022-11-04T03:49:00.530Z">
+<meta property="article:modified_time" content="2022-11-04T03:49:00.530Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/Algebra/Chp8">
+<link rel="canonical" href="http://example.com/Algebra/Determine_Sturcture_of_Abelian_Group">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Algebra/Chp8.html","path":"Algebra/Chp8.html","title":"Elementary properties of Group"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Algebra/Determine_Sturcture_of_Abelian_Group.html","path":"Algebra/Determine_Sturcture_of_Abelian_Group.html","title":"Determine Structure of Abelian Groups"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Elementary properties of Group | Ruccccc
+<title>Determine Structure of Abelian Groups | Ruccccc
 </title>
   
 
@@ -119,7 +119,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cancellation-law"><span class="nav-number">1.</span> <span class="nav-text">Cancellation Law</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#the-fundamental-theorem-of-finitel-abelian-groups"><span class="nav-number">1.</span> <span class="nav-text">The
+fundamental theorem of finitel abelian groups</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#p-torsion-subgroups"><span class="nav-number">2.</span> <span class="nav-text">\(p\)-torsion Subgroups</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#group-structure-of-mathbbz_mtimes"><span class="nav-number">3.</span> <span class="nav-text">Group Structure of \(\mathbb{Z}_m^\times\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cardinality-of-mathbbz_mtimes"><span class="nav-number">4.</span> <span class="nav-text">Cardinality of \(\mathbb{Z}_m^\times\)</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -169,7 +170,7 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Elementary properties of Group
+<h1 class="post-title" itemprop="name headline">Determine Structure of Abelian Groups
 </h1>
 
 <div class="post-meta-container">
@@ -180,17 +181,85 @@
       
       
       <div class="post-body">
-          <p><a href="index">Back to content</a></p>
-<h2 id="cancellation-law">Cancellation Law</h2>
+          <h2 id="the-fundamental-theorem-of-finitel-abelian-groups">The
+fundamental theorem of finitel abelian groups</h2>
+<p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(G\)</span> be a group. Then the
-<strong>left and right cancellation laws</strong> hold in G. That is,
-<span class="math inline">\(ab = ac\)</span> implies <span
-class="math inline">\(b = c\)</span>, and <span class="math inline">\(ba
-= ca\)</span> implies <span class="math inline">\(b = c\)</span> for all
-<span class="math inline">\(a, b, c \in G\)</span></p>
+<p>Suppose that <span class="math inline">\(G\)</span> is a finite
+abelian group. Then <span class="math inline">\(G\)</span> is isomorphic
+to a direct product of finite cyclic groups in the form <span
+class="math display">\[\mathbb{Z}_{p_{1}^{e_1}} \times
+\mathbb{Z}_{p_{2}^{e_2}} \times \cdots \times
+\mathbb{Z}_{p_{n}^{e_n}}\]</span> where <span
+class="math inline">\(p_i\)</span> are primes, not necessary distinct.
+The direct product is unique except for possible rearrangement of the
+factors.</p>
 </blockquote>
-<p>Suppose thatt $ab = ac $</p>
+<h2 id="p-torsion-subgroups"><span
+class="math inline">\(p\)</span>-torsion Subgroups</h2>
+<blockquote>
+<p>if we collect all cyclic groups in the above express with the same
+<span class="math inline">\(p_i = p\)</span> to obtain a subgroup <span
+class="math inline">\(G_p\)</span>, called the <span
+class="math inline">\(p\)</span>-torsion subgroup of <span
+class="math inline">\(G\)</span>, which can be also characterized by
+<span class="math display">\[G_p = \{ a \in G \mid a^{p^k} = e \text{for
+some} k \in \mathbb{N}\]</span> Then we can rewrite the result above as
+<span class="math display">\[G = \prod_{p \Big| |G|} G_p\]</span> where
+<span class="math inline">\(G_p\)</span> is isomorphic to a group of the
+form <span class="math display">\[\mathbb{Z}_{p^{r_1}} \times \cdots
+\times \mathbb{Z}_{p^{r_k}}\]</span> Therefore, to determine the froup
+structure of <span class="math inline">\(G\)</span>, it is sufficient to
+determine the froup structure of its <span
+class="math inline">\(p\)</span>-torsion subgroups.</p>
+</blockquote>
+<h2 id="group-structure-of-mathbbz_mtimes">Group Structure of <span
+class="math inline">\(\mathbb{Z}_m^\times\)</span></h2>
+<blockquote>
+<p>We want to study the group structure of <span
+class="math inline">\(\mathbb{Z}_m^\times\)</span>. First, we need to
+find the cardinality of the group. Recall that when <span
+class="math inline">\(m_1, m_2\)</span> are coprime. The map <span
+class="math display">\[rho : \mathbb{Z}_{m_1 m_2} \mapsto
+\mathbb{Z}_{m_1} \times \mathbb{Z}_{m_2}\]</span> is an additive group
+isomorphism. Note that this map also preserves another binary structure,
+multiplication. Recall that <span class="math display">\[\begin{align}
+\mathbb{Z}_m^\times &amp;:= \{ \bar a \in \mathbb{Z}_m \mid \bar a
+\text{a has the multiplicative inverse} \} \\
+&amp;= \{ \bar a \in \mathbb{Z}_m, {\rm gcd}(a, m) = 1 \}
+\end{align}\]</span> Thus, we have <span
+class="math inline">\(\mathbb{Z}_{m_1 m_2}^\times \cong
+\mathbb{Z}_{m_1}^\times \times \mathbb{Z}_{m_2}^\times\)</span></p>
+</blockquote>
+<h2 id="cardinality-of-mathbbz_mtimes">Cardinality of <span
+class="math inline">\(\mathbb{Z}_m^\times\)</span></h2>
+<p><strong>Theorem</strong></p>
+<blockquote>
+<p>The cardinality of <span
+class="math inline">\(\mathbb{Z}_m^\times\)</span> is equal to $_{p} (1
+- 1/p), where <span class="math inline">\(p\)</span> runs through all
+prime divisors of <span class="math inline">\(m\)</span>. <br></p>
+</blockquote>
+<details>
+<summary>
+Proof
+</summary>
+<blockquote>
+<p>If <span class="math inline">\(m = p^k\)</span>, a prime power, we
+have <span class="math display">\[\begin{align}
+|\mathbb{Z}_{p^k}^\times| &amp;= #\{\bar a \in \mathbb{Z}_{p^k} \mid
+{\rm gcd}(a, p^k) = 1 \}
+&amp;= #\{ 0 \leq i &lt; p^k \mid {\rm gcd}(i, p^k) = 1 \}
+&amp;= #\{ 0 \leq i &lt; p^k \mid {\rm gcd}(i, p) = 1 \}
+&amp;= p^{k-1}(p-1)
+\end{align}\]</span> If <span class="math inline">\(m = p_1^{k_1} \cdots
+p_r^{k_r}\)</span> where <span class="math inline">\(p_i\)</span> are
+distinct primes and <span class="math inline">\(k_i &gt; 0\)</span>,
+then <span class="math display">\[|\mathbb{Z}_m^\times| = \prod_{i =
+1}^{r} p_i^{k_i}(1 - {1 \over p_i}) = m \prod_{i = 1}^{r} (1 - {1 \over
+p_i})\]</span></p>
+</blockquote>
+</details>
 
       </div>
       

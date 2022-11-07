@@ -144,6 +144,10 @@
 
         </div>
       </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
@@ -152,10 +156,6 @@
     </header>
 
     
-  <div class="back-to-top" role="button" aria-label="Back to top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
   <a href="https://github.com/Ruccccc/Ruccccc.github.io" class="github-corner" title="GitHub" aria-label="GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
 
@@ -218,10 +218,10 @@
 <li>node.js mac : <code>brew install node</code></li>
 </ul>
 <h3 id="install-hexo-with-npm">install Hexo with npm</h3>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <h2 id="setup">Setup</h2>
 <h3 id="initialize">Initialize</h3>
-<pre class="line-numbers language-none"><code class="language-none">hexo init [folder]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [folder]</span><br></pre></td></tr></table></figure>
 <ul>
 <li>_config.yml Site configuration file.</li>
 <li>package.json Application data.</li>
@@ -232,16 +232,16 @@ target="_blank" rel="noopener" href="https://github.com/Ruffianjiang/hexo-theme-
 as the theme of this site.</p>
 <h4 id="download">download</h4>
 <ul>
-<li><p>though npm <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-theme-next<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p></li>
-<li><p>though git <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/next-theme/hexo-theme-next themes/next<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p></li>
+<li><p>though npm <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-theme-next</span><br></pre></td></tr></table></figure></p></li>
+<li><p>though git <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p></li>
 </ul>
 <h4 id="set-theme">Set theme</h4>
-<p>edit <code>_config.yml</code> <pre class="line-numbers language-none"><code class="language-none">theme: next<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<p>edit <code>_config.yml</code> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure></p>
 <h4 id="configurations">configurations</h4>
 <h4 id="update">Update</h4>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-theme-next@latest<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-theme-next@latest</span><br></pre></td></tr></table></figure>
 <h2 id="add-new-post">Add new post</h2>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token operator">&lt;</span>title<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="deploy-with-github-page">Deploy with Github Page</h2>
 <h3 id="github">Github</h3>
 <ol type="1">
@@ -252,32 +252,17 @@ as the theme of this site.</p>
 </ol>
 <h3 id="local">Local</h3>
 <ol type="1">
-<li>Edit <code>_config.yml</code> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Deployment</span>
-<span class="token comment">## Docs: https://hexo.io/docs/one-command-deployment</span>
-deploy:
-  type: <span class="token function">git</span>
-  repo: https://github.com/<span class="token operator">&lt;</span>username<span class="token operator">></span>/<span class="token operator">&lt;</span>username<span class="token operator">></span>.github.io.git
-  branch: master
-  message: <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>Edit <code>_config.yml</code> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: </span><br></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="deploy">Deploy</h2>
 <ol type="1">
-<li><p>clean the cache file and generated files. <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean
-hexo cl        <span class="token comment"># short version</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p></li>
-<li><p>gernerate static files. <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo gernerate
-hexo g         <span class="token comment"># short version</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p></li>
-<li><p>deploy the website. <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo deploy
-hexo d         <span class="token comment"># short version</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p></li>
+<li><p>clean the cache file and generated files. <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo cl        <span class="comment"># short version</span></span><br></pre></td></tr></table></figure></p></li>
+<li><p>gernerate static files. <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo gernerate</span><br><span class="line">hexo g         <span class="comment"># short version</span></span><br></pre></td></tr></table></figure></p></li>
+<li><p>deploy the website. <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line">hexo d         <span class="comment"># short version</span></span><br></pre></td></tr></table></figure></p></li>
 </ol>
 <h3 id="configuration">Configuration</h3>
 <h4 id="remove-post-time">remove <code>post time</code></h4>
-<p>Edit <code>_config.theme.yml</code> <pre class="line-numbers language-none"><code class="language-none">post_meta:
-    item_text: false
-    created_at: false
-    updated_at:
-        enable: false
-        another_day: false
-    categories: false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<p>Edit <code>_config.theme.yml</code> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">post_meta:</span><br><span class="line">    item_text: false</span><br><span class="line">    created_at: false</span><br><span class="line">    updated_at:</span><br><span class="line">        enable: false</span><br><span class="line">        another_day: false</span><br><span class="line">    categories: false</span><br></pre></td></tr></table></figure></p>
 <h2 id="references">References</h2>
 <ul>
 <li><a

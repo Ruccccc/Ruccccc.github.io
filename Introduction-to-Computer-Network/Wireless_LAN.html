@@ -20,17 +20,18 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Wireless Technologies   Wireless Technologies   PAN : Personal Area Network  Bluetooth  Wifi 不支援高速移動  來不及handoff   802.11  By IEEE in 1990 MAC protocol and physical medium specifiaction Architecture">
+    <meta name="description" content="Wireless Technologies   Wireless Technologies   PAN : Personal Area Network  safe, short distence transmition. Bluetooth, credit card.  Wifi 不支援高速移動  來不及handoff   802.11  By IEEE in 1990 MAC protocol">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Wireless LAN">
 <meta property="og:url" content="http://example.com/Introduction-to-Computer-Network/Wireless_LAN.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Wireless Technologies   Wireless Technologies   PAN : Personal Area Network  Bluetooth  Wifi 不支援高速移動  來不及handoff   802.11  By IEEE in 1990 MAC protocol and physical medium specifiaction Architecture">
+<meta property="og:description" content="Wireless Technologies   Wireless Technologies   PAN : Personal Area Network  safe, short distence transmition. Bluetooth, credit card.  Wifi 不支援高速移動  來不及handoff   802.11  By IEEE in 1990 MAC protocol">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/Introduction-to-Computer-Network/Images/WLAN/Ad_Hoc.png">
 <meta property="og:image" content="http://example.com/Introduction-to-Computer-Network/Images/WLAN/ESS.png">
-<meta property="article:published_time" content="2022-11-06T07:31:22.129Z">
-<meta property="article:modified_time" content="2022-11-06T07:31:22.129Z">
+<meta property="og:image" content="http://example.com/Introduction-to-Computer-Network/Images/WLAN/IFS.png">
+<meta property="article:published_time" content="2022-11-10T10:30:21.864Z">
+<meta property="article:modified_time" content="2022-11-10T10:30:21.864Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/Introduction-to-Computer-Network/Images/WLAN/Ad_Hoc.png">
@@ -122,7 +123,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#wireless-technologies"><span class="nav-number">1.</span> <span class="nav-text">Wireless Technologies</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section"><span class="nav-number">2.</span> <span class="nav-text">802.11</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#family"><span class="nav-number">2.1.</span> <span class="nav-text">Family</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ibss-configuration"><span class="nav-number">2.2.</span> <span class="nav-text">IBSS configuration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#extend-service-set"><span class="nav-number">2.3.</span> <span class="nav-text">Extend Service Set</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#protocol-enities"><span class="nav-number">3.</span> <span class="nav-text">Protocol Enities</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#services"><span class="nav-number">4.</span> <span class="nav-text">Services</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#wireless-technologies"><span class="nav-number">1.</span> <span class="nav-text">Wireless Technologies</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section"><span class="nav-number">2.</span> <span class="nav-text">802.11</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#family"><span class="nav-number">2.1.</span> <span class="nav-text">Family</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ibss-configuration"><span class="nav-number">2.2.</span> <span class="nav-text">IBSS configuration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#extend-service-set"><span class="nav-number">2.3.</span> <span class="nav-text">Extend Service Set</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#protocol-enities"><span class="nav-number">3.</span> <span class="nav-text">Protocol Enities</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#services"><span class="nav-number">4.</span> <span class="nav-text">Services</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mac"><span class="nav-number">5.</span> <span class="nav-text">MAC</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#inter-frame-space-ifs"><span class="nav-number">5.1.</span> <span class="nav-text">Inter Frame Space (IFS)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#values"><span class="nav-number">5.1.1.</span> <span class="nav-text">Values</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dcf"><span class="nav-number">5.2.</span> <span class="nav-text">DCF</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -193,7 +194,8 @@ alt="Wireless Technologies" />
 <ul>
 <li>PAN : Personal Area Network
 <ul>
-<li>Bluetooth</li>
+<li>safe, short distence transmition.</li>
+<li>Bluetooth, credit card.</li>
 </ul></li>
 <li>Wifi 不支援高速移動
 <ul>
@@ -208,7 +210,11 @@ alt="Wireless Technologies" />
 <ul>
 <li>BBS: basic service set</li>
 <li>STA: station</li>
-<li>AP(Access point) functions as a bridge (Wifi 分享器)</li>
+<li>AP(Access point)
+<ul>
+<li>functions as a bridge (Wifi 分享器)</li>
+<li>defined in second layer.</li>
+</ul></li>
 <li>IBSS: independent BSS(ad hoc/peer-to-peer mode)</li>
 <li>ESS: extend service set</li>
 </ul></li>
@@ -248,6 +254,8 @@ alt="Wireless Technologies" />
 <li>Multiple BSS connected together form an ESS.</li>
 <li>Allow mobile stations to access fixed resourse.</li>
 </ul></li>
+<li>Advantage: stable.</li>
+<li>Disadvantage: transmit path will be long.</li>
 </ul></li>
 </ul>
 <table>
@@ -267,7 +275,7 @@ alt="Wireless Technologies" />
 alt="Ad Hoc" /></td>
 <td><img
 src="/Introduction-to-Computer-Network/Images/WLAN/Infrastructure.png"
-alt="Ad Hoc" /></td>
+alt="Infrastructure" /></td>
 </tr>
 </tbody>
 </table>
@@ -298,23 +306,114 @@ alt="Protocol Enities" />
 <ul>
 <li>Modulation and encoding</li>
 </ul></li>
+<li>PLCP
+<ul>
+<li>SAP</li>
+<li>Functino for carrier sense (slear channel assessment)</li>
+</ul></li>
+<li>MAC management
+<ul>
+<li>synchronization</li>
+<li>Power management</li>
+<li>Roaming</li>
+<li>MIB</li>
+</ul></li>
+<li>MAC entity
+<ul>
+<li>Basic accss mechanism</li>
+<li>Fragmentation</li>
+<li>Encryption</li>
+</ul></li>
 </ul>
 <h2 id="services">Services</h2>
 <ul>
 <li>Association: initial association between a station and an AP.</li>
-<li>Reassociation: transferred from one access point ot another.</li>
+<li>Reassociation: transferred from one access point to another.</li>
 <li>Disassociation: a notification from either a station or and AP that
 an existing association is terminated.</li>
 <li>Authentication: establish the identity of stations
 <ul>
 <li>shared key or proprietary authentication extensions</li>
 </ul></li>
-<li>Privacy
+<li>Privacy - encript
 <ul>
-<li>station-tostation, not "end to end".</li>
-<li>WEP(Wired Equivalent Privacy) embedded in the MAC entity.</li>
-<li>Only paload of data frames are encrypted.</li>
+<li>station-to-station, not "end to end".</li>
+<li>WEP(Wired Equivalent Privacy) embedded in the MAC entity. (It's not
+safe now)</li>
+<li>Only payload of data frames are encrypted.</li>
 </ul></li>
+</ul>
+<h2 id="mac">MAC</h2>
+<ul>
+<li>One MAC protocol supporting multiple physical layers</li>
+<li>DCF (Distributed Coordination Function)
+<ul>
+<li>a contentino algorithm</li>
+</ul></li>
+<li>PCF (Point Coordination Function)
+<ul>
+<li>a centralized algorithm providing contention-free service (polling)
+(optional)</li>
+<li>reside in AP</li>
+<li>Now seldom use.</li>
+</ul></li>
+</ul>
+<h3 id="inter-frame-space-ifs">Inter Frame Space (IFS)</h3>
+<ul>
+<li>SIFS (short inter frame space)
+<ul>
+<li>The minimum delay.</li>
+</ul></li>
+<li>PIFS (PCF IFS)</li>
+<li>DIFS (DCF IFS)</li>
+</ul>
+<figure>
+<img src="/Introduction-to-Computer-Network/Images/WLAN/IFS.png"
+alt="IFS" />
+<figcaption aria-hidden="true">IFS</figcaption>
+</figure>
+<p>SIFS = (RF delay) + (PLCP delay) + (MAC delay) + (Transceiver delay)
+Slot time = (RF delay) + (PLCP delay) + (Clear channel aassessment time)
++ (Transceiver delay) PIFS = SIFS + 1 Slot time DIFS = SIFS + 2 Slot
+time</p>
+<h4 id="values">Values</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">SIFS</th>
+<th style="text-align: center;">Slot time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">DSSS</td>
+<td style="text-align: center;">10 μs</td>
+<td style="text-align: center;">20 μs</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">FHSS</td>
+<td style="text-align: center;">28 μs</td>
+<td style="text-align: center;">50 μs</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">DFIR</td>
+<td style="text-align: center;">7 μs</td>
+<td style="text-align: center;">8 μs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dcf">DCF</h3>
+<ul>
+<li>Collision detection is not practical
+<ul>
+<li>Requrie receive and transmit at same time.</li>
+<li>Receiver will collide with transmitter.</li>
+<li>Cost is high for a transceiver can receive and transmit at same
+time.</li>
+</ul></li>
+<li>CSMA/CA Carrier sence function in PHY called CCA (Clear Channel
+Assessment)</li>
 </ul>
 
       </div>

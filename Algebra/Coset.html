@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Coset Definition  Given a subgroup \(H\) of a group \(G\), for \(a \in G\), the set \[ aH &#x3D; \{ ah : H \in H \} \] is called the left coset of \(H\) containing \(a\). Similarly, \(Ha\) is called the ri">
+    <meta name="description" content="Coset Definition  Given a subgroup \(H\) of a group \(G\), for \(a \in G\), the set \[ aH &#x3D; \{ ah : h \in H \} \] is called the left coset of \(H\) containing \(a\). Similarly, \(Ha\) is called the ri">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Coset">
 <meta property="og:url" content="http://example.com/Algebra/Coset.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Coset Definition  Given a subgroup \(H\) of a group \(G\), for \(a \in G\), the set \[ aH &#x3D; \{ ah : H \in H \} \] is called the left coset of \(H\) containing \(a\). Similarly, \(Ha\) is called the ri">
+<meta property="og:description" content="Coset Definition  Given a subgroup \(H\) of a group \(G\), for \(a \in G\), the set \[ aH &#x3D; \{ ah : h \in H \} \] is called the left coset of \(H\) containing \(a\). Similarly, \(Ha\) is called the ri">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-11-02T12:28:56.442Z">
-<meta property="article:modified_time" content="2022-11-02T12:28:56.442Z">
+<meta property="article:published_time" content="2022-11-07T14:01:54.722Z">
+<meta property="article:modified_time" content="2022-11-07T14:01:54.722Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
@@ -119,7 +119,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#coset"><span class="nav-number">1.</span> <span class="nav-text">Coset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lagranges-theorem"><span class="nav-number">2.</span> <span class="nav-text">Lagrange&#39;s theorem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#indexes-of-subgroup"><span class="nav-number">3.</span> <span class="nav-text">Indexes of Subgroup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#applications-of-lagranges-theorem"><span class="nav-number">4.</span> <span class="nav-text">Applications of Lagrange&#39;s
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#coset"><span class="nav-number">1.</span> <span class="nav-text">Coset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#indexes-of-subgroup"><span class="nav-number">2.</span> <span class="nav-text">Indexes of Subgroup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lagranges-theorem"><span class="nav-number">3.</span> <span class="nav-text">Lagrange&#39;s theorem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#applications-of-lagranges-theorem"><span class="nav-number">4.</span> <span class="nav-text">Applications of Lagrange&#39;s
 theorem</span></a></li></ol></div>
         </div>
         <!--/noindex-->
@@ -187,7 +187,7 @@ theorem</span></a></li></ol></div>
 <p>Given a subgroup <span class="math inline">\(H\)</span> of a group
 <span class="math inline">\(G\)</span>, for <span
 class="math inline">\(a \in G\)</span>, the set <span
-class="math display">\[ aH = \{ ah : H \in H \} \]</span> is called the
+class="math display">\[ aH = \{ ah : h \in H \} \]</span> is called the
 <strong>left coset</strong> of <span class="math inline">\(H\)</span>
 containing <span class="math inline">\(a\)</span>.<br> Similarly, <span
 class="math inline">\(Ha\)</span> is called the <strong>right
@@ -229,6 +229,25 @@ class="math inline">\((23)H = \{ (23), (23)(12) \} = \{ (23), (132)
 (12)\}\)</span>, <span class="math inline">\(H(13) = \{(13), (12)(13)\}
 = \{(13), (132)\}\)</span> and <span class="math inline">\(H(23) =
 \{(23), (12)(23)\} = \{(23), (123)\}\)</span></p>
+</blockquote>
+<h2 id="indexes-of-subgroup">Indexes of Subgroup</h2>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(H\)</span> be a subgroup of group of
+a group <span class="math inline">\(G\)</span>. The number of left coset
+of <span class="math inline">\(H\)</span> is the <strong>index</strong>
+of <span class="math inline">\(H\)</span> in G deonted by <span
+class="math inline">\([G : H]\)</span></p>
+</blockquote>
+<p><strong>Theorem</strong></p>
+<blockquote>
+<p>Suppose that <span class="math inline">\(H\)</span> and <span
+class="math inline">\(K\)</span> are subgroups of a group <span
+class="math inline">\(G\)</span> such that <span class="math inline">\(K
+\leq H \leq G\)</span>. Suppose that <span class="math inline">\([G :
+H]\)</span> and <span class="math inline">\([H : K]\)</span> are finite.
+Then <span class="math inline">\([G : K]\)</span> is alse finite and
+<span class="math inline">\([G : K] = [G : H] [H : K]\)</span></p>
 </blockquote>
 <h2 id="lagranges-theorem">Lagrange's theorem</h2>
 <p><strong>Theorem (Lagrange’s theorem)</strong></p>
@@ -281,25 +300,6 @@ class="math inline">\(⟨g⟩ = G\)</span>, i.e., <span
 class="math inline">\(G\)</span> is cyclic.</p>
 </blockquote>
 </details>
-<h2 id="indexes-of-subgroup">Indexes of Subgroup</h2>
-<p><strong>Definition</strong></p>
-<blockquote>
-<p>Let <span class="math inline">\(H\)</span> be a subgroup of group of
-a group <span class="math inline">\(G\)</span>. The number of left coset
-of <span class="math inline">\(H\)</span> is the <strong>index</strong>
-of <span class="math inline">\(H\)</span> in G deonted by <span
-class="math inline">\([G : H]\)</span></p>
-</blockquote>
-<p><strong>Theorem</strong></p>
-<blockquote>
-<p>Suppose that <span class="math inline">\(H\)</span> and <span
-class="math inline">\(K\)</span> are subgroups of a group <span
-class="math inline">\(G\)</span> such that <span class="math inline">\(K
-\leq H \leq G\)</span>. Suppose that <span class="math inline">\([G :
-H]\)</span> and <span class="math inline">\([H : K]\)</span> are finite.
-Then <span class="math inline">\([G : K]\)</span> is alse finite and
-<span class="math inline">\([G : K] = [G : H] [H : K]\)</span></p>
-</blockquote>
 <h2 id="applications-of-lagranges-theorem">Applications of Lagrange's
 theorem</h2>
 <p><strong>Question</strong></p>

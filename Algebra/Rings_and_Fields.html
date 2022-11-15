@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Rings Definition  A ring \(\langle R, +, \cdot \rangle\) is a set \(R\) together with rwo binary operations \(+\) and \(\cdot\), called addition and multiplication, such that the following axioms are">
+    <meta name="description" content="Rings Definition  A ring \(\langle R, +, \cdot \rangle\) is a set \(R\) with two binary operations \(+\) and \(\cdot\), called addition and multiplication, such that the following axioms are satisfied">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Rings and Fields">
 <meta property="og:url" content="http://example.com/Algebra/Rings_and_Fields.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Rings Definition  A ring \(\langle R, +, \cdot \rangle\) is a set \(R\) together with rwo binary operations \(+\) and \(\cdot\), called addition and multiplication, such that the following axioms are">
+<meta property="og:description" content="Rings Definition  A ring \(\langle R, +, \cdot \rangle\) is a set \(R\) with two binary operations \(+\) and \(\cdot\), called addition and multiplication, such that the following axioms are satisfied">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-11-03T08:24:06.929Z">
-<meta property="article:modified_time" content="2022-11-03T08:24:06.929Z">
+<meta property="article:published_time" content="2022-11-14T15:53:29.370Z">
+<meta property="article:modified_time" content="2022-11-14T15:53:29.370Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
@@ -119,7 +119,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#rings"><span class="nav-number">1.</span> <span class="nav-text">Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#basic-properties-of-rings"><span class="nav-number">2.</span> <span class="nav-text">Basic properties of Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#multiplication-of-rings"><span class="nav-number">3.</span> <span class="nav-text">Multiplication of Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#field"><span class="nav-number">4.</span> <span class="nav-text">Field</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#subring-and-subfield"><span class="nav-number">5.</span> <span class="nav-text">Subring and Subfield</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#homomorphism"><span class="nav-number">6.</span> <span class="nav-text">Homomorphism</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#rings"><span class="nav-number">1.</span> <span class="nav-text">Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#basic-properties-of-rings"><span class="nav-number">2.</span> <span class="nav-text">Basic properties of Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#multiplication-of-rings"><span class="nav-number">3.</span> <span class="nav-text">Multiplication of Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#field"><span class="nav-number">4.</span> <span class="nav-text">Field</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#subring-and-subfield"><span class="nav-number">5.</span> <span class="nav-text">Subring and Subfield</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#homomorphism"><span class="nav-number">6.</span> <span class="nav-text">Homomorphism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iosmorphisms"><span class="nav-number">7.</span> <span class="nav-text">Iosmorphisms</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -184,9 +184,8 @@
 <p><strong>Definition</strong></p>
 <blockquote>
 <p>A ring <span class="math inline">\(\langle R, +, \cdot
-\rangle\)</span> is a set <span class="math inline">\(R\)</span>
-together with rwo binary operations <span
-class="math inline">\(+\)</span> and <span
+\rangle\)</span> is a set <span class="math inline">\(R\)</span> with
+two binary operations <span class="math inline">\(+\)</span> and <span
 class="math inline">\(\cdot\)</span>, called <strong>addition</strong>
 and <strong>multiplication</strong>, such that the following axioms are
 satisfied:</p>
@@ -236,8 +235,9 @@ to <span class="math inline">\(V\)</span>. Let addition and
 multiplication be defined by <span class="math display">\[f + g : v
 \mapsto f(v) + g(v)\]</span><span class="math display">\[f \circ g : v
 \mapsto f(g(v))\]</span> Then <span class="math inline">\(\langle {\rm
-End}(V), +, \circ\)</span> is a ring, called the <strong>endomorphism
-ring</strong> of <span class="math inline">\(V\)</span>. <br></li>
+End}(V), +, \circ \rangle\)</span> is a ring, called the
+<strong>endomorphism ring</strong> of <span
+class="math inline">\(V\)</span>. <br></li>
 </ol>
 </blockquote>
 </details>
@@ -262,7 +262,7 @@ Proof
 have <span class="math inline">\((0_R + 0_R)a = 0_R a\)</span>. By the
 distributive law, we have <span class="math display">\[0_R a + 0_R a =
 0_R a\]</span> By cancellation law, <span class="math display">\[0_R a =
-0_R\]</span>. <br> By similar method, we can also prove <span
+0_R\]</span> By similar method, we can also prove <span
 class="math inline">\(a0_R = 0_R\)</span>. <br></p></li>
 <li><p>Since <span class="math inline">\(b + (-b) = 0_R\)</span>, we
 have <span class="math display">\[ab + a(-b) = a 0_R = 0_R\]</span> Then
@@ -291,12 +291,10 @@ additive inverse, we conclude that <span class="math inline">\((-a)(-b)
 class="math inline">\(R\)</span> satisfies <span
 class="math inline">\(ra = ar = r\)</span> for all <span
 class="math inline">\(r \in R\)</span>, then <span
-class="math inline">\(a\)</span> is the multiplicative
-<strong>identity</strong> or the <strong>unity</strong>, and is denoted
-by <span class="math inline">\(1\)</span> or <span
+class="math inline">\(a\)</span> is the <strong>multiplicative
+identity</strong> or the <strong>unity</strong>, and is denoted by <span
+class="math inline">\(1\)</span> or <span
 class="math inline">\(1_R\)</span>. <br></li>
-<li>A ring with a multiplicative identity is a <strong>ring with
-unity</strong>.</li>
 <li>A multiplicative inverse of an element <span
 class="math inline">\(a\)</span> in a ring with unity is an element
 <span class="math inline">\(a^{-1}\)</span> of <span
@@ -315,6 +313,16 @@ multiplicative inverse.</li>
 <li>If every nonzero element of <span class="math inline">\(R\)</span>
 is a unit, then <span class="math inline">\(R\)</span> is a
 <strong>division ring</strong> or <strong>skew field</strong></li>
+</ol>
+</blockquote>
+<p><strong>Remark</strong></p>
+<blockquote>
+<ol type="1">
+<li>The indentity element of a ring is unique if it exist.</li>
+<li>The inverse element of a element is unique if it exist.</li>
+<li>For a ring with unity, the set of units forms a multiplicative
+group, denoted <span class="math inline">\(R^\times\)</span>, called
+<strong>the group of units</strong>.</li>
 </ol>
 </blockquote>
 <h2 id="field">Field</h2>
@@ -338,23 +346,91 @@ denote this relation by <span class="math inline">\(S &lt; R\)</span>. A
 <blockquote>
 <p>For rings <span class="math inline">\(R\)</span> and <span
 class="math inline">\(R^\prime\)</span>, a funtion <span
-class="math inline">\(\phi : R \to R^\prime\)</span> is a (ring)
-<strong>homomorphism</strong> if</p>
+class="math inline">\(\phi : R \to R^\prime\)</span> is a <strong>(ring)
+homomorphism</strong> if</p>
 <ol type="1">
 <li><span class="math inline">\(\phi(a + b) = \phi(a) +
 \phi(b)\)</span></li>
 <li><span class="math inline">\(\phi(ab) = \phi(a)\phi(b)\)</span> for
-all <span class="math inline">\(a, b \in R\)</span>. <br> The kernel of
-<span class="math inline">\(\phi\)</span> is the set <span
-class="math display">\[{\rm ker}(\phi) = \{ a \in R \mid \phi(a) = 0
-\}\]</span></li>
+all <span class="math inline">\(a, b \in R\)</span>. <br></li>
 </ol>
+<p>The kernel of <span class="math inline">\(\phi\)</span> is the set
+<span class="math inline">\({\rm ker}(\phi) = \{ a \in R \mid \phi(a) =
+0 \}\)</span>. <br></p>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(\phi: R \mapsto R^\prime\)</span> be
-a ring homomorphism. Then <span class="math inline">\(\phi(R)\)</span>
-is a subring of <span class="math inline">\(R^\prime\)</span>. <br></p>
+<p>Let <span class="math inline">\(\phi: R \to R^\prime\)</span> be a
+ring homomorphism. Then <span class="math inline">\(\phi(R)\)</span> is
+a subring of <span class="math inline">\(R^\prime\)</span>. <br></p>
+</blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(R = \mathbb{Z}[x]\)</span> be the set
+of all polynomials over <span class="math inline">\(\mathbb{Q}\)</span>.
+Given <span class="math inline">\(a \in \mathbb{R}\)</span>, define
+<span class="math inline">\(\phi_a : \mathbb{Q}[x] \to
+\mathbb{R}\)</span> by <span class="math display">\[\phi_a(f(x)) =
+f(a)\]</span></p>
+<p><span class="math inline">\(\phi_a\)</span> is <strong>evaluation
+homomorphism</strong>.</p>
+<p>for <span class="math inline">\(a = \sqrt{2}\)</span>, we have <span
+class="math display">\[ \begin{align}
+\mathbb{Q}[\sqrt{2}] &amp;:= \phi_{\sqrt{2}}(\mathbb{Q}[x]) = \{
+f(\sqrt{2}) \mid f[x] \in \mathbb{Q} \} \\
+&amp;= \{a_0 + a_1\sqrt{2} + a_2 (\sqrt{2})^2 + \ldots + a_n(\sqrt{2})^n
+\mid a_i \in \mathbb{Q}, n \in \mathbb{Z}^+ \} \\
+&amp;= \{a + b\sqrt{2} \mid a, b \in \mathbb{Q} \}
+\end{align}\]</span></p>
+</blockquote>
+<h2 id="iosmorphisms">Iosmorphisms</h2>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(R\)</span> and <span
+class="math inline">\(R^\prime\)</span> be two rings. A function <span
+class="math inline">\(\phi : R \to R^\prime\)</span> is an
+<strong>isomorphism</strong> if <span
+class="math inline">\(\phi\)</span> is one-to-one, onto and
+homomorphism. Then we say <span class="math inline">\(R\)</span> and
+<span class="math inline">\(R^\prime\)</span> is isomorphic.</p>
+</blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(\alpha\)</span> be a basis of
+n-dimensional vector space <span class="math inline">\(V\)</span> over
+<span class="math inline">\(F\)</span>. Then the matrix representation
+<span class="math inline">\({\rm Rep}_\alpha : {\rm End}(V) \to M_n
+(F)\)</span> is a ring isomorphism.</p>
+</blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>For two coprime integer <span class="math inline">\(n, m\)</span>,
+<span class="math inline">\(\rho : \mathbb{Z}_{mn} \to \mathbb{Z}_n
+\times \mathbb{Z}_m\)</span> is group isomorphism by given that <span
+class="math display">\[\rho(\bar a) = (\bar a, \bar a)\]</span> It's
+clear that <span class="math inline">\(\rho\)</span> is also a
+multiplicative homomorphsim. Thus, <span
+class="math inline">\(\rho\)</span> is a ring isomorphism.</p>
+</blockquote>
+<p><strong>Example</strong></p>
+<p>The map <span class="math inline">\(\phi : \mathbb{C} \to \left\{
+\begin{pmatrix} a &amp; b \\ -b &amp; a \end{pmatrix} \middle| a, b \in
+R \right\}\)</span> defined by <span class="math display">\[\phi(a + bi)
+= \begin{pmatrix} a &amp; -b \\ b &amp; a \end{pmatrix}\]</span> Show
+that it is a isomorphism.</p>
+<blockquote>
+<p>Regard <span class="math inline">\(\mathbb{C}\)</span> as a vector
+space over <span class="math inline">\(\mathbb{R}\)</span> with the
+basis <span class="math inline">\(\alpha = \{1, i\}\)</span>. <br>
+Consider the map <span class="math display">\[\rho : \mathbb{C} \to {\rm
+End}(\mathbb{C})\]</span> given by <span class="math inline">\(\rho_x(y)
+= xy\)</span>. It is easy to see that <span
+class="math inline">\(\rho\)</span> is injective ring homomorphism. <br>
+Note that for <span class="math inline">\(a, b \in \mathbb{R}\)</span>
+<span class="math display">\[\rho_{a+bi}(1) = a \cdot 1 + b \cdot i
+\qquad \rho_{a+bi}(i) = -b \cdot 1 + a \cdot i\]</span> Therefore, <span
+class="math display">\[{\rm Rep}_\alpha(\rho_{a+bi}) = \begin{pmatrix} a
+&amp; -b \\ b &amp; a \end{pmatrix} = \phi(a+bi)\]</span></p>
 </blockquote>
 
       </div>

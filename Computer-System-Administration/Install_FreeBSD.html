@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="Ruccccc">
 <meta property="og:description" content="Install FreeBSD Before install  Virual Machine  VMware, VirtualBox, etc...  Image file  https:&#x2F;&#x2F;www.freebsd.org&#x2F;releases&#x2F; Using Release 13.1 for this course.   Stuck in &quot;UEFI Interactive Shell&quot; type e">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-11-01T10:29:56.745Z">
-<meta property="article:modified_time" content="2022-11-01T10:29:56.745Z">
+<meta property="article:published_time" content="2022-11-16T14:32:10.168Z">
+<meta property="article:modified_time" content="2022-11-16T14:32:10.168Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
@@ -121,7 +121,7 @@
         <div class="post-toc-wrap sidebar-panel">
             <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#install-freebsd"><span class="nav-number">1.</span> <span class="nav-text">Install FreeBSD</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#before-install"><span class="nav-number">1.1.</span> <span class="nav-text">Before install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#stuck-in-uefi-interactive-shell"><span class="nav-number">1.2.</span> <span class="nav-text">Stuck in &quot;UEFI Interactive
 Shell&quot;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#starting"><span class="nav-number">1.3.</span> <span class="nav-text">Starting</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sudo"><span class="nav-number">2.</span> <span class="nav-text">Sudo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#install"><span class="nav-number">2.1.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#allowing-user-to-execute-sudo"><span class="nav-number">2.2.</span> <span class="nav-text">Allowing user to execute
-sudo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#excute-sudo-without-password"><span class="nav-number">2.3.</span> <span class="nav-text">Excute sudo without password</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#add-user"><span class="nav-number">3.</span> <span class="nav-text">Add user</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#update-freebsd"><span class="nav-number">4.</span> <span class="nav-text">Update FreeBSD</span></a></li></ol></div>
+sudo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#excute-sudo-without-password"><span class="nav-number">2.3.</span> <span class="nav-text">Excute sudo without password</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#add-user"><span class="nav-number">3.</span> <span class="nav-text">Add user</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#update-freebsd"><span class="nav-number">4.</span> <span class="nav-text">Update FreeBSD</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#using-port"><span class="nav-number">5.</span> <span class="nav-text">Using port</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#fetch-port-collection"><span class="nav-number">5.1.</span> <span class="nav-text">Fetch Port Collection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#install-application"><span class="nav-number">5.2.</span> <span class="nav-text">Install application</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -236,6 +236,20 @@ After all, boot VM with your image file.</p>
 <li>install fetch <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo freebsd-update install</span><br></pre></td></tr></table></figure></li>
 <li>reboot and check version <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo shutdown -r now</span><br><span class="line"></span><br><span class="line">freebsd-version</span><br></pre></td></tr></table></figure></li>
 </ol>
+<hr />
+<h2 id="using-port">Using port</h2>
+<p>Port collection is in /usr/ports by default.</p>
+<p>Before using port to install application, we need to fetch port
+collection first.</p>
+<h3 id="fetch-port-collection">Fetch Port Collection</h3>
+<p><strong>By Portsnap</strong></p>
+<ol type="1">
+<li>Clone snapshot of port collection to /var/db/portsnap
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">portsnap fetch</span><br></pre></td></tr></table></figure></li>
+<li>extract snapshot to /usr/ports <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">portsnap extract</span><br></pre></td></tr></table></figure></li>
+<li>Update /usr/ports <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">portsnap fetch</span><br><span class="line">portsnap update</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="install-application">Install application</h3>
 
       </div>
       

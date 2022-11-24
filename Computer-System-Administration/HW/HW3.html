@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="Ruccccc">
 <meta property="og:description" content="Pure-ftp Install by port 123cd &#x2F;usr&#x2F;ports&#x2F;ftp&#x2F;pure-ftpd&#x2F;makemake install Add configration In &#x2F;usr&#x2F;local&#x2F;etc, there is some sample of the configration file of pure-ftpd. We can add the configration fil">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-11-20T06:14:08.818Z">
-<meta property="article:modified_time" content="2022-11-20T06:14:08.818Z">
+<meta property="article:published_time" content="2022-11-23T06:18:40.258Z">
+<meta property="article:modified_time" content="2022-11-23T06:18:40.258Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
@@ -195,6 +195,8 @@ href="/Computer-System-Administration/Install_FreeBSD#using-port">port</a></h3>
 configration file of pure-ftpd. We can add the configration file by
 copying and editing the sample.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/etc</span><br><span class="line">sudo cp pure-ftpd.conf.sample pure-ftpd.conf</span><br></pre></td></tr></table></figure>
+<p>After editing the configration file, remember to restart ftps</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/etc/rc.d/pure-ftpd restart</span><br></pre></td></tr></table></figure>
 <h3 id="edit-etcrc.conf">Edit <code>/etc/rc.conf</code></h3>
 <p>Add the parameter to <code>/etc/rc.conf</code> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pureftpd_enable=&quot;YES&quot;</span><br></pre></td></tr></table></figure></p>
 <h3 id="add-user-ftp">Add user ftp</h3>

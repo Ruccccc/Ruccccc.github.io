@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Ring of Polynomials Definitions   Let \(R\) be a ring. A polynomial \(f(x)\) over \(R\) is a formal sum \[\sum_{i &#x3D; 0}^{\infty} a_i x^i &#x3D; a_0 + a_1x + a_2x^2 + \cdots + a_nx^n + \cdots\] where \(a_i \">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ring of Polynomials">
+<meta property="og:url" content="http://example.com/Algebra/Ring_of_Polynomials.html">
+<meta property="og:site_name" content="Ruccccc">
+<meta property="og:description" content="Ring of Polynomials Definitions   Let \(R\) be a ring. A polynomial \(f(x)\) over \(R\) is a formal sum \[\sum_{i &#x3D; 0}^{\infty} a_i x^i &#x3D; a_0 + a_1x + a_2x^2 + \cdots + a_nx^n + \cdots\] where \(a_i \">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-12-04T15:13:43.276Z">
+<meta property="article:modified_time" content="2022-12-04T15:13:43.276Z">
+<meta property="article:author" content="Ruc Kuo">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/Algebra/Ring_of_Polynomials">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Algebra/Ring_of_Polynomials.html","path":"Algebra/Ring_of_Polynomials.html","title":"Ring of Polynomials"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Ring of Polynomials | Ruccccc
+</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Ruccccc</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-link"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>Link</a></li><li class="menu-item menu-item-note"><a href="/note/" rel="section"><i class="fa fa-book fa-fw"></i>Note</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ring-of-polynomials"><span class="nav-number">1.</span> <span class="nav-text">Ring of Polynomials</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-first-ring-isomorphism-theorem"><span class="nav-number">2.</span> <span class="nav-text">The First Ring Isomorphism
+Theorem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ring-extension"><span class="nav-number">3.</span> <span class="nav-text">Ring Extension</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zero-of-a-polynomial"><span class="nav-number">4.</span> <span class="nav-text">Zero of a polynomial</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Ruc Kuo</p>
+  <div class="site-description" itemprop="description">Meaningless things.</div>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Ruccccc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Ruccccc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:ruckuo@gmail.com" title="E-Mail → mailto:ruckuo@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+  <a href="https://github.com/Ruccccc/Ruccccc.github.io" class="github-corner" title="GitHub" aria-label="GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Ring of Polynomials
+</h1>
+
+<div class="post-meta-container">
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <h2 id="ring-of-polynomials">Ring of Polynomials</h2>
+<p><strong>Definitions</strong></p>
+<blockquote>
+<ol type="1">
+<li>Let <span class="math inline">\(R\)</span> be a ring. A polynomial
+<span class="math inline">\(f(x)\)</span> over <span
+class="math inline">\(R\)</span> is a formal sum <span
+class="math display">\[\sum_{i = 0}^{\infty} a_i x^i = a_0 + a_1x +
+a_2x^2 + \cdots + a_nx^n + \cdots\]</span> where <span
+class="math inline">\(a_i \in R\)</span>, and only a finite number <span
+class="math inline">\(i\)</span> such that <span
+class="math inline">\(a_i \neq 0\)</span>.</li>
+<li>The letter <span class="math inline">\(x\)</span> is called an
+<strong>indeterminate</strong>.</li>
+<li><span class="math inline">\(a_i\)</span> is the
+<strong>coefficients</strong> of <span
+class="math inline">\(f(x)\)</span>.</li>
+<li>The lagrest <span class="math inline">\(i\)</span> such that <span
+class="math inline">\(a_i \neq 0\)</span> is the <strong>degree</strong>
+of <span class="math inline">\(f(x)\)</span>. <br> If all <span
+class="math inline">\(a_i = 0\)</span>, the the degree of <span
+class="math inline">\(f(x)\)</span> is undefined. (In some books, it's
+defined to be <span class="math inline">\(-\infty\)</span>).</li>
+<li>The zero polynomial and polynomials of degree 0 is called
+<strong>constant polynomials</strong>.</li>
+</ol>
+</blockquote>
+<p><strong>Theorem</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(R\)</span> be a ring. <br> The set
+<span class="math inline">\(R[x]\)</span> of all polynomials over <span
+class="math inline">\(R\)</span> is a ring with the addition and
+multiplication defined as <span class="math display">\[f(x) + g(x) =
+\sum_{i = 0}^{\infty} (a_i + b_i) x^i\]</span> <span
+class="math display">\[f(x)g(x) = \sum_{i = 0}^{\infty} \left( \sum_{j =
+0}^{i} a_{j}b_{i-j} \right) x^i\]</span> where <span
+class="math inline">\(f(x) = \sum_{i = 0}^{\infty} a_i x^i\)</span> and
+<span class="math inline">\(g(x) = \sum_{i = 0}^{\infty} b_i
+x^i\)</span> is polynomials over <span class="math inline">\(R\)</span>.
+<br> Futhermore, if <span class="math inline">\(R\)</span> is
+communicative, then so is <span class="math inline">\(R[x]\)</span>. If
+<span class="math inline">\(R\)</span> is a ring with unity, the so is
+<span class="math inline">\(R[x]\)</span> with the multiplicative
+identity <span class="math inline">\(1_R[x]\)</span> being <span
+class="math inline">\(1_R\)</span>.</p>
+</blockquote>
+<p><strong>Remarks</strong></p>
+<blockquote>
+<ol type="1">
+<li>The ring <span class="math inline">\(R[x_1, \dots , x_n]\)</span> of
+polynomials in <span class="math inline">\(n\)</span> indeterminates
+over <span class="math inline">\(R\)</span> can be similarly
+defined.</li>
+<li>If <span class="math inline">\(D\)</span> is an integral domain,
+then so is <span class="math inline">\(D[x]\)</span>.</li>
+<li>Let <span class="math inline">\(F\)</span> be a field, the set <span
+class="math inline">\(F[x]\)</span> is not a field since <span
+class="math inline">\(x\)</span> is not a unit in <span
+class="math inline">\(F[x]\)</span>. <br> On the other hand, the <a
+href="Fields_of_Quotients">field of fractions</a> of <span
+class="math inline">\(F[x]\)</span> is <span class="math display">\[F(x)
+= \{ f(x)/g(x) : f(x), g(x) \in F[x], g(x) \neq 0 \}\]</span> and <span
+class="math inline">\(F(x)\)</span> is called the <strong>field of
+rational functions</strong> in <span class="math inline">\(x\)</span>
+over <span class="math inline">\(F\)</span>.</li>
+<li>The <strong>field of rational functions</strong> in <span
+class="math inline">\(n\)</span> indetermiates over <span
+class="math inline">\(F\)</span> is similarly defined.</li>
+</ol>
+</blockquote>
+<p><strong>Remarks</strong></p>
+<blockquote>
+<ol type="1">
+<li>Some properties of polynomials over <span
+class="math inline">\(\Bbb{R}\)</span> may not hold for polynomials over
+a general ring <span class="math inline">\(R\)</span>.
+<ol type="1">
+<li>If <span class="math inline">\(R\)</span> is noncommutative, then
+<span class="math inline">\(R[x]\)</span> is noncommutative.</li>
+<li>For <span class="math inline">\(f(x), g(x) \in \Bbb{R}\)</span>,
+<span class="math inline">\({\rm deg} f(x)g(x) = {\rm deg} f(x) + {\rm
+deg} g(x)\)</span>. <br> But for <span class="math inline">\(R =
+\Bbb{Z}_4\)</span>, <span class="math display">\[(\bar 2 x + \bar 1 )^2
+= \bar 4 x^2 + \bar 4 x + \bar 1 = \bar 1\]</span> so <span
+class="math inline">\({\rm deg} (\bar 2 x + \bar 1 )^2 \neq {\rm deg}
+(\bar 2 x + \bar 1 ) + {\rm deg} (\bar 2 x + \bar 1 )\)</span>.</li>
+</ol></li>
+<li>Remark 1.2 above is hold when <span class="math inline">\(R\)</span>
+is a integral domain.</li>
+</ol>
+</blockquote>
+<h2 id="the-first-ring-isomorphism-theorem">The First Ring Isomorphism
+Theorem</h2>
+<p><strong>Theorem -- the first ring isomorphism theorem</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(\phi : R \to R^\prime\)</span> be a
+ring homomorphism. <br> <span class="math inline">\(R / {\rm ker}
+\phi\)</span> has a canonical ring structure such that <span
+class="math inline">\(R / {\rm ker} \phi \cong \rho
+(R^{\prime})\)</span></p>
+</blockquote>
+<p>In general, the kernel of some ring homomorphism is called an
+<strong>ideal</strong>.</p>
+<p><strong>Theorem -- evaluation homomorphism</strong></p>
+<blockquote>
+<p>Suppose <span class="math inline">\(R\)</span> is a subring of <span
+class="math inline">\(R^\prime\)</span> and <span
+class="math inline">\(R^\prime\)</span> is commutative. Then for <span
+class="math inline">\(\alpha \in R^\prime\)</span>, we have the ring
+homomorphism <span class="math inline">\(\phi_\alpha : R[x] \to
+R^\prime\)</span> by <span class="math display">\[\phi_\alpha (a_0 +
+a_1x + \dots + a_nx^n) = a_0 + a_1\alpha + \dots + a_n\alpha^n\]</span>
+called the evaluation homomorphism. <br> By the first ring isomorphism
+theorem, <span class="math inline">\(R[x] / {\rm ker} \phi_\alpha \cong
+\rho (R[x]) = R[\alpha]\)</span> <br> and <span
+class="math inline">\(R[\alpha] = \{f(\alpha) \mid f(x) \in R[x]
+\}\)</span></p>
+</blockquote>
+<h2 id="ring-extension">Ring Extension</h2>
+<blockquote>
+<p><span class="math inline">\(R[\alpha]\)</span> can be considered as
+an extension of <span class="math inline">\(R\)</span> by joining an
+element <span class="math inline">\(\alpha\)</span> from a larger ring
+<span class="math inline">\(R^\prime\)</span>. <br> The result above
+show that every ring extension of <span class="math inline">\(R\)</span>
+by adding single element is isomorphic to <span
+class="math inline">\(R[x]/I\)</span>, where <span
+class="math inline">\(I\)</span> is a ideal of <span
+class="math inline">\(R[x]\)</span>. <br> In general, a finitely
+generated commuatative ring with unity and characteristic <span
+class="math inline">\(n\)</span> is iosmorphic to <span
+class="math inline">\(\Bbb{Z}_n[x_1, \dots, x_k] / I\)</span>, where
+<span class="math inline">\(I\)</span> is a ideal of <span
+class="math inline">\(\Bbb{Z}_n[x_1, \dots, x_k]\)</span></p>
+</blockquote>
+<h2 id="zero-of-a-polynomial">Zero of a polynomial</h2>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(F\)</span> be a subfield of a field
+<span class="math inline">\(E\)</span>. Let <span
+class="math inline">\(f(x) \in F[x]\)</span>. Suppose that <span
+class="math inline">\(\alpha \in E\)</span> is an element such that
+<span class="math inline">\(f(\alpha) = 0\)</span>, then <span
+class="math inline">\(\alpha\)</span> is a <strong>zero</strong> of
+<span class="math inline">\(f(x)\)</span> in <span
+class="math inline">\(E\)</span>.</p>
+</blockquote>
+<p><strong>Example</strong></p>
+<ol type="1">
+<li>Let <span class="math inline">\(f(x) = x^2 - 2 \in
+\Bbb{Q}[x]\)</span>, then <span
+class="math inline">\(\pm\sqrt{2}\)</span> are the zeros of <span
+class="math inline">\(f(x)\)</span> in <span
+class="math inline">\(\Bbb{R}\)</span>.</li>
+<li>Let <span class="math inline">\(f(x) = x^2 + 1 \in
+\Bbb{R}[x]\)</span>, then <span class="math inline">\(\pm i\)</span> are
+the zeros of <span class="math inline">\(f(x)\)</span> in <span
+class="math inline">\(\Bbb{C}\)</span>.</li>
+</ol>
+
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa-solid fa-paw"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ruc Kuo</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>

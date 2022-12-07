@@ -20,27 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Back to content Cayley&#39;s Theorem Theorem  Every group is isomorphic to a group of permutations. More precisely, every group \(G\) is isomorphic to a subgroup of \(S_G\) given by the map \(\lambda_a :">
+    <meta name="description" content="The four version of Bayes&#39; Rule  Discrete \(\Theta\), Discrete \(X\): \[p_{\Theta \mid X} (\theta \mid x) &#x3D; \dfrac{p_{\Theta}(\theta)p_{X \mid \Theta}(x \mid \theta)}{p_{X}(x)}\] \[p_{X}(x) &#x3D; \sum_{\t">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Cayley&#39;s Theorem">
-<meta property="og:url" content="http://example.com/Algebra/Cayley_Theorem.html">
+<meta property="og:title" content="Bayesian Inference">
+<meta property="og:url" content="http://example.com/Probability/Bayesian_Inference.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Back to content Cayley&#39;s Theorem Theorem  Every group is isomorphic to a group of permutations. More precisely, every group \(G\) is isomorphic to a subgroup of \(S_G\) given by the map \(\lambda_a :">
+<meta property="og:description" content="The four version of Bayes&#39; Rule  Discrete \(\Theta\), Discrete \(X\): \[p_{\Theta \mid X} (\theta \mid x) &#x3D; \dfrac{p_{\Theta}(\theta)p_{X \mid \Theta}(x \mid \theta)}{p_{X}(x)}\] \[p_{X}(x) &#x3D; \sum_{\t">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-11-06T12:59:46.619Z">
-<meta property="article:modified_time" content="2022-11-06T12:59:46.619Z">
+<meta property="article:published_time" content="2022-12-06T16:52:40.242Z">
+<meta property="article:modified_time" content="2022-12-06T16:52:40.242Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/Algebra/Cayley_Theorem">
+<link rel="canonical" href="http://example.com/Probability/Bayesian_Inference">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Algebra/Cayley_Theorem.html","path":"Algebra/Cayley_Theorem.html","title":"Cayley's Theorem"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Probability/Bayesian_Inference.html","path":"Probability/Bayesian_Inference.html","title":"Bayesian Inference"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Cayley's Theorem | Ruccccc
+<title>Bayesian Inference | Ruccccc
 </title>
   
 
@@ -119,7 +119,10 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cayleys-theorem"><span class="nav-number">1.</span> <span class="nav-text">Cayley&#39;s Theorem</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#the-four-version-of-bayes-rule"><span class="nav-number">1.</span> <span class="nav-text">The four version of Bayes&#39;
+Rule</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-maximum-a-posteriori-probability-rule-map"><span class="nav-number">2.</span> <span class="nav-text">The Maximum a
+Posteriori Probability Rule (MAP)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-least-mean-squared-error-estimation-lms"><span class="nav-number">3.</span> <span class="nav-text">The Least Mean
+Squared Error Estimation (LMS)</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -169,7 +172,7 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Cayley's Theorem
+<h1 class="post-title" itemprop="name headline">Bayesian Inference
 </h1>
 
 <div class="post-meta-container">
@@ -180,15 +183,80 @@
       
       
       <div class="post-body">
-          <p><a href="index">Back to content</a></p>
-<h2 id="cayleys-theorem">Cayley's Theorem</h2>
-<p><strong>Theorem</strong></p>
+          <h2 id="the-four-version-of-bayes-rule">The four version of Bayes'
+Rule</h2>
+<ul>
+<li>Discrete <span class="math inline">\(\Theta\)</span>, Discrete <span
+class="math inline">\(X\)</span>: <span class="math display">\[p_{\Theta
+\mid X} (\theta \mid x) = \dfrac{p_{\Theta}(\theta)p_{X \mid \Theta}(x
+\mid \theta)}{p_{X}(x)}\]</span> <span class="math display">\[p_{X}(x) =
+\sum_{\theta^\prime} p_{\Theta}(\theta^\prime)p_{X \mid \Theta}(x \mid
+\theta^\prime)\]</span></li>
+<li>Discrete <span class="math inline">\(\Theta\)</span>, Continue <span
+class="math inline">\(X\)</span>: <span class="math display">\[p_{\Theta
+\mid X} (\theta \mid x) = \dfrac{p_{\Theta}(\theta)f_{X \mid \Theta}(x
+\mid \theta)}{f_{X}(x)}\]</span> <span class="math display">\[f_{X}(x) =
+\sum_{\theta^\prime} p_{\Theta}(\theta^\prime)f_{X \mid \Theta}(x \mid
+\theta^\prime)\]</span></li>
+<li>Continue <span class="math inline">\(\Theta\)</span>, Discrete <span
+class="math inline">\(X\)</span>: <span class="math display">\[f_{\Theta
+\mid X} (\theta \mid x) = \dfrac{f_{\Theta}(\theta)p_{X \mid \Theta}(x
+\mid \theta)}{p_{X}(x)}\]</span> <span class="math display">\[p_{X}(x) =
+\int f_{\Theta}(\theta^\prime)p_{X \mid \Theta}(x \mid \theta^\prime) d
+\theta^\prime\]</span></li>
+<li>Continue <span class="math inline">\(\Theta\)</span>, Continue <span
+class="math inline">\(X\)</span>: <span class="math display">\[f_{\Theta
+\mid X} (\theta \mid x) = \dfrac{f_{\Theta}(\theta)f_{X \mid \Theta}(x
+\mid \theta)}{f_{X}(x)}\]</span> <span class="math display">\[f_{X}(x) =
+\int f_{\Theta}(\theta^\prime)f_{X \mid \Theta}(x \mid \theta^\prime) d
+\theta^\prime\]</span></li>
+</ul>
+<h2 id="the-maximum-a-posteriori-probability-rule-map">The Maximum a
+Posteriori Probability Rule (MAP)</h2>
 <blockquote>
-<p>Every group is isomorphic to a group of permutations. More precisely,
-every group <span class="math inline">\(G\)</span> is isomorphic to a
-subgroup of <span class="math inline">\(S_G\)</span> given by the map
-<span class="math inline">\(\lambda_a : a \mapsto \lambda_a\)</span>,
-where <span class="math inline">\(\lambda_a(g) = ag\)</span>.</p>
+<p>For a observed value x, MAP rule select the <span
+class="math inline">\(\hat{\theta}\)</span> over <span
+class="math inline">\(\theta\)</span> such that <span
+class="math inline">\(\hat{\theta}\)</span> maximize the posterior
+distrubution <span class="math inline">\(p_{\Theta \mid X}(\theta \mid
+x)\)</span> or <span class="math inline">\(f_{\Theta \mid X}(\theta \mid
+x)\)</span> when <span class="math inline">\(\Theta\)</span> is discrete
+or continuous respectively.</p>
+</blockquote>
+<h2 id="the-least-mean-squared-error-estimation-lms">The Least Mean
+Squared Error Estimation (LMS)</h2>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>Find a <span class="math inline">\(\hat \theta\)</span> that minimize
+the mean squared error <span class="math inline">\(E[( \Theta - \hat
+\theta )^2]\)</span></p>
+</blockquote>
+<p><strong>Properity</strong></p>
+<ul>
+<li><span class="math inline">\(\hat \theta = E[\theta]\)</span> minize
+the mean squared error <span class="math inline">\(E[(\Theta -
+\theta)^2]\)</span>.</li>
+<li>Optimal mean squared error is <span class="math inline">\(E[(\Theta
+- E[\Theta])^2] = var(\Theta)\)</span>.</li>
+</ul>
+<blockquote>
+<p>The mean squared error: <span class="math display">\[E[( \Theta -
+\hat \theta )^2] = E[\Theta^2] - 2E[\Theta]\hat \theta +
+\hat{\theta}^2\]</span> Take derivative: <span
+class="math display">\[\dfrac{d}{d\hat{\theta}}E[( \Theta - \hat \theta
+)^2] = -2E[\Theta]\hat \theta + 2 \hat \theta = 0\]</span> <span
+class="math display">\[\hat \theta = E[\Theta]\]</span></p>
+<p>And we know that <span class="math inline">\(var(\Theta - \theta) =
+E[( \Theta - \hat \theta )^2] - E[\Theta - \theta]^2\)</span>, so that
+<span class="math display">\[E[( \Theta - \hat \theta )^2] = var(\Theta
+- \theta) + E[\Theta - \theta]^2\]</span> and when <span
+class="math inline">\(\hat \theta = E[\Theta]\)</span>, <span
+class="math inline">\(E[\Theta - \hat \theta]\)</span> is the minimum
+equal to zero. <br> In addition, we know that <span
+class="math inline">\(var(\Theta - \hat \theta) = var(\Theta)\)</span>
+since <span class="math inline">\(\hat \theta\)</span> is constant. <br>
+Then we know that the optimal mean squard error is <span
+class="math inline">\(var(\Theta)\)</span>. <br></p>
 </blockquote>
 
       </div>

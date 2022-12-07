@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="Wireless Technologies   Wireless Technologies   PAN : Personal Area Network  safe, short distence transmition. Bluetooth, credit card.  Wifi 不支援高速移動  來不及handoff   802.11  By IEEE in 1990 MAC protocol">
 <meta property="og:type" content="website">
@@ -33,8 +33,8 @@
 <meta property="og:image" content="http://example.com/Introduction-to-Computer-Network/Images/WLAN/DCF.jpg">
 <meta property="og:image" content="http://example.com/Introduction-to-Computer-Network/Images/WLAN/CSMACA+ACK.jpeg">
 <meta property="og:image" content="http://example.com/Introduction-to-Computer-Network/Images/WLAN/Frame.jpg">
-<meta property="article:published_time" content="2022-11-19T06:22:14.164Z">
-<meta property="article:modified_time" content="2022-11-19T06:22:14.164Z">
+<meta property="article:published_time" content="2022-11-28T16:28:01.381Z">
+<meta property="article:modified_time" content="2022-11-28T16:28:01.381Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/Introduction-to-Computer-Network/Images/WLAN/Ad_Hoc.png">
@@ -224,8 +224,8 @@ alt="Wireless Technologies" />
 </ul>
 <h3 id="family">Family</h3>
 <ul>
-<li>802.11 (wifi 0)</li>
-<li>802.11b (wifi 1)
+<li>802.11</li>
+<li>802.11b
 <ul>
 <li>2.4 GHz</li>
 <li>Same bandwith as 802.11 DSSS PHY</li>
@@ -236,7 +236,7 @@ alt="Wireless Technologies" />
 <li>With fallback rates of 5, 2, 1 Mbps</li>
 </ul></li>
 </ul></li>
-<li>802.11a (wifi 2)
+<li>802.11a
 <ul>
 <li><strong>Uses 5 GHz frequency band.</strong> (Since the interference
 at 2.4 GHz)
@@ -409,7 +409,7 @@ safe now)</li>
 <li>One MAC protocol supporting multiple physical layers</li>
 <li>DCF (Distributed Coordination Function)
 <ul>
-<li>a contentino algorithm</li>
+<li>a contention algorithm</li>
 </ul></li>
 <li>PCF (Point Coordination Function)
 <ul>
@@ -434,7 +434,7 @@ alt="IFS" />
 <figcaption aria-hidden="true">IFS</figcaption>
 </figure>
 <p>SIFS = (RF delay) + (PLCP delay) + (MAC delay) + (Transceiver delay)
-<br> Slot time = (RF delay) + (PLCP delay) + (Clear channel aassessment
+<br> Slot time = (RF delay) + (PLCP delay) + (Clear channel assessment
 time) + (Transceiver delay) <br> PIFS = SIFS + 1 Slot time <br> DIFS =
 SIFS + 2 Slot time <br></p>
 <h4 id="values">Values</h4>
@@ -504,7 +504,7 @@ alt="Basic Access Method" />
 packet is received.</li>
 <li>If no ack received, transmitter will retransmit after a random
 backoff.</li>
-<li>Backoff interval is invreased exponentially up to a certain
+<li>Backoff interval is increased exponentially up to a certain
 threshold.</li>
 </ul>
 <figure>
@@ -523,7 +523,7 @@ is to be reserved.
 <ul>
 <li>NAV(Net Allocation Vector)</li>
 </ul></li>
-<li>Cannot send transmit if sensing CTS</li>
+<li>Cannot send transmit if no CTS senced.</li>
 <li>Unicast only</li>
 <li>RTS threshold
 <ul>

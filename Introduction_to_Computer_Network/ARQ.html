@@ -20,27 +20,31 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Introduction Physical LAN Wireless LAN ARQ LLC">
+    <meta name="description" content="Error  Detection  Parity check CRC  Error correction  Hamming code  Retransmission  ARQ (Automatic Repeat reQuest)   ARQ  Stop and wait Go back n Selective repeat  Assumptions  Receiver knows when fra">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Introduction to Computer Network">
-<meta property="og:url" content="http://example.com/Introduction-to-Computer-Network/index.html">
+<meta property="og:title" content="ARQ">
+<meta property="og:url" content="http://example.com/Introduction_to_Computer_Network/ARQ.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Introduction Physical LAN Wireless LAN ARQ LLC">
+<meta property="og:description" content="Error  Detection  Parity check CRC  Error correction  Hamming code  Retransmission  ARQ (Automatic Repeat reQuest)   ARQ  Stop and wait Go back n Selective repeat  Assumptions  Receiver knows when fra">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-10-05T08:39:46.000Z">
-<meta property="article:modified_time" content="2022-11-28T06:01:38.027Z">
+<meta property="og:image" content="http://example.com/Introduction_to_Computer_Network/Images/ARQ/Piggyback.jpeg">
+<meta property="og:image" content="http://example.com/Introduction_to_Computer_Network/Images/ARQ/Go_back_7.jpeg">
+<meta property="og:image" content="http://example.com/Introduction_to_Computer_Network/Images/ARQ/Go_back_4.jpeg">
+<meta property="article:published_time" content="2022-12-13T03:05:10.147Z">
+<meta property="article:modified_time" content="2022-12-13T03:05:10.147Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/Introduction_to_Computer_Network/Images/ARQ/Piggyback.jpeg">
 
 
-<link rel="canonical" href="http://example.com/Introduction-to-Computer-Network/">
+<link rel="canonical" href="http://example.com/Introduction_to_Computer_Network/ARQ">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Introduction-to-Computer-Network/index.html","path":"Introduction-to-Computer-Network/index.html","title":"Introduction to Computer Network"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Introduction_to_Computer_Network/ARQ.html","path":"Introduction_to_Computer_Network/ARQ.html","title":"ARQ"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Introduction to Computer Network | Ruccccc
+<title>ARQ | Ruccccc
 </title>
   
 
@@ -106,7 +110,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -119,6 +123,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#error"><span class="nav-number">1.</span> <span class="nav-text">Error</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#arq"><span class="nav-number">2.</span> <span class="nav-text">ARQ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#stop-and-wait"><span class="nav-number">3.</span> <span class="nav-text">Stop and Wait</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#piggybacking"><span class="nav-number">4.</span> <span class="nav-text">Piggybacking</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#go-back-n"><span class="nav-number">5.</span> <span class="nav-text">Go Back N</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sliding-widnow"><span class="nav-number">5.1.</span> <span class="nav-text">Sliding Widnow</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -168,7 +173,7 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Introduction to Computer Network
+<h1 class="post-title" itemprop="name headline">ARQ
 </h1>
 
 <div class="post-meta-container">
@@ -179,14 +184,114 @@
       
       
       <div class="post-body">
-          <ul>
-<li><a href="Introduction">Introduction</a></li>
-<li><a href="Physical">Physical</a></li>
-<li><a href="LAN">LAN</a></li>
-<li><a href="Wireless_LAN">Wireless LAN</a></li>
-<li><a href="ARQ">ARQ</a></li>
-<li><a href="LLC">LLC</a></li>
+          <h2 id="error">Error</h2>
+<ul>
+<li>Detection
+<ul>
+<li>Parity check</li>
+<li>CRC</li>
+</ul></li>
+<li>Error correction
+<ul>
+<li>Hamming code</li>
+</ul></li>
+<li>Retransmission
+<ul>
+<li>ARQ (Automatic Repeat reQuest)</li>
+</ul></li>
 </ul>
+<h2 id="arq">ARQ</h2>
+<ul>
+<li>Stop and wait</li>
+<li>Go back n</li>
+<li>Selective repeat</li>
+</ul>
+<p><strong>Assumptions</strong></p>
+<ul>
+<li>Receiver knows when frames start and end</li>
+<li>All errors are detected</li>
+<li>Each frame is delay an arbitary time before arrvin at the
+receiver.</li>
+<li>Frames might lost.</li>
+<li>Frames arrive in same order as transmitted.</li>
+</ul>
+<h2 id="stop-and-wait">Stop and Wait</h2>
+<ul>
+<li>Ensure that the packet has been received before transmit the next
+packet.</li>
+<li>The receiver sends ack if frame is error-free, else sends nak.</li>
+<li>The transmitter sends next frame if ack is returned.</li>
+<li>The transmitter resend the old packet in new frame if nak is
+retruned or errors are detected in ack or nak.</li>
+<li>The transmitter will time-out and resend if no ack or nak returned
+after a period of time. (frame, ack or nak is lost)</li>
+<li>Problem
+<ul>
+<li>Spending too many time waiting ack.</li>
+<li>Ack or nak might received by the transmitter after time-out. In this
+situation, the receiver can't inditify the next frame is new or old
+one.</li>
+<li>Solution : Uses a sequence number(SN) in the frame header.</li>
+<li>Same problem might occur for ack/nak, so ank and nak also need to
+use SN.
+<ul>
+<li>Return the number of packet just accepted or the next packet
+awaited.</li>
+<li>Can request the next awaited packet
+<ul>
+<li>Upon the receipt of each packet.</li>
+<li>At arbitrary time.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="piggybacking">Piggybacking</h2>
+<figure>
+<img src="Images/ARQ/Piggyback.jpeg" alt="Piggyback" />
+<figcaption aria-hidden="true">Piggyback</figcaption>
+</figure>
+<ul>
+<li>Usually, the transmition is binary, so that receiver can "piggyback"
+the request for new packets</li>
+<li>SN : sequence number</li>
+<li>RN : request number</li>
+<li>SN and RN might be large when time increasing.
+<ul>
+<li>Modulo some integer, 2 is enough if frames transmit in order.</li>
+</ul></li>
+<li><img src="" title="fig:" alt="Example" /></li>
+</ul>
+<h2 id="go-back-n">Go Back N</h2>
+<ul>
+<li>Most widely used type of ARQ.</li>
+<li>It's inefficient using the communication link since nothing is send
+while waiting for an ack.</li>
+<li>N packets can be sent without waiting for the requirement for next
+packet.
+<ul>
+<li>Allow to send i+n-1 packets when i-th packet is required.</li>
+</ul></li>
+<li>After (i+n-1)-th packet is sent, send i-th packet after
+time-out.</li>
+<li>If SN != RN, send same RN again.</li>
+<li>If ack error, ignore.</li>
+</ul>
+<h3 id="sliding-widnow">Sliding Widnow</h3>
+<ul>
+<li>Let i be the last RN. The window is the packets from i to
+i+n-1.</li>
+<li>The window slides upward as RN incresing.</li>
+</ul>
+<p><strong>Example</strong></p>
+<figure>
+<img src="Images/ARQ/Go_back_7.jpeg" alt="Go back 7" />
+<figcaption aria-hidden="true">Go back 7</figcaption>
+</figure>
+<p><strong>Example - after (i+n-1) packet is send</strong></p>
+<figure>
+<img src="Images/ARQ/Go_back_4.jpeg" alt="Go back 4" />
+<figcaption aria-hidden="true">Go back 4</figcaption>
+</figure>
 
       </div>
       

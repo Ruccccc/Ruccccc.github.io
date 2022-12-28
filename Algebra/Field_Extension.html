@@ -20,27 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Cartesian product Definition  The Cartesian product of sets \(S_1, S_2, \ldots, S_n\) is the sets of ordered n-tuples \((a_1, a_2, \ldots, a_n)\), where \(a_i \in S_i\) for \(i &#x3D; 1,2, \ldots, n\).  It">
+    <meta name="description" content="Field Extension Definition  A field \(E\) is an extension field of a field \(F\) if \(F \leq E\).  Definition  Let \(F \leq E\). If there exists \(\alpha \in E\) such that \(E &#x3D; F(\alpha)\), then \(E">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Direct Product">
-<meta property="og:url" content="http://example.com/Algebra/Direct_Product.html">
+<meta property="og:title" content="Field Extension">
+<meta property="og:url" content="http://example.com/Algebra/Field_Extension.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Cartesian product Definition  The Cartesian product of sets \(S_1, S_2, \ldots, S_n\) is the sets of ordered n-tuples \((a_1, a_2, \ldots, a_n)\), where \(a_i \in S_i\) for \(i &#x3D; 1,2, \ldots, n\).  It">
+<meta property="og:description" content="Field Extension Definition  A field \(E\) is an extension field of a field \(F\) if \(F \leq E\).  Definition  Let \(F \leq E\). If there exists \(\alpha \in E\) such that \(E &#x3D; F(\alpha)\), then \(E">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-11-03T08:54:40.376Z">
-<meta property="article:modified_time" content="2022-11-03T08:54:40.376Z">
+<meta property="article:published_time" content="2022-12-27T15:54:12.564Z">
+<meta property="article:modified_time" content="2022-12-27T15:54:12.564Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/Algebra/Direct_Product">
+<link rel="canonical" href="http://example.com/Algebra/Field_Extension">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Algebra/Direct_Product.html","path":"Algebra/Direct_Product.html","title":"Direct Product"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Algebra/Field_Extension.html","path":"Algebra/Field_Extension.html","title":"Field Extension"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Direct Product | Ruccccc
+<title>Field Extension | Ruccccc
 </title>
   
 
@@ -112,7 +112,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cartesian-product"><span class="nav-number">1.</span> <span class="nav-text">Cartesian product</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#direct-products"><span class="nav-number">2.</span> <span class="nav-text">Direct Products</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#field-extension"><span class="nav-number">1.</span> <span class="nav-text">Field Extension</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#irreducible-polynomial-for-alpha-over-f"><span class="nav-number">2.</span> <span class="nav-text">Irreducible polynomial
+for \(\alpha\) over \(F\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#simple-algebraic-extension"><span class="nav-number">3.</span> <span class="nav-text">Simple Algebraic Extension</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -162,7 +163,7 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Direct Product
+<h1 class="post-title" itemprop="name headline">Field Extension
 </h1>
 
 <div class="post-meta-container">
@@ -173,139 +174,153 @@
       
       
       <div class="post-body">
-          <h2 id="cartesian-product">Cartesian product</h2>
+          <h2 id="field-extension">Field Extension</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>The Cartesian product of sets <span class="math inline">\(S_1, S_2,
-\ldots, S_n\)</span> is the sets of ordered n-tuples <span
-class="math inline">\((a_1, a_2, \ldots, a_n)\)</span>, where <span
-class="math inline">\(a_i \in S_i\)</span> for <span
-class="math inline">\(i = 1,2, \ldots, n\)</span>. <br> It's denoted by
-either <span class="math display">\[S_1 \times S_2 \times \ldots \times
-S_n\]</span> or <span class="math display">\[\prod_{i = 1}^{n}
-{S_i}\]</span></p>
-</blockquote>
-<h2 id="direct-products">Direct Products</h2>
-<p><strong>Theorem</strong></p>
-<blockquote>
-<p>Let <span class="math inline">\(G_1, G_2, \ldots, G_n\)</span> be
-groups. For <span class="math inline">\((a_1, a_2, \ldots, a_n)\)</span>
-and <span class="math inline">\((b_1, b_2, \ldots, b_n)\)</span> in
-<span class="math inline">\(\prod_{i=1}^{n} G_i\)</span> define <span
-class="math inline">\((a_1, a_2, \ldots, a_n)(b_1, b_2, \ldots,
-b_n)\)</span> to be <span class="math inline">\((a_1b_1, a_2b_2, \ldots,
-a_{n}b_{n}\)</span> Then <span class="math inline">\(\prod_{i=1}^{n}
-G_i\)</span> is a group under this binary operation.</p>
+<p>A field <span class="math inline">\(E\)</span> is an
+<strong>extension field</strong> of a field <span
+class="math inline">\(F\)</span> if <span class="math inline">\(F \leq
+E\)</span>.</p>
 </blockquote>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>The group <span class="math inline">\(\prod_{i=1}^{n} G_i\)</span> is
-called the <strong>direct product</strong> of the groups <span
-class="math inline">\(G_i\)</span>.</p>
+<p>Let <span class="math inline">\(F \leq E\)</span>. If there exists
+<span class="math inline">\(\alpha \in E\)</span> such that <span
+class="math inline">\(E = F(\alpha)\)</span>, then <span
+class="math inline">\(E = F(\alpha)\)</span> is a <strong>simple
+extension</strong> of <span class="math inline">\(F\)</span>.</p>
 </blockquote>
-<p><strong>Theorem</strong></p>
+<p><strong>Definition</strong></p>
 <blockquote>
-<p>The group <span class="math inline">\(\mathbb{Z}_m \times
-\mathbb{Z}_n\)</span> is cyclic and isomorphic to <span
-class="math inline">\(\mathbb{Z}_{mn}\)</span> if and only if m and n
-are relatively prime.</p>
+<p>An ekement <span class="math inline">\(\alpha\)</span> of an
+extension field <span class="math inline">\(E\)</span> of a field <span
+class="math inline">\(F\)</span> is <strong>algebraic</strong> over
+<span class="math inline">\(F\)</span> if <span
+class="math inline">\(f(\alpha) = 0\)</span> for some nonzero polynomial
+<span class="math inline">\(f(x) \in F[x]\)</span>. <br> If such
+polynomial does not exist, then <span
+class="math inline">\(\alpha\)</span> is <strong>transcendental</strong>
+over <span class="math inline">\(F\)</span>.</p>
+</blockquote>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>An element <span class="math inline">\(\alpha \in \Bbb{C}\)</span> is
+an algebraic number if <span class="math inline">\(\alpha\)</span> is
+algebraic over <span class="math inline">\(\Bbb{Q}\)</span>. <br> And
+it's a <strong>transendentental number</strong> if it is transendental
+over <span class="math inline">\(\Bbb{Q}\)</span>.</p>
+</blockquote>
+<h2 id="irreducible-polynomial-for-alpha-over-f">Irreducible polynomial
+for <span class="math inline">\(\alpha\)</span> over <span
+class="math inline">\(F\)</span></h2>
+<p>Assume that <span class="math inline">\(F \leq E\)</span>, and <span
+class="math inline">\(\alpha \in E\)</span> is algebraic over <span
+class="math inline">\(F\)</span>. <br> Let <span
+class="math inline">\(I_\alpha = \{ f(x) \in F[x] \mid f(\alpha) =
+0\}\)</span> be a subset of <span
+class="math inline">\(F[x]\)</span>.<br></p>
+<p><strong>Lemma</strong></p>
+<blockquote>
+<p>The polynomial <span class="math inline">\(p_\alpha(x)\)</span> is
+irreducible where <span class="math inline">\(p_\alpha(x)\)</span> is
+the nonzero polynomial of minimal degree in <span
+class="math inline">\(I_\alpha\)</span>.</p>
 </blockquote>
 <details>
 <summary>
 <strong>Proof</strong>
 </summary>
-<blockquote>
-<p><span class="math inline">\((\implies)\)</span> <br> Suppose the
-group <span class="math inline">\(\mathbb{Z}_m \times
-\mathbb{Z}_n\)</span> is cyclic. Let <span class="math inline">\((\bar a
-, \bar b )\)</span> be a generator of <span
-class="math inline">\(\mathbb{Z}_m \times \mathbb{Z}_n\)</span>, which
-is of order <span class="math inline">\(mn\)</span>. Let <span
-class="math inline">\(k = lcm(m, n)\)</span>. Then <span
-class="math display">\[ k(\bar a , \bar b ) = (k\bar a , k\bar b ) =
-(\bar 0, \bar 0) \]</span> <br> Therefore <span class="math inline">\(mn
-\leq k = \text{lcm}(m, n)\)</span> which means <span
-class="math inline">\(m\)</span> and <span
-class="math inline">\(n\)</span> are relatively prime. <br> <br> <span
-class="math inline">\((\impliedby)\)</span> <br> Assume that <span
-class="math inline">\(m\)</span> and <span
-class="math inline">\(n\)</span> are relatively prime, Then we have
-<span class="math inline">\(\text{lcm}(m,n) = mn\)</span>. let the order
-of the element <span class="math inline">\((\bar 1, \bar1)\)</span> to
-be <span class="math inline">\(k\)</span>. Then <span
-class="math inline">\(k \leq mn\)</span> and <span
-class="math display">\[(\bar 0, \bar 0) = k(\bar 1, \bar 1) = (\bar k,
-\bar k)\]</span> <br> Therefore, <span
-class="math inline">\(m|k\)</span> and <span
-class="math inline">\(n|k\)</span>, which means <span
-class="math inline">\(\text{lcm}(m,n) | k\)</span>. Especially, we have
-<span class="math display">\[mn = \text{lcm}(m,n) \leq k \leq
-mn\]</span> We conclude that <span class="math inline">\(k =
-mn\)</span>, <span class="math inline">\((\bar 1, \bar 1)\)</span> is a
-generator, and <span class="math inline">\(\mathbb{Z}_m \times
-\mathbb{Z}_n\)</span> is cyclic.</p>
-</blockquote>
 </details>
-<p><strong>Corollary</strong></p>
+<p><br></p>
+<p><strong>Definition</strong></p>
 <blockquote>
-<p>The group <span class="math inline">\(\prod_{i = i}^{n}
-\mathbb{Z}_{m_i}\)</span> is cyclic and isomorphic to <span
-class="math inline">\(\mathbb{Z}_{m_1 m_2 \ldots m_n}\)</span> if and
-only if the numbers <span class="math inline">\(m_i\)</span> are
-pairwise coprime.</p>
+<p>Let <span class="math inline">\(F\)</span> be a field. <br> A
+polynomial is <span class="math inline">\(F[x]\)</span> with leading
+coefficient <span class="math inline">\(1\)</span> is called a
+<strong>monic polynomial</strong>.</p>
 </blockquote>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>The unique monic irreducible polynomial <span
+class="math inline">\(p(x)\)</span> in <span
+class="math inline">\(I_\alpha\)</span> is called the
+<strong>irreducible polynomial for <span
+class="math inline">\(\alpha\)</span> over <span
+class="math inline">\(F\)</span></strong>, and is denoted by <span
+class="math inline">\({\rm Irr}(\alpha, F)\)</span>. <br> The degree of
+<span class="math inline">\({\rm Irr}(\alpha, F)\)</span> is the degree
+of <span class="math inline">\(\alpha\)</span> over <span
+class="math inline">\(F\)</span>, and is denoted by <span
+class="math inline">\({\rm deg}(\alpha, F)\)</span>.<br></p>
+</blockquote>
+<h2 id="simple-algebraic-extension">Simple Algebraic Extension</h2>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\((a_1, a_2, \ldots, a_n) \in
-\prod_{i=1}^{n} G_i\)</span>. If <span
-class="math inline">\(a_i\)</span> is of finite orer <span
-class="math inline">\(r_i\)</span> in <span
-class="math inline">\(G_i\)</span>, then the order of <span
-class="math inline">\((a_1, a_2, \ldots, a_n)\)</span> in <span
-class="math inline">\(\prod_{i=1}^{n} G_i\)</span> is equal to the least
-common multiple of all <span class="math inline">\(r_i\)</span>.</p>
+<p>Let <span class="math inline">\(F(\alpha)\)</span> be an algebraic
+extension field of <span class="math inline">\(F\)</span>. Then <span
+class="math inline">\(F(\alpha) = F[\alpha]\)</span>.</p>
 </blockquote>
-<p><strong>Examples</strong></p>
-<ol type="1">
-<li>What is the order of <span class="math inline">\((\bar 9, \bar 5,
-\bar 7)\)</span> in the group <span
-class="math inline">\(\mathbb{Z}_{12} \times \mathbb{Z}_{15} \times
-\mathbb{Z}_{20}\)</span>?</li>
-</ol>
 <details>
 <summary>
-Solution
+<strong>Proof</strong>
 </summary>
-<p><span class="math inline">\(\bar 9\)</span> in <span
-class="math inline">\(\mathbb{Z}_12\)</span> is of order <span
-class="math inline">\(4\)</span>. <span class="math inline">\(\bar
-5\)</span> in <span class="math inline">\(\mathbb{Z}_15\)</span> is of
-order <span class="math inline">\(3\)</span>. <span
-class="math inline">\(\bar 7\)</span> in <span
-class="math inline">\(\mathbb{Z}_20\)</span> is of order <span
-class="math inline">\(20\)</span>. <span
-class="math inline">\(\text{lcm}(4, 3, 20) = 60\)</span>. Thus the order
-of <span class="math inline">\((\bar 9, \bar 5, \bar 7)\)</span> is
-<span class="math inline">\(60\)</span>.</p>
 </details>
-<ol start="2" type="1">
-<li>For <span class="math inline">\(G_1 = \mathbb{Z}_3 \times
-\mathbb{Z}_3 \times \mathbb{Z}_9\)</span>, it has <span
-class="math inline">\(9 \times 6 = 54\)</span> elements of order 9.</li>
-</ol>
+<p><br></p>
+<p><strong>Theorem</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(F(\alpha)\)</span> be an algebraic
+extension field of <span class="math inline">\(F\)</span>. Then any
+<span class="math inline">\(\beta \in F(\alpha)\)</span> can be uniquely
+expressed in the form <span class="math display">\[\beta = b_0 + b_1
+\alpha + \cdots + b_{n-1} \alpha^{n-1}\]</span> where <span
+class="math inline">\(n = {\rm deg}(\alpha, F)\)</span></p>
+</blockquote>
 <details>
 <summary>
-Solution
+<strong>Proof</strong>
 </summary>
-<p>There is <span class="math inline">\(6\)</span> elements in <span
-class="math inline">\(\mathbb{Z}_9\)</span> of order <span
-class="math inline">\(9\)</span> and all elements of <span
-class="math inline">\(\mathbb{Z}_3\)</span> is of order <span
-class="math inline">\(3\)</span>. Therefore, we have <span
-class="math inline">\(3 \times 3 \times 6\)</span> elements in <span
-class="math inline">\(G_1\)</span> of order <span
-class="math inline">\(9\)</span>. <br></p>
 </details>
+<p><br></p>
+<p><strong>Problem</strong></p>
+<p>Let <span class="math inline">\(\alpha\)</span> be a zero of <span
+class="math inline">\(f(x) = x^3 + x + 1\)</span> in <span
+class="math inline">\(\Bbb{Q}[x]\)</span>.<br> Write <span
+class="math inline">\(\beta = (2\alpha^2 + 3\alpha -1)/(\alpha^2 -
+\alpha + 1)\)</span> in the form <span class="math inline">\(a_0 +
+a_1\alpha + a_2 \alpha^2\)</span>.</p>
+<blockquote>
+<p>Use the Euclidean algorithm to find polynomials <span
+class="math inline">\(g(x), h(x)\)</span> such that <span
+class="math display">\[(x^3 + x + 1)g(x) + (x^2 - x + 1)h(x) =
+1\]</span> Then when substitute <span
+class="math inline">\(\alpha\)</span>, <span
+class="math display">\[\begin{align}
+(\alpha^3 + \alpha + 1)g(x) + (\alpha^2 - \alpha + 1)h(x) &amp;= 1 \\
+(\alpha^2 - \alpha + 1)h(x) &amp;= 1 \\
+h(x) &amp;= (\alpha^2 - \alpha + 1)^{-1} \\
+\end{align}\]</span> And we can simplely multiple <span
+class="math inline">\(h(x)\)</span> by <span
+class="math inline">\((2\alpha^2 + 3\alpha -1)\)</span> to get the
+answer.<br></p>
+<p>Start with finding <span class="math inline">\(h(x)\)</span>. <span
+class="math display">\[\begin{align}
+x^3 + x + 1 &amp;= (x + 1)(x^2 -x + 1) + x \\
+x^2 - x + 1 &amp;= (x - 1)(x) + 1 \\
+\end{align}\]</span> Then we get <span
+class="math display">\[\begin{align}
+1 &amp;= (x^2 - x + 1) - (x - 1)x \\
+&amp;= (x^2 - x + 1) - (x - 1)\left[(x^3 + x + 1) - (x + 1)(x^2 - x +
+1)\right] \\
+&amp;= x^2(x^2 - x + 1) - (x - 1)(x^3 + x + 1) \\
+\end{align}\]</span> Therefore <span class="math inline">\(h(x) =
+x^2\)</span> <br> Thus, <span class="math display">\[\begin{align}
+\dfrac{2\alpha^2 + 3\alpha -1}{\alpha^2 - \alpha + 1} &amp;=  2\alpha^4
++ 3\alpha^3 - \alpha^2 \\
+&amp;= (2\alpha + 3)(\alpha^3 + \alpha + 1) + (3\alpha^2 + 5\alpha + 3)
+\\
+&amp;= -3\alpha^2 -5\alpha - 3 \\
+\end{align}\]</span></p>
+</blockquote>
 
       </div>
       

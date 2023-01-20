@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Organization of IEEE 802 Standards for LAN, PAN, MAN  802.2: LLC 802.3: CSMA&#x2F;CD 802.4: Token Bus 802.5: Token Ring 802.6: MAN 802.7: Broadband 802.10: Security 802.11: Wireless 802.14: Cable Modem  In">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lan Architecture">
+<meta property="og:url" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/LAN.html">
+<meta property="og:site_name" content="Ruccccc">
+<meta property="og:description" content="Organization of IEEE 802 Standards for LAN, PAN, MAN  802.2: LLC 802.3: CSMA&#x2F;CD 802.4: Token Bus 802.5: Token Ring 802.6: MAN 802.7: Broadband 802.10: Security 802.11: Wireless 802.14: Cable Modem  In">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/LAN/Bus.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/LAN/Tree.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/LAN/Ring.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/LAN/Star.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/LAN/10BASE.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/LAN/Two-Level_Star.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/LAN/LAN_switch.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/LAN/MAC_Frame.png">
+<meta property="article:published_time" content="2022-12-13T03:08:03.606Z">
+<meta property="article:modified_time" content="2022-12-13T03:08:03.606Z">
+<meta property="article:author" content="Ruc Kuo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/LAN/Bus.png">
+
+
+<link rel="canonical" href="http://example.com/Lecture_notes/Introduction_to_Computer_Network/LAN">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Lecture_notes/Introduction_to_Computer_Network/LAN.html","path":"Lecture_notes/Introduction_to_Computer_Network/LAN.html","title":"Lan Architecture"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Lan Architecture | Ruccccc
+</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Ruccccc</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#organization-of-ieee-802"><span class="nav-number">1.</span> <span class="nav-text">Organization of IEEE 802</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ingredients-of-lan"><span class="nav-number">2.</span> <span class="nav-text">Ingredients of LAN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#topology"><span class="nav-number">2.1.</span> <span class="nav-text">Topology</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#bus-ans-tree"><span class="nav-number">2.1.1.</span> <span class="nav-text">Bus ans Tree</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ring"><span class="nav-number">2.1.2.</span> <span class="nav-text">Ring</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#star"><span class="nav-number">2.1.3.</span> <span class="nav-text">Star</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hub"><span class="nav-number">2.1.4.</span> <span class="nav-text">Hub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lan-switch"><span class="nav-number">2.1.5.</span> <span class="nav-text">LAN switch</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#type-of-switch"><span class="nav-number">2.1.5.1.</span> <span class="nav-text">Type of switch</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#protocol-reference-model"><span class="nav-number">2.2.</span> <span class="nav-text">Protocol Reference Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#llc"><span class="nav-number">2.2.1.</span> <span class="nav-text">LLC</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mac"><span class="nav-number">2.2.2.</span> <span class="nav-text">MAC</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#two-level-addressing"><span class="nav-number">2.3.</span> <span class="nav-text">Two Level Addressing</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#generic-mac-frame"><span class="nav-number">2.3.1.</span> <span class="nav-text">Generic MAC Frame</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#error-detection-and-recovery"><span class="nav-number">2.4.</span> <span class="nav-text">Error Detection and Recovery</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#networking-devices"><span class="nav-number">2.5.</span> <span class="nav-text">Networking Devices</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#bridge"><span class="nav-number">2.5.1.</span> <span class="nav-text">Bridge</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#router"><span class="nav-number">2.5.2.</span> <span class="nav-text">Router</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bridge-v.s-router"><span class="nav-number">2.5.3.</span> <span class="nav-text">Bridge v.s Router</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ethernet-lans"><span class="nav-number">3.</span> <span class="nav-text">Ethernet LANs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#section"><span class="nav-number">3.1.</span> <span class="nav-text">802.3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pure-aloha"><span class="nav-number">3.2.</span> <span class="nav-text">Pure ALOHA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#slotted-aloha"><span class="nav-number">3.3.</span> <span class="nav-text">Slotted ALOHA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#csma-carrier-sense-multiple-access"><span class="nav-number">3.4.</span> <span class="nav-text">CSMA (carrier sense multiple
+access)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#persistent"><span class="nav-number">3.4.1.</span> <span class="nav-text">persistent</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#backoff"><span class="nav-number">3.4.2.</span> <span class="nav-text">Backoff</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cd-collision-detection"><span class="nav-number">3.5.</span> <span class="nav-text">CD (Collision Detection)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#csmacd"><span class="nav-number">3.6.</span> <span class="nav-text">CSMA&#x2F;CD</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#carrier-sense-and-collision-detection"><span class="nav-number">3.6.1.</span> <span class="nav-text">Carrier Sense and
+Collision Detection</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mbps-ethernet"><span class="nav-number">3.7.</span> <span class="nav-text">10Mbps Ethernet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#collision-domain"><span class="nav-number">3.8.</span> <span class="nav-text">Collision Domain</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#auto-negotiation"><span class="nav-number">3.9.</span> <span class="nav-text">Auto Negotiation</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Ruc Kuo</p>
+  <div class="site-description" itemprop="description">Meaningless things.</div>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Ruccccc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Ruccccc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:ruckuo@gmail.com" title="E-Mail → mailto:ruckuo@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+  <a href="https://github.com/Ruccccc/Ruccccc.github.io" class="github-corner" title="GitHub" aria-label="GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Lan Architecture
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+            <li><a href="/Lecture_notes/Introduction_to_Computer_Network/">INTRODUCTION_TO_COMPUTER_NETWORK</a></li>
+            <li>LAN</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <h2 id="organization-of-ieee-802">Organization of IEEE 802</h2>
+<p>Standards for LAN, PAN, MAN</p>
+<ul>
+<li>802.2: LLC</li>
+<li>802.3: CSMA/CD</li>
+<li>802.4: Token Bus</li>
+<li>802.5: Token Ring</li>
+<li>802.6: MAN</li>
+<li>802.7: Broadband</li>
+<li>802.10: Security</li>
+<li>802.11: Wireless</li>
+<li>802.14: Cable Modem</li>
+</ul>
+<h2 id="ingredients-of-lan">Ingredients of LAN</h2>
+<h3 id="topology">Topology</h3>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Bus</th>
+<th style="text-align: center;">Tree</th>
+<th style="text-align: center;">Ring</th>
+<th style="text-align: center;">Star</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="Images/LAN/Bus.png"
+alt="Bus" /></td>
+<td style="text-align: center;"><img src="Images/LAN/Tree.png"
+alt="Tree" /></td>
+<td style="text-align: center;"><img src="Images/LAN/Ring.png"
+alt="Ring" /></td>
+<td style="text-align: center;"><img src="Images/LAN/Star.png"
+alt="Star" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="bus-ans-tree">Bus ans Tree</h4>
+<ul>
+<li>MAC protocol: regulate which station on the medium may transmit at
+any point in time
+<ul>
+<li>Centralized</li>
+<li>Distributed</li>
+</ul></li>
+<li>Frames will be absorbed by the terminator</li>
+<li>Multipoint</li>
+<li>Signal balancing - strength of signal
+<ul>
+<li>Divide the medium smaller segments</li>
+</ul></li>
+<li>Repeater
+<ul>
+<li>First Layer</li>
+<li>Usually bi-directional</li>
+<li>In ring reperater is ued as device attachment, and is
+undirectional</li>
+</ul></li>
+<li>10BASE 5, 10BASE 2
+<ul>
+<li><img src="Images/LAN/10BASE.png" title="fig:"
+alt="10BASE-5 v.s 10BASE-2" /></li>
+</ul></li>
+</ul>
+<h4 id="ring">Ring</h4>
+<ul>
+<li>Repeaters joined by point-to-point links</li>
+<li>Unidirectional</li>
+<li>Destination copies the frame into its local buffer</li>
+<li>The frame circulates until it returns to the source</li>
+<li>Token ring
+<ul>
+<li>Won't collide</li>
+<li>Have to wait for token</li>
+<li>mangement of token -&gt; token might disappear or stuck
+somewhere</li>
+</ul></li>
+<li>seldom use now</li>
+</ul>
+<h4 id="star">Star</h4>
+<ul>
+<li>Hub: central element, acts as repeater.</li>
+<li>Bus logically (Layered bus)</li>
+<li>Hierarchical configuration
+<ul>
+<li>header hub (HHUB)</li>
+<li>intremediate hub (IHUB)</li>
+<li><img src="Images/LAN/Two-Level_Star.png" title="fig:"
+alt="Two Level Star" /></li>
+</ul></li>
+</ul>
+<h4 id="hub">Hub</h4>
+<ul>
+<li>First Layer</li>
+<li>multi-ports repeater</li>
+<li>Shared medium bus</li>
+<li>only one station can transmit at a time</li>
+<li>recognize a malfuncioning station and cut that station out of the
+network</li>
+<li>total capacity is still 10 Mbps</li>
+</ul>
+<h4 id="lan-switch">LAN switch</h4>
+<ul>
+<li>Second Layer -&gt; can see the inside of frame.</li>
+<li>Frame is switched to the intended destination directly.</li>
+<li>Other unused line can be used at the same time.</li>
+<li>No change is require to attached devices.</li>
+<li>Each attached device has a dedicated capacity if the switch has
+sufficient capacity.</li>
+<li>The switch scales easily.</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Shared Medium Bus</th>
+<th style="text-align: center;">Shared Medium Hub</th>
+<th style="text-align: center;">LAN switch</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img
+src="Images/LAN/Shared_medium_bus.png" alt="Bus" /></td>
+<td style="text-align: center;"><img
+src="Images/LAN/Shared_medium_hub.png" alt="Hub" /></td>
+<td style="text-align: center;"><img src="Images/LAN/LAN_switch.png"
+alt="Switch" /></td>
+</tr>
+</tbody>
+</table>
+<h5 id="type-of-switch">Type of switch</h5>
+<ul>
+<li>Store-and-forward switch
+<ul>
+<li>high delay, low error rate</li>
+</ul></li>
+<li>Cut-though switch
+<ul>
+<li>switch start repating as soon as recognizes the destination
+address.</li>
+<li>low delay, high error rate.</li>
+</ul></li>
+<li>Adaptive switch
+<ul>
+<li>begin with cut-though mode</li>
+<li>change to store-and-forward mode if necessary(error rate is too
+high)</li>
+</ul></li>
+</ul>
+<h3 id="protocol-reference-model">Protocol Reference Model</h3>
+<ul>
+<li>Mostly, transmission medium is sgared in LAN.</li>
+<li>MAC layer is not found in traditional layers data link control.</li>
+<li>Two sublayer in OSI layer 2
+<ul>
+<li>LLC: logical link control
+<ul>
+<li>Provide one or more service access points(SAPs), whick is used to
+communicate with upper layer.</li>
+</ul></li>
+<li>MAC: medium access control
+<ul>
+<li>assemble data, addresss and error-detection fields into frame.</li>
+<li>disassemble frame and perform address recognition and error
+detection.</li>
+<li>Govern access to the LAN transmission medium.</li>
+</ul></li>
+</ul></li>
+</ul>
+<h4 id="llc">LLC</h4>
+<ul>
+<li>similar to other link layers:
+<ul>
+<li>transmit PDU between two stations, without intermediate node.</li>
+</ul></li>
+<li>different with other link layers:
+<ul>
+<li>support multiaccess</li>
+<li>relieve some details of link access by the MAC layer.</li>
+</ul></li>
+</ul>
+<h4 id="mac">MAC</h4>
+<ul>
+<li>Polling 徵詢</li>
+<li>Round robin (Take turns)</li>
+<li>Reservation</li>
+<li>Contention
+<ul>
+<li>low delay, often collide.</li>
+<li>mostly used. Since internet is bursty.</li>
+</ul></li>
+</ul>
+<h3 id="two-level-addressing">Two Level Addressing</h3>
+<ul>
+<li>MAC address: identify a physical interface form the station to the
+LAN.</li>
+<li>LLC address: indentify an LLC user
+<ul>
+<li>LLC address(LLC SAP) is associated with a particular user(process,
+etc.) within a station.</li>
+</ul></li>
+</ul>
+<h4 id="generic-mac-frame">Generic MAC Frame</h4>
+<figure>
+<img src="Images/LAN/MAC_Frame.png" alt="MAC Frame" />
+<figcaption aria-hidden="true">MAC Frame</figcaption>
+</figure>
+<h3 id="error-detection-and-recovery">Error Detection and Recovery</h3>
+<ul>
+<li>MAC: detecting errors and discarding the frame that are error.</li>
+<li>LLC: retransmission</li>
+</ul>
+<h3 id="networking-devices">Networking Devices</h3>
+<ul>
+<li>Gateway: translation between one networking rechnology and
+another.</li>
+<li>Router</li>
+<li>Repeater</li>
+<li>Hub: multiport repeater</li>
+<li>Bridge</li>
+<li>LAN switch
+<ul>
+<li>Bridge frame handling is done in software while LAN switch is
+preforms in hardware.</li>
+<li>Bridge can only handle a frame at a time, while LAN can handle
+multiple frames.</li>
+<li>Bridge uses store-and-forward. LAN can used cut-though and
+store-and-froward.</li>
+</ul></li>
+</ul>
+<h4 id="bridge">Bridge</h4>
+<ul>
+<li>Second layer</li>
+<li>Only read doesn't change frame.</li>
+<li>Contain addressing and routing intelligence (spanning trees)</li>
+<li>A bridge may connect more than two LANs.</li>
+</ul>
+<h4 id="router">Router</h4>
+<h4 id="bridge-v.s-router">Bridge v.s Router</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ethernet-lans">Ethernet LANs</h2>
+<h3 id="section">802.3</h3>
+<ul>
+<li>Intended for use in commercial and light industrial
+environments.</li>
+<li>Defines physical layer and MAC layer(CSMA/CD)</li>
+</ul>
+<h3 id="pure-aloha">Pure ALOHA</h3>
+<ul>
+<li>For packet radio networks.</li>
+<li>After sending a frame, it resends if no ack return in the maximum
+possible round-trip propagation delay on the network.</li>
+<li>Collision if two or more simultaneous transmissions.</li>
+<li>Assume the transmition time of a frame is L. The maximum collide
+time is 2L.</li>
+<li>The maximum throughput is only about 18%.</li>
+</ul>
+<h3 id="slotted-aloha">Slotted ALOHA</h3>
+<ul>
+<li>Divide time axis into time slots, transmission is permitted only at
+the begin of a slot boundary.</li>
+<li>Assume the length of a time slot is L. The maximum collide time is
+L.</li>
+<li>The maximum throughput is about 37%.</li>
+</ul>
+<h3 id="csma-carrier-sense-multiple-access">CSMA (carrier sense multiple
+access)</h3>
+<ul>
+<li>Check if the medium is in use or not, if it's in used wait, else
+transmit.</li>
+<li>Collision if two or more stations attempt or transmit at
+<strong>about the same time</strong></li>
+<li>Maximum throughput can far exceed that of Pure/slotted ALOHA</li>
+</ul>
+<h4 id="persistent">persistent</h4>
+<ul>
+<li>non-persistent
+<ol type="1">
+<li>Transmit if the medium is idle.</li>
+<li>wait random time if the medim is busy then try again.</li>
+</ol>
+<ul>
+<li>Capacity is wasted in the time after the end of a transmission
+before the next try.</li>
+<li>Less collide, more waste, not FIFO guaranteed.</li>
+</ul></li>
+<li>1-persistent
+<ol type="1">
+<li>transmit if the medium is idle.</li>
+<li>if the medium is busy, continue to listen until the channel is
+sensed idle. Then transmit immediately.</li>
+</ol>
+<ul>
+<li>Collision is guaranteed if more than two stations are waiting.</li>
+</ul></li>
+<li>p-persistent
+<ol type="1">
+<li>Waiting until the medium is idle. After that, Transmit with
+probability p, or delay,</li>
+<li>After delay, repeat 1.</li>
+</ol>
+<ul>
+<li>n stations, np is the expected number of stations that will
+transmit.</li>
+<li>if np &gt; 1, there will be a collision.</li>
+<li>Thoughout will drop to zero.</li>
+<li>np must be less than one for a heavy load</li>
+<li>Smaller p is, the longer delay will be.</li>
+</ul></li>
+</ul>
+<h4 id="backoff">Backoff</h4>
+<ul>
+<li>Binary expontential backoff
+<ul>
+<li>in the n-th delay, random time from [0, 2^n].</li>
+<li>the station gives up after 16 unsuccessful.</li>
+</ul></li>
+</ul>
+<h3 id="cd-collision-detection">CD (Collision Detection)</h3>
+<ul>
+<li>If a collision is detected, tramsmit a brief jamming signal to
+assure all stations know there is a collision and stop
+transmission.</li>
+<li>A station detect a collision <strong>twice the end-to-end
+propagation delay</strong></li>
+</ul>
+<figure>
+<img src="" alt="CSMA/CD Collision" />
+<figcaption aria-hidden="true">CSMA/CD Collision</figcaption>
+</figure>
+<h3 id="csmacd">CSMA/CD</h3>
+<ul>
+<li>IEEE 802.3 used 1-persistent.</li>
+<li>Binary exponential backoff</li>
+<li>Efficient over a wide range of loads</li>
+<li>Stations with fewer collisions will transmit before the station
+waited longer.</li>
+<li>後傳的人成功機率高,因為兩次之間等待時間短</li>
+</ul>
+<h4 id="carrier-sense-and-collision-detection">Carrier Sense and
+Collision Detection</h4>
+<ul>
+<li>A collision should produce higher voltage swings than those produced
+by singal transmitter.</li>
+<li>IEEE 802.3 restricts the maximum length of cable to 500m
+<ul>
+<li>Propergation delay will be long</li>
+<li>The singal will decay and a collision might not be reconigized.</li>
+</ul></li>
+<li>For any hub, if there is signal on more than one input, a sollision
+is assumed. Collision presence(CP) is generated.</li>
+</ul>
+<h3 id="mbps-ethernet">10Mbps Ethernet</h3>
+<h3 id="collision-domain">Collision Domain</h3>
+<ul>
+<li>Collision domain is the range that will be affected by same
+collision.</li>
+<li>Station separated by a bridge are in different collision
+domains.</li>
+</ul>
+<h3 id="auto-negotiation">Auto Negotiation</h3>
+<ul>
+<li>A station can be automatically configured to run at 10 Mbps or 100
+Mbps.</li>
+</ul>
+
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+            <li><a href="/Lecture_notes/Introduction_to_Computer_Network/">INTRODUCTION_TO_COMPUTER_NETWORK</a></li>
+            <li>LAN</li>
+  </ul>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa-solid fa-paw"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ruc Kuo</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>

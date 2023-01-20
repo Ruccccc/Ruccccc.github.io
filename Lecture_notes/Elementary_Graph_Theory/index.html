@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Introduction Graph  A graph \(G &#x3D; (V, E)\) consists two sets: \(V(G)\) and \(E(G)\), represent vertex and edge respectively. The number of vetices in a graph \(G\) is denoted \(|V(G)|\) or \(|G|\).  S">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ruccccc">
+<meta property="og:url" content="http://example.com/Lecture_notes/Elementary_Graph_Theory/index.html">
+<meta property="og:site_name" content="Ruccccc">
+<meta property="og:description" content="Introduction Graph  A graph \(G &#x3D; (V, E)\) consists two sets: \(V(G)\) and \(E(G)\), represent vertex and edge respectively. The number of vetices in a graph \(G\) is denoted \(|V(G)|\) or \(|G|\).  S">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-12-26T04:01:54.151Z">
+<meta property="article:modified_time" content="2022-12-26T04:01:54.151Z">
+<meta property="article:author" content="Ruc Kuo">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/Lecture_notes/Elementary_Graph_Theory/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Lecture_notes/Elementary_Graph_Theory/index.html","path":"Lecture_notes/Elementary_Graph_Theory/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title> | Ruccccc
+</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Ruccccc</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#graph"><span class="nav-number">1.1.</span> <span class="nav-text">Graph</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#specification-of-graphs"><span class="nav-number">1.2.</span> <span class="nav-text">Specification of Graphs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#subgraph"><span class="nav-number">1.3.</span> <span class="nav-text">Subgraph</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#directed-graph"><span class="nav-number">1.4.</span> <span class="nav-text">Directed graph</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#weighted-graphs"><span class="nav-number">1.5.</span> <span class="nav-text">Weighted Graphs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#complete-graph"><span class="nav-number">1.6.</span> <span class="nav-text">Complete Graph</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#graph-complement"><span class="nav-number">1.7.</span> <span class="nav-text">Graph Complement</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bipartite-graph"><span class="nav-number">1.8.</span> <span class="nav-text">Bipartite Graph</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#degree-sequence"><span class="nav-number">2.</span> <span class="nav-text">Degree Sequence</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#havel-hakimi-theorem"><span class="nav-number">2.1.</span> <span class="nav-text">Havel-Hakimi Theorem</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Ruc Kuo</p>
+  <div class="site-description" itemprop="description">Meaningless things.</div>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Ruccccc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Ruccccc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:ruckuo@gmail.com" title="E-Mail → mailto:ruckuo@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+  <a href="https://github.com/Ruccccc/Ruccccc.github.io" class="github-corner" title="GitHub" aria-label="GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+          <li>ELEMENTARY_GRAPH_THEORY</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <h2 id="introduction">Introduction</h2>
+<h3 id="graph">Graph</h3>
+<blockquote>
+<p>A graph <span class="math inline">\(G = (V, E)\)</span> consists two
+sets: <span class="math inline">\(V(G)\)</span> and <span
+class="math inline">\(E(G)\)</span>, represent vertex and edge
+respectively. The number of vetices in a graph <span
+class="math inline">\(G\)</span> is denoted <span
+class="math inline">\(|V(G)|\)</span> or <span
+class="math inline">\(|G|\)</span>.</p>
+</blockquote>
+<h3 id="specification-of-graphs">Specification of Graphs</h3>
+<p><strong>Definition</strong></p>
+<blockquote>
+<ol type="1">
+<li>If a graph has no multi-edge or loops, we call it simple. else
+more..</li>
+</ol>
+</blockquote>
+<h3 id="subgraph">Subgraph</h3>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>Graph <span class="math inline">\(H\)</span> is
+<strong>gubgraph</strong> of graph <span
+class="math inline">\(G=\)</span> if <span class="math inline">\(V(H)
+\subseteq V(G)\)</span> and <span class="math inline">\(E(H) \subseteq
+E(G)\)</span>. <br> <span class="math inline">\(H_1\)</span> is a
+<strong>induced subgraph</strong> of <span
+class="math inline">\(G\)</span> if <span class="math inline">\(V(H_1)
+\subseteq V(G)\)</span> and every availiable edge from <span
+class="math inline">\(G\)</span> between the verieces in <span
+class="math inline">\(V(H_1)\)</span> is included. <br> <span
+class="math inline">\(H_2\)</span> is a <strong>spanning
+subgraph</strong> of <span class="math inline">\(G\)</span> if <span
+class="math inline">\(V(H_2) = V(G)\)</span> and <span
+class="math inline">\(E(H_2) \subseteq E(G)\)</span></p>
+</blockquote>
+<h3 id="directed-graph">Directed graph</h3>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>A <strong>directed graph</strong> or <strong>digraph</strong>, is a
+graph <span class="math inline">\(G=(V,A)\)</span>, where <span
+class="math inline">\(V(G)\)</span> is a vertex set and A(G) is an arc
+set. An arc is an ordered pair of vertices. An arc <span
+class="math inline">\(xy\)</span>, the <em>head</em> is the starting
+vertex <span class="math inline">\(x\)</span> and the tail is the ending
+vertex <span class="math inline">\(y\)</span>. The
+<strong>indegree</strong> of a vertex <span
+class="math inline">\(x\)</span> is the number of arcs which <span
+class="math inline">\(x\)</span> is a tail, denoted <span
+class="math inline">\(deg^{-}(x)\)</span> The <strong>outdegree</strong>
+of a vertex <span class="math inline">\(x\)</span> is the number of arcs
+which <span class="math inline">\(x\)</span> is a head, denoted <span
+class="math inline">\(deg^{+}(x)\)</span> The <strong>underlying
+graph</strong> for a digraph is the graph that removing the
+direction.</p>
+</blockquote>
+<h3 id="weighted-graphs">Weighted Graphs</h3>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>A weighted graph is a graph that each edges has real number
+associated with it. This number refferred to as the weight and denoted
+<span class="math inline">\(w(xy)\)</span> for the edge <span
+class="math inline">\(xy\)</span>. (Weight can also be assigned to
+vertices)</p>
+</blockquote>
+<h3 id="complete-graph">Complete Graph</h3>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>A simple graph <span class="math inline">\(G\)</span> is
+<strong>complete</strong> if every pair of distinct vertice is adjacent.
+The complete graph on <span class="math inline">\(n\)</span> vertices is
+denoted <span class="math inline">\(K_n\)</span>.</p>
+</blockquote>
+<p><strong>Properties</strong></p>
+<blockquote>
+<ol type="1">
+<li>Each vertex in <span class="math inline">\(K_n\)</span> has degree
+<span class="math inline">\(n-1\)</span></li>
+<li><span class="math inline">\(K_n\)</span> has <span
+class="math inline">\(n(n-1) \over 2\)</span> edges.</li>
+<li><span class="math inline">\(K_n\)</span> contains the most edges out
+of all simple graphs on <span class="math inline">\(n\)</span>
+vertices.</li>
+</ol>
+</blockquote>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>The <strong>clique-size</strong> of a graph is the largest integer n
+such that <span class="math inline">\(K_n\)</span> is a subgraph of
+<span class="math inline">\(G\)</span> but <span
+class="math inline">\(K_{n+1}\)</span> is not.</p>
+</blockquote>
+<h3 id="graph-complement">Graph Complement</h3>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>Given a simple graph <span class="math inline">\(G = (V, E)\)</span>,
+define the <strong>complement</strong> of <span
+class="math inline">\(G\)</span> as the graph <span
+class="math inline">\(\bar G = (V, \bar E)\)</span>, where an edge <span
+class="math inline">\(xy \in \bar E\)</span> if and only if <span
+class="math inline">\(xy \notin E\)</span></p>
+</blockquote>
+<h3 id="bipartite-graph">Bipartite Graph</h3>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>A graph <span class="math inline">\(G\)</span> is
+<strong>bipartitie</strong> if the vertices can be partitioned into two
+sets <span class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span> so that every edge has one endpoint in
+<span class="math inline">\(X\)</span> and the other in <span
+class="math inline">\(Y\)</span>. <br> <span
+class="math inline">\(K_{m,n}\)</span> is the <strong>complete bipartite
+graph</strong> where <span class="math inline">\(|X| = m\)</span> and
+<span class="math inline">\(|Y| = n\)</span> and every vertex in <span
+class="math inline">\(X\)</span> is adjacent to every vertex in <span
+class="math inline">\(Y\)</span>.</p>
+</blockquote>
+<h2 id="degree-sequence">Degree Sequence</h2>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>The <strong>degree sequence</strong> of a graph is a listion of the
+degrees of the vertices. It is customary to write in decreasing order.
+If a sequence is degree sequence of a simple graph then we call it
+<strong>graphical</strong></p>
+</blockquote>
+<h3 id="havel-hakimi-theorem">Havel-Hakimi Theorem</h3>
+<p><strong>Theorem</strong></p>
+<p>An non-increasing <span class="math inline">\(S: s_1, s_2, \ldots,
+s_n\)</span> (for <span class="math inline">\(n \geq 2\)</span>) of
+nonnegative integers is graphical if and only if the sequence <span
+class="math inline">\(S^\prime: s_{2}-1, s_{3}-1, \ldots, s_{s_{1}+1}-1,
+s_{s_{1}+2}, \ldots, s_n\)</span> is graphical.</p>
+
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+          <li>ELEMENTARY_GRAPH_THEORY</li>
+  </ul>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa-solid fa-paw"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ruc Kuo</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>

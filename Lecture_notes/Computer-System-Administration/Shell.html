@@ -20,27 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Hello, welcome to my page.  Hexo   Github Page with Hexo Courses   Algebra    Computer System Administration    Introduction to Computer Networks  Link">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hello">
-<meta property="og:url" content="http://example.com/index/index.html">
+    <meta name="description" content="Unix Kernel and Shell  Shell is the interface to communication with kernel  Unix Shells    Shell System Name      Bourne Shell &#x2F;bin&#x2F;sh In FreeBSD base   C Shell &#x2F;bin&#x2F;csh In FreeBSD base, default for r">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shell">
+<meta property="og:url" content="http://example.com/Lecture_notes/Computer-System-Administration/Shell.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Hello, welcome to my page.  Hexo   Github Page with Hexo Courses   Algebra    Computer System Administration    Introduction to Computer Networks  Link">
+<meta property="og:description" content="Unix Kernel and Shell  Shell is the interface to communication with kernel  Unix Shells    Shell System Name      Bourne Shell &#x2F;bin&#x2F;sh In FreeBSD base   C Shell &#x2F;bin&#x2F;csh In FreeBSD base, default for r">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-09-24T12:02:05.000Z">
-<meta property="article:modified_time" content="2023-01-15T07:09:51.444Z">
+<meta property="article:published_time" content="2022-11-01T17:26:31.082Z">
+<meta property="article:modified_time" content="2022-11-01T17:26:31.082Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/index/">
+<link rel="canonical" href="http://example.com/Lecture_notes/Computer-System-Administration/Shell">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/index/","path":"index/","title":"Hello"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Lecture_notes/Computer-System-Administration/Shell.html","path":"Lecture_notes/Computer-System-Administration/Shell.html","title":"Shell"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hello | Ruccccc</title>
+<title>Shell | Ruccccc
+</title>
   
 
 
@@ -111,7 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo"><span class="nav-number">1.</span> <span class="nav-text">Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#courses"><span class="nav-number">2.</span> <span class="nav-text">Courses</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#link"><span class="nav-number">3.</span> <span class="nav-text">Link</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#unix-kernel-and-shell"><span class="nav-number">1.</span> <span class="nav-text">Unix Kernel and Shell</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#unix-shells"><span class="nav-number">1.1.</span> <span class="nav-text">Unix Shells</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#environment-variable"><span class="nav-number">2.</span> <span class="nav-text">Environment Variable</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#get-environment-variable"><span class="nav-number">2.1.</span> <span class="nav-text">Get Environment Variable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#some-useful-variables"><span class="nav-number">2.2.</span> <span class="nav-text">Some Useful Variables</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -153,86 +154,114 @@
 </noscript>
 
 
-    <div class="main-inner post posts-expand">
+    <div class="main-inner page posts-expand">
 
 
-  
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
 
+<h1 class="post-title" itemprop="name headline">Shell
+</h1>
 
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/index/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ruc Kuo">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ruccccc">
-      <meta itemprop="description" content="Meaningless things.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hello | Ruccccc">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Hello
-        </h1>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-
-  
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+            <li><a href="/Lecture_notes/Computer-System-Administration/">COMPUTER-SYSTEM-ADMINISTRATION</a></li>
+            <li>SHELL</li>
+  </ul>
 </div>
 
-        </div>
-      </header>
+</header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-        <center>
-<p>Hello, welcome to my page.</p>
-</center>
-<h2 id="hexo">Hexo</h2>
-<p><i class="fa-solid fa-chevron-right"></i>  <a
-href="/Hexo/Github-Page-with-Hexo"><strong>Github Page with
-Hexo</strong></a></p>
-<h2 id="courses">Courses</h2>
-<p><i class="fa-solid fa-chevron-right"></i>  <a
-href="/Lecture_notes/Algebra"><strong>Algebra</strong></a> <br>
-<i class="fa-solid fa-chevron-right"></i>  <a
-href="/Lecture_notes/Computer-System-Administration"><strong>Computer
-System Administration</strong></a> <br>
-<i class="fa-solid fa-chevron-right"></i>  <a
-href="/Lecture_notes/Introduction_to_Computer_Network"><strong>Introduction
-to Computer Networks</strong></a> <br></p>
-<h2 id="link"><a href="/links">Link</a></h2>
+      
+      
+      <div class="post-body">
+          <h2 id="unix-kernel-and-shell">Unix Kernel and Shell</h2>
+<blockquote>
+<p>Shell is the interface to communication with kernel</p>
+</blockquote>
+<h3 id="unix-shells">Unix Shells</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Shell</th>
+<th>System Name</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bourne Shell</td>
+<td>/bin/sh</td>
+<td>In FreeBSD base</td>
+</tr>
+<tr class="even">
+<td>C Shell</td>
+<td>/bin/csh</td>
+<td>In FreeBSD base, default for root</td>
+</tr>
+<tr class="odd">
+<td>TENEX C Shell</td>
+<td>/bin/tcsh</td>
+<td>In FreeBSD base</td>
+</tr>
+<tr class="even">
+<td>Bourne-Again Shell</td>
+<td>shells/bash</td>
+<td>widely used</td>
+</tr>
+<tr class="odd">
+<td>Z Shell</td>
+<td>shells/zsh</td>
+<td>macOS default, often with Oh-my-zsh</td>
+</tr>
+</tbody>
+</table>
+<h2 id="environment-variable">Environment Variable</h2>
+<blockquote>
+<p>Controlling shell behaviors</p>
+</blockquote>
+<h3 id="get-environment-variable">Get Environment Variable</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">env</span> <span class="comment"># dumping all</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;VARIABLE_NAME&#125;</span> <span class="comment"># get value of variable</span></span><br></pre></td></tr></table></figure>
+<h3 id="some-useful-variables">Some Useful Variables</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variable naem</th>
+<th>Descirption</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">HOME</td>
+<td>User's home directory</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">MAIL</td>
+<td>User's mailbox</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">PATH</td>
+<td>Command search path</td>
+</tr>
+</tbody>
+</table>
 
+      </div>
+      
+      
+      
     </div>
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+            <li><a href="/Lecture_notes/Computer-System-Administration/">COMPUTER-SYSTEM-ADMINISTRATION</a></li>
+            <li>SHELL</li>
+  </ul>
 
     
     
-    
-
-    <footer class="post-footer">
-
-        
-
-    </footer>
-  </article>
-</div>
-
-
-
-
 
 
 </div>

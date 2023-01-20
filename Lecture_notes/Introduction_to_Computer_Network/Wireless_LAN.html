@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Wireless Technologies   Wireless Technologies   PAN : Personal Area Network  safe, short distence transmition. Bluetooth, credit card.  Wifi 不支援高速移動  來不及handoff   802.11  By IEEE in 1990 MAC protocol">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wireless LAN">
+<meta property="og:url" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Wireless_LAN.html">
+<meta property="og:site_name" content="Ruccccc">
+<meta property="og:description" content="Wireless Technologies   Wireless Technologies   PAN : Personal Area Network  safe, short distence transmition. Bluetooth, credit card.  Wifi 不支援高速移動  來不及handoff   802.11  By IEEE in 1990 MAC protocol">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/WLAN/Wireless_Technologies.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/WLAN/Ad_Hoc.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/WLAN/Infrastructure.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/WLAN/ESS.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/WLAN/Protocol_Enities.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/WLAN/IFS.png">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/WLAN/DCF.jpg">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/WLAN/CSMACA+ACK.jpeg">
+<meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/WLAN/Frame.jpg">
+<meta property="article:published_time" content="2022-12-13T03:07:22.857Z">
+<meta property="article:modified_time" content="2022-12-13T03:07:22.857Z">
+<meta property="article:author" content="Ruc Kuo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/WLAN/Wireless_Technologies.png">
+
+
+<link rel="canonical" href="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Wireless_LAN">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Lecture_notes/Introduction_to_Computer_Network/Wireless_LAN.html","path":"Lecture_notes/Introduction_to_Computer_Network/Wireless_LAN.html","title":"Wireless LAN"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Wireless LAN | Ruccccc
+</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Ruccccc</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#wireless-technologies"><span class="nav-number">1.</span> <span class="nav-text">Wireless Technologies</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section"><span class="nav-number">2.</span> <span class="nav-text">802.11</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#family"><span class="nav-number">2.1.</span> <span class="nav-text">Family</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ibss-configuration"><span class="nav-number">2.2.</span> <span class="nav-text">IBSS configuration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#extend-service-set"><span class="nav-number">2.3.</span> <span class="nav-text">Extend Service Set</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#protocol-enities"><span class="nav-number">3.</span> <span class="nav-text">Protocol Enities</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#services"><span class="nav-number">4.</span> <span class="nav-text">Services</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mac"><span class="nav-number">5.</span> <span class="nav-text">MAC</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#inter-frame-space-ifs"><span class="nav-number">5.1.</span> <span class="nav-text">Inter Frame Space (IFS)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#values"><span class="nav-number">5.1.1.</span> <span class="nav-text">Values</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dcf"><span class="nav-number">5.2.</span> <span class="nav-text">DCF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#csmaca-ack-prorocol"><span class="nav-number">5.3.</span> <span class="nav-text">CSMA&#x2F;CA + ACK Prorocol</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#csmaca"><span class="nav-number">5.3.1.</span> <span class="nav-text">CSMA&#x2F;CA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ack"><span class="nav-number">5.3.2.</span> <span class="nav-text">ACK</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#virtual-sensing"><span class="nav-number">6.</span> <span class="nav-text">Virtual Sensing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#frame-format"><span class="nav-number">7.</span> <span class="nav-text">Frame Format</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#scanning"><span class="nav-number">8.</span> <span class="nav-text">Scanning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#roaming"><span class="nav-number">8.1.</span> <span class="nav-text">Roaming</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#power-management"><span class="nav-number">9.</span> <span class="nav-text">Power Management</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#spectrum"><span class="nav-number">10.</span> <span class="nav-text">Spectrum</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#wi-fi-certification"><span class="nav-number">11.</span> <span class="nav-text">Wi-Fi Certification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#other-wlans"><span class="nav-number">12.</span> <span class="nav-text">Other WLANs</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Ruc Kuo</p>
+  <div class="site-description" itemprop="description">Meaningless things.</div>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Ruccccc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Ruccccc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:ruckuo@gmail.com" title="E-Mail → mailto:ruckuo@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+  <a href="https://github.com/Ruccccc/Ruccccc.github.io" class="github-corner" title="GitHub" aria-label="GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Wireless LAN
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+            <li><a href="/Lecture_notes/Introduction_to_Computer_Network/">INTRODUCTION_TO_COMPUTER_NETWORK</a></li>
+            <li>WIRELESS_LAN</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <h2 id="wireless-technologies">Wireless Technologies</h2>
+<figure>
+<img src="Images/WLAN/Wireless_Technologies.png"
+alt="Wireless Technologies" />
+<figcaption aria-hidden="true">Wireless Technologies</figcaption>
+</figure>
+<ul>
+<li>PAN : Personal Area Network
+<ul>
+<li>safe, short distence transmition.</li>
+<li>Bluetooth, credit card.</li>
+</ul></li>
+<li>Wifi 不支援高速移動
+<ul>
+<li>來不及handoff</li>
+</ul></li>
+</ul>
+<h2 id="section">802.11</h2>
+<ul>
+<li>By IEEE in 1990</li>
+<li>MAC protocol and physical medium specifiaction</li>
+<li>Architecture
+<ul>
+<li>BBS: basic service set</li>
+<li>STA: station</li>
+<li>AP(Access point)
+<ul>
+<li>functions as a bridge (Wifi 分享器)</li>
+<li>defined in second layer.</li>
+</ul></li>
+<li>IBSS: independent BSS(ad hoc/peer-to-peer mode)</li>
+<li>ESS: extend service set</li>
+</ul></li>
+</ul>
+<h3 id="family">Family</h3>
+<ul>
+<li>802.11</li>
+<li>802.11b
+<ul>
+<li>2.4 GHz</li>
+<li>Same bandwith as 802.11 DSSS PHY</li>
+<li>Complementary Code Keying (CCK)</li>
+<li>Backward compatible</li>
+<li><strong>Data rate up to 11 Mbps.</strong>
+<ul>
+<li>With fallback rates of 5, 2, 1 Mbps</li>
+</ul></li>
+</ul></li>
+<li>802.11a
+<ul>
+<li><strong>Uses 5 GHz frequency band.</strong> (Since the interference
+at 2.4 GHz)
+<ul>
+<li>802.11a and 802.11b are not compatible</li>
+<li>Not license-free in every country</li>
+</ul></li>
+<li>Orthogonal Frequency Division multiplexing (OFDM)</li>
+<li><strong>Data rate up to 54 Mbps.</strong>
+<ul>
+<li>With fallback rates 48, 36, 24, 18, 12, 9, 6 Mbps.
+<!-- - ![802.11a v.s 802.11b]() --></li>
+</ul></li>
+</ul></li>
+<li>802.11g
+<ul>
+<li><strong>Enhance the 2.4 GHz 802.11b</strong>
+<ul>
+<li>compatible with 802.11b</li>
+</ul></li>
+<li>OFDM
+<ul>
+<li>PBCC is considered as an alternative.</li>
+</ul></li>
+<li>20 Mbps
+<ul>
+<li>Potentially up to 54 Mbps ans beyond.</li>
+</ul></li>
+</ul></li>
+<li>802.11n
+<ul>
+<li>Improving 802.11a and 802.11g
+<ul>
+<li>54 Mbps to 600 Mbps</li>
+</ul></li>
+<li>Adding Multiple-input Multiple-Output antennas and many other newer
+features.</li>
+</ul></li>
+<li>802.11e
+<ul>
+<li>MAC enhancement for quality-of-serivce (QoS) (優先級)</li>
+<li>Enhanced Distrubuted Channel Access (EDCA)
+<ul>
+<li>Enhance DCF</li>
+<li>Four distinct access categories.</li>
+<li>Transmission Opportunity(TXOP): the maximum period that allow
+continously transmit without contending channel.</li>
+<li>Contention window size relies QoS.</li>
+<li>Start a backoff period after AIFS, which is equal to or larger than
+DIFS.</li>
+</ul></li>
+</ul></li>
+<li>802.11f
+<ul>
+<li>To assure the interoperability of APs.</li>
+<li>IAPP (Inter Access Point Protocol)
+<ul>
+<li>Standardizes the handoff information of a multi-vendor WLAN
+network.</li>
+<li>Promises mobility among 802.11 WLAN network.</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="ibss-configuration">IBSS configuration</h3>
+<ul>
+<li>Independent (ad hoc)
+<ul>
+<li>Direct communication</li>
+<li>One BBS (basic service set)</li>
+</ul></li>
+<li>Infrastructure
+<ul>
+<li>AP and stations</li>
+<li>Distrubution System
+<ul>
+<li>Multiple BSS connected together form an ESS.</li>
+<li>Allow mobile stations to access fixed resourse.</li>
+</ul></li>
+<li>Advantage: stable.</li>
+<li>Disadvantage: transmit path will be long.</li>
+</ul></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ad Hoc</th>
+<th>Infrastructure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="Images/WLAN/Ad_Hoc.png" alt="Ad Hoc" /></td>
+<td><img src="Images/WLAN/Infrastructure.png"
+alt="Infrastructure" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="extend-service-set">Extend Service Set</h3>
+<figure>
+<img src="Images/WLAN/ESS.png" alt="ESS" />
+<figcaption aria-hidden="true">ESS</figcaption>
+</figure>
+<h2 id="protocol-enities">Protocol Enities</h2>
+<figure>
+<img src="Images/WLAN/Protocol_Enities.png" alt="Protocol Enities" />
+<figcaption aria-hidden="true">Protocol Enities</figcaption>
+</figure>
+<ul>
+<li>Station Management
+<ul>
+<li>Interact with physical and MAC management.</li>
+</ul></li>
+<li>PHY Management
+<ul>
+<li>Channel tuning</li>
+<li>Physical-layer MIB(Management Information Base)</li>
+</ul></li>
+<li>PMD (Physical Medium Dependent Sublayer)
+<ul>
+<li>Modulation and encoding</li>
+</ul></li>
+<li>PLCP
+<ul>
+<li>SAP</li>
+<li>Functino for carrier sense (slear channel assessment)</li>
+</ul></li>
+<li>MAC management
+<ul>
+<li>synchronization</li>
+<li>Power management</li>
+<li>Roaming</li>
+<li>MIB</li>
+</ul></li>
+<li>MAC entity
+<ul>
+<li>Basic accss mechanism</li>
+<li>Fragmentation</li>
+<li>Encryption</li>
+</ul></li>
+</ul>
+<h2 id="services">Services</h2>
+<ul>
+<li>Association: initial association between a station and an AP.</li>
+<li>Reassociation: transferred from one access point to another.</li>
+<li>Disassociation: a notification from either a station or and AP that
+an existing association is terminated.</li>
+<li>Authentication: establish the identity of stations
+<ul>
+<li>shared key or proprietary authentication extensions</li>
+</ul></li>
+<li>Privacy - encript
+<ul>
+<li>station-to-station, not "end to end".</li>
+<li>WEP(Wired Equivalent Privacy) embedded in the MAC entity. (It's not
+safe now)</li>
+<li>Only payload of data frames are encrypted.</li>
+</ul></li>
+</ul>
+<h2 id="mac">MAC</h2>
+<ul>
+<li>One MAC protocol supporting multiple physical layers</li>
+<li>DCF (Distributed Coordination Function)
+<ul>
+<li>a contention algorithm</li>
+</ul></li>
+<li>PCF (Point Coordination Function)
+<ul>
+<li>a centralized algorithm providing contention-free service (polling)
+(optional)</li>
+<li>reside in AP</li>
+<li>Now seldom use.</li>
+</ul></li>
+</ul>
+<h3 id="inter-frame-space-ifs">Inter Frame Space (IFS)</h3>
+<ul>
+<li>SIFS (short inter frame space)
+<ul>
+<li>The minimum delay.</li>
+</ul></li>
+<li>PIFS (PCF IFS)</li>
+<li>DIFS (DCF IFS)</li>
+</ul>
+<figure>
+<img src="Images/WLAN/IFS.png" alt="IFS" />
+<figcaption aria-hidden="true">IFS</figcaption>
+</figure>
+<p>SIFS = (RF delay) + (PLCP delay) + (MAC delay) + (Transceiver delay)
+<br> Slot time = (RF delay) + (PLCP delay) + (Clear channel assessment
+time) + (Transceiver delay) <br> PIFS = SIFS + 1 Slot time <br> DIFS =
+SIFS + 2 Slot time <br></p>
+<h4 id="values">Values</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">SIFS</th>
+<th style="text-align: center;">Slot time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">DSSS</td>
+<td style="text-align: center;">10 μs</td>
+<td style="text-align: center;">20 μs</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">FHSS</td>
+<td style="text-align: center;">28 μs</td>
+<td style="text-align: center;">50 μs</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">DFIR</td>
+<td style="text-align: center;">7 μs</td>
+<td style="text-align: center;">8 μs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dcf">DCF</h3>
+<ul>
+<li>Collision detection is not practical
+<ul>
+<li>Requrie receive and transmit at same time.</li>
+<li>Receiver will collide with transmitter.</li>
+<li>Cost is high for a transceiver can receive and transmit at same
+time.</li>
+</ul></li>
+<li>CSMA/CA (collision Avoidance)</li>
+<li>Carrier sence function in PHY called CCA (Clear Channel
+Assessment)</li>
+</ul>
+<h3 id="csmaca-ack-prorocol">CSMA/CA + ACK Prorocol</h3>
+<h4 id="csmaca">CSMA/CA</h4>
+<ul>
+<li>Access when medium is senced free longer than DIFS, otherwise defer
+and backoff.</li>
+<li>Continue to listen up to backoff interval.
+<ul>
+<li>Transmit if medium is free.</li>
+<li>Suspend if medium is busy at any time.</li>
+</ul></li>
+<li>When the medium is sensed idle greater than DIFS again, it continues
+the backoff procedure.</li>
+<li>After a success transmition, wait a contention window to avoid a
+certain station occupy channel.</li>
+</ul>
+<figure>
+<img src="Images/WLAN/DCF.jpg" alt="Basic Access Method" />
+<figcaption aria-hidden="true">Basic Access Method</figcaption>
+</figure>
+<h4 id="ack">ACK</h4>
+<ul>
+<li>Only used in unicast.</li>
+<li>When CRC is correct receiver return ack to let transmitter know that
+packet is received.</li>
+<li>If no ack received, transmitter will retransmit after a random
+backoff.</li>
+<li>Backoff interval is increased exponentially up to a certain
+threshold.</li>
+</ul>
+<figure>
+<img src="Images/WLAN/CSMACA+ACK.jpeg" alt="CSMA/CA + ACK" />
+<figcaption aria-hidden="true">CSMA/CA + ACK</figcaption>
+</figure>
+<h2 id="virtual-sensing">Virtual Sensing</h2>
+<ul>
+<li>Used to avoid hidden terminal.</li>
+<li>RTS: request-to-send</li>
+<li>CTS: clear-to-send; grant the requestion node permission to
+transmit.</li>
+<li>Contain a duration field that defines the period of time the medium
+is to be reserved.
+<ul>
+<li>NAV(Net Allocation Vector)</li>
+</ul></li>
+<li>Cannot send transmit if no CTS senced.</li>
+<li>Unicast only</li>
+<li>RTS threshold
+<ul>
+<li>When the RTS, CTS is too big compare to data, transmit
+directly.</li>
+<li>Since the collision cost is similar to the cost of RTS, CTS.</li>
+</ul></li>
+</ul>
+<figure>
+<img src="" alt="Hidden Terminal" />
+<figcaption aria-hidden="true">Hidden Terminal</figcaption>
+</figure>
+<h2 id="frame-format">Frame Format</h2>
+<figure>
+<img src="Images/WLAN/Frame.jpg" alt="Frame" />
+<figcaption aria-hidden="true">Frame</figcaption>
+</figure>
+<h2 id="scanning">Scanning</h2>
+<ul>
+<li>Initial setup
+<ul>
+<li>Infrastructure: finding a network</li>
+<li>Ad hoc: finding a IBSS</li>
+</ul></li>
+<li>Roaming
+<ul>
+<li>Finding a new AP</li>
+</ul></li>
+<li>Passive Scanning
+<ul>
+<li>simply by listening for beacons</li>
+</ul></li>
+<li>Active Scanning
+<ul>
+<li>send a probe, then wait for a probe response</li>
+</ul></li>
+<li>Both beacon and probe response contain information necessary to join
+a new network.</li>
+</ul>
+<h3 id="roaming">Roaming</h3>
+<ul>
+<li>A station start to find other AP when the link with current AP is
+poor.</li>
+<li>Station sends reassociation request to new AP.</li>
+<li>When the link with new AP is Strong enough, change to the new AP.
+<ul>
+<li>If change to new AP when the link is stronger then current one,
+"Ping Pong effect" might occur.</li>
+<li>That is repeatly changing AP since the strengh between two AP is
+similar.</li>
+</ul></li>
+</ul>
+<h2 id="power-management">Power Management</h2>
+<ul>
+<li>Allow idle stations go to sleep mode.</li>
+<li>AP buffers packets for sleeping stations
+<ul>
+<li>Traffic Indication Map(TIM) is sent with every beacon.</li>
+<li>TIM announces which station have packets buffered.</li>
+</ul></li>
+<li>Power saving station wake up periodically.
+<ul>
+<li>Listen for beacon</li>
+</ul></li>
+</ul>
+<h2 id="spectrum">Spectrum</h2>
+<p>Unlicensedd spread spectrum in US by FCC(Federal Communications
+Commission)</p>
+<ul>
+<li>915 MHz</li>
+<li>2.4 GHz</li>
+<li>5.8 GHz</li>
+</ul>
+<h2 id="wi-fi-certification">Wi-Fi Certification</h2>
+<ul>
+<li>Wi-Fi Alliance</li>
+</ul>
+<h2 id="other-wlans">Other WLANs</h2>
+<ul>
+<li>HIPERLAN (High Performance Radio LAN)
+<ul>
+<li>By ETSI</li>
+</ul></li>
+<li>MMAC (Multimedia Mobile Access Communication)
+<ul>
+<li>In Japan</li>
+</ul></li>
+</ul>
+
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+            <li><a href="/Lecture_notes/Introduction_to_Computer_Network/">INTRODUCTION_TO_COMPUTER_NETWORK</a></li>
+            <li>WIRELESS_LAN</li>
+  </ul>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa-solid fa-paw"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ruc Kuo</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>

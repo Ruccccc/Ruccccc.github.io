@@ -20,27 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Hello, welcome to my page.  Hexo   Github Page with Hexo Courses   Algebra    Computer System Administration    Introduction to Computer Networks  Link">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hello">
-<meta property="og:url" content="http://example.com/index/index.html">
+    <meta name="description" content="Back to content Transpostitions Defination  A cycle \((ij)\) of length \(2\) is a transposition. If \(j &#x3D; i \pm 1\), then it&#39;s an adjacent transposition.  Lemma  Every transposition is a product of od">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Transpositions">
+<meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Transposition.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Hello, welcome to my page.  Hexo   Github Page with Hexo Courses   Algebra    Computer System Administration    Introduction to Computer Networks  Link">
+<meta property="og:description" content="Back to content Transpostitions Defination  A cycle \((ij)\) of length \(2\) is a transposition. If \(j &#x3D; i \pm 1\), then it&#39;s an adjacent transposition.  Lemma  Every transposition is a product of od">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-09-24T12:02:05.000Z">
-<meta property="article:modified_time" content="2023-01-15T07:09:51.444Z">
+<meta property="article:published_time" content="2022-11-07T12:20:37.184Z">
+<meta property="article:modified_time" content="2022-11-07T12:20:37.184Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/index/">
+<link rel="canonical" href="http://example.com/Lecture_notes/Algebra/Transposition">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/index/","path":"index/","title":"Hello"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Lecture_notes/Algebra/Transposition.html","path":"Lecture_notes/Algebra/Transposition.html","title":"Transpositions"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hello | Ruccccc</title>
+<title>Transpositions | Ruccccc
+</title>
   
 
 
@@ -111,7 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo"><span class="nav-number">1.</span> <span class="nav-text">Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#courses"><span class="nav-number">2.</span> <span class="nav-text">Courses</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#link"><span class="nav-number">3.</span> <span class="nav-text">Link</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#transpostitions"><span class="nav-number">1.</span> <span class="nav-text">Transpostitions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#generating-set-of-s_n"><span class="nav-number">2.</span> <span class="nav-text">Generating set of \(S_n\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#inversion"><span class="nav-number">3.</span> <span class="nav-text">Inversion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sign-representation"><span class="nav-number">4.</span> <span class="nav-text">Sign representation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#alternative-group"><span class="nav-number">5.</span> <span class="nav-text">Alternative group</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -153,86 +154,138 @@
 </noscript>
 
 
-    <div class="main-inner post posts-expand">
+    <div class="main-inner page posts-expand">
 
 
-  
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
 
+<h1 class="post-title" itemprop="name headline">Transpositions
+</h1>
 
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/index/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ruc Kuo">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ruccccc">
-      <meta itemprop="description" content="Meaningless things.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hello | Ruccccc">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Hello
-        </h1>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-
-  
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+            <li><a href="/Lecture_notes/Algebra/">ALGEBRA</a></li>
+            <li>TRANSPOSITION</li>
+  </ul>
 </div>
 
-        </div>
-      </header>
+</header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-        <center>
-<p>Hello, welcome to my page.</p>
-</center>
-<h2 id="hexo">Hexo</h2>
-<p><i class="fa-solid fa-chevron-right"></i>  <a
-href="/Hexo/Github-Page-with-Hexo"><strong>Github Page with
-Hexo</strong></a></p>
-<h2 id="courses">Courses</h2>
-<p><i class="fa-solid fa-chevron-right"></i>  <a
-href="/Lecture_notes/Algebra"><strong>Algebra</strong></a> <br>
-<i class="fa-solid fa-chevron-right"></i>  <a
-href="/Lecture_notes/Computer-System-Administration"><strong>Computer
-System Administration</strong></a> <br>
-<i class="fa-solid fa-chevron-right"></i>  <a
-href="/Lecture_notes/Introduction_to_Computer_Network"><strong>Introduction
-to Computer Networks</strong></a> <br></p>
-<h2 id="link"><a href="/links">Link</a></h2>
+      
+      
+      <div class="post-body">
+          <p><a href="index">Back to content</a></p>
+<h2 id="transpostitions">Transpostitions</h2>
+<p><strong>Defination</strong></p>
+<blockquote>
+<p>A cycle <span class="math inline">\((ij)\)</span> of length <span
+class="math inline">\(2\)</span> is a <strong>transposition</strong>. If
+<span class="math inline">\(j = i \pm 1\)</span>, then it's an
+<strong>adjacent transposition</strong>.</p>
+</blockquote>
+<p><strong>Lemma</strong></p>
+<blockquote>
+<p>Every transposition is a product of odd many adjacent
+transpositions.</p>
+</blockquote>
+<ul>
+<li>Example
+<ul>
+<li><span class="math inline">\((13) = (23)(12)(23)\)</span></li>
+<li><span class="math inline">\((36) =
+(34)(45)(56)(45)(34)\)</span></li>
+</ul></li>
+</ul>
+<p><strong>Theorem</strong></p>
+<blockquote>
+<p>Any permutation in <span class="math inline">\(S_n\)</span> with
+<span class="math inline">\(n &gt; 2\)</span> is a product of
+transpositions.</p>
+</blockquote>
+<h2 id="generating-set-of-s_n">Generating set of <span
+class="math inline">\(S_n\)</span></h2>
+<p><strong>Theorem</strong></p>
+<blockquote>
+<p>For all <span class="math inline">\(n \leq 2\)</span>, <span
+class="math display">\[
+\begin{align}
+S_n &amp;= \langle (ij) | 1 \leq i &lt;j \leq n \rangle \\
+&amp;= \langle (12), (13), \cdots , (1n) \rangle \\
+&amp;= \langle (12), (123 \cdots n) \rangle
+\end{align}
+\]</span></p>
+</blockquote>
+<h2 id="inversion">Inversion</h2>
+<p><strong>Defination</strong></p>
+<blockquote>
+<p>Given a permuation <span class="math inline">\(\sigma \in
+S_n\)</span>. A pair <span class="math inline">\((i,j)\)</span> wit
+<span class="math inline">\(i &lt; j\)</span> is called an
+<strong>inversion</strong> of <span
+class="math inline">\(\sigma\)</span> if <span
+class="math inline">\(\sigma(i) &gt; \sigma(j)\)</span>. Let <span
+class="math display">\[C(\sigma) = \#\{(i,j) | 1 \leq i &lt; j \leq n,
+\sigma(i) &gt; \sigma(j)\}\]</span>, <span
+class="math inline">\(C(\sigma)\)</span> is called <strong>the number of
+inversions</strong> of <span class="math inline">\(\sigma\)</span>. When
+<span class="math inline">\(C(\sigma)\)</span> is odd/even, <span
+class="math inline">\(\sigma\)</span> is called an odd/even
+permutation.</p>
+</blockquote>
+<p><strong>Theorem</strong></p>
+<blockquote>
+<p>For an adjacent transposition <span class="math inline">\(\tau = (k,
+k+1)\)</span> and a permutation <span
+class="math inline">\(\sigma\)</span> in <span
+class="math inline">\(S_n\)</span>, <span class="math inline">\(C(\tau
+\sigma) = C(\tau) \pm 1\)</span>.</p>
+</blockquote>
+<h2 id="sign-representation">Sign representation</h2>
+<p><strong>Defination</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(sgn : S_n \to \{\pm 1\}\)</span>,
+given by <span class="math inline">\(sgn(\sigma) =
+(-1)^{C(\sigma)}\)</span></p>
+</blockquote>
+<p><strong>Corollary</strong></p>
+<blockquote>
+<p>The map <span class="math inline">\(sgn\)</span> is homomorphism.</p>
+</blockquote>
+<h2 id="alternative-group">Alternative group</h2>
+<p><strong>Theorem</strong></p>
+<blockquote>
+<p>If <span class="math inline">\(n \geq 2\)</span>, then the set <span
+class="math inline">\(A_n\)</span> of all even permutations of <span
+class="math inline">\(\{1,2, \ldots,n\}\)</span> forms a subgroup of
+order <span class="math inline">\(n!/2\)</span> of <span
+class="math inline">\(S_n\)</span>. <br></p>
+</blockquote>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>The subgroup of <span class="math inline">\(S_n\)</span> consisting
+of the even permutations of <span class="math inline">\(n\)</span>
+letters is the alternating group <span
+class="math inline">\(A_n\)</span> on <span
+class="math inline">\(n\)</span> letters.</p>
+</blockquote>
 
+      </div>
+      
+      
+      
     </div>
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+            <li><a href="/Lecture_notes/Algebra/">ALGEBRA</a></li>
+            <li>TRANSPOSITION</li>
+  </ul>
 
     
     
-    
-
-    <footer class="post-footer">
-
-        
-
-    </footer>
-  </article>
-</div>
-
-
-
-
 
 
 </div>
@@ -273,7 +326,7 @@ to Computer Networks</strong></a> <br></p>
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 

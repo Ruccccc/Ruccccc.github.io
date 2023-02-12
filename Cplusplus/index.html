@@ -20,27 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Start Math Mode">
+    <meta name="description" content="Structured binding declaration 結構化鏈結  C++17  Usage 123[[attribute]] [[cv-qualifier]] auto [ref-qulifier] [variable-list] &#x3D; &amp;#123;expression&amp;#125;;[[attribute]] [[cv-qualifier]] auto [ref-qulifier] [va">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Latex commands">
-<meta property="og:url" content="http://example.com/Misc/Latex.html">
+<meta property="og:title" content="Cplusplus">
+<meta property="og:url" content="http://example.com/Cplusplus/index.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Start Math Mode">
+<meta property="og:description" content="Structured binding declaration 結構化鏈結  C++17  Usage 123[[attribute]] [[cv-qualifier]] auto [ref-qulifier] [variable-list] &#x3D; &amp;#123;expression&amp;#125;;[[attribute]] [[cv-qualifier]] auto [ref-qulifier] [va">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-01-19T18:48:45.090Z">
-<meta property="article:modified_time" content="2023-01-19T18:48:45.090Z">
+<meta property="article:published_time" content="2023-01-24T16:22:18.411Z">
+<meta property="article:modified_time" content="2023-01-24T16:22:18.411Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/Misc/Latex">
+<link rel="canonical" href="http://example.com/Cplusplus/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Misc/Latex.html","path":"Misc/Latex.html","title":"Latex commands"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Cplusplus/index.html","path":"Cplusplus/index.html","title":"Cplusplus"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Latex commands | Ruccccc
+<title>Cplusplus | Ruccccc
 </title>
   
 
@@ -112,7 +112,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#start-math-mode"><span class="nav-number">1.</span> <span class="nav-text">Start Math Mode</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#structured-binding-declaration-%E7%B5%90%E6%A7%8B%E5%8C%96%E9%8F%88%E7%B5%90"><span class="nav-number">1.</span> <span class="nav-text">Structured binding
+declaration 結構化鏈結</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#usage"><span class="nav-number">1.1.</span> <span class="nav-text">Usage</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -162,7 +163,7 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Latex commands
+<h1 class="post-title" itemprop="name headline">Cplusplus
 </h1>
 
 <div class="post-meta-container">
@@ -173,7 +174,15 @@
       
       
       <div class="post-body">
-          <h2 id="start-math-mode">Start Math Mode</h2>
+          <h2 id="structured-binding-declaration-結構化鏈結">Structured binding
+declaration 結構化鏈結</h2>
+<ul>
+<li>C++17</li>
+</ul>
+<h3 id="usage">Usage</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[[attribute]] [[cv-qualifier]] auto [ref-qulifier] [variable-list] = &#123;expression&#125;;</span><br><span class="line">[[attribute]] [[cv-qualifier]] auto [ref-qulifier] [variable-list] &#123;expression&#125;;</span><br><span class="line">[[attribute]] [[cv-qualifier]] auto [ref-qulifier] [variable-list] (expression);</span><br></pre></td></tr></table></figure>
+<p><strong>Example</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">std::tuple&lt;<span class="type">int</span>, <span class="type">char</span>, string&gt; t &#123;<span class="number">1</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&quot;345&quot;</span>&#125;;</span><br><span class="line"><span class="keyword">auto</span> [a, b, c] = t;</span><br><span class="line"><span class="keyword">auto</span> [d, e, f] &#123;t&#125;;</span><br><span class="line"><span class="keyword">auto</span> [g, h ,i] (t);</span><br></pre></td></tr></table></figure>
 
       </div>
       
@@ -223,7 +232,7 @@
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 

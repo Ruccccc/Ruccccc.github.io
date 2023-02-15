@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Group Action Definition -- Group Action  Let \(X\) be a set and \(G\) be a group.  An action of \(G\) on \(X\) is a map \(\ast : G \times X \to X\) such that  \(\ast(e, x) &#x3D; x\) for all \(x \in X\), w">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Group Actions">
+<meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Group_Actions.html">
+<meta property="og:site_name" content="Ruccccc">
+<meta property="og:description" content="Group Action Definition -- Group Action  Let \(X\) be a set and \(G\) be a group.  An action of \(G\) on \(X\) is a map \(\ast : G \times X \to X\) such that  \(\ast(e, x) &#x3D; x\) for all \(x \in X\), w">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-02-15T10:26:57.323Z">
+<meta property="article:modified_time" content="2023-02-15T10:26:57.323Z">
+<meta property="article:author" content="Ruc Kuo">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/Lecture_notes/Algebra/Group_Actions">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Lecture_notes/Algebra/Group_Actions.html","path":"Lecture_notes/Algebra/Group_Actions.html","title":"Group Actions"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Group Actions | Ruccccc
+</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Ruccccc</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#group-action"><span class="nav-number">1.</span> <span class="nav-text">Group Action</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#conjugation-as-a-group-action"><span class="nav-number">2.</span> <span class="nav-text">Conjugation as a Group
+Action</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Ruc Kuo</p>
+  <div class="site-description" itemprop="description">Meaningless things.</div>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Ruccccc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Ruccccc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:ruckuo@gmail.com" title="E-Mail → mailto:ruckuo@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+  <a href="https://github.com/Ruccccc/Ruccccc.github.io" class="github-corner" title="GitHub" aria-label="GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Group Actions
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+            <li><a href="/Lecture_notes/Algebra/">ALGEBRA</a></li>
+            <li>GROUP_ACTIONS</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <h2 id="group-action">Group Action</h2>
+<p><strong>Definition -- Group Action</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(X\)</span> be a set and <span
+class="math inline">\(G\)</span> be a group. <br> An action of <span
+class="math inline">\(G\)</span> on <span
+class="math inline">\(X\)</span> is a map <span
+class="math inline">\(\ast : G \times X \to X\)</span> such that</p>
+<ol type="1">
+<li><span class="math inline">\(\ast(e, x) = x\)</span> for all <span
+class="math inline">\(x \in X\)</span>, where <span
+class="math inline">\(e\)</span> is the identity element of <span
+class="math inline">\(G\)</span>.</li>
+<li><span class="math inline">\(\ast(g_1, \ast(g_2, x)) = \ast(g_1g_2,
+x)\)</span> for all <span class="math inline">\(x \in X\)</span> and all
+<span class="math inline">\(g_1, g_2 \in G\)</span>.</li>
+</ol>
+<p>Under these conditions, <span class="math inline">\(X\)</span> is
+referreed to as a <strong><span
+class="math inline">\(G\)</span>-set</strong>. For convenience, we write
+<span class="math inline">\(\ast(g, x)\)</span> simply as <span
+class="math inline">\(gx\)</span>.</p>
+</blockquote>
+<p><strong>Proposition</strong></p>
+<blockquote>
+<p>Suppose that a group <span class="math inline">\(G\)</span> acts on a
+set <span class="math inline">\(X\)</span>. Then for a given <span
+class="math inline">\(g \in G\)</span><br />
+</p>
+<ol type="1">
+<li>If <span class="math inline">\(gx_1 = gx_2\)</span>, then <span
+class="math inline">\(x_1 = x_2\)</span> (injective)</li>
+<li>For all <span class="math inline">\(y \in X\)</span>, there exists
+<span class="math inline">\(x \in X\)</span> such that <span
+class="math inline">\(gx = y\)</span> (surjective)</li>
+</ol>
+</blockquote>
+<details>
+<summary>
+<strong>Proof</strong>
+</summary>
+<blockquote>
+<ol type="1">
+<li>Suppose that <span class="math inline">\(gx_1 = gx_2\)</span>, then
+<span class="math inline">\(g^{-1}gx_1 = g^{-1}gx_2\)</span>, hence
+<span class="math inline">\(x_1 = x_2\)</span>.</li>
+<li>For all <span class="math inline">\(y \in X\)</span>, let <span
+class="math inline">\(x = g^{-1}y\)</span>. Then <span
+class="math inline">\(gx = g(g^{-1}y) = (gg^{-1})y = ey =
+y\)</span>.</li>
+</ol>
+</blockquote>
+</details>
+<p><br></p>
+<p><strong>Remark</strong></p>
+<blockquote>
+<p>A group action <span class="math inline">\(G\)</span> on <span
+class="math inline">\(X\)</span> can be alternatively interpreted as
+follows. <br> Let <span class="math inline">\(S_X\)</span> be the set of
+permutations on <span class="math inline">\(X\)</span>. A group action
+<span class="math inline">\(\ast\)</span> of <span
+class="math inline">\(G\)</span> on <span
+class="math inline">\(X\)</span> can be regarded as a group homomorphism
+<span class="math inline">\(\rho : G \to S_X\)</span> such that <span
+class="math display">\[\ast (g, x) = \rho(g)x\]</span> This
+interpretation ensures that <span class="math inline">\(\rho(g)\)</span>
+is a permutation for all <span class="math inline">\(g\)</span> in <span
+class="math inline">\(G\)</span> and is a homomorphism. <br> In other
+words, <span class="math inline">\(G\)</span> acts on <span
+class="math inline">\(X\)</span> <span
+class="math inline">\(\iff\)</span> A group homomorphism from <span
+class="math inline">\(G\)</span> to <span
+class="math inline">\(S_X\)</span>.</p>
+</blockquote>
+<details>
+<summary>
+<strong>Examples</strong>
+</summary>
+<ol type="1">
+<li>Let <span class="math inline">\(G\)</span> be a group of symmetries
+of an object <span class="math inline">\(X\)</span>. Then the action of
+<span class="math inline">\(G\)</span> on <span
+class="math inline">\(X\)</span> is a group action.</li>
+<li>Let <span class="math inline">\(X = \{ 1, 2, \ldots, n \}\)</span>.
+Then any subgroup of the symmetric group <span
+class="math inline">\(S_n\)</span> acts on <span
+class="math inline">\(X\)</span> by <span class="math inline">\(\sigma x
+= \sigma(x)\)</span>.</li>
+<li>Let <span class="math inline">\(X = \mathbb{R}^n\)</span>. Then the
+group of all invertible <span class="math inline">\(n \times n\)</span>
+matrices <span class="math inline">\({\rm GL}(n, \mathbb{R})\)</span>,
+acts on <span class="math inline">\(X\)</span> by <span
+class="math inline">\((M, v) \mapsto Mv\)</span> for all <span
+class="math inline">\(M \in {\rm GL}(n, \mathbb{R})\)</span> and <span
+class="math inline">\(v \in X\)</span>.</li>
+<li>Let <span class="math inline">\(G\)</span> be a group. Then the map
+<span class="math inline">\((g, x) \mapsto gx\)</span> from <span
+class="math inline">\(G \times G\)</span> to <span
+class="math inline">\(G\)</span> is a group action.</li>
+<li>Let <span class="math inline">\(H\)</span> be a subgroup of <span
+class="math inline">\(G\)</span> and <span
+class="math inline">\(G/H\)</span> be the set of all left cosets. Then
+<span class="math inline">\(G\)</span> acts on <span
+class="math inline">\(G/H\)</span> by <span class="math inline">\((g,
+aH) \mapsto (ga)H\)</span>.</li>
+<li>Let <span class="math inline">\(X\)</span> be a non-empty set and
+<span class="math inline">\(n\)</span> be a positive integer. Then any
+subgroup of the symmetric group <span class="math inline">\(S_n\)</span>
+acts on <span class="math inline">\(X^n\)</span> by <span
+class="math inline">\(\left(\sigma, (x_1, \cdots, x_n)\right) \mapsto
+\left(x_{\sigma(1)}, \cdots, x_{\sigma(n)}\right)\)</span></li>
+</ol>
+</details>
+<p><br></p>
+<h2 id="conjugation-as-a-group-action">Conjugation as a Group
+Action</h2>
+<blockquote>
+<p>Let <span class="math inline">\(G\)</span> be a group and consider
+the set of all group isomorphisms of <span
+class="math inline">\(G\)</span>, <span class="math display">\[Aut(G) =
+\{\rho : G \to G \mid \text{$\rho$ is a group iosmorphism.}\}\]</span>
+For any <span class="math inline">\(g \in G\)</span>, the map <span
+class="math inline">\(\rho_g : G \to G\)</span> defined by <span
+class="math inline">\(\rho_g(x) = gxg^{-1}\)</span> is a group
+automorphism. <br> The map <span class="math inline">\(\rho : G \to {\rm
+Aut}(G)\)</span> defined by <span class="math inline">\(g \mapsto
+\rho_g\)</span> is a group homomorphism, and its kernel is equal to the
+center of <span class="math inline">\(G\)</span>.<br> As a result, the
+map <span class="math inline">\(\ast : G \times G \to G\)</span> given
+by <span class="math inline">\(\ast(g, x) = gxg^{-1}\)</span> is a group
+action.</p>
+</blockquote>
+
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
+            <li><a href="/Lecture_notes/Algebra/">ALGEBRA</a></li>
+            <li>GROUP_ACTIONS</li>
+  </ul>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa-solid fa-paw"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ruc Kuo</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>

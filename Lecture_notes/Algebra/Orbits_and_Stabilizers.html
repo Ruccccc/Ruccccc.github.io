@@ -20,27 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Back to content Structural Property  A structural property of a binary strucuture is one that must be shared by any isomorphic structure.    Example   Structural properties  The set has 4 elements. Th">
+    <meta name="description" content="Stabilizer Definition  Let \(X\) be a \(G\)-set. The set \({\rm Stab}_G (x) &#x3D; \{g \in G : gx &#x3D; x\}\) is called the stabilizer of \(x\) in \(G\).  Theorem  For every \(x \in X\), the set \({\rm Stab}_G">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Structure Properties">
-<meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Structural_Property.html">
+<meta property="og:title" content="Orbits and Stabilizers">
+<meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Orbits_and_Stabilizers.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Back to content Structural Property  A structural property of a binary strucuture is one that must be shared by any isomorphic structure.    Example   Structural properties  The set has 4 elements. Th">
+<meta property="og:description" content="Stabilizer Definition  Let \(X\) be a \(G\)-set. The set \({\rm Stab}_G (x) &#x3D; \{g \in G : gx &#x3D; x\}\) is called the stabilizer of \(x\) in \(G\).  Theorem  For every \(x \in X\), the set \({\rm Stab}_G">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-02-15T12:34:36.584Z">
-<meta property="article:modified_time" content="2023-02-15T12:34:36.584Z">
+<meta property="article:published_time" content="2023-02-19T16:20:05.414Z">
+<meta property="article:modified_time" content="2023-02-19T16:20:05.414Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/Lecture_notes/Algebra/Structural_Property">
+<link rel="canonical" href="http://example.com/Lecture_notes/Algebra/Orbits_and_Stabilizers">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Lecture_notes/Algebra/Structural_Property.html","path":"Lecture_notes/Algebra/Structural_Property.html","title":"Structure Properties"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Lecture_notes/Algebra/Orbits_and_Stabilizers.html","path":"Lecture_notes/Algebra/Orbits_and_Stabilizers.html","title":"Orbits and Stabilizers"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Structure Properties | Ruccccc
+<title>Orbits and Stabilizers | Ruccccc
 </title>
   
 
@@ -112,7 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#structural-property"><span class="nav-number">1.</span> <span class="nav-text">Structural Property</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#identity-element"><span class="nav-number">2.</span> <span class="nav-text">Identity Element</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#stabilizer"><span class="nav-number">1.</span> <span class="nav-text">Stabilizer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orbits"><span class="nav-number">2.</span> <span class="nav-text">Orbits</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -162,14 +162,14 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Structure Properties
+<h1 class="post-title" itemprop="name headline">Orbits and Stabilizers
 </h1>
 
 <div class="post-meta-container">
   <ul class="breadcrumb">
             <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
             <li><a href="/Lecture_notes/Algebra/">ALGEBRA</a></li>
-            <li>STRUCTURAL_PROPERTY</li>
+            <li>ORBITS_AND_STABILIZERS</li>
   </ul>
 </div>
 
@@ -178,122 +178,140 @@
       
       
       <div class="post-body">
-          <p><a href="index">Back to content</a></p>
-<h2 id="structural-property">Structural Property</h2>
-<blockquote>
-<p>A <strong>structural property</strong> of a binary strucuture is one
-that must be shared by any isomorphic structure.</p>
-</blockquote>
-<details>
-<summary>
-<strong>Example</strong>
-</summary>
-<blockquote>
-<p><strong>Structural properties</strong></p>
-<ol type="1">
-<li>The set has 4 elements.</li>
-<li>The operation is commutative.</li>
-<li>$ x * x = x$ for all <span class="math inline">\(x \in
-S\)</span></li>
-<li>The equation <span class="math inline">\(a * x = b\)</span> has
-solution in <span class="math inline">\(S\)</span> for all <span
-class="math inline">\(a, b \in S\)</span></li>
-</ol>
-<p><strong>non-structural properties</strong></p>
-<ol type="1">
-<li>The set <span class="math inline">\(S\)</span> is a subset of <span
-class="math inline">\(\mathbb{C}\)</span></li>
-<li>The number 4 is an element.</li>
-<li>The operation is called "addition".</li>
-<li>The elements of <span class="math inline">\(S\)</span> are
-matrices.</li>
-</ol>
-</blockquote>
-</details>
-<h2 id="identity-element">Identity Element</h2>
+          <h2 id="stabilizer">Stabilizer</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\((S,*)\)</span> be a binary structure.
-An element <span class="math inline">\(e\)</span> of <span
-class="math inline">\(S\)</span> is an identity element for <span
-class="math inline">\(\ast\)</span> if <span class="math inline">\(e * s
-= s * e = s\ \forall\ s\in\ S\)</span></p>
+<p>Let <span class="math inline">\(X\)</span> be a <span
+class="math inline">\(G\)</span>-set. The set <span
+class="math inline">\({\rm Stab}_G (x) = \{g \in G : gx = x\}\)</span>
+is called the <strong>stabilizer</strong> of <span
+class="math inline">\(x\)</span> in <span
+class="math inline">\(G\)</span>.</p>
 </blockquote>
-<details>
-<summary>
-<strong>Example</strong>
-</summary>
+<p><strong>Theorem</strong></p>
 <blockquote>
-<ol type="1">
-<li>In <span class="math inline">\(\left( \mathbb{Z} ,\
-+\right)\)</span>, the element 0 is an identity element.</li>
-<li>In <span class="math inline">\(\left( \mathbb{Z} ,\
-*\right)\)</span>, the element 0 is an identity element.</li>
-<li>In <span class="math inline">\(\left( \mathbb{Z}_{n},\
-*\right)\)</span>, the element <span
-class="math inline">\(\overline{1}\)</span> is an identity element.</li>
-<li>In <span class="math inline">\(\left(M_2 \left( \mathbb{R} \right),\
-+\right)\)</span>, the zero matrix is an identity elements.</li>
-</ol>
-</blockquote>
-</details>
-<p><br></p>
-<p><strong>Theorem -- Uniqueness</strong></p>
-<blockquote>
-<p>A binary structure <span class="math inline">\(\left( S,\
-*\right)\)</span> has at moest one identity element.</p>
+<p>For every <span class="math inline">\(x \in X\)</span>, the set <span
+class="math inline">\({\rm Stab}_G(x)\)</span> is a subgroup of <span
+class="math inline">\(G\)</span>.</p>
 </blockquote>
 <details>
 <summary>
 <strong>Proof</strong>
 </summary>
 <blockquote>
-<p>Suppose That <span class="math inline">\(e\)</span> and <span
-class="math inline">\(e^\prime\)</span> are both identity elements.
-Consider <span class="math inline">\(e * e^{\prime}\)</span>. Since
-<span class="math inline">\(e\)</span> is identity element, we have
-<span class="math display">\[e * e^{\prime} = e^{\prime}\]</span> On the
-other hand, <span class="math inline">\(e^{\prime}\)</span> is an
-identity element, we also have <span class="math display">\[e *
-e^{\prime} = e\]</span> We conclude the <span
-class="math inline">\(e=e^{\prime}\)</span></p>
+<ol type="1">
+<li>Closure <br> For all <span class="math inline">\(g_1, g_2 \in {\rm
+Stab}_G(x)\)</span>, <span class="math inline">\((g_1g_2)x = g_1x =
+x\)</span> since <span class="math inline">\(g_1x = g_2x = x\)</span>.
+Thus, <span class="math inline">\(g_1g_2 \in {\rm
+Stab}_G(x)\)</span></li>
+<li>Identity <br> <span class="math inline">\(ex = x\)</span>, thus
+<span class="math inline">\(e \in {\rm Stab}_G(x)\)</span></li>
+<li>Inverse <br> For all <span class="math inline">\(g \in G\)</span>,
+<span class="math inline">\(g^{-1}x = g^{-1}gx = ex = x\)</span>. Thus,
+<span class="math inline">\(g^{-1} \in {\rm Stab}_G(x)\)</span></li>
+</ol>
 </blockquote>
 </details>
 <p><br></p>
+<h2 id="orbits">Orbits</h2>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>The set <span class="math inline">\(Gx = \{gx \mid g \in G\}\)</span>
+is called the G-orbit.</p>
+</blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Suppose that <span class="math inline">\((S, *)\)</span> has an
-identity element <span class="math inline">\(e\)</span>. If <span
-class="math inline">\(\phi : S \mapsto S^\prime\)</span> is an
-isomorphism of <span class="math inline">\((S, *)\)</span> with <span
-class="math inline">\((S^\prime, *^\prime)\)</span>, then <span
-class="math inline">\(\phi(e)\)</span> is an identity element for <span
-class="math inline">\(\ast^\prime\)</span>. <br> In other words, having
-an identity element is a structure property.</p>
+<p>Let <span class="math inline">\(X\)</span> be a <span
+class="math inline">\(G\)</span>-set, Define a realation <span
+class="math inline">\(\sim\)</span> on <span
+class="math inline">\(X\)</span> by <span class="math inline">\(x_1 \sim
+x_2\)</span> if there exists <span class="math inline">\(g \in
+G\)</span> such that <span class="math inline">\(gx_1 = x_2\)</span>.
+Then <span class="math inline">\(\sim\)</span> is a an equivalence
+relation.</p>
 </blockquote>
 <details>
 <summary>
-<small> Proof </small>
+<strong>Proof</strong>
 </summary>
 <blockquote>
-<p>We need to show that <span class="math display">\[\phi(e) *^\prime
-s^\prime = s^\prime \ast^\prime \phi(e) = s^\prime\]</span> for all
-<span class="math inline">\(s^\prime \in S^\prime\)</span> Since <span
-class="math inline">\(\phi\)</span> is isomorphism, <span
-class="math inline">\(\phi\)</span> is onto. Thus, there exists <span
-class="math inline">\(s \in S\)</span> s.t. <span
-class="math inline">\(\phi(s) = s^\prime\)</span> Then <span
-class="math display">\[\phi(e) *^\prime s^\prime = \phi(e) *^\prime
-\phi(s)\]</span> By <span class="math inline">\(\phi\)</span> is
-isomorphism again, we have <span class="math display">\[\phi(e) *^\prime
-\phi(s) = \phi(e \ast s) \]</span> It follows that <span
-class="math display">\[\phi(e) *^\prime s^\prime = \phi(e \ast s) =
-\phi(s) = s^\prime\]</span> By same token, we can also show that <span
-class="math inline">\(s^\prime *^\prime \phi(e) = s^\prime\)</span>. We
-can conclude that <span class="math inline">\(\phi(e)\)</span> is an
-identity element.</p>
+<ol type="1">
+<li>Reflexive <br> <span class="math inline">\(ex = x\)</span>, thus
+<span class="math inline">\(x \sim x\)</span></li>
+<li>Symmetric <br> Suppose that <span class="math inline">\(x \sim
+y\)</span>, then <span class="math inline">\(gx = y\)</span>. We have
+<span class="math inline">\(g^{-1}y = g^{-1}gx = x\)</span>, so <span
+class="math inline">\(y \sim x\)</span>.</li>
+<li>Transitive <br> Suppose that <span class="math inline">\(x \sim
+y\)</span> and <span class="math inline">\(y \sim z\)</span>, that is
+<span class="math inline">\(g_1x = y\)</span> and <span
+class="math inline">\(g_2y = z\)</span> for some <span
+class="math inline">\(g_1, g_2 \in G\)</span>. Then we know that <span
+class="math inline">\(g_1g_2x = z\)</span>. Thus, <span
+class="math inline">\(x \sim z\)</span>.</li>
+</ol>
+<p>Then we proved that <span class="math inline">\(\sim\)</span> is a
+equivalence relation.</p>
 </blockquote>
 </details>
+<p><br></p>
+<blockquote>
+<p><span class="math inline">\(\sim\)</span> is a equivalence relation,
+so it defines a partition of <span class="math inline">\(X\)</span>. The
+cell of <span class="math inline">\(x \in X\)</span> is exactly the
+<span class="math inline">\(G\)</span>-orbit of <span
+class="math inline">\(x\)</span> denoted by <span
+class="math inline">\(Gx\)</span>.</p>
+</blockquote>
+<p><strong>Theorem</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(X\)</span> be a <span
+class="math inline">\(G\)</span>-set. Then <span
+class="math inline">\(X\)</span> can be written as a disjoint union of
+<span class="math inline">\(G\)</span>-orbits.</p>
+</blockquote>
+<p><strong>Theorem -- The orbit-stabilizer theorem</strong></p>
+<blockquote>
+<p>For all <span class="math inline">\(x \in X\)</span>, where <span
+class="math inline">\(X\)</span> is a <span
+class="math inline">\(G\)</span>-set, we have <span
+class="math inline">\(|Gx| = [G : {\rm Stab}_G(x)]\)</span>. <br> If
+<span class="math inline">\(G\)</span> is finite, we have <span
+class="math inline">\(|G| = |Gx||{\rm Stab}_G(x)|\)</span></p>
+</blockquote>
+<details>
+<summary>
+<strong>Proof</strong>
+</summary>
+<blockquote>
+<p>We will show that there is a bijection between <span
+class="math inline">\(Gx\)</span> and <span class="math inline">\(G/{\rm
+Stab}_G(x)\)</span>. <br> Let <span class="math inline">\(H = {\rm
+Stab}_G(x)\)</span> <br></p>
+<p>Let <span class="math inline">\(\phi : G/H \to Gx\)</span> be a
+function given by <span class="math inline">\(\phi(gH) =
+gx\)</span>.</p>
+<ol type="1">
+<li>Well-defined <br> Let <span class="math inline">\(g_1 =
+g_2\)</span>. Then <span class="math inline">\(\phi(g_1H) = g_1x = g_2x
+= \phi(g_2H)\)</span>. Thus, <span class="math inline">\(\phi\)</span>
+is well-defined.</li>
+<li>One-to-one <br> Suppose that <span class="math inline">\(\phi(g_1H)
+= \phi(g_2H)\)</span>. We get <span class="math inline">\(g_1x =
+g_2x\)</span> and <span class="math inline">\(x = g_1^{-1}g_2x\)</span>.
+It means that <span class="math inline">\(g_1^{-1}g_2 \in H\)</span>,
+which implies <span class="math inline">\(g_1H = g_2H\)</span>.
+Therefore, <span class="math inline">\(\phi\)</span> is one-to-one.</li>
+<li>Onto <br> Let <span class="math inline">\(y \in Gx\)</span>. Then
+<span class="math inline">\(y = gx\)</span> for some <span
+class="math inline">\(g \in G\)</span>. It follows that <span
+class="math inline">\(\phi(gH) = gx = y\)</span>. Therefore <span
+class="math inline">\(\phi\)</span> is onto.</li>
+</ol>
+</blockquote>
+</details>
+<p><br></p>
 
       </div>
       
@@ -303,7 +321,7 @@ identity element.</p>
   <ul class="breadcrumb">
             <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
             <li><a href="/Lecture_notes/Algebra/">ALGEBRA</a></li>
-            <li>STRUCTURAL_PROPERTY</li>
+            <li>ORBITS_AND_STABILIZERS</li>
   </ul>
 
     

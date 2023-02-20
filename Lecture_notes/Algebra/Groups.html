@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="Ruccccc">
 <meta property="og:description" content="Back to content Group Definition  A group \((G, \ast)\) is a set G, with a binary operation \(\ast\), such that  \(\ast\) is associative. There is a indentity element \(e \in G\) for \(\ast\). \(\fora">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-11-09T15:50:00.889Z">
-<meta property="article:modified_time" content="2022-11-09T15:50:00.870Z">
+<meta property="article:published_time" content="2023-02-15T14:16:31.699Z">
+<meta property="article:modified_time" content="2023-02-15T14:16:31.699Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
@@ -112,7 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#group"><span class="nav-number">1.</span> <span class="nav-text">Group</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#abelian"><span class="nav-number">2.</span> <span class="nav-text">Abelian</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#properties-of-groups"><span class="nav-number">3.</span> <span class="nav-text">Properties of Groups</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#subgroup"><span class="nav-number">4.</span> <span class="nav-text">Subgroup</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#proper-subgroup"><span class="nav-number">4.1.</span> <span class="nav-text">Proper subgroup</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#property-of-subgroup"><span class="nav-number">4.2.</span> <span class="nav-text">Property of subgroup</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#criterion-of-subgroups"><span class="nav-number">4.3.</span> <span class="nav-text">Criterion of Subgroups</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#group"><span class="nav-number">1.</span> <span class="nav-text">Group</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#subgroup"><span class="nav-number">2.</span> <span class="nav-text">Subgroup</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -202,46 +202,54 @@ e\)</span>.</li>
 class="math inline">\(G\)</span> for short when there is no
 ambiguity.</p>
 </blockquote>
-<p><strong>Example</strong></p>
-<blockquote>
-<p>Show that the set <span class="math inline">\(GL(n,
-\mathbb{R})\)</span> of all invertible <span
-class="math inline">\(n\times n\)</span> matrices under matrix
-multiplication is a group. (<span class="math inline">\(GL\)</span>
-stands for <strong>general linear</strong>)</p>
-</blockquote>
 <details>
 <summary>
-Solution
+<strong>Example -- Show that <span class="math inline">\({\rm GL}(n,
+\mathbb{R})\)</span> is a group</strong>
 </summary>
+<p><br> Show that the set <span class="math inline">\({\rm GL}(n,
+\mathbb{R})\)</span> of all invertible <span
+class="math inline">\(n\times n\)</span> matrices under matrix
+multiplication is a group.<br> (<span class="math inline">\({\rm
+GL}\)</span> stands for <strong>general linear</strong>)</p>
+<blockquote>
 <ol type="1">
-<li>Closedness: Recall: An matrix <span class="math inline">\(A\)</span>
-is invertible iff <span class="math inline">\(det(A) \neq 0\)</span>
-<br> Suppose <span class="math inline">\(A\)</span> and <span
+<li>Closedness: <br> Recall: An matrix <span
+class="math inline">\(A\)</span> is invertible iff <span
+class="math inline">\(det(A) \neq 0\)</span> <br> Suppose <span
+class="math inline">\(A\)</span> and <span
 class="math inline">\(B\)</span> is invertible, then <span
 class="math inline">\(det(A), det(B) \neq 0\)</span>. <br> <span
-class="math inline">\(det(AB) = det(A)det(B) \neq 0\)</span>. Therefore,
-<span class="math inline">\(\forall A, B \in GL(n, \mathbb{R})
-\Rightarrow AB \in GL(n, \mathbb{R})\)</span></li>
-<li>Associative: A porperty of matrix multipliction.</li>
-<li>Indentity element: The matrix <span
+class="math inline">\(det(AB) = det(A)det(B) \neq 0\)</span>. <br>
+Therefore, <span class="math inline">\(\forall A, B \in GL(n,
+\mathbb{R}) \Rightarrow AB \in GL(n, \mathbb{R})\)</span></li>
+<li>Associative: <br> A porperty of matrix multipliction.</li>
+<li>Indentity element: <br> The matrix <span
 class="math inline">\(I_n\)</span> satisfies <span
 class="math inline">\(AI_n = I_n A = A\)</span></li>
-<li>Inverse: Suppose that <span class="math inline">\(A \in GL(n,
+<li>Inverse: <br> Suppose that <span class="math inline">\(A \in GL(n,
 \mathbb{R})\)</span>. Then <span class="math inline">\(A^{-1}\)</span>
 is also in <span class="math inline">\(GL(n, \mathbb{R})\)</span> since
 <span class="math inline">\(det(A^{-1}) = \frac{1}{det(A)} \neq
 0\)</span></li>
 </ol>
+</blockquote>
 </details>
-<h2 id="abelian">Abelian</h2>
-<p><strong>Definition</strong></p>
+<p><br></p>
+<p><strong>Defintion -- Order</strong></p>
+<blockquote>
+<p>The <strong>order</strong> of a group <span
+class="math inline">\(G\)</span>, denoted by <span
+class="math inline">\(|G|\)</span>, is the cardinality of <span
+class="math inline">\(G\)</span>.</p>
+</blockquote>
+<p><strong>Definition -- Abelian</strong></p>
 <blockquote>
 <p>A group <span class="math inline">\((G, \ast)\)</span> is
 <strong>abelian</strong> if its binary operation is
 <strong>commutative</strong>.</p>
 </blockquote>
-<h2 id="properties-of-groups">Properties of Groups</h2>
+<p><br></p>
 <p><strong>Theorem - Cancellation Law</strong></p>
 <blockquote>
 <p>Let <span class="math inline">\(G\)</span> be a group. Then the
@@ -253,7 +261,7 @@ class="math inline">\(b = c\)</span>, and <span class="math inline">\(ba
 </blockquote>
 <details>
 <summary>
-<small> proof </small>
+<strong>proof</strong>
 </summary>
 <blockquote>
 <p>Suppose that <span class="math inline">\(ab = ac\)</span>. Consider
@@ -285,6 +293,7 @@ structures that <span class="math inline">\(ax = B\)</span> may not be
 solvable for all <span class="math inline">\(a\)</span> and <span
 class="math inline">\(b\)</span>.</p>
 </blockquote>
+<p><br></p>
 <p><strong>Theorem - Uniqueness of identity and inverse
 element</strong></p>
 <blockquote>
@@ -298,6 +307,7 @@ class="math inline">\(a^{-1}\)</span> in <span
 class="math inline">\(G\)</span> such that <span
 class="math inline">\(a^{-1} a = a a^{-1} = e\)</span>. <br></p>
 </blockquote>
+<p><br></p>
 <p><strong>Collary</strong></p>
 <blockquote>
 <p>Let <span class="math inline">\(G\)</span> be a group. For all <span
@@ -305,31 +315,33 @@ class="math inline">\(a, b \in G\)</span>, we have <span
 class="math inline">\((ab)^{-1} = b^{-1} a ^{-1}\)</span>.</p>
 </blockquote>
 <h2 id="subgroup">Subgroup</h2>
-<p>Defination &gt;If a subset <span class="math inline">\(H\)</span> of
-a group <span class="math inline">\(G\)</span> is closed under the
-binary operation of <span class="math inline">\(G\)</span> and if <span
+<p><strong>Defination -- Subgroup</strong></p>
+<blockquote>
+<p>If a subset <span class="math inline">\(H\)</span> of a group <span
+class="math inline">\(G\)</span> is closed under the binary operation of
+<span class="math inline">\(G\)</span> and <span
 class="math inline">\(H\)</span> with the induced operation from <span
-class="math inline">\(G\)</span> is itself a group, then <span
+class="math inline">\(G\)</span> is a group, then <span
 class="math inline">\(H\)</span> is a subgroup of <span
-class="math inline">\(G\)</span>. &gt;denoted <span
+class="math inline">\(G\)</span>. And it's denoted by <span
 class="math inline">\(H \leq G\)</span> or <span class="math inline">\(G
 \geq H\)</span></p>
-<h3 id="proper-subgroup">Proper subgroup</h3>
+</blockquote>
+<p><br></p>
+<p><strong>Definition</strong></p>
 <blockquote>
 <p>If <span class="math inline">\(G\)</span> is a group, then the
 subgroup consisting of <span class="math inline">\(G\)</span> itself is
 the <strong>improper subgroup</strong> of <span
-class="math inline">\(G\)</span>. All other subgroups are <strong>proper
-subgroups</strong> of <span class="math inline">\(G\)</span>.</p>
-<p>The subgroup <span class="math inline">\(\lbrace e \rbrace\)</span>
-is the <strong>trivial subgroup</strong> of <span
-class="math inline">\(G\)</span>. All other subgroups are
-nontrivial.</p>
+class="math inline">\(G\)</span>. <br> All other subgroups are
+<strong>proper subgroups</strong> of <span
+class="math inline">\(G\)</span>. <br> <br> The subgroup <span
+class="math inline">\(\lbrace e \rbrace\)</span> is the <strong>trivial
+subgroup</strong> of <span class="math inline">\(G\)</span>. <br> All
+other subgroups are nontrivial.</p>
 </blockquote>
-<h3 id="property-of-subgroup">Property of subgroup</h3>
-<ul>
-<li>Indentity and Inverse element</li>
-</ul>
+<p><br></p>
+<p><strong>Theorem</strong></p>
 <blockquote>
 <p>Let <span class="math inline">\(H\)</span> be a subgroup of <span
 class="math inline">\(G\)</span>. Then the identity <span
@@ -362,7 +374,8 @@ a^\prime = e_H = e_G = a a^{-1}\]</span> Therefore, <span
 class="math inline">\(a^\prime = a^{-1}\)</span>.</p>
 </blockquote>
 </details>
-<h3 id="criterion-of-subgroups">Criterion of Subgroups</h3>
+<p><br></p>
+<p><strong>Theorem -- Criterion of Subgroups</strong></p>
 <blockquote>
 <p>A subset <span class="math inline">\(H\)</span> of a group <span
 class="math inline">\(G\)</span> is a subgroup of <span
@@ -377,13 +390,14 @@ class="math inline">\(e_G\)</span></li>
 class="math inline">\(H\)</span></li>
 </ol>
 </blockquote>
-<ul>
-<li>In the certerion of subgroups, it seems that conditions 1 and 3
-imply 2. Is it correct?
-<ul>
-<li>NO <!-- 待補 --></li>
-</ul></li>
-</ul>
+<p><strong>Remark</strong></p>
+<p>In the certerion of subgroups, it seems that conditions 1 and 3 imply
+2. Is it correct?</p>
+<blockquote>
+<p>No! <br> When <span class="math inline">\(H\)</span> is a empty set,
+conditions 1, 3 holds, but <span class="math inline">\(H\)</span>
+doesn't contain <span class="math inline">\(e_G\)</span>.</p>
+</blockquote>
 <!-- 待補
 ### Subgroup diagram
 

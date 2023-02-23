@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="Ruccccc">
 <meta property="og:description" content="Structured binding declaration 結構化鏈結  C++17  Usage 123[[attribute]] [[cv-qualifier]] auto [[ref-qulifier]] [variable-list] &#x3D; &amp;#123;expression&amp;#125;;[[attribute]] [[cv-qualifier]] auto [[ref-qulifier]]">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-02-13T10:55:27.502Z">
-<meta property="article:modified_time" content="2023-02-13T10:55:27.502Z">
+<meta property="article:published_time" content="2023-02-23T14:38:16.239Z">
+<meta property="article:modified_time" content="2023-02-23T14:38:16.239Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
@@ -113,7 +113,7 @@
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
             <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#structured-binding-declaration-%E7%B5%90%E6%A7%8B%E5%8C%96%E9%8F%88%E7%B5%90"><span class="nav-number">1.</span> <span class="nav-text">Structured binding
-declaration 結構化鏈結</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#usage"><span class="nav-number">1.1.</span> <span class="nav-text">Usage</span></a></li></ol></li></ol></div>
+declaration 結構化鏈結</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#usage"><span class="nav-number">1.1.</span> <span class="nav-text">Usage</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%9C%E9%A0%85"><span class="nav-number">2.</span> <span class="nav-text">雜項</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#heap-buffer-overflow"><span class="nav-number">2.1.</span> <span class="nav-text">heap-buffer-overflow</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -183,6 +183,16 @@ declaration 結構化鏈結</h2>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[[attribute]] [[cv-qualifier]] auto [[ref-qulifier]] [variable-list] = &#123;expression&#125;;</span><br><span class="line">[[attribute]] [[cv-qualifier]] auto [[ref-qulifier]] [variable-list] &#123;expression&#125;;</span><br><span class="line">[[attribute]] [[cv-qualifier]] auto [[ref-qulifier]] [variable-list] (expression);</span><br></pre></td></tr></table></figure>
 <p><strong>Example</strong></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">std::tuple&lt;<span class="type">int</span>, <span class="type">char</span>, string&gt; t &#123;<span class="number">1</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&quot;345&quot;</span>&#125;;</span><br><span class="line"><span class="keyword">auto</span> [a, b, c] = t;</span><br><span class="line"><span class="keyword">auto</span> [d, e, f] &#123;t&#125;;</span><br><span class="line"><span class="keyword">auto</span> [g, h ,i] (t);</span><br></pre></td></tr></table></figure>
+<h2 id="雜項">雜項</h2>
+<h3 id="heap-buffer-overflow">heap-buffer-overflow</h3>
+<p>在LeetCode上遇到的報錯，簡單來說就是取用超出範圍的index造成的runtime-error。
+<br>
+是<strong>AddressSanitizer</strong>的報錯，他能檢查像vector的非法詢問等runtime-error.</p>
+<ul>
+<li>reference: <a
+target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-tw/cpp/sanitizers/asan?view=msvc-170">AddressSanitizer
+| Microsoft Learn</a></li>
+</ul>
 
       </div>
       

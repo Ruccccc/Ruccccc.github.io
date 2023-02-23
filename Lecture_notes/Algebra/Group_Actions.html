@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="Ruccccc">
 <meta property="og:description" content="Group Action Definition -- Group Action  Let \(X\) be a set and \(G\) be a group.  An action of \(G\) on \(X\) is a map \(\ast : G \times X \to X\) such that  \(\ast(e, x) &#x3D; x\) for all \(x \in X\), w">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-02-15T10:26:57.323Z">
-<meta property="article:modified_time" content="2023-02-15T10:26:57.323Z">
+<meta property="article:published_time" content="2023-02-20T15:40:58.050Z">
+<meta property="article:modified_time" content="2023-02-20T15:40:58.050Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
@@ -113,7 +113,8 @@
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
             <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#group-action"><span class="nav-number">1.</span> <span class="nav-text">Group Action</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#conjugation-as-a-group-action"><span class="nav-number">2.</span> <span class="nav-text">Conjugation as a Group
-Action</span></a></li></ol></div>
+Action</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#faithful-and-transitive-group-actions"><span class="nav-number">3.</span> <span class="nav-text">Faithful and Transitive
+Group Actions</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -253,10 +254,8 @@ class="math inline">\(\iff\)</span> A group homomorphism from <span
 class="math inline">\(G\)</span> to <span
 class="math inline">\(S_X\)</span>.</p>
 </blockquote>
-<details>
-<summary>
-<strong>Examples</strong>
-</summary>
+<p><strong>Examples of Group Action</strong></p>
+<blockquote>
 <ol type="1">
 <li>Let <span class="math inline">\(G\)</span> be a group of symmetries
 of an object <span class="math inline">\(X\)</span>. Then the action of
@@ -266,7 +265,7 @@ class="math inline">\(X\)</span> is a group action.</li>
 Then any subgroup of the symmetric group <span
 class="math inline">\(S_n\)</span> acts on <span
 class="math inline">\(X\)</span> by <span class="math inline">\(\sigma x
-= \sigma(x)\)</span>.</li>
+= \sigma(x)\)</span></li>
 <li>Let <span class="math inline">\(X = \mathbb{R}^n\)</span>. Then the
 group of all invertible <span class="math inline">\(n \times n\)</span>
 matrices <span class="math inline">\({\rm GL}(n, \mathbb{R})\)</span>,
@@ -291,10 +290,10 @@ acts on <span class="math inline">\(X^n\)</span> by <span
 class="math inline">\(\left(\sigma, (x_1, \cdots, x_n)\right) \mapsto
 \left(x_{\sigma(1)}, \cdots, x_{\sigma(n)}\right)\)</span></li>
 </ol>
-</details>
-<p><br></p>
+</blockquote>
 <h2 id="conjugation-as-a-group-action">Conjugation as a Group
 Action</h2>
+<p><strong>Lemma</strong></p>
 <blockquote>
 <p>Let <span class="math inline">\(G\)</span> be a group and consider
 the set of all group isomorphisms of <span
@@ -303,13 +302,34 @@ class="math inline">\(G\)</span>, <span class="math display">\[Aut(G) =
 For any <span class="math inline">\(g \in G\)</span>, the map <span
 class="math inline">\(\rho_g : G \to G\)</span> defined by <span
 class="math inline">\(\rho_g(x) = gxg^{-1}\)</span> is a group
-automorphism. <br> The map <span class="math inline">\(\rho : G \to {\rm
-Aut}(G)\)</span> defined by <span class="math inline">\(g \mapsto
-\rho_g\)</span> is a group homomorphism, and its kernel is equal to the
-center of <span class="math inline">\(G\)</span>.<br> As a result, the
-map <span class="math inline">\(\ast : G \times G \to G\)</span> given
-by <span class="math inline">\(\ast(g, x) = gxg^{-1}\)</span> is a group
+automorphism on <span class="math inline">\(G\)</span>. <br> And this
+action <span class="math inline">\(\rho\)</span> is called
+<strong>conjugation</strong>. <br> The map <span
+class="math inline">\(\rho : G \to {\rm Aut}(G)\)</span> defined by
+<span class="math inline">\(g \mapsto \rho_g\)</span> is a group
+homomorphism, and its kernel is equal to the center of <span
+class="math inline">\(G\)</span>.<br> As a result, the map <span
+class="math inline">\(\ast : G \times G \to G\)</span> given by <span
+class="math inline">\(\ast(g, x) = gxg^{-1}\)</span> is a group
 action.</p>
+</blockquote>
+<h2 id="faithful-and-transitive-group-actions">Faithful and Transitive
+Group Actions</h2>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(X\)</span> be a <span
+class="math inline">\(G\)</span>-set. <br> <span
+class="math inline">\(G\)</span> acts on <span
+class="math inline">\(X\)</span> <strong>faithfully</strong> if the
+identity element is the only element in <span
+class="math inline">\(G\)</span> that leaves every element of <span
+class="math inline">\(X\)</span> unchanged. <br> <span
+class="math inline">\(G\)</span> acts on <span
+class="math inline">\(X\)</span> <strong>transitively</strong> if there
+is only one orbit in <span class="math inline">\(X\)</span>. That is for
+all <span class="math inline">\(x, y \in X\)</span>, exist <span
+class="math inline">\(g \in G\)</span> such that <span
+class="math inline">\(gx = y\)</span>.</p>
 </blockquote>
 
       </div>

@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="Ruccccc">
 <meta property="og:description" content="Stabilizer Definition  Let \(X\) be a \(G\)-set. The set \({\rm Stab}_G (x) &#x3D; \{g \in G : gx &#x3D; x\}\) is called the stabilizer of \(x\) in \(G\).  Theorem  For every \(x \in X\), the set \({\rm Stab}_G">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-02-20T16:06:58.262Z">
-<meta property="article:modified_time" content="2023-02-20T16:06:58.262Z">
+<meta property="article:published_time" content="2023-02-28T14:03:18.660Z">
+<meta property="article:modified_time" content="2023-02-28T14:03:18.660Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
@@ -112,7 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#stabilizer"><span class="nav-number">1.</span> <span class="nav-text">Stabilizer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orbits"><span class="nav-number">2.</span> <span class="nav-text">Orbits</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#stabilizer"><span class="nav-number">1.</span> <span class="nav-text">Stabilizer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orbits"><span class="nav-number">2.</span> <span class="nav-text">Orbits</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fixed-subset"><span class="nav-number">3.</span> <span class="nav-text">Fixed Subset</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -311,25 +311,67 @@ class="math inline">\(\phi\)</span> is onto.</li>
 <p><br></p>
 <p><strong>Examples</strong></p>
 <ul>
-<li>Cube</li>
-</ul>
+<li><p>Cube</p>
 <blockquote>
 <p>Let <span class="math inline">\(G\)</span> be the group of rotational
 symmetrics of a cube, <span class="math inline">\(X\)</span> be the set
 of vertices. <br> Then for any vertex <span class="math inline">\(x \in
 X\)</span>, we have <span class="math display">\[|G| = |Gx||{\rm
 Stab}_G(x) = 8 \cdot 3 = 24\]</span></p>
-</blockquote>
-<ul>
-<li>Buckyball</li>
-</ul>
+</blockquote></li>
+<li><p>Buckyball</p>
 <blockquote>
 <p>Let <span class="math inline">\(G\)</span> be the group of rotational
 symmetrics of a buckyball, <span class="math inline">\(X\)</span> be the
 set of vertices. <br> Then for any vertex <span class="math inline">\(x
 \in X\)</span>, we have <span class="math display">\[|G| = |Gx||{\rm
 Stab}_G(x) = 60 * 1 = 60\]</span></p>
+</blockquote></li>
+</ul>
+<h2 id="fixed-subset">Fixed Subset</h2>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(X\)</span> be a <span
+class="math inline">\(G\)</span>-set. For any element <span
+class="math inline">\(g \in G\)</span>, the <strong><span
+class="math inline">\(g\)</span>-fixed subset</strong> is <span
+class="math display">\[X^g = \{ x \in X \mid gx = x \}\]</span> The
+<strong><span class="math inline">\(G\)</span>-fixed subset</strong> of
+<span class="math inline">\(X\)</span> is <span
+class="math display">\[X^G = \bigcap_{g \in G}X^g\]</span> Note that
+<span class="math inline">\(x \in X^G\)</span> if and only if <span
+class="math inline">\(Gx = \{x\}\)</span></p>
 </blockquote>
+<p><strong>Theorem -- Fixed subset for <span
+class="math inline">\(p\)</span>-Groups</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(p\)</span> be a prime and <span
+class="math inline">\(G\)</span> be a finite <span
+class="math inline">\(p\)</span>-group that acts on a finite set <span
+class="math inline">\(X\)</span>. Then <span class="math inline">\(|X|
+\equiv |X^G| \pmod p\)</span>.</p>
+</blockquote>
+<details>
+<summary>
+<strong>Proof</strong>
+</summary>
+<blockquote>
+<p>Let <span class="math inline">\(X_1, \ldots, X_k\)</span> be the
+collection of <span class="math inline">\(G\)</span>-orbits that contain
+at least two elements. Then we have <span class="math display">\[X = X^G
+\cup X_1 \cup \cdots \cup X_k\]</span></p>
+<p>By the orbit-stabilizer theorem, all <span
+class="math inline">\(|X_i|\)</span> divides <span
+class="math inline">\(|G|\)</span>, implying that <span
+class="math inline">\(|X_i|\)</span> is a multiple of <span
+class="math inline">\(p\)</span>. Since that <span
+class="math inline">\(G\)</span>-orbits form a partition of <span
+class="math inline">\(X\)</span>, we obtain <span
+class="math display">\[|X| = |X^G| + |X_1| + \ldots + |X_k| \equiv |X^G|
+\pmod p\]</span></p>
+</blockquote>
+</details>
+<p><br></p>
 
       </div>
       

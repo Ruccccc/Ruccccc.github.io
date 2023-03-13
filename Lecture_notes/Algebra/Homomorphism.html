@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
 
-
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -15,17 +14,17 @@
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha256-/4UQcSmErDzPCMAiuOiWPVVsNN2s3ZY/NsmXNcj0IFc=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Homomorphism Definition  A map \(\phi\) of a group \(G\) into a group \(G^\prime\) is a homomoriphism if \[\phi(ab) &#x3D; \phi(a) \phi(b)\] for all \(a, b \in G\).   Definition  Let \(\phi\) be a mapping">
+    <meta name="description" content="Homomorphism Definition  A map $\phi$ of a group $G$ into a group $G^\prime$ is a homomoriphism if $$\phi(ab) &#x3D; \phi(a) \phi(b)$$ for all $a, b \in G$.   Definition  Let $\phi$ be a mapping of a set $">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Homomorphism">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Homomorphism.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Homomorphism Definition  A map \(\phi\) of a group \(G\) into a group \(G^\prime\) is a homomoriphism if \[\phi(ab) &#x3D; \phi(a) \phi(b)\] for all \(a, b \in G\).   Definition  Let \(\phi\) be a mapping">
+<meta property="og:description" content="Homomorphism Definition  A map $\phi$ of a group $G$ into a group $G^\prime$ is a homomoriphism if $$\phi(ab) &#x3D; \phi(a) \phi(b)$$ for all $a, b \in G$.   Definition  Let $\phi$ be a mapping of a set $">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-11-08T12:30:05.692Z">
 <meta property="article:modified_time" content="2022-11-08T12:30:05.692Z">
@@ -49,19 +48,19 @@
 
 
 
+
+
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-<!-- hexo injector head_end end --></head>
+</head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
     </div>
@@ -77,7 +76,7 @@
   </div>
 
   <div class="site-nav-right">
-    <div class="toggle popup-trigger">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
     </div>
   </div>
 </div>
@@ -88,15 +87,9 @@
 
 
 
-</div>
+</header>
         
   
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-
   <aside class="sidebar">
 
     <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
@@ -112,26 +105,23 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#homomorphism"><span class="nav-number">1.</span> <span class="nav-text">Homomorphism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#kernel"><span class="nav-number">2.</span> <span class="nav-text">Kernel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#normal-subgroup"><span class="nav-number">3.</span> <span class="nav-text">Normal Subgroup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#quotient-groups"><span class="nav-number">4.</span> <span class="nav-text">Quotient Groups</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#homomorphisms-and-normal-subgroups"><span class="nav-number">5.</span> <span class="nav-text">Homomorphisms and Normal
-Subgroups</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#quotient-group-computation"><span class="nav-number">6.</span> <span class="nav-text">Quotient Group Computation</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Homomorphism"><span class="nav-number">1.</span> <span class="nav-text">Homomorphism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Kernel"><span class="nav-number">2.</span> <span class="nav-text">Kernel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Normal-Subgroup"><span class="nav-number">3.</span> <span class="nav-text">Normal Subgroup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Quotient-Groups"><span class="nav-number">4.</span> <span class="nav-text">Quotient Groups</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Homomorphisms-and-Normal-Subgroups"><span class="nav-number">5.</span> <span class="nav-text">Homomorphisms and Normal Subgroups</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Quotient-Group-Computation"><span class="nav-number">6.</span> <span class="nav-text">Quotient Group Computation</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Ruc Kuo</p>
   <div class="site-description" itemprop="description">Meaningless things.</div>
 </div>
-  <div class="links-of-author site-overview-item animated">
+  <div class="links-of-author animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/Ruccccc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Ruccccc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/Ruccccc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Ruccccc" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:ruckuo@gmail.com" title="E-Mail → mailto:ruckuo@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <a href="mailto:ruckuo@gmail.com" title="E-Mail → mailto:ruckuo@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
   </div>
-
-
 
         </div>
       </div>
@@ -140,20 +130,12 @@ Subgroups</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" hr
           <span>0%</span>
         </div>
     </div>
-  </aside>
-  <div class="sidebar-dimmer"></div>
-
-
-    </header>
 
     
+  </aside>
 
-  <a href="https://github.com/Ruccccc/Ruccccc.github.io" class="github-corner" title="GitHub" aria-label="GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
 
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-
+    </div>
 
     <div class="main-inner page posts-expand">
 
@@ -179,359 +161,199 @@ Subgroups</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" hr
       
       
       <div class="post-body">
-          <h2 id="homomorphism">Homomorphism</h2>
+          <h2 id="Homomorphism">Homomorphism</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>A map <span class="math inline">\(\phi\)</span> of a group <span
-class="math inline">\(G\)</span> into a group <span
-class="math inline">\(G^\prime\)</span> is a homomoriphism if <span
-class="math display">\[\phi(ab) = \phi(a) \phi(b)\]</span> for all <span
-class="math inline">\(a, b \in G\)</span>. <br></p>
+<p>A map $\phi$ of a group $G$ into a group $G^\prime$ is a homomoriphism if<br>
+$$\phi(ab) = \phi(a) \phi(b)$$<br>
+for all $a, b \in G$. <br></p>
 </blockquote>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(\phi\)</span> be a mapping of a set
-<span class="math inline">\(X\)</span> into a set <span
-class="math inline">\(Y\)</span>. Let <span class="math inline">\(A
-\subset X\)</span> and <span class="math inline">\(B \subset Y\)</span>.
-<br></p>
-<ol type="1">
-<li>The <strong>image</strong> of <span class="math inline">\(A\)</span>
-under <span class="math inline">\(\phi\)</span> is the set <span
-class="math inline">\(\{ \phi(a) : a \in A \}\)</span>, denoted by <span
-class="math inline">\(\phi(A)\)</span>.</li>
-<li>The set <span class="math inline">\(\phi(X)\)</span> is the
-<strong>range</strong> of <span class="math inline">\(\phi\)</span></li>
-<li>The <strong>inverse image (or preimage)</strong> of <span
-class="math inline">\(B\)</span> in <span
-class="math inline">\(X\)</span> is <span class="math inline">\(\{x \in
-X : \phi(x) \in B\}\)</span>, denoted by <span
-class="math inline">\(\phi^{-1}(B)\)</span>. <br></li>
+<p>Let $\phi$ be a mapping of a set $X$ into a set $Y$. Let $A \subset X$ and $B \subset Y$. <br></p>
+<ol>
+<li>The <strong>image</strong> of $A$ under $\phi$ is the set ${ \phi(a) : a \in A }$, denoted by $\phi(A)$.</li>
+<li>The set $\phi(X)$ is the <strong>range</strong> of $\phi$</li>
+<li>The <strong>inverse image (or preimage)</strong> of $B$ in $X$ is ${x \in X : \phi(x) \in B}$, denoted by $\phi^{-1}(B)$. <br></li>
 </ol>
 </blockquote>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>A Homomorphism is <strong>trivial</strong> if it maps whole domain
-into <span class="math inline">\(e\)</span>. <br></p>
+<p>A Homomorphism is <strong>trivial</strong> if it maps whole domain into $e$. <br></p>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(\phi\)</span> be a homomorphism of a
-group <span class="math inline">\(G\)</span> into a group <span
-class="math inline">\(G^\prime\)</span>. <br></p>
-<ol type="1">
-<li><span class="math inline">\(\phi(e) = e^\prime\)</span></li>
-<li><span class="math inline">\(\phi(a^{-1}) = \phi(a)^{-1}\)</span> for
-all <span class="math inline">\(a \in G\)</span>.</li>
-<li>If <span class="math inline">\(H\)</span> is a subgroup of <span
-class="math inline">\(G\)</span>, then <span
-class="math inline">\(\phi(H)\)</span> is a subgroup of <span
-class="math inline">\(G^\prime\)</span>.</li>
-<li>If <span class="math inline">\(H^\prime\)</span> is a subgroup of
-<span class="math inline">\(G^\prime\)</span>, then <span
-class="math inline">\(\phi^{-1}(H^\prime)\)</span> is a subgroup of
-<span class="math inline">\(G\)</span>.</li>
+<p>Let $\phi$ be a homomorphism of a group $G$ into a group $G^\prime$. <br></p>
+<ol>
+<li>$\phi(e) = e^\prime$</li>
+<li>$\phi(a^{-1}) = \phi(a)^{-1}$ for all $a \in G$.</li>
+<li>If $H$ is a subgroup of $G$, then $\phi(H)$ is a subgroup of $G^\prime$.</li>
+<li>If $H^\prime$ is a subgroup of $G^\prime$, then $\phi^{-1}(H^\prime)$ is a subgroup of $G$.</li>
 </ol>
 </blockquote>
 <detail>
-<summary>
-Proof
-</summary>
-<p></detail></p>
+<summary> Proof </summary>
+</detail>
 <p><strong>Corollary</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(\phi : G \to G^\prime\)</span> be a
-group homomorphism. If <span class="math inline">\(\phi\)</span> is
-one-to-one then <span class="math inline">\(G\)</span> and <span
-class="math inline">\(\phi(G)\)</span> are isomorphic.</p>
+<p>Let $\phi : G \to G^\prime$ be a group homomorphism. If $\phi$ is one-to-one then $G$ and $\phi(G)$ are isomorphic.</p>
 </blockquote>
-<h2 id="kernel">Kernel</h2>
+<h2 id="Kernel">Kernel</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>The subgroup <span class="math inline">\(\phi^{-1}(\{ e^\prime
-\})\)</span> is called the <strong>kernel</strong> of <span
-class="math inline">\(\phi\)</span> denoted by <span
-class="math inline">\({\rm ker}(\phi)\)</span>. <br></p>
+<p>The subgroup $\phi^{-1}({ e^\prime })$ is called the <strong>kernel</strong> of $\phi$ denoted by ${\rm ker}(\phi)$. <br></p>
 </blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<p>Recall that det:<span class="math inline">\(GL(n, \mathbb{R}) \to
-\mathbb{R}^\prime\)</span> is a group homorphism. Therefore, <span
-class="math display">\[SL(n, \mathbb{R}) = \{ A \in GL(n, \mathbb{R})
-\mid det(A) = 1 \} = \text{ker det}\]</span> is a subgroup (also called
-the special linear group)</p>
+<p>Recall that det:$GL(n, \mathbb{R}) \to \mathbb{R}^\prime$ is a group homorphism.<br>
+Therefore,<br>
+$$SL(n, \mathbb{R}) = { A \in GL(n, \mathbb{R}) \mid det(A) = 1 } = \text{ker det}$$<br>
+is a subgroup (also called the special linear group)</p>
 </blockquote>
 <p><strong>Problem</strong></p>
-<p>Let <span class="math inline">\(\phi : G \to G^\prime\)</span> be a
-group homomorphism. For <span class="math inline">\(a \in G\)</span>, is
-there any relation between the order of <span
-class="math inline">\(a\)</span> and the order of <span
-class="math inline">\(\phi(a)\)</span>?</p>
+<p>Let $\phi : G \to G^\prime$ be a group homomorphism. For $a \in G$, is there any relation between the order of $a$ and the order of $\phi(a)$?</p>
 <blockquote>
-<p>Suppose <span class="math inline">\({\rm ord}(a) = n &lt;
-\infty\)</span> then <span class="math display">\[e^\prime = \phi(e) =
-\phi(a^n) = \phi(a)^n\]</span> Therefore <span
-class="math inline">\({\rm ord}(\phi(a)) | n\)</span>. <br></p>
+<p>Suppose ${\rm ord}(a) = n &lt; \infty$ then<br>
+$$e^\prime = \phi(e) = \phi(a^n) = \phi(a)^n$$<br>
+Therefore ${\rm ord}(\phi(a)) | n$. <br></p>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(\phi : G \to G^\prime\)</span> be a
-group homomorphism, and let <span class="math inline">\(H = {\rm
-ker}(\phi)\)</span>. <br> Let <span class="math inline">\(a \in
-G\)</span>. Then the set <span class="math display">\[\{ x \in G :
-\phi(x) = \phi(a) \} = \phi^{-1}(\{\phi(a)\})\]</span> is the
-<strong>left coset <span class="math inline">\(aH\)</span></strong>, and
-also the <strong>right coset <span
-class="math inline">\(Ha\)</span></strong>. Consequently, the partition
-of <span class="math inline">\(G\)</span> intot left cosets is the same
-as the parrtition into right coset.</p>
+<p>Let $\phi : G \to G^\prime$ be a group homomorphism, and let $H = {\rm ker}(\phi)$. <br><br>
+Let $a \in G$. Then the set<br>
+$${ x \in G : \phi(x) = \phi(a) } = \phi^{-1}({\phi(a)})$$<br>
+is the <strong>left coset $aH$</strong>, and also the <strong>right coset $Ha$</strong>. Consequently, the partition of $G$ intot left cosets is the same as the parrtition into right coset.</p>
 </blockquote>
 <details>
-<summary>
-Proof
-</summary>
+<summary> Proof </summary>
 <blockquote>
-<p>To show <span class="math inline">\(\phi^{-1}(\{\phi(a)\}) =
-aH\)</span>, we will show that</p>
-<ol type="1">
-<li><span class="math inline">\(aH \subset
-\phi^{-1}(\{\phi(a)\})\)</span>: Let <span class="math inline">\(x = ah
-\in aH\)</span>. Since <span class="math inline">\(\phi\)</span> is a
-homomorphism, we have <span class="math inline">\(\phi(x) =
-\phi(a)\phi(h) = \phi(a)e^\prime = \phi(a)\)</span>. Therefore, <span
-class="math inline">\(x \in \phi^{-1}(\{\phi(a)\})\)</span>. <br></li>
-<li><span class="math inline">\(\phi^{-1}(\{\phi(a)\}) \subset
-aH\)</span>: Suppose that <span class="math inline">\(x \in
-\phi^{-1}(\{\phi(a)\})\)</span>. We have <span
-class="math display">\[\phi(x) = \phi(a)\]</span> <span
-class="math display">\[e^\prime = \phi(a)^{-1}\phi(x) =
-\phi(a^{-1}\phi(x) = \phi(a^{-1}x)\]</span> Thus, <span
-class="math inline">\(a^{-1}x \in H\)</span>. We see that <span
-class="math inline">\(s \in aH\)</span>. <br></li>
+<p>To show $\phi^{-1}({\phi(a)}) = aH$, we will show that</p>
+<ol>
+<li>$aH \subset \phi^{-1}({\phi(a)})$: Let $x = ah \in aH$. Since $\phi$ is a homomorphism, we have $\phi(x) = \phi(a)\phi(h) = \phi(a)e^\prime = \phi(a)$. Therefore, $x \in \phi^{-1}({\phi(a)})$. <br></li>
+<li>$\phi^{-1}({\phi(a)}) \subset aH$: Suppose that $x \in \phi^{-1}({\phi(a)})$. We have<br>
+$$\phi(x) = \phi(a)$$<br>
+$$e^\prime = \phi(a)^{-1}\phi(x) = \phi(a^{-1}\phi(x) = \phi(a^{-1}x)$$<br>
+Thus, $a^{-1}x \in H$. We see that $s \in aH$. <br></li>
 </ol>
-<p>We can prove <span class="math inline">\(\phi^{-1}(\{\phi(a)\}) =
-Ha\)</span> by similar method.</p>
+<p>We can prove $\phi^{-1}({\phi(a)}) = Ha$ by similar method.</p>
 </blockquote>
 </details>
 <p><strong>Corollary</strong></p>
 <blockquote>
-<p>A group homomorphism <span class="math inline">\(\phi : G \to
-G^\prime\)</span> is one-to-one if and only if <span
-class="math inline">\({\rm ker}(\phi) = \{e\}\)</span>. <br></p>
+<p>A group homomorphism $\phi : G \to G^\prime$ is one-to-one if and only if ${\rm ker}(\phi) = {e}$. <br></p>
 </blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(n\)</span> be a positive integer. Let
-<span class="math inline">\(\phi : \mathbb{Z} \to \mathbb{Z}_n\)</span>
-be defined by <span class="math inline">\(\phi(a) = \bar a\)</span>, the
-residue class modulo <span class="math inline">\(n\)</span> containing
-<span class="math inline">\(a\)</span>. then <span
-class="math inline">\({\rm ker}(\phi) = n\mathbb{Z}\)</span>. Also, for
-each <span class="math inline">\(\bar b \in \mathbb{Z}_n\)</span>, the
-set <span class="math inline">\(\phi^{-1}(\{\bar b\}) = \{\ldots, b-2n,
-b-n, b, b+n, b+2n, \ldots \} = b + n\mathbb{Z}\)</span>, which is indeed
-a coset.</p>
+<p>Let $n$ be a positive integer. Let $\phi : \mathbb{Z} \to \mathbb{Z}_n$ be defined by $\phi(a) = \bar a$, the residue class modulo $n$ containing $a$. then ${\rm ker}(\phi) = n\mathbb{Z}$. Also, for each $\bar b \in \mathbb{Z}_n$, the set $\phi^{-1}({\bar b}) = {\ldots, b-2n, b-n, b, b+n, b+2n, \ldots } = b + n\mathbb{Z}$, which is indeed a coset.</p>
 </blockquote>
-<h2 id="normal-subgroup">Normal Subgroup</h2>
+<h2 id="Normal-Subgroup">Normal Subgroup</h2>
 <p><strong>Definiton</strong></p>
 <blockquote>
-<p>A subgroup <span class="math inline">\(H\)</span> of a group <span
-class="math inline">\(G\)</span> is <strong>normal</strong> if its left
-cosets and right cosets coincide, that is <span
-class="math display">\[\begin{array}{}
-gH = Hg &amp; \text{ for all } g \in G \\
-\end{array}\]</span></p>
+<p>A subgroup $H$ of a group $G$ is <strong>normal</strong> if its left cosets and right cosets coincide, that is<br>
+$$\begin{array}{}<br>
+gH = Hg &amp; \text{ for all } g \in G \<br>
+\end{array}$$</p>
 <p>Note that all subgroups of abelian groups are normal.</p>
-<p>We use the notation <span class="math inline">\(H \triangleleft
-G\)</span> ot denote that <span class="math inline">\(H\)</span> is a
-normal subgroup of <span class="math inline">\(G\)</span>. <br></p>
+<p>We use the notation $H \triangleleft G$ ot denote that $H$ is a normal subgroup of $G$. <br></p>
 </blockquote>
 <p><strong>Corollary</strong></p>
-<p>If <span class="math inline">\(\phi : G \to G^\prime\)</span> is a
-group homomorphism, then <span class="math inline">\({\rm
-ker}(\phi)\)</span> is a normal subgroup.</p>
+<p>If $\phi : G \to G^\prime$ is a group homomorphism, then ${\rm ker}(\phi)$ is a normal subgroup.</p>
 <p><strong>Proposition</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(N\)</span> be a subgroup of index two
-of <span class="math inline">\(G\)</span>. Then <span
-class="math inline">\(N\)</span> is normal.</p>
+<p>Let $N$ be a subgroup of index two of $G$. Then $N$ is normal.</p>
 </blockquote>
 <detail>
-<summary>
-Proof
-</summary>
+<summary> Proof </summary>
 <blockquote>
-<p>For <span class="math inline">\(g \in G\)</span>, if <span
-class="math inline">\(g \in N\)</span>, then <span
-class="math inline">\(gN = N = Ng\)</span>. If <span
-class="math inline">\(g \notin N\)</span>, then <span
-class="math inline">\(G = N \cup gN\)</span>. Therefore. <span
-class="math inline">\(gN = G \backslash N\)</span>. By same token, we
-also have <span class="math inline">\(Ng = G \backslash N\)</span>,
-which implies <span class="math inline">\(gN = Ng\)</span>. Therefore,
-<span class="math inline">\(N\)</span> is normal.</p>
+<p>For $g \in G$, if $g \in N$, then $gN = N = Ng$. If $g \notin N$, then $G = N \cup gN$. Therefore. $gN = G \backslash N$.<br>
+By same token, we also have $Ng = G \backslash N$, which implies $gN = Ng$. Therefore, $N$ is normal.</p>
 </blockquote>
 </details>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>The following are equivalent conditions for a subgroup <span
-class="math inline">\(H\)</span> of a group <span
-class="math inline">\(G\)</span> to be normal.</p>
-<ol type="1">
-<li><span class="math inline">\(ghg^{-1} \in H\)</span> for all <span
-class="math inline">\(g \in G\)</span> and all <span
-class="math inline">\(h \in H\)</span>.</li>
-<li><span class="math inline">\(gHg^{-1} \in H\)</span> for all <span
-class="math inline">\(g \in G\)</span>.</li>
-<li><span class="math inline">\(gH = Hg\)</span> for all <span
-class="math inline">\(g \in G\)</span>.</li>
-<li><span class="math inline">\(aHbH = abH\)</span> for all <span
-class="math inline">\(a, b \in G\)</span>.</li>
+<p>The following are equivalent conditions for a subgroup $H$ of a group $G$ to be normal.</p>
+<ol>
+<li>$ghg^{-1} \in H$ for all $g \in G$ and all $h \in H$.</li>
+<li>$gHg^{-1} \in H$ for all $g \in G$.</li>
+<li>$gH = Hg$ for all $g \in G$.</li>
+<li>$aHbH = abH$ for all $a, b \in G$.</li>
 </ol>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(H\)</span> be a subgroup of a group
-<span class="math inline">\(G\)</span>. Suppose <span
-class="math inline">\(G\)</span> is generated by <span
-class="math inline">\(g_1, \cdots, g_n\)</span>. Then if <span
-class="math inline">\(g_iHg_i^{-1} = H\)</span> for all <span
-class="math inline">\(i\)</span>, then <span
-class="math inline">\(H\)</span> is normal.</p>
+<p>Let $H$ be a subgroup of a group $G$. Suppose $G$ is generated by $g_1, \cdots, g_n$. Then if $g_iHg_i^{-1} = H$ for all $i$, then $H$ is normal.</p>
 </blockquote>
-<hr />
-<h2 id="quotient-groups">Quotient Groups</h2>
+<hr>
+<h2 id="Quotient-Groups">Quotient Groups</h2>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p><span class="math inline">\((G/N , \ast)\)</span> is a group, called
-the <strong>quotient group</strong> of <span
-class="math inline">\(G\)</span> by <span
-class="math inline">\(N\)</span>. <br></p>
+<p>$(G/N , \ast)$ is a group, called the <strong>quotient group</strong> of $G$ by $N$. <br></p>
 </blockquote>
 <p><strong>Example</strong></p>
-<p>Let <span class="math inline">\(G = D_4\)</span> and <span
-class="math inline">\(N = \langle \sigma^2 \rangle\)</span>. Determine
-the structure of <span class="math inline">\(G/N\)</span>. <br></p>
+<p>Let $G = D_4$ and $N = \langle \sigma^2 \rangle$. Determine the structure of $G/N$. <br></p>
 <blockquote>
-<p><span class="math inline">\(G = N \cup \sigma N \cup \tau N \cup
-\tau\sigma N\)</span> <br> <span class="math inline">\(G/N\)</span> is a
-group of order 4. Since <span class="math inline">\(\sigma N = \{\sigma,
-\sigma^3\} = N\sigma\)</span> and <span class="math inline">\(\tau N =
-\{\tau, \tau\sigma^2\} = N \tau\)</span>, <br> N is normal. Therefore,
-<span class="math inline">\(G/N \cong \mathbb{Z}_4 or \mathbb{Z}_2
-\times \mathbb{Z}_2\)</span>. <br> Note that <span
-class="math inline">\((\tau N)^2 = (\sigma N)^2 = (\tau\sigma N)^2 =
-N\)</span>. <br> Therefore, <span class="math inline">\(G/N \cong
-\mathbb{Z}_2 \times \mathbb{Z}_2\)</span>. <br></p>
+<p>$G = N \cup \sigma N \cup \tau N \cup \tau\sigma N$ <br><br>
+$G/N$ is a group of order 4.<br>
+Since $\sigma N = {\sigma, \sigma^3} = N\sigma$ and $\tau N = {\tau, \tau\sigma^2} = N \tau$, <br><br>
+N is normal. Therefore, $G/N \cong \mathbb{Z}_4 or \mathbb{Z}_2 \times \mathbb{Z}_2$. <br><br>
+Note that $(\tau N)^2 = (\sigma N)^2 = (\tau\sigma N)^2 = N$. <br><br>
+Therefore, $G/N \cong \mathbb{Z}_2 \times \mathbb{Z}_2$. <br></p>
 </blockquote>
-<h2 id="homomorphisms-and-normal-subgroups">Homomorphisms and Normal
-Subgroups</h2>
+<h2 id="Homomorphisms-and-Normal-Subgroups">Homomorphisms and Normal Subgroups</h2>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(N\)</span> be a normal subgroup of
-<span class="math inline">\(G\)</span>. Then <span
-class="math inline">\(\gamma : G \to G\backslash N\)</span> goven by
-<span class="math inline">\(\gamma(g) = gN\)</span> is a homomorphism
-with the kernel N.</p>
+<p>Let $N$ be a normal subgroup of $G$. Then $\gamma : G \to G\backslash N$ goven by $\gamma(g) = gN$ is a homomorphism with the kernel N.</p>
 </blockquote>
 <p><strong>Theorem - The first isomorphism theorem</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(\psi : G \to G^\prime\)</span> be a
-group homomorphism with kernel <span class="math inline">\(N\)</span>.
-Then <span class="math inline">\(G/N\)</span> and <span
-class="math inline">\(\psi(G)\)</span> is isomorphic. The canonical
-isomorphism <span class="math inline">\(\mu : G/N \to \psi(G)\)</span>
-is given by <span class="math inline">\(\mu(gN) = \psi(g)\)</span>.
-<br></p>
+<p>Let $\psi : G \to G^\prime$ be a group homomorphism with kernel $N$. Then $G/N$ and $\psi(G)$ is isomorphic. The canonical isomorphism $\mu : G/N \to \psi(G)$ is given by $\mu(gN) = \psi(g)$. <br></p>
 </blockquote>
 <p><strong>Theroem</strong></p>
 <blockquote>
-<p>Every abelian group with <span class="math inline">\(n\)</span>
-generators is isomorphic to a quotient group of <span
-class="math inline">\(\mathbb{Z}^n\)</span></p>
+<p>Every abelian group with $n$ generators is isomorphic to a quotient group of $\mathbb{Z}^n$</p>
 </blockquote>
-<h2 id="quotient-group-computation">Quotient Group Computation</h2>
+<h2 id="Quotient-Group-Computation">Quotient Group Computation</h2>
 <p><strong>Problem</strong></p>
 <blockquote>
-<p>Given a quotient group <span class="math inline">\(G/H\)</span>, find
-an isomorphic group <span class="math inline">\(G^\prime\)</span> that
-is more familiar to us. (So that to study the structure of <span
-class="math inline">\(G/H\)</span>, we can work on the more familiar
-group <span class="math inline">\(G^\prime\)</span> instead).</p>
+<p>Given a quotient group $G/H$, find an isomorphic group $G^\prime$ that is more familiar to us.<br>
+(So that to study the structure of $G/H$, we can work on the more familiar group $G^\prime$ instead).</p>
 </blockquote>
 <p><strong>Some simple facts</strong></p>
 <blockquote>
-<ol type="1">
-<li><span class="math inline">\(G/{e}\)</span> is isomorphic to <span
-class="math inline">\(G\)</span> itself.</li>
-<li><span class="math inline">\(G/G\)</span> is isomorphic to the
-trivial group with one element.</li>
-<li>If <span class="math inline">\(G\)</span> is cyclic, then <span
-class="math inline">\(G/H\)</span> is also cyclic.</li>
-<li>If <span class="math inline">\(G = G_1 \times G_2\)</span>, then
-<span class="math inline">\(G/({e_1} \times G_2)\)</span> is isomorphic
-to <span class="math inline">\(G_1\)</span>. <br></li>
-<li>If <span class="math inline">\(G = G_1 \times \G_2\)</span>, <span
-class="math inline">\(H_1 \triangleleft G_1\)</span>, and <span
-class="math inline">\(H_2 \triangleleft G_2\)</span>, then <span
-class="math inline">\(G / (H_1 \times H_2)\)</span> is isomorphic to
-<span class="math inline">\((G_1/H_1) \times (G_2/H_2)\)</span></li>
+<ol>
+<li>$G/{e}$ is isomorphic to $G$ itself.</li>
+<li>$G/G$ is isomorphic to the trivial group with one element.</li>
+<li>If $G$ is cyclic, then $G/H$ is also cyclic.</li>
+<li>If $G = G_1 \times G_2$, then $G/({e_1} \times G_2)$ is isomorphic to $G_1$. <br></li>
+<li>If $G = G_1 \times \G_2$, $H_1 \triangleleft G_1$, and $H_2 \triangleleft G_2$, then $G / (H_1 \times H_2)$ is isomorphic to $(G_1/H_1) \times (G_2/H_2)$</li>
 </ol>
 </blockquote>
 <p><strong>Example</strong></p>
-<p>Classify the quotient group <span class="math inline">\(\mathbb{Z}_4
-\times \mathbb{Z}_2 / \langle (\bar 2, \bar 0) \rangle\)</span>.
-<br></p>
+<p>Classify the quotient group $\mathbb{Z}_4 \times \mathbb{Z}_2 / \langle (\bar 2, \bar 0) \rangle$. <br></p>
 <blockquote>
 <p>soluation 1</p>
-<p>Write <span class="math inline">\(G = \mathbb{Z}_4 \times
-\mathbb{Z}_2\)</span> and <span class="math inline">\(H = \{(\bar 0,
-\bar 0), (\bar 2, \bar 0)\}\)</span>.<br> The cosets are: <br> <span
-class="math inline">\((\bar 0, \bar 0) + H = \{(\bar 0, \bar 0), (\bar
-2, \bar 0)\}\)</span>, <span class="math inline">\((\bar 1, \bar 0) + H
-= \{(\bar 1, \bar 0), (\bar 3, \bar 0)\}\)</span>, <span
-class="math inline">\((\bar 0, \bar 1) + H = \{(\bar 0, \bar 1), (\bar
-2, \bar 1)\}\)</span> and <span class="math inline">\((\bar 1, \bar 1) +
-H = \{(\bar 1, \bar 1), (\bar 3, \bar 1)\}\)</span> <br> Since <span
-class="math inline">\(G/H\)</span> is abelian of order <span
-class="math inline">\(4\)</span>, it is isomorphic to <span
-class="math inline">\(\mathbb{Z}_4\)</span> ro <span
-class="math inline">\(\mathbb{Z}_2 \times \mathbb{Z}_2\)</span>. <br>
-Now, <span class="math inline">\(2((\bar 1, \bar 0) + H) = (\bar 2, \bar
-0) + H = H\)</span>, <span class="math inline">\(2((\bar 0, \bar 1) + H)
-= (\bar 0, \bar 0) + H = H\)</span>, <br> <span
-class="math inline">\(2((\bar 1, \bar 1) + H) = (\bar 2, \bar 0) + H =
-H\)</span>. <br> There is no element of order <span
-class="math inline">\(4\)</span> in the group <span
-class="math inline">\(G/H\)</span>, so <span class="math inline">\(G/H
-\cong \mathbb{Z}_2 \times \mathbb{Z}_2\)</span>. <br></p>
+<p>Write $G = \mathbb{Z}_4 \times \mathbb{Z}_2$ and $H = {(\bar 0, \bar 0), (\bar 2, \bar 0)}$.<br><br>
+The cosets are: <br><br>
+$(\bar 0, \bar 0) + H = {(\bar 0, \bar 0), (\bar 2, \bar 0)}$, $(\bar 1, \bar 0) + H = {(\bar 1, \bar 0), (\bar 3, \bar 0)}$, $(\bar 0, \bar 1) + H = {(\bar 0, \bar 1), (\bar 2, \bar 1)}$ and $(\bar 1, \bar 1) + H = {(\bar 1, \bar 1), (\bar 3, \bar 1)}$ <br><br>
+Since $G/H$ is abelian of order $4$, it is isomorphic to $\mathbb{Z}_4$ ro $\mathbb{Z}_2 \times \mathbb{Z}_2$. <br><br>
+Now, $2((\bar 1, \bar 0) + H) = (\bar 2, \bar 0) + H = H$, $2((\bar 0, \bar 1) + H) = (\bar 0, \bar 0) + H = H$, <br><br>
+$2((\bar 1, \bar 1) + H) = (\bar 2, \bar 0) + H = H$. <br><br>
+There is no element of order $4$ in the group $G/H$, so $G/H \cong \mathbb{Z}_2 \times \mathbb{Z}_2$. <br></p>
 <p>soluation 2</p>
-<p>Define a function <span class="math inline">\(\psi : \mathbb{Z}_4
-\times \mathbb{Z}_2 \to \mathbb{Z}_2 \times \mathbb{Z}_2\)</span> by
-<span class="math display">\[\psi(a \text{ mod } 4, b \text{ mod } 2) =
-(a \text{ mod } 2, b \text{ mod } 2)\]</span> which is a well-defined
-since <span class="math inline">\(2|4\)</span>. <br> It's easy to see
-that <span class="math inline">\(\psi\)</span> is a homomorphism. The
-kernel is <span class="math inline">\(\{(\bar 0, \bar 0)\} = H\)</span>.
-Moreover, <span class="math inline">\(\psi\)</span> is onto(prove by
-check one by one). <br> Therefore, by the first isomorphism theorem we
-have <span class="math inline">\(\mathbb{Z}_4 \times \mathbb{Z}_2 /
-\langle (2, 0) \rangle \cong \mathbb{Z}_2 \times
-\mathbb{Z}_2\)</span>.<br></p>
+<p>Define a function $\psi : \mathbb{Z}_4 \times \mathbb{Z}_2 \to \mathbb{Z}_2 \times \mathbb{Z}_2$ by<br>
+$$\psi(a \text{ mod } 4, b \text{ mod } 2) = (a \text{ mod } 2, b \text{ mod } 2)$$<br>
+which is a well-defined since $2|4$. <br><br>
+It’s easy to see that $\psi$ is a homomorphism. The kernel is ${(\bar 0, \bar 0)} = H$. Moreover, $\psi$ is onto(prove by check one by one). <br><br>
+Therefore, by the first isomorphism theorem we have $\mathbb{Z}_4 \times \mathbb{Z}_2 / \langle (2, 0) \rangle \cong \mathbb{Z}_2 \times \mathbb{Z}_2$.<br></p>
 </blockquote>
 <p><strong>Theorem - Elementary divisor theorem</strong></p>
 <blockquote>
-<p>Let <span class="math inline">\(G\)</span> be an additive group
-generated by <span class="math inline">\(g_1, \cdots, g_n\)</span>. Let
-<span class="math display">\[\begin{matrix}
-\rho: &amp; \mathbb{Z}^n &amp; \to &amp; G \\
-&amp; (a_1, \cdots , a_n) &amp; \to &amp; \sum a_i g_i. \\
-\end{matrix}\]</span> be a surjective group homomorphism. In this case,
-we have <span class="math inline">\(G \cong \mathbb{Z}^n / {\rm
-ker}(\rho)\)</span>. Suppose <span class="math inline">\({\rm
-ker}(\rho)\)</span> is generated by <span
-class="math display">\[\{(a_{i1}, a_{i2}, \dots , a_{in}) \mid i = 1
-\sim m \}\]</span></p>
+<p>Let $G$ be an additive group generated by $g_1, \cdots, g_n$. Let<br>
+$$\begin{matrix}<br>
+\rho: &amp; \mathbb{Z}^n &amp; \to &amp; G \<br>
+&amp; (a_1, \cdots , a_n) &amp; \to &amp; \sum a_i g_i. \<br>
+\end{matrix}$$<br>
+be a surjective group homomorphism. In this case, we have $G \cong \mathbb{Z}^n / {\rm ker}(\rho)$. Suppose ${\rm ker}(\rho)$ is generated by $${(a_{i1}, a_{i2}, \dots , a_{in}) \mid i = 1 \sim m }$$</p>
 </blockquote>
 
       </div>
@@ -571,11 +393,19 @@ class="math display">\[\{(a_{i1}, a_{i2}, \dots , a_{in}) \mid i = 1
   </footer>
 
   
+
+  <a href="https://github.com/Ruccccc/Ruccccc.github.io" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
-
 
 
 

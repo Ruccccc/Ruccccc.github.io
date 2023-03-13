@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
 
-
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -15,17 +14,17 @@
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha256-/4UQcSmErDzPCMAiuOiWPVVsNN2s3ZY/NsmXNcj0IFc=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Basis for \(F(\alpha)\)  Let \(\alpha \in E\), where \(E\) is a field extesnion of \(F\). If \(\alpha\) is algebraic over \(F\) with \({\rm deg}(\alpha, F) &#x3D; n\), then \(F(\alpha)\) is a finite-dimesi">
+    <meta name="description" content="Basis for $F(\alpha)$  Let $\alpha \in E$, where $E$ is a field extesnion of $F$. If $\alpha$ is algebraic over $F$ with ${\rm deg}(\alpha, F) &#x3D; n$, then $F(\alpha)$ is a finite-dimesional vector spac">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Algebraic Extension">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Algebraic_Extension.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Basis for \(F(\alpha)\)  Let \(\alpha \in E\), where \(E\) is a field extesnion of \(F\). If \(\alpha\) is algebraic over \(F\) with \({\rm deg}(\alpha, F) &#x3D; n\), then \(F(\alpha)\) is a finite-dimesi">
+<meta property="og:description" content="Basis for $F(\alpha)$  Let $\alpha \in E$, where $E$ is a field extesnion of $F$. If $\alpha$ is algebraic over $F$ with ${\rm deg}(\alpha, F) &#x3D; n$, then $F(\alpha)$ is a finite-dimesional vector spac">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-12-28T13:33:14.926Z">
 <meta property="article:modified_time" content="2022-12-28T13:33:14.926Z">
@@ -49,19 +48,19 @@
 
 
 
+
+
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-<!-- hexo injector head_end end --></head>
+</head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
     </div>
@@ -77,7 +76,7 @@
   </div>
 
   <div class="site-nav-right">
-    <div class="toggle popup-trigger">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
     </div>
   </div>
 </div>
@@ -88,15 +87,9 @@
 
 
 
-</div>
+</header>
         
   
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-
   <aside class="sidebar">
 
     <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
@@ -112,25 +105,23 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#basis-for-falpha"><span class="nav-number">1.</span> <span class="nav-text">Basis for \(F(\alpha)\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#algebraic-extensions"><span class="nav-number">2.</span> <span class="nav-text">Algebraic extensions</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basis-for-F-alpha"><span class="nav-number">1.</span> <span class="nav-text">Basis for $F(\alpha)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Algebraic-extensions"><span class="nav-number">2.</span> <span class="nav-text">Algebraic extensions</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Ruc Kuo</p>
   <div class="site-description" itemprop="description">Meaningless things.</div>
 </div>
-  <div class="links-of-author site-overview-item animated">
+  <div class="links-of-author animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/Ruccccc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Ruccccc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/Ruccccc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Ruccccc" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:ruckuo@gmail.com" title="E-Mail → mailto:ruckuo@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <a href="mailto:ruckuo@gmail.com" title="E-Mail → mailto:ruckuo@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
   </div>
-
-
 
         </div>
       </div>
@@ -139,20 +130,12 @@
           <span>0%</span>
         </div>
     </div>
-  </aside>
-  <div class="sidebar-dimmer"></div>
-
-
-    </header>
 
     
+  </aside>
 
-  <a href="https://github.com/Ruccccc/Ruccccc.github.io" class="github-corner" title="GitHub" aria-label="GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
 
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-
+    </div>
 
     <div class="main-inner page posts-expand">
 
@@ -178,106 +161,54 @@
       
       
       <div class="post-body">
-          <h2 id="basis-for-falpha">Basis for <span
-class="math inline">\(F(\alpha)\)</span></h2>
+          <h2 id="Basis-for-F-alpha">Basis for $F(\alpha)$</h2>
 <blockquote>
-<p>Let <span class="math inline">\(\alpha \in E\)</span>, where <span
-class="math inline">\(E\)</span> is a field extesnion of <span
-class="math inline">\(F\)</span>.</p>
-<p>If <span class="math inline">\(\alpha\)</span> is algebraic over
-<span class="math inline">\(F\)</span> with <span
-class="math inline">\({\rm deg}(\alpha, F) = n\)</span>, then <span
-class="math inline">\(F(\alpha)\)</span> is a finite-dimesional vector
-space over <span class="math inline">\(n\)</span>, and a basis is given
-by <span class="math inline">\(\{1, \alpha, \cdots,
-\alpha^{n-1}\}\)</span> If <span class="math inline">\(\alpha\)</span>
-is not algebraic over <span class="math inline">\(F\)</span>, then <span
-class="math inline">\(F(\alpha)\)</span> is an infinite-dimensional
-vector space over <span class="math inline">\(F\)</span>.</p>
+<p>Let $\alpha \in E$, where $E$ is a field extesnion of $F$.</p>
+<p>If $\alpha$ is algebraic over $F$ with ${\rm deg}(\alpha, F) = n$, then $F(\alpha)$ is a finite-dimesional vector space over $n$, and a basis is given by ${1, \alpha, \cdots, \alpha^{n-1}}$<br>
+If $\alpha$ is not algebraic over $F$, then $F(\alpha)$ is an infinite-dimensional vector space over $F$.</p>
 </blockquote>
-<h2 id="algebraic-extensions">Algebraic extensions</h2>
+<h2 id="Algebraic-extensions">Algebraic extensions</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>An extension <span class="math inline">\(E\)</span> of field <span
-class="math inline">\(F\)</span> is an <strong>algebraic
-extension</strong> of <span class="math inline">\(F\)</span> if every
-element in <span class="math inline">\(E\)</span> is algebraic over
-<span class="math inline">\(F\)</span>.</p>
+<p>An extension $E$ of field $F$ is an <strong>algebraic extension</strong> of $F$ if every element in $E$ is algebraic over $F$.</p>
 </blockquote>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>If an extension field <span class="math inline">\(E\)</span> of a
-field <span class="math inline">\(F\)</span> is of finite dimension
-<span class="math inline">\(n\)</span> as a vector space over <span
-class="math inline">\(F\)</span>, then <span
-class="math inline">\(E\)</span> is a finite extension of degree <span
-class="math inline">\(n\)</span> over <span
-class="math inline">\(F\)</span>. And <span class="math inline">\([E :
-F]\)</span> denote the degree of <span class="math inline">\(E\)</span>
-over <span class="math inline">\(F\)</span>.</p>
+<p>If an extension field $E$ of a field $F$ is of finite dimension $n$ as a vector space over $F$, then $E$ is a finite extension of degree $n$ over $F$. And $[E : F]$ denote the degree of $E$ over $F$.</p>
 </blockquote>
 <p><strong>Remark</strong></p>
 <blockquote>
-<p>The finiteness in the definition of a finite extension refers to the
-degree, not about the field <span class="math inline">\(E\)</span>. <br>
-For example, <span class="math inline">\(\Bbb{Q}[i]\)</span> is a
-finited extension of degree <span class="math inline">\(2\)</span> of
-<span class="math inline">\(\Bbb{Q}\)</span>, but it has infinitely many
-elements.</p>
+<p>The finiteness in the definition of a finite extension refers to the degree, not about the field $E$. <br><br>
+For example, $\Bbb{Q}[i]$ is a finited extension of degree $2$ of $\Bbb{Q}$, but it has infinitely many elements.</p>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>A finite extension <span class="math inline">\(E\)</span> of a field
-<span class="math inline">\(F\)</span> is an algebraic extension.</p>
+<p>A finite extension $E$ of a field $F$ is an algebraic extension.</p>
 </blockquote>
 <details>
-<summary>
-<strong>Proof</strong>
-</summary>
-</details>
-<p><br></p>
+<summary> **Proof** </summary>
+</details><br>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>If <span class="math inline">\(E\)</span> is a finite extension of a
-field <span class="math inline">\(F\)</span>, and <span
-class="math inline">\(K\)</span> is a finite extension of <span
-class="math inline">\(E\)</span>, them <span
-class="math inline">\(K\)</span> is a finite extensino of <span
-class="math inline">\(F\)</span> and <span class="math inline">\([K:F] =
-[K:E] [E:F]\)</span></p>
+<p>If $E$ is a finite extension of a field $F$, and $K$ is a finite extension of $E$, them $K$ is a finite extensino of $F$ and $[K:F] = [K:E] [E:F]$</p>
 </blockquote>
 <details>
-<summary>
-<strong>Proof</strong>
-</summary>
-</details>
-<p><br></p>
+<summary> **Proof** </summary>
+</details><br>
 <p><strong>Corollary</strong></p>
 <blockquote>
-<p>Assume that <span class="math inline">\(E\)</span> is an extension
-field of <span class="math inline">\(F\)</span> and <span
-class="math inline">\(\alpha \in E\)</span> is algebraic over <span
-class="math inline">\(F\)</span>. If <span class="math inline">\(\beta
-\in F(\alpha)\)</span>, then <span class="math inline">\({\rm
-deg}(\beta, F)\)</span> divides <span class="math inline">\({\rm
-deg}(\alpha, F)\)</span>.</p>
+<p>Assume that $E$ is an extension field of $F$ and $\alpha \in E$ is algebraic over $F$. If $\beta \in F(\alpha)$, then ${\rm deg}(\beta, F)$ divides ${\rm deg}(\alpha, F)$.</p>
 </blockquote>
 <p><strong>Corollary</strong></p>
 <blockquote>
-<p>Assume that <span class="math inline">\(E = F(\alpha, \beta)\)</span>
-is an algebraic extension of <span class="math inline">\(F\)</span>. Let
-<span class="math inline">\(n = {\rm deg}(\alpha, F)\)</span> and <span
-class="math inline">\(m = {\rm deg}(\beta, F)\)</span>. Then</p>
-<ol type="1">
-<li><span class="math inline">\([E : F] \leq mn\)</span></li>
-<li><span class="math inline">\({\rm lcm}(m, n) \mid [E :
-F]\)</span></li>
+<p>Assume that $E = F(\alpha, \beta)$ is an algebraic extension of $F$. Let $n = {\rm deg}(\alpha, F)$ and $m = {\rm deg}(\beta, F)$. Then</p>
+<ol>
+<li>$[E : F] \leq mn$</li>
+<li>${\rm lcm}(m, n) \mid [E : F]$</li>
 </ol>
 </blockquote>
 <p><strong>Problem</strong></p>
-<p>Find the degree of <span class="math inline">\(F = \Bbb{Q}(\sqrt{2},
-\sqrt{3})\)</span> over <span
-class="math inline">\(\Bbb{Q}\)</span>.</p>
+<p>Find the degree of $F = \Bbb{Q}(\sqrt{2}, \sqrt{3})$ over $\Bbb{Q}$.</p>
 
       </div>
       
@@ -316,11 +247,19 @@ class="math inline">\(\Bbb{Q}\)</span>.</p>
   </footer>
 
   
+
+  <a href="https://github.com/Ruccccc/Ruccccc.github.io" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
-
 
 
 

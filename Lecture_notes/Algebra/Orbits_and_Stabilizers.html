@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Stabilizer Definition  Let $X$ be a $G$-set. The set ${\rm Stab}_G (x) &#x3D; {g \in G : gx &#x3D; x}$ is called the stabilizer of $x$ in $G$.  Theorem  For every $x \in X$, the set ${\rm Stab}_G(x)$ is a subgr">
+    <meta name="description" content="Stabilizer Definition  Let \(X\) be a \(G\)-set. The set \({\rm Stab}_G (x) &#x3D; \{g \in G : gx &#x3D; x\}\) is called the stabilizer of \(x\) in \(G\).  Theorem  For every \(x \in X\), the set \({\rm Stab}_G">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Orbits and Stabilizers">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Orbits_and_Stabilizers.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Stabilizer Definition  Let $X$ be a $G$-set. The set ${\rm Stab}_G (x) &#x3D; {g \in G : gx &#x3D; x}$ is called the stabilizer of $x$ in $G$.  Theorem  For every $x \in X$, the set ${\rm Stab}_G(x)$ is a subgr">
+<meta property="og:description" content="Stabilizer Definition  Let \(X\) be a \(G\)-set. The set \({\rm Stab}_G (x) &#x3D; \{g \in G : gx &#x3D; x\}\) is called the stabilizer of \(x\) in \(G\).  Theorem  For every \(x \in X\), the set \({\rm Stab}_G">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-28T14:03:18.660Z">
 <meta property="article:modified_time" content="2023-02-28T14:03:18.660Z">
@@ -105,7 +105,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Stabilizer"><span class="nav-number">1.</span> <span class="nav-text">Stabilizer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Orbits"><span class="nav-number">2.</span> <span class="nav-text">Orbits</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fixed-Subset"><span class="nav-number">3.</span> <span class="nav-text">Fixed Subset</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#stabilizer"><span class="nav-number">1.</span> <span class="nav-text">Stabilizer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orbits"><span class="nav-number">2.</span> <span class="nav-text">Orbits</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fixed-subset"><span class="nav-number">3.</span> <span class="nav-text">Fixed Subset</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -161,116 +161,200 @@
       
       
       <div class="post-body">
-          <h2 id="Stabilizer">Stabilizer</h2>
+          <h2 id="stabilizer">Stabilizer</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>Let $X$ be a $G$-set. The set ${\rm Stab}_G (x) = {g \in G : gx = x}$ is called the <strong>stabilizer</strong> of $x$ in $G$.</p>
+<p>Let <span class="math inline">\(X\)</span> be a <span
+class="math inline">\(G\)</span>-set. The set <span
+class="math inline">\({\rm Stab}_G (x) = \{g \in G : gx = x\}\)</span>
+is called the <strong>stabilizer</strong> of <span
+class="math inline">\(x\)</span> in <span
+class="math inline">\(G\)</span>.</p>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>For every $x \in X$, the set ${\rm Stab}_G(x)$ is a subgroup of $G$.</p>
+<p>For every <span class="math inline">\(x \in X\)</span>, the set <span
+class="math inline">\({\rm Stab}_G(x)\)</span> is a subgroup of <span
+class="math inline">\(G\)</span>.</p>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<ol>
-<li>Closure <br><br>
-For all $g_1, g_2 \in {\rm Stab}_G(x)$, $(g_1g_2)x = g_1x = x$ since $g_1x = g_2x = x$. Thus, $g_1g_2 \in {\rm Stab}_G(x)$</li>
-<li>Identity <br><br>
-$ex = x$, thus $e \in {\rm Stab}_G(x)$</li>
-<li>Inverse <br><br>
-For all $g \in G$, $g^{-1}x = g^{-1}gx = ex = x$. Thus, $g^{-1} \in {\rm Stab}_G(x)$</li>
+<ol type="1">
+<li>Closure <br> For all <span class="math inline">\(g_1, g_2 \in {\rm
+Stab}_G(x)\)</span>, <span class="math inline">\((g_1g_2)x = g_1x =
+x\)</span> since <span class="math inline">\(g_1x = g_2x = x\)</span>.
+Thus, <span class="math inline">\(g_1g_2 \in {\rm
+Stab}_G(x)\)</span></li>
+<li>Identity <br> <span class="math inline">\(ex = x\)</span>, thus
+<span class="math inline">\(e \in {\rm Stab}_G(x)\)</span></li>
+<li>Inverse <br> For all <span class="math inline">\(g \in G\)</span>,
+<span class="math inline">\(g^{-1}x = g^{-1}gx = ex = x\)</span>. Thus,
+<span class="math inline">\(g^{-1} \in {\rm Stab}_G(x)\)</span></li>
 </ol>
 </blockquote>
-</details><br>
-<h2 id="Orbits">Orbits</h2>
+</details>
+<p><br></p>
+<h2 id="orbits">Orbits</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>The set $Gx = {gx \mid g \in G}$ is called the $G$-orbit. <br></p>
-<p>It’s easy to see that elements in same $G$-orbit form an equivalence relation, and $G$-orbits is the partition of $X$. We will talk about the relation next.</p>
+<p>The set <span class="math inline">\(Gx = \{gx \mid g \in G\}\)</span>
+is called the <span class="math inline">\(G\)</span>-orbit. <br></p>
+<p>It's easy to see that elements in same <span
+class="math inline">\(G\)</span>-orbit form an equivalence relation, and
+<span class="math inline">\(G\)</span>-orbits is the partition of <span
+class="math inline">\(X\)</span>. We will talk about the relation
+next.</p>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let $X$ be a $G$-set, Define a realation $\sim$ on $X$ by $x_1 \sim x_2$ if there exists $g \in G$ such that $gx_1 = x_2$. Then $\sim$ is a an equivalence relation.</p>
+<p>Let <span class="math inline">\(X\)</span> be a <span
+class="math inline">\(G\)</span>-set, Define a realation <span
+class="math inline">\(\sim\)</span> on <span
+class="math inline">\(X\)</span> by <span class="math inline">\(x_1 \sim
+x_2\)</span> if there exists <span class="math inline">\(g \in
+G\)</span> such that <span class="math inline">\(gx_1 = x_2\)</span>.
+Then <span class="math inline">\(\sim\)</span> is a an equivalence
+relation.</p>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<ol>
-<li>Reflexive <br><br>
-$ex = x$, thus $x \sim x$</li>
-<li>Symmetric <br><br>
-Suppose that $x \sim y$, then $gx = y$. We have $g^{-1}y = g^{-1}gx = x$, so $y \sim x$.</li>
-<li>Transitive <br><br>
-Suppose that $x \sim y$ and $y \sim z$, that is $g_1x = y$ and $g_2y = z$ for some $g_1, g_2 \in G$. Then we know that $g_1g_2x = z$. Thus, $x \sim z$.</li>
+<ol type="1">
+<li>Reflexive <br> <span class="math inline">\(ex = x\)</span>, thus
+<span class="math inline">\(x \sim x\)</span></li>
+<li>Symmetric <br> Suppose that <span class="math inline">\(x \sim
+y\)</span>, then <span class="math inline">\(gx = y\)</span>. We have
+<span class="math inline">\(g^{-1}y = g^{-1}gx = x\)</span>, so <span
+class="math inline">\(y \sim x\)</span>.</li>
+<li>Transitive <br> Suppose that <span class="math inline">\(x \sim
+y\)</span> and <span class="math inline">\(y \sim z\)</span>, that is
+<span class="math inline">\(g_1x = y\)</span> and <span
+class="math inline">\(g_2y = z\)</span> for some <span
+class="math inline">\(g_1, g_2 \in G\)</span>. Then we know that <span
+class="math inline">\(g_1g_2x = z\)</span>. Thus, <span
+class="math inline">\(x \sim z\)</span>.</li>
 </ol>
-<p>Then we proved that $\sim$ is a equivalence relation.</p>
+<p>Then we proved that <span class="math inline">\(\sim\)</span> is a
+equivalence relation.</p>
 </blockquote>
-</details><br>
+</details>
+<p><br></p>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let $X$ be a $G$-set. Then $X$ can be written as a disjoint union of $G$-orbits.</p>
+<p>Let <span class="math inline">\(X\)</span> be a <span
+class="math inline">\(G\)</span>-set. Then <span
+class="math inline">\(X\)</span> can be written as a disjoint union of
+<span class="math inline">\(G\)</span>-orbits.</p>
 </blockquote>
-<p><strong>Theorem – The orbit-stabilizer theorem</strong></p>
+<p><strong>Theorem -- The orbit-stabilizer theorem</strong></p>
 <blockquote>
-<p>For all $x \in X$, where $X$ is a $G$-set, we have $|Gx| = [G : {\rm Stab}_G(x)]$. <br><br>
-If $G$ is finite, we have $|G| = |Gx||{\rm Stab}_G(x)|$</p>
+<p>For all <span class="math inline">\(x \in X\)</span>, where <span
+class="math inline">\(X\)</span> is a <span
+class="math inline">\(G\)</span>-set, we have <span
+class="math inline">\(|Gx| = [G : {\rm Stab}_G(x)]\)</span>. <br> If
+<span class="math inline">\(G\)</span> is finite, we have <span
+class="math inline">\(|G| = |Gx||{\rm Stab}_G(x)|\)</span></p>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<p>We will show that there is a bijection between $Gx$ and $G/{\rm Stab}_G(x)$. <br><br>
-Let $H = {\rm Stab}_G(x)$ <br></p>
-<p>Let $\phi : G/H \to Gx$ be a function given by $\phi(gH) = gx$.</p>
-<ol>
-<li>Well-defined <br><br>
-Let $g_1 = g_2$. Then $\phi(g_1H) = g_1x = g_2x = \phi(g_2H)$. Thus, $\phi$ is well-defined.</li>
-<li>One-to-one <br><br>
-Suppose that $\phi(g_1H) = \phi(g_2H)$. We get $g_1x = g_2x$ and $x = g_1^{-1}g_2x$. It means that $g_1^{-1}g_2 \in H$, which implies $g_1H = g_2H$. Therefore, $\phi$ is one-to-one.</li>
-<li>Onto <br><br>
-Let $y \in Gx$. Then $y = gx$ for some $g \in G$. It follows that $\phi(gH) = gx = y$. Therefore $\phi$ is onto.</li>
+<p>We will show that there is a bijection between <span
+class="math inline">\(Gx\)</span> and <span class="math inline">\(G/{\rm
+Stab}_G(x)\)</span>. <br> Let <span class="math inline">\(H = {\rm
+Stab}_G(x)\)</span> <br></p>
+<p>Let <span class="math inline">\(\phi : G/H \to Gx\)</span> be a
+function given by <span class="math inline">\(\phi(gH) =
+gx\)</span>.</p>
+<ol type="1">
+<li>Well-defined <br> Let <span class="math inline">\(g_1 =
+g_2\)</span>. Then <span class="math inline">\(\phi(g_1H) = g_1x = g_2x
+= \phi(g_2H)\)</span>. Thus, <span class="math inline">\(\phi\)</span>
+is well-defined.</li>
+<li>One-to-one <br> Suppose that <span class="math inline">\(\phi(g_1H)
+= \phi(g_2H)\)</span>. We get <span class="math inline">\(g_1x =
+g_2x\)</span> and <span class="math inline">\(x = g_1^{-1}g_2x\)</span>.
+It means that <span class="math inline">\(g_1^{-1}g_2 \in H\)</span>,
+which implies <span class="math inline">\(g_1H = g_2H\)</span>.
+Therefore, <span class="math inline">\(\phi\)</span> is one-to-one.</li>
+<li>Onto <br> Let <span class="math inline">\(y \in Gx\)</span>. Then
+<span class="math inline">\(y = gx\)</span> for some <span
+class="math inline">\(g \in G\)</span>. It follows that <span
+class="math inline">\(\phi(gH) = gx = y\)</span>. Therefore <span
+class="math inline">\(\phi\)</span> is onto.</li>
 </ol>
 </blockquote>
-</details><br>
+</details>
+<p><br></p>
 <p><strong>Examples</strong></p>
 <ul>
-<li>
-<p>Cube</p>
+<li><p>Cube</p>
 <blockquote>
-<p>Let $G$ be the group of rotational symmetrics of a cube, $X$ be the set of vertices. <br><br>
-Then for any vertex $x \in X$, we have<br>
-$$|G| = |Gx||{\rm Stab}_G(x) = 8 \cdot 3 = 24$$</p>
-</blockquote>
-</li>
-<li>
-<p>Buckyball</p>
+<p>Let <span class="math inline">\(G\)</span> be the group of rotational
+symmetrics of a cube, <span class="math inline">\(X\)</span> be the set
+of vertices. <br> Then for any vertex <span class="math inline">\(x \in
+X\)</span>, we have <span class="math display">\[|G| = |Gx||{\rm
+Stab}_G(x) = 8 \cdot 3 = 24\]</span></p>
+</blockquote></li>
+<li><p>Buckyball</p>
 <blockquote>
-<p>Let $G$ be the group of rotational symmetrics of a buckyball, $X$ be the set of vertices. <br><br>
-Then for any vertex $x \in X$, we have<br>
-$$|G| = |Gx||{\rm Stab}_G(x) = 60 * 1 = 60$$</p>
-</blockquote>
-</li>
+<p>Let <span class="math inline">\(G\)</span> be the group of rotational
+symmetrics of a buckyball, <span class="math inline">\(X\)</span> be the
+set of vertices. <br> Then for any vertex <span class="math inline">\(x
+\in X\)</span>, we have <span class="math display">\[|G| = |Gx||{\rm
+Stab}_G(x) = 60 * 1 = 60\]</span></p>
+</blockquote></li>
 </ul>
-<h2 id="Fixed-Subset">Fixed Subset</h2>
+<h2 id="fixed-subset">Fixed Subset</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>Let $X$ be a $G$-set. For any element $g \in G$, the <strong>$g$-fixed subset</strong> is $$X^g = { x \in X \mid gx = x }$$<br>
-The <strong>$G$-fixed subset</strong> of $X$ is $$X^G = \bigcap_{g \in G}X^g$$<br>
-Note that $x \in X^G$ if and only if $Gx = {x}$</p>
+<p>Let <span class="math inline">\(X\)</span> be a <span
+class="math inline">\(G\)</span>-set. For any element <span
+class="math inline">\(g \in G\)</span>, the <strong><span
+class="math inline">\(g\)</span>-fixed subset</strong> is <span
+class="math display">\[X^g = \{ x \in X \mid gx = x \}\]</span> The
+<strong><span class="math inline">\(G\)</span>-fixed subset</strong> of
+<span class="math inline">\(X\)</span> is <span
+class="math display">\[X^G = \bigcap_{g \in G}X^g\]</span> Note that
+<span class="math inline">\(x \in X^G\)</span> if and only if <span
+class="math inline">\(Gx = \{x\}\)</span></p>
 </blockquote>
-<p><strong>Theorem – Fixed subset for $p$-Groups</strong></p>
+<p><strong>Theorem -- Fixed subset for <span
+class="math inline">\(p\)</span>-Groups</strong></p>
 <blockquote>
-<p>Let $p$ be a prime and $G$ be a finite $p$-group that acts on a finite set $X$. Then $|X| \equiv |X^G| \pmod p$.</p>
+<p>Let <span class="math inline">\(p\)</span> be a prime and <span
+class="math inline">\(G\)</span> be a finite <span
+class="math inline">\(p\)</span>-group that acts on a finite set <span
+class="math inline">\(X\)</span>. Then <span class="math inline">\(|X|
+\equiv |X^G| \pmod p\)</span>.</p>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<p>Let $X_1, \ldots, X_k$ be the collection of $G$-orbits that contain at least two elements. Then we have<br>
-$$X = X^G \cup X_1 \cup \cdots \cup X_k$$</p>
-<p>By the orbit-stabilizer theorem, all $|X_i|$ divides $|G|$, implying that $|X_i|$ is a multiple of $p$. Since that $G$-orbits form a partition of $X$, we obtain<br>
-$$|X| = |X^G| + |X_1| + \ldots + |X_k| \equiv |X^G| \pmod p$$</p>
+<p>Let <span class="math inline">\(X_1, \ldots, X_k\)</span> be the
+collection of <span class="math inline">\(G\)</span>-orbits that contain
+at least two elements. Then we have <span class="math display">\[X = X^G
+\cup X_1 \cup \cdots \cup X_k\]</span></p>
+<p>By the orbit-stabilizer theorem, all <span
+class="math inline">\(|X_i|\)</span> divides <span
+class="math inline">\(|G|\)</span>, implying that <span
+class="math inline">\(|X_i|\)</span> is a multiple of <span
+class="math inline">\(p\)</span>. Since that <span
+class="math inline">\(G\)</span>-orbits form a partition of <span
+class="math inline">\(X\)</span>, we obtain <span
+class="math display">\[|X| = |X^G| + |X_1| + \ldots + |X_k| \equiv |X^G|
+\pmod p\]</span></p>
 </blockquote>
-</details><br>
+</details>
+<p><br></p>
 
       </div>
       

@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Example To make a field out of $\mathbb{Z}$, we can add all fractions $b&#x2F;a$.  Then the set becomes ${b&#x2F;a \mid a, b \in Z, a\neq 0} &#x3D; \mathbb{Q}$  Thus, we say $\mathbb{Q}$ is the field of fractions o">
+    <meta name="description" content="Example To make a field out of \(\mathbb{Z}\), we can add all fractions \(b&#x2F;a\).  Then the set becomes \(\{b&#x2F;a \mid a, b \in Z, a\neq 0\} &#x3D; \mathbb{Q}\)  Thus, we say \(\mathbb{Q}\) is the field of f">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Fields of Quotients">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Fields_of_Quotients.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Example To make a field out of $\mathbb{Z}$, we can add all fractions $b&#x2F;a$.  Then the set becomes ${b&#x2F;a \mid a, b \in Z, a\neq 0} &#x3D; \mathbb{Q}$  Thus, we say $\mathbb{Q}$ is the field of fractions o">
+<meta property="og:description" content="Example To make a field out of \(\mathbb{Z}\), we can add all fractions \(b&#x2F;a\).  Then the set becomes \(\{b&#x2F;a \mid a, b \in Z, a\neq 0\} &#x3D; \mathbb{Q}\)  Thus, we say \(\mathbb{Q}\) is the field of f">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-12-04T09:46:21.851Z">
 <meta property="article:modified_time" content="2022-12-04T09:46:21.851Z">
@@ -105,7 +105,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Field-of-Fractions"><span class="nav-number">1.</span> <span class="nav-text">Field of Fractions</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#field-of-fractions"><span class="nav-number">1.</span> <span class="nav-text">Field of Fractions</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -171,25 +171,35 @@ To make the field close under the multiplication, we also need to add $b/a$, whe
 
 -->
 <p><strong>Example</strong></p>
-<p>To make a field out of $\mathbb{Z}$, we can add all fractions $b/a$. <br><br>
-Then the set becomes ${b/a \mid a, b \in Z, a\neq 0} = \mathbb{Q}$ <br><br>
-Thus, we say $\mathbb{Q}$ is the <strong>field of fractions</strong> or the <strong>field of quotients</strong> of $\Bbb{Z}$. <br></p>
-<h2 id="Field-of-Fractions">Field of Fractions</h2>
-<p>Let $D$ be a field.</p>
-<ol>
-<li>Define the set<br>
-$$S = {(a, b) \mid a, b \in D, b \neq 0}$$<br>
-and think $(a,b)$ as a formal fraction $a/b$. <br></li>
-<li>Define a relation $\sim$ on $S$ by<br>
-$$(a, b) \sim (c,d) \iff ad = bc$$<br>
-It is straightforward to show that this is an equivalence relation.</li>
-<li>Let $a/b$ denote the equicalence class containing $(a,b)$ and let<br>
-$$F = {a/b \mid (a,b) \in S}$$<br>
-be the set of all equivalence classes.</li>
-<li>Define addition and multiplication on F to make it a field.<br>
-$$+ : (a/b, c/d) \mapsto (ad + bc) /bd$$ $$\times : (a/b, c/d) \mapsto ac/bd$$<br>
+<p>To make a field out of <span
+class="math inline">\(\mathbb{Z}\)</span>, we can add all fractions
+<span class="math inline">\(b/a\)</span>. <br> Then the set becomes
+<span class="math inline">\(\{b/a \mid a, b \in Z, a\neq 0\} =
+\mathbb{Q}\)</span> <br> Thus, we say <span
+class="math inline">\(\mathbb{Q}\)</span> is the <strong>field of
+fractions</strong> or the <strong>field of quotients</strong> of <span
+class="math inline">\(\Bbb{Z}\)</span>. <br></p>
+<h2 id="field-of-fractions">Field of Fractions</h2>
+<p>Let <span class="math inline">\(D\)</span> be a field.</p>
+<ol type="1">
+<li>Define the set <span class="math display">\[S = \{(a, b) \mid a, b
+\in D, b \neq 0\}\]</span> and think <span
+class="math inline">\((a,b)\)</span> as a formal fraction <span
+class="math inline">\(a/b\)</span>. <br></li>
+<li>Define a relation <span class="math inline">\(\sim\)</span> on <span
+class="math inline">\(S\)</span> by <span class="math display">\[(a, b)
+\sim (c,d) \iff ad = bc\]</span> It is straightforward to show that this
+is an equivalence relation.</li>
+<li>Let <span class="math inline">\(a/b\)</span> denote the equicalence
+class containing <span class="math inline">\((a,b)\)</span> and let
+<span class="math display">\[F = \{a/b \mid (a,b) \in S\}\]</span> be
+the set of all equivalence classes.</li>
+<li>Define addition and multiplication on F to make it a field. <span
+class="math display">\[+ : (a/b, c/d) \mapsto (ad + bc) /bd\]</span>
+<span class="math display">\[\times : (a/b, c/d) \mapsto ac/bd\]</span>
 They are well-defined.</li>
-<li>The field $(F, +, \times)$ is the field of fractions over $D$.</li>
+<li>The field <span class="math inline">\((F, +, \times)\)</span> is the
+field of fractions over <span class="math inline">\(D\)</span>.</li>
 </ol>
 
       </div>

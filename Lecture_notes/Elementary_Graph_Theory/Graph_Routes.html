@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="The Traveling Salesman Problem  Finding the least weight sum Hamiltionian circle.  Nearest Neighbor Algorithm  Choose a starting vertex, called $v$. highlight $v$. Among all edges incident to $v$, pic">
+    <meta name="description" content="The Traveling Salesman Problem  Finding the least weight sum Hamiltionian circle.  Nearest Neighbor Algorithm  Choose a starting vertex, called \(v\). highlight \(v\). Among all edges incident to \(v\">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Graph Routes">
 <meta property="og:url" content="http://example.com/Lecture_notes/Elementary_Graph_Theory/Graph_Routes.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="The Traveling Salesman Problem  Finding the least weight sum Hamiltionian circle.  Nearest Neighbor Algorithm  Choose a starting vertex, called $v$. highlight $v$. Among all edges incident to $v$, pic">
+<meta property="og:description" content="The Traveling Salesman Problem  Finding the least weight sum Hamiltionian circle.  Nearest Neighbor Algorithm  Choose a starting vertex, called \(v\). highlight \(v\). Among all edges incident to \(v\">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-10-30T15:35:29.458Z">
 <meta property="article:modified_time" content="2022-10-30T15:35:29.458Z">
@@ -105,7 +105,9 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Traveling-Salesman-Problem"><span class="nav-number">1.</span> <span class="nav-text">The Traveling Salesman Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nearest-Neighbor-Algorithm"><span class="nav-number">1.1.</span> <span class="nav-text">Nearest Neighbor Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Repetitive-Nearest-Neightbor-Algorithm"><span class="nav-number">1.2.</span> <span class="nav-text">Repetitive Nearest Neightbor Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cheapest-Link-Algorithm"><span class="nav-number">1.3.</span> <span class="nav-text">Cheapest Link Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nearest-Insertion-Algorithm"><span class="nav-number">1.4.</span> <span class="nav-text">Nearest Insertion Algorithm</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#the-traveling-salesman-problem"><span class="nav-number">1.</span> <span class="nav-text">The Traveling Salesman
+Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#nearest-neighbor-algorithm"><span class="nav-number">1.1.</span> <span class="nav-text">Nearest Neighbor Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#repetitive-nearest-neightbor-algorithm"><span class="nav-number">1.2.</span> <span class="nav-text">Repetitive Nearest
+Neightbor Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cheapest-link-algorithm"><span class="nav-number">1.3.</span> <span class="nav-text">Cheapest Link Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nearest-insertion-algorithm"><span class="nav-number">1.4.</span> <span class="nav-text">Nearest Insertion Algorithm</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -161,41 +163,53 @@
       
       
       <div class="post-body">
-          <h2 id="The-Traveling-Salesman-Problem">The Traveling Salesman Problem</h2>
+          <h2 id="the-traveling-salesman-problem">The Traveling Salesman
+Problem</h2>
 <blockquote>
 <p>Finding the least weight sum Hamiltionian circle.</p>
 </blockquote>
-<h3 id="Nearest-Neighbor-Algorithm">Nearest Neighbor Algorithm</h3>
-<ol>
-<li>Choose a starting vertex, called $v$. highlight $v$.</li>
-<li>Among all edges incident to $v$, pick the one with the smallest weight. If there are multiple choices, randomly pick one.</li>
-<li>Highlight the edge and move to its other endpoint $u$. Highlight $u$.</li>
-<li>Repeat step 2. and 3., where only unhighlight vertices are considered.</li>
-<li>Close the cycle by adding the edge to $v$ from the last vertex highlight.</li>
+<h3 id="nearest-neighbor-algorithm">Nearest Neighbor Algorithm</h3>
+<ol type="1">
+<li>Choose a starting vertex, called <span
+class="math inline">\(v\)</span>. highlight <span
+class="math inline">\(v\)</span>.</li>
+<li>Among all edges incident to <span class="math inline">\(v\)</span>,
+pick the one with the smallest weight. If there are multiple choices,
+randomly pick one.</li>
+<li>Highlight the edge and move to its other endpoint <span
+class="math inline">\(u\)</span>. Highlight <span
+class="math inline">\(u\)</span>.</li>
+<li>Repeat step 2. and 3., where only unhighlight vertices are
+considered.</li>
+<li>Close the cycle by adding the edge to <span
+class="math inline">\(v\)</span> from the last vertex highlight.</li>
 </ol>
 <ul>
 <li>might stuck in local optimality.</li>
 </ul>
-<h3 id="Repetitive-Nearest-Neightbor-Algorithm">Repetitive Nearest Neightbor Algorithm</h3>
-<ol>
+<h3 id="repetitive-nearest-neightbor-algorithm">Repetitive Nearest
+Neightbor Algorithm</h3>
+<ol type="1">
 <li>Choose a vertex and do nearest neighbor algorithm</li>
 <li>Repeat step 1.</li>
-<li>Choose the least total weight. Rewrite it with desired reference point.</li>
+<li>Choose the least total weight. Rewrite it with desired reference
+point.</li>
 </ol>
-<h3 id="Cheapest-Link-Algorithm">Cheapest Link Algorithm</h3>
-<ol>
+<h3 id="cheapest-link-algorithm">Cheapest Link Algorithm</h3>
+<ol type="1">
 <li>Choose the smallest weight edge. Highlight the edge.</li>
 <li>Repeat Step 1. with added conditions:
-<ol>
+<ol type="1">
 <li>no vertex has three highlighted edge incident to it.</li>
 <li>no cycle formed before hitting all vertices.</li>
+</ol></li>
 </ol>
-</li>
-</ol>
-<h3 id="Nearest-Insertion-Algorithm">Nearest Insertion Algorithm</h3>
-<ol>
-<li>Choose the edge with the smallest weight.Highlight the edge and its endpoints.</li>
-<li>Pick a vetex that is closest to one of the three already chosen vertices.</li>
+<h3 id="nearest-insertion-algorithm">Nearest Insertion Algorithm</h3>
+<ol type="1">
+<li>Choose the edge with the smallest weight.Highlight the edge and its
+endpoints.</li>
+<li>Pick a vetex that is closest to one of the three already chosen
+vertices.</li>
 </ol>
 
       </div>

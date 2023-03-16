@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="First Isomorphism Theorem Theroem  Let $\phi : G \to G^\prime$ be a homomorphism with kernel $K$. Then the canonical map $\mu : G&#x2F;K \to \phi(G)$ defined by $\mu(gK) &#x3D; \phi(g)$ is a group isomorphism.">
+    <meta name="description" content="First Isomorphism Theorem Theroem  Let \(\phi : G \to G^\prime\) be a homomorphism with kernel \(K\). Then the canonical map \(\mu : G&#x2F;K \to \phi(G)\) defined by \(\mu(gK) &#x3D; \phi(g)\) is a group isomo">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Three Isomorphism Theorem">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Three_Isomorphism_Theorem.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="First Isomorphism Theorem Theroem  Let $\phi : G \to G^\prime$ be a homomorphism with kernel $K$. Then the canonical map $\mu : G&#x2F;K \to \phi(G)$ defined by $\mu(gK) &#x3D; \phi(g)$ is a group isomorphism.">
+<meta property="og:description" content="First Isomorphism Theorem Theroem  Let \(\phi : G \to G^\prime\) be a homomorphism with kernel \(K\). Then the canonical map \(\mu : G&#x2F;K \to \phi(G)\) defined by \(\mu(gK) &#x3D; \phi(g)\) is a group isomo">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-03-08T13:41:05.443Z">
 <meta property="article:modified_time" content="2023-03-08T13:41:05.443Z">
@@ -105,7 +105,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#First-Isomorphism-Theorem"><span class="nav-number">1.</span> <span class="nav-text">First Isomorphism Theorem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Join-of-Two-Subgroup"><span class="nav-number">2.</span> <span class="nav-text">Join of Two Subgroup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Second-Isomorphism-Theorem"><span class="nav-number">3.</span> <span class="nav-text">Second Isomorphism Theorem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Applications-of-Second-Isomorphism-Theorem"><span class="nav-number">4.</span> <span class="nav-text">Applications of Second Isomorphism Theorem</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#first-isomorphism-theorem"><span class="nav-number">1.</span> <span class="nav-text">First Isomorphism Theorem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#join-of-two-subgroup"><span class="nav-number">2.</span> <span class="nav-text">Join of Two Subgroup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#second-isomorphism-theorem"><span class="nav-number">3.</span> <span class="nav-text">Second Isomorphism Theorem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#applications-of-second-isomorphism-theorem"><span class="nav-number">4.</span> <span class="nav-text">Applications of
+Second Isomorphism Theorem</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -161,78 +162,150 @@
       
       
       <div class="post-body">
-          <h2 id="First-Isomorphism-Theorem">First Isomorphism Theorem</h2>
+          <h2 id="first-isomorphism-theorem">First Isomorphism Theorem</h2>
 <p><strong>Theroem</strong></p>
 <blockquote>
-<p>Let $\phi : G \to G^\prime$ be a homomorphism with kernel $K$. Then the canonical map $\mu : G/K \to \phi(G)$ defined by $\mu(gK) = \phi(g)$ is a group isomorphism.</p>
+<p>Let <span class="math inline">\(\phi : G \to G^\prime\)</span> be a
+homomorphism with kernel <span class="math inline">\(K\)</span>. Then
+the canonical map <span class="math inline">\(\mu : G/K \to
+\phi(G)\)</span> defined by <span class="math inline">\(\mu(gK) =
+\phi(g)\)</span> is a group isomorphism.</p>
 </blockquote>
-<h2 id="Join-of-Two-Subgroup">Join of Two Subgroup</h2>
+<h2 id="join-of-two-subgroup">Join of Two Subgroup</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>Let $H$ and $N$ be two subgroup of $G$. The join $\langle H, N \rangle$ of $H$ and $N$ is the smallest subgroup of $G$ that contains both $H$ and $N$.</p>
-<p>Equivalently, $\langle H, N \rangle$ is the intersection of all subgroups of $G$ containing $H$ and $N$.</p>
+<p>Let <span class="math inline">\(H\)</span> and <span
+class="math inline">\(N\)</span> be two subgroup of <span
+class="math inline">\(G\)</span>. The join <span
+class="math inline">\(\langle H, N \rangle\)</span> of <span
+class="math inline">\(H\)</span> and <span
+class="math inline">\(N\)</span> is the smallest subgroup of <span
+class="math inline">\(G\)</span> that contains both <span
+class="math inline">\(H\)</span> and <span
+class="math inline">\(N\)</span>.</p>
+<p>Equivalently, <span class="math inline">\(\langle H, N
+\rangle\)</span> is the intersection of all subgroups of <span
+class="math inline">\(G\)</span> containing <span
+class="math inline">\(H\)</span> and <span
+class="math inline">\(N\)</span>.</p>
 </blockquote>
 <p><strong>Remark</strong></p>
 <blockquote>
-<p>$\begin{align} \langle H, N \rangle &amp;= HN \cup HNHN \cup HNHNHN \cup \cdots \ &amp;= \bigcup_{i = 1}^{\infty} (HN)^i \end{align}$</p>
+<p><span class="math inline">\(\begin{align} \langle H, N \rangle &amp;=
+HN \cup HNHN \cup HNHNHN \cup \cdots \\ &amp;= \bigcup_{i = 1}^{\infty}
+(HN)^i \end{align}\)</span></p>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let $H$ and $N$ be two subgroup of $G$. If $N$ is a normal subgropu of $G$, then $HN = NH = \langle H, N \rangle$ is a subgroup of $G$.</p>
+<p>Let <span class="math inline">\(H\)</span> and <span
+class="math inline">\(N\)</span> be two subgroup of <span
+class="math inline">\(G\)</span>. If <span
+class="math inline">\(N\)</span> is a normal subgropu of <span
+class="math inline">\(G\)</span>, then <span class="math inline">\(HN =
+NH = \langle H, N \rangle\)</span> is a subgroup of <span
+class="math inline">\(G\)</span>.</p>
 </blockquote>
 <details>
-<summary> Proof </summary>
+<summary>
+Proof
+</summary>
 <blockquote>
-<p>First we proof that $HN$ is a subgroup of $G$.</p>
-<ol>
-<li>Closure: Let $h_1n_1, h_2n_2 \in HN$. Since $N$ is a normal subgroup, $h_2^{-1}n_1h_2 \in N$. Then $h_1n_1h_2n_2 = (h_1h_2)((h_2^{-1}n_1h_2)n_2) \in HN$</li>
-<li>Identity: $e = ee \in HN$</li>
-<li>Inverse: Let $hn \in HN$. We have $(hn)^{-1} = n^{-1}h^{-1}$. Since $N$ is normal, $hn^{-1}h^{-1} \in N$.<br>
-Thus, $(hn)^{-1} = n^{-1}h^{-1} = h^{-1}(hn^{-1}h^{-1}) \in HN$</li>
+<p>First we proof that <span class="math inline">\(HN\)</span> is a
+subgroup of <span class="math inline">\(G\)</span>.</p>
+<ol type="1">
+<li>Closure: Let <span class="math inline">\(h_1n_1, h_2n_2 \in
+HN\)</span>. Since <span class="math inline">\(N\)</span> is a normal
+subgroup, <span class="math inline">\(h_2^{-1}n_1h_2 \in N\)</span>.
+Then <span class="math inline">\(h_1n_1h_2n_2 =
+(h_1h_2)((h_2^{-1}n_1h_2)n_2) \in HN\)</span></li>
+<li>Identity: <span class="math inline">\(e = ee \in HN\)</span></li>
+<li>Inverse: Let <span class="math inline">\(hn \in HN\)</span>. We have
+<span class="math inline">\((hn)^{-1} = n^{-1}h^{-1}\)</span>. Since
+<span class="math inline">\(N\)</span> is normal, <span
+class="math inline">\(hn^{-1}h^{-1} \in N\)</span>. Thus, <span
+class="math inline">\((hn)^{-1} = n^{-1}h^{-1} = h^{-1}(hn^{-1}h^{-1})
+\in HN\)</span></li>
 </ol>
-<p>Then we proof that $\langle H, N \rangle = HN$</p>
-<ol>
-<li>$\langle H, N \rangle \subseteq HN$: trivial</li>
-<li>$\langle H, N \rangle \supseteq HN$: Any subset containing $H$ and $N$ must contain all element of the form $hn$, where $h \in H$ and $n \in N$. Therefore we have $\langle H, N \rangle \supseteq HN$</li>
+<p>Then we proof that <span class="math inline">\(\langle H, N \rangle =
+HN\)</span></p>
+<ol type="1">
+<li><span class="math inline">\(\langle H, N \rangle \subseteq
+HN\)</span>: trivial</li>
+<li><span class="math inline">\(\langle H, N \rangle \supseteq
+HN\)</span>: Any subset containing <span
+class="math inline">\(H\)</span> and <span
+class="math inline">\(N\)</span> must contain all element of the form
+<span class="math inline">\(hn\)</span>, where <span
+class="math inline">\(h \in H\)</span> and <span class="math inline">\(n
+\in N\)</span>. Therefore we have <span class="math inline">\(\langle H,
+N \rangle \supseteq HN\)</span></li>
 </ol>
 </blockquote>
 </details>
-<h2 id="Second-Isomorphism-Theorem">Second Isomorphism Theorem</h2>
+<h2 id="second-isomorphism-theorem">Second Isomorphism Theorem</h2>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let $H$ be a subgroup of $G$ and $N$ be a normal subgroup of $G$.<br>
-Then $(HN) / N \cong H/(H \cap N)$</p>
+<p>Let <span class="math inline">\(H\)</span> be a subgroup of <span
+class="math inline">\(G\)</span> and <span
+class="math inline">\(N\)</span> be a normal subgroup of <span
+class="math inline">\(G\)</span>. Then <span class="math inline">\((HN)
+/ N \cong H/(H \cap N)\)</span></p>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<p>Define a function $\phi : H \to (HN)/N$ by $\phi(h) = hN$. We claim that</p>
-<ol>
-<li>$\phi$ is a homomorphism</li>
-<li>$ker(\phi) = H \cap N$</li>
-<li>$\phi$ is onto</li>
+<p>Define a function <span class="math inline">\(\phi : H \to
+(HN)/N\)</span> by <span class="math inline">\(\phi(h) = hN\)</span>. We
+claim that</p>
+<ol type="1">
+<li><span class="math inline">\(\phi\)</span> is a homomorphism</li>
+<li><span class="math inline">\(ker(\phi) = H \cap N\)</span></li>
+<li><span class="math inline">\(\phi\)</span> is onto</li>
 </ol>
-<p>By First Isomorphism Theorem, $H/(H \cap N) \cong (HN) / N$</p>
+<p>By First Isomorphism Theorem, <span class="math inline">\(H/(H \cap
+N) \cong (HN) / N\)</span></p>
 </blockquote>
 </details>
-<h2 id="Applications-of-Second-Isomorphism-Theorem">Applications of Second Isomorphism Theorem</h2>
+<h2 id="applications-of-second-isomorphism-theorem">Applications of
+Second Isomorphism Theorem</h2>
 <p><strong>Corollary</strong></p>
 <blockquote>
-<p>By Second Isomorphism Theorem, when $|G| &lt; \infty$, we have $|HN| = \dfrac{|N|||H}{|H \cap N|}$ <br></p>
+<p>By Second Isomorphism Theorem, when <span class="math inline">\(|G|
+&lt; \infty\)</span>, we have <span class="math inline">\(|HN| =
+\dfrac{|N|||H}{|H \cap N|}\)</span> <br></p>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let $G$ be a group with a subgroup $H$ and normal subgroup $N$. If $|H \cap N| = 1$ and $|G| = |H||N|$, then every element of $G$ can be written ws $hn$ for some unique $h \in H$ and $n \in N$.</p>
+<p>Let <span class="math inline">\(G\)</span> be a group with a subgroup
+<span class="math inline">\(H\)</span> and normal subgroup <span
+class="math inline">\(N\)</span>. If <span class="math inline">\(|H \cap
+N| = 1\)</span> and <span class="math inline">\(|G| = |H||N|\)</span>,
+then every element of <span class="math inline">\(G\)</span> can be
+written ws <span class="math inline">\(hn\)</span> for some unique <span
+class="math inline">\(h \in H\)</span> and <span class="math inline">\(n
+\in N\)</span>.</p>
 </blockquote>
 <p><strong>Remark</strong></p>
 <blockquote>
-<p>If $|H|$ and $|N|$ are coprime, then we always have $|H \cap N| = 1$</p>
+<p>If <span class="math inline">\(|H|\)</span> and <span
+class="math inline">\(|N|\)</span> are coprime, then we always have
+<span class="math inline">\(|H \cap N| = 1\)</span></p>
 </blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<p>Let $G$ be a group of order $2p$, where $p$ is a prime. <br><br>
-By Cauchy’s theorem, there exist an element $a$ of order $2$ and a element $b$ of order $p$. Since $\langle a \rangle$ is of order $2$, it’s a normal subgroup. Therefore, we have<br>
-$$\langle a, b \rangle = \langle a \rangle \langle b \rangle = G$$</p>
+<p>Let <span class="math inline">\(G\)</span> be a group of order <span
+class="math inline">\(2p\)</span>, where <span
+class="math inline">\(p\)</span> is a prime. <br> By Cauchy's theorem,
+there exist an element <span class="math inline">\(a\)</span> of order
+<span class="math inline">\(2\)</span> and a element <span
+class="math inline">\(b\)</span> of order <span
+class="math inline">\(p\)</span>. Since <span
+class="math inline">\(\langle a \rangle\)</span> is of order <span
+class="math inline">\(2\)</span>, it's a normal subgroup. Therefore, we
+have <span class="math display">\[\langle a, b \rangle = \langle a
+\rangle \langle b \rangle = G\]</span></p>
 </blockquote>
 
       </div>

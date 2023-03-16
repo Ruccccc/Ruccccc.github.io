@@ -108,7 +108,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Major-function-of-IP"><span class="nav-number">1.</span> <span class="nav-text">Major function of IP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IP-address"><span class="nav-number">2.</span> <span class="nav-text">IP address</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Format"><span class="nav-number">2.1.</span> <span class="nav-text">Format</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Range-of-five-class"><span class="nav-number">2.1.1.</span> <span class="nav-text">Range of five class</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Header"><span class="nav-number">2.1.2.</span> <span class="nav-text">Header</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Subnetting"><span class="nav-number">2.2.</span> <span class="nav-text">Subnetting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supernetting"><span class="nav-number">2.3.</span> <span class="nav-text">Supernetting</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#CIDR-and-mask"><span class="nav-number">2.3.1.</span> <span class="nav-text">CIDR and mask</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Routing"><span class="nav-number">2.4.</span> <span class="nav-text">Routing</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Address-Resolution-Protocol-ARP"><span class="nav-number">3.</span> <span class="nav-text">Address Resolution Protocol (ARP)</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#major-function-of-ip"><span class="nav-number">1.</span> <span class="nav-text">Major function of IP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ip-address"><span class="nav-number">2.</span> <span class="nav-text">IP address</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#format"><span class="nav-number">2.1.</span> <span class="nav-text">Format</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#range-of-five-class"><span class="nav-number">2.1.1.</span> <span class="nav-text">Range of five class</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#header"><span class="nav-number">2.1.2.</span> <span class="nav-text">Header</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#subnetting"><span class="nav-number">2.2.</span> <span class="nav-text">Subnetting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#supernetting"><span class="nav-number">2.3.</span> <span class="nav-text">Supernetting</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#cidr-and-mask"><span class="nav-number">2.3.1.</span> <span class="nav-text">CIDR and mask</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#routing"><span class="nav-number">2.4.</span> <span class="nav-text">Routing</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#address-resolution-protocol-arp"><span class="nav-number">3.</span> <span class="nav-text">Address Resolution Protocol
+(ARP)</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -164,67 +165,73 @@
       
       
       <div class="post-body">
-          <h2 id="Major-function-of-IP">Major function of IP</h2>
+          <h2 id="major-function-of-ip">Major function of IP</h2>
 <ul>
 <li>Addressing</li>
 <li>Route packets</li>
 <li>Fragmentation</li>
 </ul>
-<h2 id="IP-address">IP address</h2>
+<h2 id="ip-address">IP address</h2>
 <ul>
 <li>Represent ID and location of a host.</li>
 <li>IP routing can be done by looking at netid.
 <ul>
 <li>A router do not need to maintain a table for all host.</li>
 <li>But if device move, the routing table will be wrong.</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="Format">Format</h3>
-<p><img src="Images/IP/Format_of_IPv4_Address.png" alt="Format"></p>
+<h3 id="format">Format</h3>
+<figure>
+<img src="Images/IP/Format_of_IPv4_Address.png" alt="Format" />
+<figcaption aria-hidden="true">Format</figcaption>
+</figure>
 <ul>
 <li>每 8 bits 一組, 轉成十進位</li>
-<li>Domain name: represent a ip address, the mapping can be found by DNS server.</li>
+<li>Domain name: represent a ip address, the mapping can be found by DNS
+server.</li>
 </ul>
-<h4 id="Range-of-five-class">Range of five class</h4>
+<h4 id="range-of-five-class">Range of five class</h4>
 <table>
 <thead>
-<tr>
-<th style="text-align:center">Class</th>
+<tr class="header">
+<th style="text-align: center;">Class</th>
 <th>Lowest</th>
 <th>Highest</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:center">A</td>
+<tr class="odd">
+<td style="text-align: center;">A</td>
 <td>1.0.0.0</td>
 <td>126.0.0.0</td>
 </tr>
-<tr>
-<td style="text-align:center">B</td>
+<tr class="even">
+<td style="text-align: center;">B</td>
 <td>128.1.0.0</td>
 <td>191.255.0.0</td>
 </tr>
-<tr>
-<td style="text-align:center">C</td>
+<tr class="odd">
+<td style="text-align: center;">C</td>
 <td>192.0.1.0</td>
 <td>223.255.255.0</td>
 </tr>
-<tr>
-<td style="text-align:center">D</td>
+<tr class="even">
+<td style="text-align: center;">D</td>
 <td>224.0.0.0</td>
 <td>239.255.255.255</td>
 </tr>
-<tr>
-<td style="text-align:center">E</td>
+<tr class="odd">
+<td style="text-align: center;">E</td>
 <td>240.0.0.0</td>
 <td>255.255.255.254</td>
 </tr>
 </tbody>
 </table>
-<h4 id="Header">Header</h4>
-<p><img src="images/IP/IP_Header.png" alt="Header Format"></p>
+<h4 id="header">Header</h4>
+<figure>
+<img src="images/IP/IP_Header.png" alt="Header Format" />
+<figcaption aria-hidden="true">Header Format</figcaption>
+</figure>
 <ul>
 <li>Service Type: TOS</li>
 <li>Flags: 0 for the last packet</li>
@@ -233,26 +240,27 @@
 <li>Option and Padding
 <ul>
 <li>Option: Addition imformation</li>
-<li>Padding: Some properties of option. Adding useless data for security</li>
+<li>Padding: Some properties of option. Adding useless data for
+security</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="Subnetting">Subnetting</h3>
+<h3 id="subnetting">Subnetting</h3>
 <ul>
-<li>hostid can be parting into smaller part just like netid and hostid.</li>
+<li>hostid can be parting into smaller part just like netid and
+hostid.</li>
 <li>Using subnet mask.</li>
 </ul>
-<h3 id="Supernetting">Supernetting</h3>
+<h3 id="supernetting">Supernetting</h3>
 <ul>
 <li>Also called classless addressing.</li>
-<li>Allow the address assign to a organization to span multiple classed prefixes.</li>
+<li>Allow the address assign to a organization to span multiple classed
+prefixes.</li>
 <li>Classless Inter-Domain Routing (CIDR)
 <ul>
 <li>collapse a block of continuous address into a single entry.</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h4 id="CIDR-and-mask">CIDR and mask</h4>
+<h4 id="cidr-and-mask">CIDR and mask</h4>
 <ul>
 <li>Require the size of block to be power of 2.</li>
 <li>Use a bit mask to identify the size of block</li>
@@ -261,19 +269,19 @@
 <p>128.211.168.0/21</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th></th>
 <th>Dotted Decimal</th>
 <th>32-bit binary</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>lowest</td>
 <td>128.211.168.0</td>
 <td>10000000 11010011 <br> 10101000 00000000</td>
 </tr>
-<tr>
+<tr class="even">
 <td>highest</td>
 <td>128.211.175.255</td>
 <td>10000000 11010011 <br> 10101111 11111111</td>
@@ -281,13 +289,15 @@
 </tbody>
 </table>
 <p>mask: 21 bits : 11111111 11111111 11111000 00000000</p>
-<h3 id="Routing">Routing</h3>
+<h3 id="routing">Routing</h3>
 <ul>
-<li>Searching routing table for an entry that matches the completed destinations.</li>
+<li>Searching routing table for an entry that matches the completed
+destinations.</li>
 <li>If not found, then search for which matches the netid.</li>
 <li>If not found, then search the entry labeled default</li>
 </ul>
-<h2 id="Address-Resolution-Protocol-ARP">Address Resolution Protocol (ARP)</h2>
+<h2 id="address-resolution-protocol-arp">Address Resolution Protocol
+(ARP)</h2>
 <ul>
 <li>Associate IP address with hardware address.</li>
 <li>Broadcost ARP REQUEST</li>

@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Rings Definition  A ring $\langle R, +, \cdot \rangle$ is a set $R$ with two binary operations $+$ and $\cdot$, called addition and multiplication, such that the following axioms are satisfied:  $\lan">
+    <meta name="description" content="Rings Definition  A ring \(\langle R, +, \cdot \rangle\) is a set \(R\) with two binary operations \(+\) and \(\cdot\), called addition and multiplication, such that the following axioms are satisfied">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Rings and Fields">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Rings_and_Fields.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Rings Definition  A ring $\langle R, +, \cdot \rangle$ is a set $R$ with two binary operations $+$ and $\cdot$, called addition and multiplication, such that the following axioms are satisfied:  $\lan">
+<meta property="og:description" content="Rings Definition  A ring \(\langle R, +, \cdot \rangle\) is a set \(R\) with two binary operations \(+\) and \(\cdot\), called addition and multiplication, such that the following axioms are satisfied">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-11-21T12:08:25.734Z">
 <meta property="article:modified_time" content="2022-11-21T12:08:25.734Z">
@@ -105,7 +105,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Rings"><span class="nav-number">1.</span> <span class="nav-text">Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-properties-of-Rings"><span class="nav-number">2.</span> <span class="nav-text">Basic properties of Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Multiplication-of-Rings"><span class="nav-number">3.</span> <span class="nav-text">Multiplication of Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Field"><span class="nav-number">4.</span> <span class="nav-text">Field</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Subring-and-Subfield"><span class="nav-number">5.</span> <span class="nav-text">Subring and Subfield</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Homomorphism"><span class="nav-number">6.</span> <span class="nav-text">Homomorphism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Isomorphisms"><span class="nav-number">7.</span> <span class="nav-text">Isomorphisms</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#rings"><span class="nav-number">1.</span> <span class="nav-text">Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#basic-properties-of-rings"><span class="nav-number">2.</span> <span class="nav-text">Basic properties of Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#multiplication-of-rings"><span class="nav-number">3.</span> <span class="nav-text">Multiplication of Rings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#field"><span class="nav-number">4.</span> <span class="nav-text">Field</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#subring-and-subfield"><span class="nav-number">5.</span> <span class="nav-text">Subring and Subfield</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#homomorphism"><span class="nav-number">6.</span> <span class="nav-text">Homomorphism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#isomorphisms"><span class="nav-number">7.</span> <span class="nav-text">Isomorphisms</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -161,215 +161,352 @@
       
       
       <div class="post-body">
-          <h2 id="Rings">Rings</h2>
+          <h2 id="rings">Rings</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>A ring $\langle R, +, \cdot \rangle$ is a set $R$ with two binary operations $+$ and $\cdot$, called <strong>addition</strong> and <strong>multiplication</strong>, such that the following axioms are satisfied:</p>
-<ol>
-<li>$\langle R, + \rangle$ is an abelian group.</li>
-<li>Multiplication is associative. That is $a(bc) = (ab)c$ for all $a, b, c \in R$. <br></li>
-<li>For all $a, b, c \in R$, the <strong>left distributive law</strong> and <strong>right distributive law</strong> holds. That is $a \cdot (b+c) = (a \cdot b) + (a \cdot c)$ and $(a + b) \cdot c = (a \cdot c) + (b \cdot c)$. <br></li>
+<p>A ring <span class="math inline">\(\langle R, +, \cdot
+\rangle\)</span> is a set <span class="math inline">\(R\)</span> with
+two binary operations <span class="math inline">\(+\)</span> and <span
+class="math inline">\(\cdot\)</span>, called <strong>addition</strong>
+and <strong>multiplication</strong>, such that the following axioms are
+satisfied:</p>
+<ol type="1">
+<li><span class="math inline">\(\langle R, + \rangle\)</span> is an
+abelian group.</li>
+<li>Multiplication is associative. That is <span
+class="math inline">\(a(bc) = (ab)c\)</span> for all <span
+class="math inline">\(a, b, c \in R\)</span>. <br></li>
+<li>For all <span class="math inline">\(a, b, c \in R\)</span>, the
+<strong>left distributive law</strong> and <strong>right distributive
+law</strong> holds. That is <span class="math inline">\(a \cdot (b+c) =
+(a \cdot b) + (a \cdot c)\)</span> and <span class="math inline">\((a +
+b) \cdot c = (a \cdot c) + (b \cdot c)\)</span>. <br></li>
 </ol>
 </blockquote>
 <details>
-<summary> **Examples of Ring** </summary>
+<summary>
+<strong>Examples of Ring</strong>
+</summary>
 <blockquote>
-<ol>
-<li>The set $\mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ are all rings with usual addition and multiplication.</li>
-<li>The set $\mathbb{Z}_n$ of all residue classes modulo $n$ is a ring with $\bar a + \bar b = \overline{a + b}$ and $\bar a \cdot \bar b = \overline{ab}$. <br></li>
-<li>The set $M_n(\mathbb{R})$ of all $n \times n$ matrices is a ring.</li>
-<li>Let $R_1$ and $R_2$ be rings. Define $+$ and $\cdot$ on $R_1 \times R_2$ by<br>
-$$(a_1, b_1) + (a_2, b_2) = (a_1 + a_2, b_1 + b_2)$$ and<br>
-$$(a_1, b_1) \cdot (a_2, b_2) = (a_1 \cdot a_2, b_1 \cdot b_2)$$<br>
-Then $R_1 \times R_2$ is a ring, called the <strong>direct product</strong> of $R_1$ and $R_2$. <br></li>
-<li>Let ${\rm End}(V)$ be the set of all linear transformations from $V$ to $V$. Let addition and multiplication be defined by<br>
-$$f + g : v \mapsto f(v) + g(v)$$$$f \circ g : v \mapsto f(g(v))$$<br>
-Then $\langle {\rm End}(V), +, \circ \rangle$ is a ring, called the <strong>endomorphism ring</strong> of $V$. <br></li>
-</ol>
-</blockquote>
-</details>  
-<details>
-<summary> **Show that $R$ is a ring** </summary>
-<blockquote>
-<p>Let $R$ be a set with $+$, $\ast$ be addition and multiplication.</p>
-<ol>
-<li>Show $\langle R, + \rangle$ is a abelian group
-<ol>
-<li>$+$ is associative since $R$ is a ring and $+$ is induced from $R$.</li>
-<li>$\exists e \in R$ such that $\forall a \in R$, $a + e = e + a = a$</li>
-<li>$\forall a \in R, \exists -a \in R$ such that $a + (-a) = (-a) + a = 0$</li>
-<li>$\forall a, b \in R$, $a + b = b + a$</li>
-</ol>
-</li>
-<li>Show multiplication is associative.<br>
-$\forall a, b, c \in R$, $a(bc) = (ab)c$</li>
-<li>Show that left and right distributive law holds.<br>
-$\forall a, b, c \in R$, $a(b + c) = ab + ac$ and $(a + b) c = ac + bc$</li>
+<ol type="1">
+<li>The set <span class="math inline">\(\mathbb{Z}, \mathbb{Q},
+\mathbb{R}, \mathbb{C}\)</span> are all rings with usual addition and
+multiplication.</li>
+<li>The set <span class="math inline">\(\mathbb{Z}_n\)</span> of all
+residue classes modulo <span class="math inline">\(n\)</span> is a ring
+with <span class="math inline">\(\bar a + \bar b = \overline{a +
+b}\)</span> and <span class="math inline">\(\bar a \cdot \bar b =
+\overline{ab}\)</span>. <br></li>
+<li>The set <span class="math inline">\(M_n(\mathbb{R})\)</span> of all
+<span class="math inline">\(n \times n\)</span> matrices is a ring.</li>
+<li>Let <span class="math inline">\(R_1\)</span> and <span
+class="math inline">\(R_2\)</span> be rings. Define <span
+class="math inline">\(+\)</span> and <span
+class="math inline">\(\cdot\)</span> on <span class="math inline">\(R_1
+\times R_2\)</span> by <span class="math display">\[(a_1, b_1) + (a_2,
+b_2) = (a_1 + a_2, b_1 + b_2)\]</span> and <span
+class="math display">\[(a_1, b_1) \cdot (a_2, b_2) = (a_1 \cdot a_2, b_1
+\cdot b_2)\]</span> Then <span class="math inline">\(R_1 \times
+R_2\)</span> is a ring, called the <strong>direct product</strong> of
+<span class="math inline">\(R_1\)</span> and <span
+class="math inline">\(R_2\)</span>. <br></li>
+<li>Let <span class="math inline">\({\rm End}(V)\)</span> be the set of
+all linear transformations from <span class="math inline">\(V\)</span>
+to <span class="math inline">\(V\)</span>. Let addition and
+multiplication be defined by <span class="math display">\[f + g : v
+\mapsto f(v) + g(v)\]</span><span class="math display">\[f \circ g : v
+\mapsto f(g(v))\]</span> Then <span class="math inline">\(\langle {\rm
+End}(V), +, \circ \rangle\)</span> is a ring, called the
+<strong>endomorphism ring</strong> of <span
+class="math inline">\(V\)</span>. <br></li>
 </ol>
 </blockquote>
 </details>
-<h2 id="Basic-properties-of-Rings">Basic properties of Rings</h2>
+<details>
+<summary>
+<strong>Show that <span class="math inline">\(R\)</span> is a
+ring</strong>
+</summary>
+<blockquote>
+<p>Let <span class="math inline">\(R\)</span> be a set with <span
+class="math inline">\(+\)</span>, <span
+class="math inline">\(\ast\)</span> be addition and multiplication.</p>
+<ol type="1">
+<li>Show <span class="math inline">\(\langle R, + \rangle\)</span> is a
+abelian group
+<ol type="1">
+<li><span class="math inline">\(+\)</span> is associative since <span
+class="math inline">\(R\)</span> is a ring and <span
+class="math inline">\(+\)</span> is induced from <span
+class="math inline">\(R\)</span>.</li>
+<li><span class="math inline">\(\exists e \in R\)</span> such that <span
+class="math inline">\(\forall a \in R\)</span>, <span
+class="math inline">\(a + e = e + a = a\)</span></li>
+<li><span class="math inline">\(\forall a \in R, \exists -a \in
+R\)</span> such that <span class="math inline">\(a + (-a) = (-a) + a =
+0\)</span></li>
+<li><span class="math inline">\(\forall a, b \in R\)</span>, <span
+class="math inline">\(a + b = b + a\)</span></li>
+</ol></li>
+<li>Show multiplication is associative. <span
+class="math inline">\(\forall a, b, c \in R\)</span>, <span
+class="math inline">\(a(bc) = (ab)c\)</span></li>
+<li>Show that left and right distributive law holds. <span
+class="math inline">\(\forall a, b, c \in R\)</span>, <span
+class="math inline">\(a(b + c) = ab + ac\)</span> and <span
+class="math inline">\((a + b) c = ac + bc\)</span></li>
+</ol>
+</blockquote>
+</details>
+<h2 id="basic-properties-of-rings">Basic properties of Rings</h2>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let $R$ be a ring. For any $a, b \in R$, we have</p>
-<ol>
-<li>$0_R a = a 0_R = 0_R$</li>
-<li>$a (-b) = (-a) b = -ab$</li>
-<li>$(-a)(-b) = ab$ <br></li>
+<p>Let <span class="math inline">\(R\)</span> be a ring. For any <span
+class="math inline">\(a, b \in R\)</span>, we have</p>
+<ol type="1">
+<li><span class="math inline">\(0_R a = a 0_R = 0_R\)</span></li>
+<li><span class="math inline">\(a (-b) = (-a) b = -ab\)</span></li>
+<li><span class="math inline">\((-a)(-b) = ab\)</span> <br></li>
 </ol>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<ol>
-<li>
-<p>Since $0_R + 0_R = 0_R$, we have $(0_R + 0_R)a = 0_R a$. By the distributive law, we have<br>
-$$0_R a + 0_R a = 0_R a$$<br>
-By cancellation law,<br>
-$$0_R a = 0_R$$<br>
-By similar method, we can also prove $a0_R = 0_R$. <br></p>
-</li>
-<li>
-<p>Since $b + (-b) = 0_R$, we have $$ab + a(-b) = a 0_R = 0_R$$<br>
-Then we can say that $ab$ is the inverse element of $a(-b)$. That is<br>
-$$a(-b) = -ab$$<br>
-We can prove $(-a)b = -ab$ in similar way.</p>
-</li>
-<li>
-<p>Applying the result of (2) twice, we can get<br>
-$$(-a)(-b) = -(a(-b)) = -(-ab)$$<br>
-It means that $-ab$ is the inverse element of $(-a)(-b)$. <br><br>
-But we know that the additiveinverse of $-ab$ is $ab$. <br><br>
-Thus, by the uniqueness of additive inverse, we conclude that $(-a)(-b) = ab$. <br></p>
-</li>
+<ol type="1">
+<li><p>Since <span class="math inline">\(0_R + 0_R = 0_R\)</span>, we
+have <span class="math inline">\((0_R + 0_R)a = 0_R a\)</span>. By the
+distributive law, we have <span class="math display">\[0_R a + 0_R a =
+0_R a\]</span> By cancellation law, <span class="math display">\[0_R a =
+0_R\]</span> By similar method, we can also prove <span
+class="math inline">\(a0_R = 0_R\)</span>. <br></p></li>
+<li><p>Since <span class="math inline">\(b + (-b) = 0_R\)</span>, we
+have <span class="math display">\[ab + a(-b) = a 0_R = 0_R\]</span> Then
+we can say that <span class="math inline">\(ab\)</span> is the inverse
+element of <span class="math inline">\(a(-b)\)</span>. That is <span
+class="math display">\[a(-b) = -ab\]</span> We can prove <span
+class="math inline">\((-a)b = -ab\)</span> in similar way.</p></li>
+<li><p>Applying the result of (2) twice, we can get <span
+class="math display">\[(-a)(-b) = -(a(-b)) = -(-ab)\]</span> It means
+that <span class="math inline">\(-ab\)</span> is the inverse element of
+<span class="math inline">\((-a)(-b)\)</span>. <br> But we know that the
+additiveinverse of <span class="math inline">\(-ab\)</span> is <span
+class="math inline">\(ab\)</span>. <br> Thus, by the uniqueness of
+additive inverse, we conclude that <span class="math inline">\((-a)(-b)
+= ab\)</span>. <br></p></li>
 </ol>
 </blockquote>
 </details>
-<h2 id="Multiplication-of-Rings">Multiplication of Rings</h2>
+<h2 id="multiplication-of-rings">Multiplication of Rings</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<ol>
-<li>A ring in which the multiplication is commutative is a <strong>commutative ring</strong>.</li>
-<li>If a element $a$ of $R$ satisfies $ra = ar = r$ for all $r \in R$, then $a$ is the <strong>multiplicative identity</strong> or the <strong>unity</strong>, and is denoted by $1$ or $1_R$. <br></li>
-<li>A multiplicative inverse of an element $a$ in a ring with unity is an element $a^{-1}$ of $R$ such that $a^{-1}a = a a^{-1} = 1$. <br></li>
+<ol type="1">
+<li>A ring in which the multiplication is commutative is a
+<strong>commutative ring</strong>.</li>
+<li>If a element <span class="math inline">\(a\)</span> of <span
+class="math inline">\(R\)</span> satisfies <span
+class="math inline">\(ra = ar = r\)</span> for all <span
+class="math inline">\(r \in R\)</span>, then <span
+class="math inline">\(a\)</span> is the <strong>multiplicative
+identity</strong> or the <strong>unity</strong>, and is denoted by <span
+class="math inline">\(1\)</span> or <span
+class="math inline">\(1_R\)</span>. <br></li>
+<li>A multiplicative inverse of an element <span
+class="math inline">\(a\)</span> in a ring with unity is an element
+<span class="math inline">\(a^{-1}\)</span> of <span
+class="math inline">\(R\)</span> such that <span
+class="math inline">\(a^{-1}a = a a^{-1} = 1\)</span>. <br></li>
 </ol>
 </blockquote>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>Let $R$ be a ring with unity $1 \neq 0$. <br></p>
-<ol>
-<li>An element $u$ of $R$ is a <strong>unit</strong> if it has a multiplicative inverse.</li>
-<li>If every nonzero element of $R$ is a unit, then $R$ is a <strong>division ring</strong> or <strong>skew field</strong></li>
+<p>Let <span class="math inline">\(R\)</span> be a ring with unity <span
+class="math inline">\(1 \neq 0\)</span>. <br></p>
+<ol type="1">
+<li>An element <span class="math inline">\(u\)</span> of <span
+class="math inline">\(R\)</span> is a <strong>unit</strong> if it has a
+multiplicative inverse.</li>
+<li>If every nonzero element of <span class="math inline">\(R\)</span>
+is a unit, then <span class="math inline">\(R\)</span> is a
+<strong>division ring</strong> or <strong>skew field</strong></li>
 </ol>
 </blockquote>
 <p><strong>Remark</strong></p>
 <blockquote>
-<ol>
+<ol type="1">
 <li>The indentity element of a ring is unique if it exist.</li>
 <li>The inverse element of a element is unique if it exist.</li>
-<li>For a ring with unity, the set of units forms a multiplicative group, denoted $R^\times$, called <strong>the group of units</strong>.</li>
+<li>For a ring with unity, the set of units forms a multiplicative
+group, denoted <span class="math inline">\(R^\times\)</span>, called
+<strong>the group of units</strong>.</li>
 </ol>
 </blockquote>
-<h2 id="Field">Field</h2>
+<h2 id="field">Field</h2>
 <p><strong>Defintion</strong></p>
 <blockquote>
 <p>A commutative division ring is field.</p>
 </blockquote>
-<h2 id="Subring-and-Subfield">Subring and Subfield</h2>
+<h2 id="subring-and-subfield">Subring and Subfield</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>A subset $S$ of a ring $R$ is a <strong>subring</strong> of $R$ is $S$ if s is ring under the induced addition and multiplication from $R$. We denote this relation by $S &lt; R$. <br><br>
-A <strong>subfield</strong> is similarly defined.</p>
+<p>A subset <span class="math inline">\(S\)</span> of a ring <span
+class="math inline">\(R\)</span> is a <strong>subring</strong> of <span
+class="math inline">\(R\)</span> is <span
+class="math inline">\(S\)</span> if s is ring under the induced addition
+and multiplication from <span class="math inline">\(R\)</span>. We
+denote this relation by <span class="math inline">\(S &lt; R\)</span>.
+<br> A <strong>subfield</strong> is similarly defined.</p>
 </blockquote>
 <p><strong>Criterion of Subring</strong></p>
 <blockquote>
-<p>A subset $S$ of ring $R$ is a subring of $\langle R, +, \cdot \rangle$ if</p>
-<ol>
-<li>$\langle S, + \rangle$ is a subgroup of $\langle R, + \rangle$.</li>
-<li>$S$ is close under multiplication of $R$.</li>
+<p>A subset <span class="math inline">\(S\)</span> of ring <span
+class="math inline">\(R\)</span> is a subring of <span
+class="math inline">\(\langle R, +, \cdot \rangle\)</span> if</p>
+<ol type="1">
+<li><span class="math inline">\(\langle S, + \rangle\)</span> is a
+subgroup of <span class="math inline">\(\langle R, +
+\rangle\)</span>.</li>
+<li><span class="math inline">\(S\)</span> is close under multiplication
+of <span class="math inline">\(R\)</span>.</li>
 </ol>
 </blockquote>
 <p><strong>Theorem - Subring test</strong></p>
 <blockquote>
-<p>A subset $S$ of ring $R$ is a subring of $\langle R, +, \cdot \rangle$ if</p>
-<ol>
-<li>$S$ in non-empty.</li>
-<li>For all $a, b \in S$, $a - b \in S$.</li>
-<li>For all $a, b \in S$, $a \cdot b \in S$.</li>
+<p>A subset <span class="math inline">\(S\)</span> of ring <span
+class="math inline">\(R\)</span> is a subring of <span
+class="math inline">\(\langle R, +, \cdot \rangle\)</span> if</p>
+<ol type="1">
+<li><span class="math inline">\(S\)</span> in non-empty.</li>
+<li>For all <span class="math inline">\(a, b \in S\)</span>, <span
+class="math inline">\(a - b \in S\)</span>.</li>
+<li>For all <span class="math inline">\(a, b \in S\)</span>, <span
+class="math inline">\(a \cdot b \in S\)</span>.</li>
 </ol>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<p>First show that $\langle S, + \rangle$ is a subgroup of $\langle R, + \rangle$.</p>
-<ol>
-<li>Let $0_R$ be the identity element of $R$, $x \in S$.<br>
-By second condition, we know that $x - x = 0_R \in S$. <br><br>
-Therefore, $0_R \in S$.</li>
-<li>Take $a = 0_R$, $\forall b \in S$, by second condition, we can get $a - b = 0_R - b = -b \in R$ <br><br>
-Thus, we know that every element has a corresponding inverse element in $S$.</li>
-<li>For all $a, b \in S$, we can take $x = a, y = -b$ since we had show that $-y$ is in $S$ above. <br><br>
-Then $a + b = x - y \in S$ is given by second condition. <br><br>
-Thus, we know that $S$ is close.</li>
+<p>First show that <span class="math inline">\(\langle S, +
+\rangle\)</span> is a subgroup of <span class="math inline">\(\langle R,
++ \rangle\)</span>.</p>
+<ol type="1">
+<li>Let <span class="math inline">\(0_R\)</span> be the identity element
+of <span class="math inline">\(R\)</span>, <span class="math inline">\(x
+\in S\)</span>. By second condition, we know that <span
+class="math inline">\(x - x = 0_R \in S\)</span>. <br> Therefore, <span
+class="math inline">\(0_R \in S\)</span>.</li>
+<li>Take <span class="math inline">\(a = 0_R\)</span>, <span
+class="math inline">\(\forall b \in S\)</span>, by second condition, we
+can get <span class="math inline">\(a - b = 0_R - b = -b \in R\)</span>
+<br> Thus, we know that every element has a corresponding inverse
+element in <span class="math inline">\(S\)</span>.</li>
+<li>For all <span class="math inline">\(a, b \in S\)</span>, we can take
+<span class="math inline">\(x = a, y = -b\)</span> since we had show
+that <span class="math inline">\(-y\)</span> is in <span
+class="math inline">\(S\)</span> above. <br> Then <span
+class="math inline">\(a + b = x - y \in S\)</span> is given by second
+condition. <br> Thus, we know that <span
+class="math inline">\(S\)</span> is close.</li>
 </ol>
-<p>And we already know that $S$ is closed under multiplication by the third condition.<br>
-Therefore, $S$ is a subring of $R$.</p>
+<p>And we already know that <span class="math inline">\(S\)</span> is
+closed under multiplication by the third condition. Therefore, <span
+class="math inline">\(S\)</span> is a subring of <span
+class="math inline">\(R\)</span>.</p>
 </blockquote>
 </details>
-<h2 id="Homomorphism">Homomorphism</h2>
+<h2 id="homomorphism">Homomorphism</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>For rings $R$ and $R^\prime$, a funtion $\phi : R \to R^\prime$ is a <strong>(ring) homomorphism</strong> if</p>
-<ol>
-<li>$\phi(a + b) = \phi(a) + \phi(b)$</li>
-<li>$\phi(ab) = \phi(a)\phi(b)$<br>
-for all $a, b \in R$. <br></li>
+<p>For rings <span class="math inline">\(R\)</span> and <span
+class="math inline">\(R^\prime\)</span>, a funtion <span
+class="math inline">\(\phi : R \to R^\prime\)</span> is a <strong>(ring)
+homomorphism</strong> if</p>
+<ol type="1">
+<li><span class="math inline">\(\phi(a + b) = \phi(a) +
+\phi(b)\)</span></li>
+<li><span class="math inline">\(\phi(ab) = \phi(a)\phi(b)\)</span> for
+all <span class="math inline">\(a, b \in R\)</span>. <br></li>
 </ol>
-<p>The kernel of $\phi$ is the set ${\rm ker}(\phi) = { a \in R \mid \phi(a) = 0 }$. <br></p>
+<p>The kernel of <span class="math inline">\(\phi\)</span> is the set
+<span class="math inline">\({\rm ker}(\phi) = \{ a \in R \mid \phi(a) =
+0 \}\)</span>. <br></p>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let $\phi: R \to R^\prime$ be a ring homomorphism. Then $\phi®$ is a subring of $R^\prime$. <br></p>
+<p>Let <span class="math inline">\(\phi: R \to R^\prime\)</span> be a
+ring homomorphism. Then <span class="math inline">\(\phi(R)\)</span> is
+a subring of <span class="math inline">\(R^\prime\)</span>. <br></p>
 </blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<p>Let $R = \mathbb{Z}[x]$ be the set of all polynomials over $\mathbb{Q}$. Given $a \in \mathbb{R}$, define $\phi_a : \mathbb{Q}[x] \to \mathbb{R}$ by<br>
-$$\phi_a(f(x)) = f(a)$$</p>
-<p>$\phi_a$ is <strong>evaluation homomorphism</strong>.</p>
-<p>for $a = \sqrt{2}$, we have<br>
-$$ \begin{align}<br>
-\mathbb{Q}[\sqrt{2}] &amp;:= \phi_{\sqrt{2}}(\mathbb{Q}[x]) = { f(\sqrt{2}) \mid f[x] \in \mathbb{Q} } \<br>
-&amp;= {a_0 + a_1\sqrt{2} + a_2 (\sqrt{2})^2 + \ldots + a_n(\sqrt{2})^n \mid a_i \in \mathbb{Q}, n \in \mathbb{Z}^+ } \<br>
-&amp;= {a + b\sqrt{2} \mid a, b \in \mathbb{Q} }<br>
-\end{align}$$</p>
+<p>Let <span class="math inline">\(R = \mathbb{Z}[x]\)</span> be the set
+of all polynomials over <span class="math inline">\(\mathbb{Q}\)</span>.
+Given <span class="math inline">\(a \in \mathbb{R}\)</span>, define
+<span class="math inline">\(\phi_a : \mathbb{Q}[x] \to
+\mathbb{R}\)</span> by <span class="math display">\[\phi_a(f(x)) =
+f(a)\]</span></p>
+<p><span class="math inline">\(\phi_a\)</span> is <strong>evaluation
+homomorphism</strong>.</p>
+<p>for <span class="math inline">\(a = \sqrt{2}\)</span>, we have <span
+class="math display">\[ \begin{align}
+\mathbb{Q}[\sqrt{2}] &amp;:= \phi_{\sqrt{2}}(\mathbb{Q}[x]) = \{
+f(\sqrt{2}) \mid f[x] \in \mathbb{Q} \} \\
+&amp;= \{a_0 + a_1\sqrt{2} + a_2 (\sqrt{2})^2 + \ldots + a_n(\sqrt{2})^n
+\mid a_i \in \mathbb{Q}, n \in \mathbb{Z}^+ \} \\
+&amp;= \{a + b\sqrt{2} \mid a, b \in \mathbb{Q} \}
+\end{align}\]</span></p>
 </blockquote>
-<h2 id="Isomorphisms">Isomorphisms</h2>
+<h2 id="isomorphisms">Isomorphisms</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>Let $R$ and $R^\prime$ be two rings. A function $\phi : R \to R^\prime$ is an <strong>isomorphism</strong> if $\phi$ is one-to-one, onto and homomorphism. Then we say $R$ and $R^\prime$ is isomorphic.</p>
+<p>Let <span class="math inline">\(R\)</span> and <span
+class="math inline">\(R^\prime\)</span> be two rings. A function <span
+class="math inline">\(\phi : R \to R^\prime\)</span> is an
+<strong>isomorphism</strong> if <span
+class="math inline">\(\phi\)</span> is one-to-one, onto and
+homomorphism. Then we say <span class="math inline">\(R\)</span> and
+<span class="math inline">\(R^\prime\)</span> is isomorphic.</p>
 </blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<p>Let $\alpha$ be a basis of n-dimensional vector space $V$ over $F$. Then the matrix representation ${\rm Rep}_\alpha : {\rm End}(V) \to M_n (F)$ is a ring isomorphism.</p>
+<p>Let <span class="math inline">\(\alpha\)</span> be a basis of
+n-dimensional vector space <span class="math inline">\(V\)</span> over
+<span class="math inline">\(F\)</span>. Then the matrix representation
+<span class="math inline">\({\rm Rep}_\alpha : {\rm End}(V) \to M_n
+(F)\)</span> is a ring isomorphism.</p>
 </blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<p>For two coprime integer $n, m$, $\rho : \mathbb{Z}_{mn} \to \mathbb{Z}_n \times \mathbb{Z}_m$ is group isomorphism by given that<br>
-$$\rho(\bar a) = (\bar a, \bar a)$$<br>
-It’s clear that $\rho$ is also a multiplicative homomorphsim. Thus, $\rho$ is a ring isomorphism.</p>
+<p>For two coprime integer <span class="math inline">\(n, m\)</span>,
+<span class="math inline">\(\rho : \mathbb{Z}_{mn} \to \mathbb{Z}_n
+\times \mathbb{Z}_m\)</span> is group isomorphism by given that <span
+class="math display">\[\rho(\bar a) = (\bar a, \bar a)\]</span> It's
+clear that <span class="math inline">\(\rho\)</span> is also a
+multiplicative homomorphsim. Thus, <span
+class="math inline">\(\rho\)</span> is a ring isomorphism.</p>
 </blockquote>
 <p><strong>Example</strong></p>
-<p>The map $\phi : \mathbb{C} \to \left{ \begin{pmatrix} a &amp; b \ -b &amp; a \end{pmatrix} \middle| a, b \in R \right}$ defined by<br>
-$$\phi(a + bi) = \begin{pmatrix} a &amp; -b \ b &amp; a \end{pmatrix}$$<br>
-Show that it is a isomorphism.</p>
+<p>The map <span class="math inline">\(\phi : \mathbb{C} \to \left\{
+\begin{pmatrix} a &amp; b \\ -b &amp; a \end{pmatrix} \middle| a, b \in
+R \right\}\)</span> defined by <span class="math display">\[\phi(a + bi)
+= \begin{pmatrix} a &amp; -b \\ b &amp; a \end{pmatrix}\]</span> Show
+that it is a isomorphism.</p>
 <blockquote>
-<p>Regard $\mathbb{C}$ as a vector space over $\mathbb{R}$ with the basis $\alpha = {1, i}$. <br><br>
-Consider the map $$\rho : \mathbb{C} \to {\rm End}(\mathbb{C})$$<br>
-given by $\rho_x(y) = xy$. It is easy to see that $\rho$ is injective ring homomorphism. <br><br>
-Note that for $a, b \in \mathbb{R}$<br>
-$$\rho_{a+bi}(1) = a \cdot 1 + b \cdot i \qquad \rho_{a+bi}(i) = -b \cdot 1 + a \cdot i$$<br>
-Therefore,<br>
-$${\rm Rep}<em>\alpha(\rho</em>{a+bi}) = \begin{pmatrix} a &amp; -b \ b &amp; a \end{pmatrix} = \phi(a+bi)$$</p>
+<p>Regard <span class="math inline">\(\mathbb{C}\)</span> as a vector
+space over <span class="math inline">\(\mathbb{R}\)</span> with the
+basis <span class="math inline">\(\alpha = \{1, i\}\)</span>. <br>
+Consider the map <span class="math display">\[\rho : \mathbb{C} \to {\rm
+End}(\mathbb{C})\]</span> given by <span class="math inline">\(\rho_x(y)
+= xy\)</span>. It is easy to see that <span
+class="math inline">\(\rho\)</span> is injective ring homomorphism. <br>
+Note that for <span class="math inline">\(a, b \in \mathbb{R}\)</span>
+<span class="math display">\[\rho_{a+bi}(1) = a \cdot 1 + b \cdot i
+\qquad \rho_{a+bi}(i) = -b \cdot 1 + a \cdot i\]</span> Therefore, <span
+class="math display">\[{\rm Rep}_\alpha(\rho_{a+bi}) = \begin{pmatrix} a
+&amp; -b \\ b &amp; a \end{pmatrix} = \phi(a+bi)\]</span></p>
 </blockquote>
 
       </div>

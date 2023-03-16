@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Ring of Polynomials Definitions   Let $R$ be a ring. A polynomial $f(x)$ over $R$ is a formal sum $$\sum_{i &#x3D; 0}^{\infty} a_i x^i &#x3D; a_0 + a_1x + a_2x^2 + \cdots + a_nx^n + \cdots$$ where $a_i \in R$,">
+    <meta name="description" content="Ring of Polynomials Definitions   Let \(R\) be a ring. A polynomial \(f(x)\) over \(R\) is a formal sum \[\sum_{i &#x3D; 0}^{\infty} a_i x^i &#x3D; a_0 + a_1x + a_2x^2 + \cdots + a_nx^n + \cdots\] where \(a_i \">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ring of Polynomials">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Ring_of_Polynomials.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Ring of Polynomials Definitions   Let $R$ be a ring. A polynomial $f(x)$ over $R$ is a formal sum $$\sum_{i &#x3D; 0}^{\infty} a_i x^i &#x3D; a_0 + a_1x + a_2x^2 + \cdots + a_nx^n + \cdots$$ where $a_i \in R$,">
+<meta property="og:description" content="Ring of Polynomials Definitions   Let \(R\) be a ring. A polynomial \(f(x)\) over \(R\) is a formal sum \[\sum_{i &#x3D; 0}^{\infty} a_i x^i &#x3D; a_0 + a_1x + a_2x^2 + \cdots + a_nx^n + \cdots\] where \(a_i \">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-12-04T15:13:43.276Z">
 <meta property="article:modified_time" content="2022-12-04T15:13:43.276Z">
@@ -105,7 +105,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ring-of-Polynomials"><span class="nav-number">1.</span> <span class="nav-text">Ring of Polynomials</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-First-Ring-Isomorphism-Theorem"><span class="nav-number">2.</span> <span class="nav-text">The First Ring Isomorphism Theorem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ring-Extension"><span class="nav-number">3.</span> <span class="nav-text">Ring Extension</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Zero-of-a-polynomial"><span class="nav-number">4.</span> <span class="nav-text">Zero of a polynomial</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ring-of-polynomials"><span class="nav-number">1.</span> <span class="nav-text">Ring of Polynomials</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-first-ring-isomorphism-theorem"><span class="nav-number">2.</span> <span class="nav-text">The First Ring Isomorphism
+Theorem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ring-extension"><span class="nav-number">3.</span> <span class="nav-text">Ring Extension</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zero-of-a-polynomial"><span class="nav-number">4.</span> <span class="nav-text">Zero of a polynomial</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -161,84 +162,164 @@
       
       
       <div class="post-body">
-          <h2 id="Ring-of-Polynomials">Ring of Polynomials</h2>
+          <h2 id="ring-of-polynomials">Ring of Polynomials</h2>
 <p><strong>Definitions</strong></p>
 <blockquote>
-<ol>
-<li>Let $R$ be a ring. A polynomial $f(x)$ over $R$ is a formal sum<br>
-$$\sum_{i = 0}^{\infty} a_i x^i = a_0 + a_1x + a_2x^2 + \cdots + a_nx^n + \cdots$$<br>
-where $a_i \in R$, and only a finite number $i$ such that $a_i \neq 0$.</li>
-<li>The letter $x$ is called an <strong>indeterminate</strong>.</li>
-<li>$a_i$ is the <strong>coefficients</strong> of $f(x)$.</li>
-<li>The lagrest $i$ such that $a_i \neq 0$ is the <strong>degree</strong> of $f(x)$. <br><br>
-If all $a_i = 0$, the the degree of $f(x)$ is undefined. (In some books, it’s defined to be $-\infty$).</li>
-<li>The zero polynomial and polynomials of degree 0 is called <strong>constant polynomials</strong>.</li>
+<ol type="1">
+<li>Let <span class="math inline">\(R\)</span> be a ring. A polynomial
+<span class="math inline">\(f(x)\)</span> over <span
+class="math inline">\(R\)</span> is a formal sum <span
+class="math display">\[\sum_{i = 0}^{\infty} a_i x^i = a_0 + a_1x +
+a_2x^2 + \cdots + a_nx^n + \cdots\]</span> where <span
+class="math inline">\(a_i \in R\)</span>, and only a finite number <span
+class="math inline">\(i\)</span> such that <span
+class="math inline">\(a_i \neq 0\)</span>.</li>
+<li>The letter <span class="math inline">\(x\)</span> is called an
+<strong>indeterminate</strong>.</li>
+<li><span class="math inline">\(a_i\)</span> is the
+<strong>coefficients</strong> of <span
+class="math inline">\(f(x)\)</span>.</li>
+<li>The lagrest <span class="math inline">\(i\)</span> such that <span
+class="math inline">\(a_i \neq 0\)</span> is the <strong>degree</strong>
+of <span class="math inline">\(f(x)\)</span>. <br> If all <span
+class="math inline">\(a_i = 0\)</span>, the the degree of <span
+class="math inline">\(f(x)\)</span> is undefined. (In some books, it's
+defined to be <span class="math inline">\(-\infty\)</span>).</li>
+<li>The zero polynomial and polynomials of degree 0 is called
+<strong>constant polynomials</strong>.</li>
 </ol>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let $R$ be a ring. <br><br>
-The set $R[x]$ of all polynomials over $R$ is a ring with the addition and multiplication defined as<br>
-$$f(x) + g(x) = \sum_{i = 0}^{\infty} (a_i + b_i) x^i$$ $$f(x)g(x) = \sum_{i = 0}^{\infty} \left( \sum_{j = 0}^{i} a_{j}b_{i-j} \right) x^i$$<br>
-where $f(x) = \sum_{i = 0}^{\infty} a_i x^i$ and $g(x) = \sum_{i = 0}^{\infty} b_i x^i$ is polynomials over $R$. <br><br>
-Futhermore, if $R$ is communicative, then so is $R[x]$. If $R$ is a ring with unity, the so is $R[x]$ with the multiplicative identity $1_R[x]$ being $1_R$.</p>
+<p>Let <span class="math inline">\(R\)</span> be a ring. <br> The set
+<span class="math inline">\(R[x]\)</span> of all polynomials over <span
+class="math inline">\(R\)</span> is a ring with the addition and
+multiplication defined as <span class="math display">\[f(x) + g(x) =
+\sum_{i = 0}^{\infty} (a_i + b_i) x^i\]</span> <span
+class="math display">\[f(x)g(x) = \sum_{i = 0}^{\infty} \left( \sum_{j =
+0}^{i} a_{j}b_{i-j} \right) x^i\]</span> where <span
+class="math inline">\(f(x) = \sum_{i = 0}^{\infty} a_i x^i\)</span> and
+<span class="math inline">\(g(x) = \sum_{i = 0}^{\infty} b_i
+x^i\)</span> is polynomials over <span class="math inline">\(R\)</span>.
+<br> Futhermore, if <span class="math inline">\(R\)</span> is
+communicative, then so is <span class="math inline">\(R[x]\)</span>. If
+<span class="math inline">\(R\)</span> is a ring with unity, the so is
+<span class="math inline">\(R[x]\)</span> with the multiplicative
+identity <span class="math inline">\(1_R[x]\)</span> being <span
+class="math inline">\(1_R\)</span>.</p>
 </blockquote>
 <p><strong>Remarks</strong></p>
 <blockquote>
-<ol>
-<li>The ring $R[x_1, \dots , x_n]$ of polynomials in $n$ indeterminates over $R$ can be similarly defined.</li>
-<li>If $D$ is an integral domain, then so is $D[x]$.</li>
-<li>Let $F$ be a field, the set $F[x]$ is not a field since $x$ is not a unit in $F[x]$. <br><br>
-On the other hand, the <a href="Fields_of_Quotients">field of fractions</a> of $F[x]$ is<br>
-$$F(x) = { f(x)/g(x) : f(x), g(x) \in F[x], g(x) \neq 0 }$$<br>
-and $F(x)$ is called the <strong>field of rational functions</strong> in $x$ over $F$.</li>
-<li>The <strong>field of rational functions</strong> in $n$ indetermiates over $F$ is similarly defined.</li>
+<ol type="1">
+<li>The ring <span class="math inline">\(R[x_1, \dots , x_n]\)</span> of
+polynomials in <span class="math inline">\(n\)</span> indeterminates
+over <span class="math inline">\(R\)</span> can be similarly
+defined.</li>
+<li>If <span class="math inline">\(D\)</span> is an integral domain,
+then so is <span class="math inline">\(D[x]\)</span>.</li>
+<li>Let <span class="math inline">\(F\)</span> be a field, the set <span
+class="math inline">\(F[x]\)</span> is not a field since <span
+class="math inline">\(x\)</span> is not a unit in <span
+class="math inline">\(F[x]\)</span>. <br> On the other hand, the <a
+href="Fields_of_Quotients">field of fractions</a> of <span
+class="math inline">\(F[x]\)</span> is <span class="math display">\[F(x)
+= \{ f(x)/g(x) : f(x), g(x) \in F[x], g(x) \neq 0 \}\]</span> and <span
+class="math inline">\(F(x)\)</span> is called the <strong>field of
+rational functions</strong> in <span class="math inline">\(x\)</span>
+over <span class="math inline">\(F\)</span>.</li>
+<li>The <strong>field of rational functions</strong> in <span
+class="math inline">\(n\)</span> indetermiates over <span
+class="math inline">\(F\)</span> is similarly defined.</li>
 </ol>
 </blockquote>
 <p><strong>Remarks</strong></p>
 <blockquote>
-<ol>
-<li>Some properties of polynomials over $\Bbb{R}$ may not hold for polynomials over a general ring $R$.
-<ol>
-<li>If $R$ is noncommutative, then $R[x]$ is noncommutative.</li>
-<li>For $f(x), g(x) \in \Bbb{R}$, ${\rm deg} f(x)g(x) = {\rm deg} f(x) + {\rm deg} g(x)$. <br><br>
-But for $R = \Bbb{Z}_4$, $$(\bar 2 x + \bar 1 )^2 = \bar 4 x^2 + \bar 4 x + \bar 1 = \bar 1$$<br>
-so ${\rm deg} (\bar 2 x + \bar 1 )^2 \neq {\rm deg} (\bar 2 x + \bar 1 ) + {\rm deg} (\bar 2 x + \bar 1 )$.</li>
+<ol type="1">
+<li>Some properties of polynomials over <span
+class="math inline">\(\Bbb{R}\)</span> may not hold for polynomials over
+a general ring <span class="math inline">\(R\)</span>.
+<ol type="1">
+<li>If <span class="math inline">\(R\)</span> is noncommutative, then
+<span class="math inline">\(R[x]\)</span> is noncommutative.</li>
+<li>For <span class="math inline">\(f(x), g(x) \in \Bbb{R}\)</span>,
+<span class="math inline">\({\rm deg} f(x)g(x) = {\rm deg} f(x) + {\rm
+deg} g(x)\)</span>. <br> But for <span class="math inline">\(R =
+\Bbb{Z}_4\)</span>, <span class="math display">\[(\bar 2 x + \bar 1 )^2
+= \bar 4 x^2 + \bar 4 x + \bar 1 = \bar 1\]</span> so <span
+class="math inline">\({\rm deg} (\bar 2 x + \bar 1 )^2 \neq {\rm deg}
+(\bar 2 x + \bar 1 ) + {\rm deg} (\bar 2 x + \bar 1 )\)</span>.</li>
+</ol></li>
+<li>Remark 1.2 above is hold when <span class="math inline">\(R\)</span>
+is a integral domain.</li>
 </ol>
-</li>
-<li>Remark 1.2 above is hold when $R$ is a integral domain.</li>
-</ol>
 </blockquote>
-<h2 id="The-First-Ring-Isomorphism-Theorem">The First Ring Isomorphism Theorem</h2>
-<p><strong>Theorem – the first ring isomorphism theorem</strong></p>
+<h2 id="the-first-ring-isomorphism-theorem">The First Ring Isomorphism
+Theorem</h2>
+<p><strong>Theorem -- the first ring isomorphism theorem</strong></p>
 <blockquote>
-<p>Let $\phi : R \to R^\prime$ be a ring homomorphism. <br><br>
-$R / {\rm ker} \phi$ has a canonical ring structure such that $R / {\rm ker} \phi \cong \rho (R^{\prime})$</p>
+<p>Let <span class="math inline">\(\phi : R \to R^\prime\)</span> be a
+ring homomorphism. <br> <span class="math inline">\(R / {\rm ker}
+\phi\)</span> has a canonical ring structure such that <span
+class="math inline">\(R / {\rm ker} \phi \cong \rho
+(R^{\prime})\)</span></p>
 </blockquote>
-<p>In general, the kernel of some ring homomorphism is called an <strong>ideal</strong>.</p>
-<p><strong>Theorem – evaluation homomorphism</strong></p>
+<p>In general, the kernel of some ring homomorphism is called an
+<strong>ideal</strong>.</p>
+<p><strong>Theorem -- evaluation homomorphism</strong></p>
 <blockquote>
-<p>Suppose $R$ is a subring of $R^\prime$ and $R^\prime$ is commutative. Then for $\alpha \in R^\prime$, we have the ring homomorphism $\phi_\alpha : R[x] \to R^\prime$ by<br>
-$$\phi_\alpha (a_0 + a_1x + \dots + a_nx^n) = a_0 + a_1\alpha + \dots + a_n\alpha^n$$<br>
-called the evaluation homomorphism. <br><br>
-By the first ring isomorphism theorem, $R[x] / {\rm ker} \phi_\alpha \cong \rho (R[x]) = R[\alpha]$ <br><br>
-and $R[\alpha] = {f(\alpha) \mid f(x) \in R[x] }$</p>
+<p>Suppose <span class="math inline">\(R\)</span> is a subring of <span
+class="math inline">\(R^\prime\)</span> and <span
+class="math inline">\(R^\prime\)</span> is commutative. Then for <span
+class="math inline">\(\alpha \in R^\prime\)</span>, we have the ring
+homomorphism <span class="math inline">\(\phi_\alpha : R[x] \to
+R^\prime\)</span> by <span class="math display">\[\phi_\alpha (a_0 +
+a_1x + \dots + a_nx^n) = a_0 + a_1\alpha + \dots + a_n\alpha^n\]</span>
+called the evaluation homomorphism. <br> By the first ring isomorphism
+theorem, <span class="math inline">\(R[x] / {\rm ker} \phi_\alpha \cong
+\rho (R[x]) = R[\alpha]\)</span> <br> and <span
+class="math inline">\(R[\alpha] = \{f(\alpha) \mid f(x) \in R[x]
+\}\)</span></p>
 </blockquote>
-<h2 id="Ring-Extension">Ring Extension</h2>
+<h2 id="ring-extension">Ring Extension</h2>
 <blockquote>
-<p>$R[\alpha]$ can be considered as an extension of $R$ by joining an element $\alpha$ from a larger ring $R^\prime$. <br><br>
-The result above show that every ring extension of $R$ by adding single element is isomorphic to $R[x]/I$, where $I$ is a ideal of $R[x]$. <br><br>
-In general, a finitely generated commuatative ring with unity and characteristic $n$ is iosmorphic to $\Bbb{Z}_n[x_1, \dots, x_k] / I$, where $I$ is a ideal of $\Bbb{Z}_n[x_1, \dots, x_k]$</p>
+<p><span class="math inline">\(R[\alpha]\)</span> can be considered as
+an extension of <span class="math inline">\(R\)</span> by joining an
+element <span class="math inline">\(\alpha\)</span> from a larger ring
+<span class="math inline">\(R^\prime\)</span>. <br> The result above
+show that every ring extension of <span class="math inline">\(R\)</span>
+by adding single element is isomorphic to <span
+class="math inline">\(R[x]/I\)</span>, where <span
+class="math inline">\(I\)</span> is a ideal of <span
+class="math inline">\(R[x]\)</span>. <br> In general, a finitely
+generated commuatative ring with unity and characteristic <span
+class="math inline">\(n\)</span> is iosmorphic to <span
+class="math inline">\(\Bbb{Z}_n[x_1, \dots, x_k] / I\)</span>, where
+<span class="math inline">\(I\)</span> is a ideal of <span
+class="math inline">\(\Bbb{Z}_n[x_1, \dots, x_k]\)</span></p>
 </blockquote>
-<h2 id="Zero-of-a-polynomial">Zero of a polynomial</h2>
+<h2 id="zero-of-a-polynomial">Zero of a polynomial</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>Let $F$ be a subfield of a field $E$. Let $f(x) \in F[x]$. Suppose that $\alpha \in E$ is an element such that $f(\alpha) = 0$, then $\alpha$ is a <strong>zero</strong> of $f(x)$ in $E$.</p>
+<p>Let <span class="math inline">\(F\)</span> be a subfield of a field
+<span class="math inline">\(E\)</span>. Let <span
+class="math inline">\(f(x) \in F[x]\)</span>. Suppose that <span
+class="math inline">\(\alpha \in E\)</span> is an element such that
+<span class="math inline">\(f(\alpha) = 0\)</span>, then <span
+class="math inline">\(\alpha\)</span> is a <strong>zero</strong> of
+<span class="math inline">\(f(x)\)</span> in <span
+class="math inline">\(E\)</span>.</p>
 </blockquote>
 <p><strong>Example</strong></p>
-<ol>
-<li>Let $f(x) = x^2 - 2 \in \Bbb{Q}[x]$, then $\pm\sqrt{2}$ are the zeros of $f(x)$ in $\Bbb{R}$.</li>
-<li>Let $f(x) = x^2 + 1 \in \Bbb{R}[x]$, then $\pm i$ are the zeros of $f(x)$ in $\Bbb{C}$.</li>
+<ol type="1">
+<li>Let <span class="math inline">\(f(x) = x^2 - 2 \in
+\Bbb{Q}[x]\)</span>, then <span
+class="math inline">\(\pm\sqrt{2}\)</span> are the zeros of <span
+class="math inline">\(f(x)\)</span> in <span
+class="math inline">\(\Bbb{R}\)</span>.</li>
+<li>Let <span class="math inline">\(f(x) = x^2 + 1 \in
+\Bbb{R}[x]\)</span>, then <span class="math inline">\(\pm i\)</span> are
+the zeros of <span class="math inline">\(f(x)\)</span> in <span
+class="math inline">\(\Bbb{C}\)</span>.</li>
 </ol>
 
       </div>

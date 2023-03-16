@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Burnside’s Lemma Theorem – Burnside’s Lemma  Let $G$ be a finite group acting on a finite set $X$ and let $X&#x2F;G$ denote the set of $G$-orbits in $X$.  The number of $X&#x2F;G$ can be computed as follows: $$">
+    <meta name="description" content="Burnside&#39;s Lemma Theorem -- Burnside&#39;s Lemma  Let \(G\) be a finite group acting on a finite set \(X\) and let \(X&#x2F;G\) denote the set of \(G\)-orbits in \(X\).  The number of \(X&#x2F;G\) can be computed a">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Burnside&#39;s Lemma">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Burnsides_Lemma.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Burnside’s Lemma Theorem – Burnside’s Lemma  Let $G$ be a finite group acting on a finite set $X$ and let $X&#x2F;G$ denote the set of $G$-orbits in $X$.  The number of $X&#x2F;G$ can be computed as follows: $$">
+<meta property="og:description" content="Burnside&#39;s Lemma Theorem -- Burnside&#39;s Lemma  Let \(G\) be a finite group acting on a finite set \(X\) and let \(X&#x2F;G\) denote the set of \(G\)-orbits in \(X\).  The number of \(X&#x2F;G\) can be computed a">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-03-04T06:27:04.053Z">
 <meta property="article:modified_time" content="2023-03-04T06:27:04.053Z">
@@ -105,7 +105,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Burnside%E2%80%99s-Lemma"><span class="nav-number">1.</span> <span class="nav-text">Burnside’s Lemma</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#burnsides-lemma"><span class="nav-number">1.</span> <span class="nav-text">Burnside&#39;s Lemma</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -161,41 +161,61 @@
       
       
       <div class="post-body">
-          <h2 id="Burnside’s-Lemma">Burnside’s Lemma</h2>
-<p><strong>Theorem – Burnside’s Lemma</strong></p>
+          <h2 id="burnsides-lemma">Burnside's Lemma</h2>
+<p><strong>Theorem -- Burnside's Lemma</strong></p>
 <blockquote>
-<p>Let $G$ be a finite group acting on a finite set $X$ and let $X/G$ denote the set of $G$-orbits in $X$. <br><br>
-The number of $X/G$ can be computed as follows:<br>
-$$|X/G| = {1 \over |G|}\sum_{g \in G}|X^g|$$</p>
+<p>Let <span class="math inline">\(G\)</span> be a finite group acting
+on a finite set <span class="math inline">\(X\)</span> and let <span
+class="math inline">\(X/G\)</span> denote the set of <span
+class="math inline">\(G\)</span>-orbits in <span
+class="math inline">\(X\)</span>. <br> The number of <span
+class="math inline">\(X/G\)</span> can be computed as follows: <span
+class="math display">\[|X/G| = {1 \over |G|}\sum_{g \in
+G}|X^g|\]</span></p>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <p>待補</p>
-</details><br>
+</details>
+<p><br></p>
 <p><strong>Examples</strong></p>
-<p>Q: How many ways are there to paint a triangular frame with equal sides and $n \geq 3$ different colors, taking into account rotations and reflections?</p>
+<p>Q: How many ways are there to paint a triangular frame with equal
+sides and <span class="math inline">\(n \geq 3\)</span> different
+colors, taking into account rotations and reflections?</p>
 <p>Solution 1: <br></p>
 <blockquote>
 <p>Three possibles:</p>
-<ol>
+<ol type="1">
 <li>All three sides are in same color.</li>
 <li>Two sides in same color while the other is different.</li>
 <li>All three sides are in different colors.</li>
 </ol>
-<p>Thus, the number of ways are:<br>
-$${n \choose 1} + 2 {n \choose 2} + {n \choose 3} = {1 \over 6}(n^3 + 3 n^2 + 2n)$$</p>
+<p>Thus, the number of ways are: <span class="math display">\[{n \choose
+1} + 2 {n \choose 2} + {n \choose 3} = {1 \over 6}(n^3 + 3 n^2 +
+2n)\]</span></p>
 </blockquote>
 <p>Solution 2: <br></p>
 <blockquote>
-<p>Let $G$ be the group of symmetries of a triangular frame and $X$ be the set of all possible colorings of the frame. <br><br>
-The elemets $g$ of $G$ can be classified as follows:</p>
-<ol>
-<li>The identity element doesn’t effect any coloring in $X$, resulting in $|X^e| = |X| = n^3$</li>
-<li>The two rotations require the same color on the each side, resulting in $X^g = n$</li>
-<li>The three reflection must have same color on two sides that are flipped by the refliection and any color on the rest side, resulting in $|X^g| = n^2$</li>
+<p>Let <span class="math inline">\(G\)</span> be the group of symmetries
+of a triangular frame and <span class="math inline">\(X\)</span> be the
+set of all possible colorings of the frame. <br> The elemets <span
+class="math inline">\(g\)</span> of <span
+class="math inline">\(G\)</span> can be classified as follows:</p>
+<ol type="1">
+<li>The identity element doesn't effect any coloring in <span
+class="math inline">\(X\)</span>, resulting in <span
+class="math inline">\(|X^e| = |X| = n^3\)</span></li>
+<li>The two rotations require the same color on the each side, resulting
+in <span class="math inline">\(X^g = n\)</span></li>
+<li>The three reflection must have same color on two sides that are
+flipped by the refliection and any color on the rest side, resulting in
+<span class="math inline">\(|X^g| = n^2\)</span></li>
 </ol>
-<p>By Burnside’s lemma, the number of possible coloring is<br>
-$${1 \over |G|}\sum_{g \in G}|X^g| = {1 \over 6}(n^3 + 3 n^2 + 2n)$$</p>
+<p>By Burnside's lemma, the number of possible coloring is <span
+class="math display">\[{1 \over |G|}\sum_{g \in G}|X^g| = {1 \over
+6}(n^3 + 3 n^2 + 2n)\]</span></p>
 </blockquote>
 
       </div>

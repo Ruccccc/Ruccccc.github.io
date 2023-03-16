@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Zero Divisor Definition  A non-zero element $a$ of a ring $R$ is a zero divisor if there exists a non-zero element $b$ such that $ab &#x3D; 0$.  Example  $\bar 2$, $\bar 3$, $\bar 4$ are all zero disvisors">
+    <meta name="description" content="Zero Divisor Definition  A non-zero element \(a\) of a ring \(R\) is a zero divisor if there exists a non-zero element \(b\) such that \(ab &#x3D; 0\).  Example  \(\bar 2\), \(\bar 3\), \(\bar 4\) are all">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Integral domain">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Integral_Domains.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Zero Divisor Definition  A non-zero element $a$ of a ring $R$ is a zero divisor if there exists a non-zero element $b$ such that $ab &#x3D; 0$.  Example  $\bar 2$, $\bar 3$, $\bar 4$ are all zero disvisors">
+<meta property="og:description" content="Zero Divisor Definition  A non-zero element \(a\) of a ring \(R\) is a zero divisor if there exists a non-zero element \(b\) such that \(ab &#x3D; 0\).  Example  \(\bar 2\), \(\bar 3\), \(\bar 4\) are all">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-11-27T16:18:08.817Z">
 <meta property="article:modified_time" content="2022-11-27T16:18:08.817Z">
@@ -105,7 +105,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Zero-Divisor"><span class="nav-number">1.</span> <span class="nav-text">Zero Divisor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Integral-Domains"><span class="nav-number">2.</span> <span class="nav-text">Integral Domains</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Finite-Integral-Domains"><span class="nav-number">3.</span> <span class="nav-text">Finite Integral Domains</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Characteristic-of-Ring"><span class="nav-number">4.</span> <span class="nav-text">Characteristic of Ring</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#zero-divisor"><span class="nav-number">1.</span> <span class="nav-text">Zero Divisor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#integral-domains"><span class="nav-number">2.</span> <span class="nav-text">Integral Domains</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#finite-integral-domains"><span class="nav-number">3.</span> <span class="nav-text">Finite Integral Domains</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#characteristic-of-ring"><span class="nav-number">4.</span> <span class="nav-text">Characteristic of Ring</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -161,169 +161,288 @@
       
       
       <div class="post-body">
-          <h2 id="Zero-Divisor">Zero Divisor</h2>
+          <h2 id="zero-divisor">Zero Divisor</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>A non-zero element $a$ of a ring $R$ is a <strong>zero divisor</strong> if there exists a non-zero element $b$ such that $ab = 0$.</p>
+<p>A non-zero element <span class="math inline">\(a\)</span> of a ring
+<span class="math inline">\(R\)</span> is a <strong>zero
+divisor</strong> if there exists a non-zero element <span
+class="math inline">\(b\)</span> such that <span
+class="math inline">\(ab = 0\)</span>.</p>
 </blockquote>
 <p><strong>Example</strong></p>
-<ol>
-<li>$\bar 2$, $\bar 3$, $\bar 4$ are all zero disvisors in $\mathbb{Z}_6$.</li>
-<li>The matrices $\begin{pmatrix} 0 &amp; 0 \ 1 &amp; 0 \end{pmatrix}$ and $\begin{pmatrix} 0 &amp; 0 \ 0 &amp; 1 \end{pmatrix}$ are zero divisors in $M_2(\mathbb{Z})$. <br></li>
+<ol type="1">
+<li><span class="math inline">\(\bar 2\)</span>, <span
+class="math inline">\(\bar 3\)</span>, <span class="math inline">\(\bar
+4\)</span> are all zero disvisors in <span
+class="math inline">\(\mathbb{Z}_6\)</span>.</li>
+<li>The matrices <span class="math inline">\(\begin{pmatrix} 0 &amp; 0
+\\ 1 &amp; 0 \end{pmatrix}\)</span> and <span
+class="math inline">\(\begin{pmatrix} 0 &amp; 0 \\ 0 &amp; 1
+\end{pmatrix}\)</span> are zero divisors in <span
+class="math inline">\(M_2(\mathbb{Z})\)</span>. <br></li>
 </ol>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>The zero divisors of $\mathbb{Z}_n$ is the the nonzero elements not relatively prime to $n$. <br></p>
+<p>The zero divisors of <span
+class="math inline">\(\mathbb{Z}_n\)</span> is the the nonzero elements
+not relatively prime to <span class="math inline">\(n\)</span>. <br></p>
 </blockquote>
 <p><strong>Corollary</strong></p>
 <blockquote>
-<p>If $p$ is a prime, then $\mathbb{Z}_p$ has no zero divisor.</p>
+<p>If <span class="math inline">\(p\)</span> is a prime, then <span
+class="math inline">\(\mathbb{Z}_p\)</span> has no zero divisor.</p>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<p>For $\bar m \in \mathbb{Z}_n$</p>
-<ol>
-<li>If ${\rm gcd}(m, n) = d &gt; 1$. We have<br>
-$$\bar m ({n \over d}) = \bar n ({\bar m \over d}) = \bar 0$$<br>
-so $\bar m$ is a zero divisor.</li>
-<li>If ${\rm gcd}(m, n) = 1$. <br><br>
-We assume that $\bar m \bar k = 0$ $\implies$ $n \mid mk$ <br><br>
-Since $m$ is relatively prime to $n$, we have $n \mid k$ $\implies$ $\bar k = \bar 0$ <br><br>
-We see that $\bar m$ is not a zero divisor.</li>
+<p>For <span class="math inline">\(\bar m \in \mathbb{Z}_n\)</span></p>
+<ol type="1">
+<li>If <span class="math inline">\({\rm gcd}(m, n) = d &gt; 1\)</span>.
+We have <span class="math display">\[\bar m ({n \over d}) = \bar n
+({\bar m \over d}) = \bar 0\]</span> so <span class="math inline">\(\bar
+m\)</span> is a zero divisor.</li>
+<li>If <span class="math inline">\({\rm gcd}(m, n) = 1\)</span>. <br> We
+assume that <span class="math inline">\(\bar m \bar k = 0\)</span> <span
+class="math inline">\(\implies\)</span> <span class="math inline">\(n
+\mid mk\)</span> <br> Since <span class="math inline">\(m\)</span> is
+relatively prime to <span class="math inline">\(n\)</span>, we have
+<span class="math inline">\(n \mid k\)</span> <span
+class="math inline">\(\implies\)</span> <span class="math inline">\(\bar
+k = \bar 0\)</span> <br> We see that <span class="math inline">\(\bar
+m\)</span> is not a zero divisor.</li>
 </ol>
 </blockquote>
-</details> <br>
+</details>
+<p><br></p>
 <p><strong>Theorem - Cancellation Law</strong></p>
 <blockquote>
-<p>The cancellation law holds if and only if $R$ has no zero divisors</p>
+<p>The cancellation law holds if and only if <span
+class="math inline">\(R\)</span> has no zero divisors</p>
 </blockquote>
 <p><strong>Remark</strong></p>
-<ol>
-<li>For a ring with zero divisor, even though the cancellation law not hold in general, but still holds in some cases that a multiplicative inverse exists.
-<ol>
-<li>In $\mathbb{Z}_5$, $2b = 2c$ implies $b = c$ because $2$ is relatively prime to $15$. <br></li>
-<li>$A$ is an invertible matrix in $M_2(\mathbb{R})$, then $AB = AC$ implies $B = C$. <Br></li>
-</ol>
-</li>
-<li>If $R$ is a ring with no zero divisor, then the equation $ax = b$ has at most one solution in $R$. <Br></li>
+<ol type="1">
+<li>For a ring with zero divisor, even though the cancellation law not
+hold in general, but still holds in some cases that a multiplicative
+inverse exists.
+<ol type="1">
+<li>In <span class="math inline">\(\mathbb{Z}_5\)</span>, <span
+class="math inline">\(2b = 2c\)</span> implies <span
+class="math inline">\(b = c\)</span> because <span
+class="math inline">\(2\)</span> is relatively prime to <span
+class="math inline">\(15\)</span>. <br></li>
+<li><span class="math inline">\(A\)</span> is an invertible matrix in
+<span class="math inline">\(M_2(\mathbb{R})\)</span>, then <span
+class="math inline">\(AB = AC\)</span> implies <span
+class="math inline">\(B = C\)</span>. <Br></li>
+</ol></li>
+<li>If <span class="math inline">\(R\)</span> is a ring with no zero
+divisor, then the equation <span class="math inline">\(ax = b\)</span>
+has at most one solution in <span class="math inline">\(R\)</span>.
+<Br></li>
 </ol>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<ol>
-<li>$\implies$ <br><br>
-Assume that the cancellation holds but $a \neq 0$ is a zero divisor in $R$. <br><br>
-Then we have $ab = 0$ for some $b \neq 0 \in R$. <br><br>
-$ab = 0 = a0$ but $b \neq 0$, which is a contradiction.</li>
-<li>$\impliedby$ <br><br>
-Assume that $R$ has no zero divisor.<br>
-If $ab = ac$ and $a \neq 0$, then $ab - ac = 0$. <br><br>
-By distributive law, $a(b - c) = 0$. <br><br>
-Since $R$ has no zero divisor and $a \neq 0$, we can get $b - c = 0 \implies b = c$. <br></li>
+<ol type="1">
+<li><span class="math inline">\(\implies\)</span> <br> Assume that the
+cancellation holds but <span class="math inline">\(a \neq 0\)</span> is
+a zero divisor in <span class="math inline">\(R\)</span>. <br> Then we
+have <span class="math inline">\(ab = 0\)</span> for some <span
+class="math inline">\(b \neq 0 \in R\)</span>. <br> <span
+class="math inline">\(ab = 0 = a0\)</span> but <span
+class="math inline">\(b \neq 0\)</span>, which is a contradiction.</li>
+<li><span class="math inline">\(\impliedby\)</span> <br> Assume that
+<span class="math inline">\(R\)</span> has no zero divisor. If <span
+class="math inline">\(ab = ac\)</span> and <span class="math inline">\(a
+\neq 0\)</span>, then <span class="math inline">\(ab - ac = 0\)</span>.
+<br> By distributive law, <span class="math inline">\(a(b - c) =
+0\)</span>. <br> Since <span class="math inline">\(R\)</span> has no
+zero divisor and <span class="math inline">\(a \neq 0\)</span>, we can
+get <span class="math inline">\(b - c = 0 \implies b = c\)</span>.
+<br></li>
 </ol>
 </blockquote>
-</details> <br>
+</details>
+<p><br></p>
 <p><strong>Notation - b/a</strong></p>
 <blockquote>
-<p>When a ring R is commutative, having unity and no zero divisors. we can denote $a^{-1}b$ as $b/a$. And $1/a$ deonte $a^{-1}$. <br></p>
-<p>But when R is not communitive, we can’t use this notation since we don’t know $b/a$ means $a^{-1}b$ or $ba^{-1}$. <br></p>
+<p>When a ring R is commutative, having unity and no zero divisors. we
+can denote <span class="math inline">\(a^{-1}b\)</span> as <span
+class="math inline">\(b/a\)</span>. And <span
+class="math inline">\(1/a\)</span> deonte <span
+class="math inline">\(a^{-1}\)</span>. <br></p>
+<p>But when R is not communitive, we can't use this notation since we
+don't know <span class="math inline">\(b/a\)</span> means <span
+class="math inline">\(a^{-1}b\)</span> or <span
+class="math inline">\(ba^{-1}\)</span>. <br></p>
 </blockquote>
-<h2 id="Integral-Domains">Integral Domains</h2>
+<h2 id="integral-domains">Integral Domains</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>A commutative ring $R$ with unity $1 \neq 0$ and has no zero divisors is an <strong>integral domain</strong>.</p>
+<p>A commutative ring <span class="math inline">\(R\)</span> with unity
+<span class="math inline">\(1 \neq 0\)</span> and has no zero divisors
+is an <strong>integral domain</strong>.</p>
 </blockquote>
 <p><strong>Example</strong></p>
-<ol>
-<li>The ring of integres $\mathbb{Z}$ is an integral domain. (That’s why integral domain is called “integral” domain)</li>
-<li>If $p$ is a prime, then $\mathbb{Z}_p$ is an integral domain.</li>
-<li>The direct product of two nonzero rings $R, S$ is not an integral domain since $(r, 0)(0, s) = (0, 0)$ for all $r \in R$ and $s \in S$. <br></li>
+<ol type="1">
+<li>The ring of integres <span class="math inline">\(\mathbb{Z}\)</span>
+is an integral domain. (That's why integral domain is called "integral"
+domain)</li>
+<li>If <span class="math inline">\(p\)</span> is a prime, then <span
+class="math inline">\(\mathbb{Z}_p\)</span> is an integral domain.</li>
+<li>The direct product of two nonzero rings <span
+class="math inline">\(R, S\)</span> is not an integral domain since
+<span class="math inline">\((r, 0)(0, s) = (0, 0)\)</span> for all <span
+class="math inline">\(r \in R\)</span> and <span class="math inline">\(s
+\in S\)</span>. <br></li>
 </ol>
-<h2 id="Finite-Integral-Domains">Finite Integral Domains</h2>
+<h2 id="finite-integral-domains">Finite Integral Domains</h2>
 <p><strong>Theorem</strong></p>
 <blockquote>
 <p>Every finite integral domain is a field.</p>
 </blockquote>
 <p><strong>Corollary</strong></p>
 <blockquote>
-<p>If $p$ is a prime, then $\mathbb{Z}$ is field.</p>
+<p>If <span class="math inline">\(p\)</span> is a prime, then <span
+class="math inline">\(\mathbb{Z}\)</span> is field.</p>
 </blockquote>
-<p><strong>Remark - Wedderburn’s theorem</strong></p>
+<p><strong>Remark - Wedderburn's theorem</strong></p>
 <blockquote>
 <p>Every finite division ring is a field.</p>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<p>Let $D$ be a finite integral domain. <br><br>
-Since field is a communicative division ring, to show $D$ is a field, we need to show that every nonzero element in $D$ is unit. <br><br>
-Let $0, 1, a_1, a_2, \dots, a_n$ be all the elements of $D$. <br><br>
-The products $0 = a0, a = a1, aa_1, \dots, aa_n$ are distinct since the cancellation law. <br><br>
-Then the products must be all elements of $D$, so that there must be some $a_i$ s.t. $aa_i = 1$. <br><br>
-Therefore, for all $a \in D$ is unit. This prove the theorem.</p>
+<p>Let <span class="math inline">\(D\)</span> be a finite integral
+domain. <br> Since field is a communicative division ring, to show <span
+class="math inline">\(D\)</span> is a field, we need to show that every
+nonzero element in <span class="math inline">\(D\)</span> is unit. <br>
+Let <span class="math inline">\(0, 1, a_1, a_2, \dots, a_n\)</span> be
+all the elements of <span class="math inline">\(D\)</span>. <br> The
+products <span class="math inline">\(0 = a0, a = a1, aa_1, \dots,
+aa_n\)</span> are distinct since the cancellation law. <br> Then the
+products must be all elements of <span class="math inline">\(D\)</span>,
+so that there must be some <span class="math inline">\(a_i\)</span> s.t.
+<span class="math inline">\(aa_i = 1\)</span>. <br> Therefore, for all
+<span class="math inline">\(a \in D\)</span> is unit. This prove the
+theorem.</p>
 </blockquote>
 </details>
-<h2 id="Characteristic-of-Ring">Characteristic of Ring</h2>
+<h2 id="characteristic-of-ring">Characteristic of Ring</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>Let R be a ring, the least interger $n$ such that $n \cdot a = 0$ for all $a \in R$ is the <strong>characteristic</strong> of R. <br><br>
-If no such positive integer exist, then $R$ is of <strong>characteristic $0$</strong>.</p>
+<p>Let R be a ring, the least interger <span
+class="math inline">\(n\)</span> such that <span class="math inline">\(n
+\cdot a = 0\)</span> for all <span class="math inline">\(a \in
+R\)</span> is the <strong>characteristic</strong> of R. <br> If no such
+positive integer exist, then <span class="math inline">\(R\)</span> is
+of <strong>characteristic <span
+class="math inline">\(0\)</span></strong>.</p>
 </blockquote>
 <p><strong>Example</strong></p>
-<ol>
-<li>The rings $\mathbb{Z}_n$ are of characteristic $n$.</li>
-<li>The rings $\mathbb{Z},, \mathbb{Q},, \mathbb{R},, \mathbb{C}$ are all of characteristic $0$.</li>
+<ol type="1">
+<li>The rings <span class="math inline">\(\mathbb{Z}_n\)</span> are of
+characteristic <span class="math inline">\(n\)</span>.</li>
+<li>The rings <span class="math inline">\(\mathbb{Z},\, \mathbb{Q},\,
+\mathbb{R},\, \mathbb{C}\)</span> are all of characteristic <span
+class="math inline">\(0\)</span>.</li>
 </ol>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let $R$ be a ring with unity. <br><br>
-If $n \cdot 1 \neq 0$ for all $n \in \mathbb{Z}^{+}$, then $R$ has characteristic $0$. <br><br>
-If $n \cdot 1 = 0$ for some $n \in \mathbb{Z}^{+}$, then the smallest such $n$ is the characteristic of $R$. <br></p>
+<p>Let <span class="math inline">\(R\)</span> be a ring with unity. <br>
+If <span class="math inline">\(n \cdot 1 \neq 0\)</span> for all <span
+class="math inline">\(n \in \mathbb{Z}^{+}\)</span>, then <span
+class="math inline">\(R\)</span> has characteristic <span
+class="math inline">\(0\)</span>. <br> If <span class="math inline">\(n
+\cdot 1 = 0\)</span> for some <span class="math inline">\(n \in
+\mathbb{Z}^{+}\)</span>, then the smallest such <span
+class="math inline">\(n\)</span> is the characteristic of <span
+class="math inline">\(R\)</span>. <br></p>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<p>If $n \cdot 1 \neq 0$ for all $n \in \mathbb{Z}^{+}$, then $R$ is clearly of characteristic 0 by definition. <br><br>
-If $n \cdot 1 = 0$ for some $n \in \mathbb{Z}^{+}$, then for all $a \in R$, we have<br>
-$$n \cdot a = (a + \dots + a) = a (1 + \dots + 1) = a(n \cdot 1) = a0 = 0$$<br>
-which prove the theorem. <br></p>
+<p>If <span class="math inline">\(n \cdot 1 \neq 0\)</span> for all
+<span class="math inline">\(n \in \mathbb{Z}^{+}\)</span>, then <span
+class="math inline">\(R\)</span> is clearly of characteristic 0 by
+definition. <br> If <span class="math inline">\(n \cdot 1 = 0\)</span>
+for some <span class="math inline">\(n \in \mathbb{Z}^{+}\)</span>, then
+for all <span class="math inline">\(a \in R\)</span>, we have <span
+class="math display">\[n \cdot a = (a + \dots + a) = a (1 + \dots + 1) =
+a(n \cdot 1) = a0 = 0\]</span> which prove the theorem. <br></p>
 </blockquote>
-</details> <br>
+</details>
+<p><br></p>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Let $R$ be a ring with unity of characteristic $n$ ($n$ can be zero). Then $\langle 1_R \rangle \cong \mathbb{Z}_n$.</p>
+<p>Let <span class="math inline">\(R\)</span> be a ring with unity of
+characteristic <span class="math inline">\(n\)</span> (<span
+class="math inline">\(n\)</span> can be zero). Then <span
+class="math inline">\(\langle 1_R \rangle \cong
+\mathbb{Z}_n\)</span>.</p>
 </blockquote>
 <p><strong>Remark</strong></p>
 <blockquote>
-<p>$\mathbb{Z}_n$ can be regard as the quotient ring $\mathbb{Z} / n\mathbb{Z}$. <br><br>
-Therefore, we have $\mathbb{Z} / 0\mathbb{Z} = \mathbb{Z}$ when $n = 0$.<br>
-So that we can difine the characteristic in this case to be zero instead of infinity.</p>
+<p><span class="math inline">\(\mathbb{Z}_n\)</span> can be regard as
+the quotient ring <span class="math inline">\(\mathbb{Z} /
+n\mathbb{Z}\)</span>. <br> Therefore, we have <span
+class="math inline">\(\mathbb{Z} / 0\mathbb{Z} = \mathbb{Z}\)</span>
+when <span class="math inline">\(n = 0\)</span>. So that we can difine
+the characteristic in this case to be zero instead of infinity.</p>
 </blockquote>
 <p><strong>Corollary</strong></p>
 <blockquote>
-<p>Every ring with unity contains $\mathbb{Z}$ or $\mathbb{Z}_n$ as a subring.</p>
+<p>Every ring with unity contains <span
+class="math inline">\(\mathbb{Z}\)</span> or <span
+class="math inline">\(\mathbb{Z}_n\)</span> as a subring.</p>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<p>For $n = 0$, the order of $1_R$ is infinite. That is $\langle 1_r \rangle \cong \mathbb{Z}$ <br><br>
-For $n \neq 0$, we can write $\langle 1_R \rangle$ as ${m 1_r \mid m \in \mathbb{Z}_n }$, since $1_R \times n = 1_R \times 0 = 0$ <br><br>
-Let $\phi : \langle 1_R \rangle \to \mathbb{Z}_n$, defined by $$\phi(m1_R) = m$$<br>
-Now we need to show $\phi$ is a isomorphism:</p>
-<ol>
-<li>Suppose $\phi(a) = \phi(b)$, then $a = b = m1_R$ where $m \in \mathbb{Z}_n$ <br><br>
-$\phi$ is one-to-one</li>
-<li>For all $a \in \mathbb{Z}_n$, $\exists a1_R \in \langle 1_R \rangle$ such that $\phi(a1_R) = a$ <br><br>
-$\phi$ is onto</li>
-<li>For all $x1_R, y1_R \in \langle 1_R \rangle$, where $x, y \in \mathbb{Z}_n$<br>
-$$\phi(x1_R) + \phi(y1_R) = x + y = \phi(a + b)$$<br>
-$$\phi(x1_R)\phi(y1_R) = xy = \phi(ab)$$<br>
-$\phi$ is homomorphism.<br></li>
+<p>For <span class="math inline">\(n = 0\)</span>, the order of <span
+class="math inline">\(1_R\)</span> is infinite. That is <span
+class="math inline">\(\langle 1_r \rangle \cong \mathbb{Z}\)</span> <br>
+For <span class="math inline">\(n \neq 0\)</span>, we can write <span
+class="math inline">\(\langle 1_R \rangle\)</span> as <span
+class="math inline">\(\{m 1_r \mid m \in \mathbb{Z}_n \}\)</span>, since
+<span class="math inline">\(1_R \times n = 1_R \times 0 = 0\)</span>
+<br> Let <span class="math inline">\(\phi : \langle 1_R \rangle \to
+\mathbb{Z}_n\)</span>, defined by <span
+class="math display">\[\phi(m1_R) = m\]</span> Now we need to show <span
+class="math inline">\(\phi\)</span> is a isomorphism:</p>
+<ol type="1">
+<li>Suppose <span class="math inline">\(\phi(a) = \phi(b)\)</span>, then
+<span class="math inline">\(a = b = m1_R\)</span> where <span
+class="math inline">\(m \in \mathbb{Z}_n\)</span> <br> <span
+class="math inline">\(\phi\)</span> is one-to-one</li>
+<li>For all <span class="math inline">\(a \in \mathbb{Z}_n\)</span>,
+<span class="math inline">\(\exists a1_R \in \langle 1_R
+\rangle\)</span> such that <span class="math inline">\(\phi(a1_R) =
+a\)</span> <br> <span class="math inline">\(\phi\)</span> is onto</li>
+<li>For all <span class="math inline">\(x1_R, y1_R \in \langle 1_R
+\rangle\)</span>, where <span class="math inline">\(x, y \in
+\mathbb{Z}_n\)</span> <span class="math display">\[\phi(x1_R) +
+\phi(y1_R) = x + y = \phi(a + b)\]</span> <span
+class="math display">\[\phi(x1_R)\phi(y1_R) = xy = \phi(ab)\]</span>
+<span class="math inline">\(\phi\)</span> is homomorphism.<br></li>
 </ol>
-<p>Therefore, $\phi$ is isomorphism. And we can know that $\langle 1_R \rangle \cong \mathbb{Z}_n$</p>
+<p>Therefore, <span class="math inline">\(\phi\)</span> is isomorphism.
+And we can know that <span class="math inline">\(\langle 1_R \rangle
+\cong \mathbb{Z}_n\)</span></p>
 </blockquote>
-</details> <br>
+</details>
+<p><br></p>
 
       </div>
       

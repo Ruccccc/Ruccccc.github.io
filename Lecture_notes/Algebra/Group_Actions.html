@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Group Action Definition – Group Action  Let $X$ be a set and $G$ be a group.  An action of $G$ on $X$ is a map $\ast : G \times X \to X$ such that  $\ast(e, x) &#x3D; x$ for all $x \in X$, where $e$ is the">
+    <meta name="description" content="Group Action Definition -- Group Action  Let \(X\) be a set and \(G\) be a group.  An action of \(G\) on \(X\) is a map \(\ast : G \times X \to X\) such that  \(\ast(e, x) &#x3D; x\) for all \(x \in X\), w">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Group Actions">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Group_Actions.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Group Action Definition – Group Action  Let $X$ be a set and $G$ be a group.  An action of $G$ on $X$ is a map $\ast : G \times X \to X$ such that  $\ast(e, x) &#x3D; x$ for all $x \in X$, where $e$ is the">
+<meta property="og:description" content="Group Action Definition -- Group Action  Let \(X\) be a set and \(G\) be a group.  An action of \(G\) on \(X\) is a map \(\ast : G \times X \to X\) such that  \(\ast(e, x) &#x3D; x\) for all \(x \in X\), w">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-20T15:40:58.050Z">
 <meta property="article:modified_time" content="2023-02-20T15:40:58.050Z">
@@ -105,7 +105,9 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Group-Action"><span class="nav-number">1.</span> <span class="nav-text">Group Action</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conjugation-as-a-Group-Action"><span class="nav-number">2.</span> <span class="nav-text">Conjugation as a Group Action</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Faithful-and-Transitive-Group-Actions"><span class="nav-number">3.</span> <span class="nav-text">Faithful and Transitive Group Actions</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#group-action"><span class="nav-number">1.</span> <span class="nav-text">Group Action</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#conjugation-as-a-group-action"><span class="nav-number">2.</span> <span class="nav-text">Conjugation as a Group
+Action</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#faithful-and-transitive-group-actions"><span class="nav-number">3.</span> <span class="nav-text">Faithful and Transitive
+Group Actions</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -161,68 +163,156 @@
       
       
       <div class="post-body">
-          <h2 id="Group-Action">Group Action</h2>
-<p><strong>Definition – Group Action</strong></p>
+          <h2 id="group-action">Group Action</h2>
+<p><strong>Definition -- Group Action</strong></p>
 <blockquote>
-<p>Let $X$ be a set and $G$ be a group. <br><br>
-An action of $G$ on $X$ is a map $\ast : G \times X \to X$ such that</p>
-<ol>
-<li>$\ast(e, x) = x$ for all $x \in X$, where $e$ is the identity element of $G$.</li>
-<li>$\ast(g_1, \ast(g_2, x)) = \ast(g_1g_2, x)$ for all $x \in X$ and all $g_1, g_2 \in G$.</li>
+<p>Let <span class="math inline">\(X\)</span> be a set and <span
+class="math inline">\(G\)</span> be a group. <br> An action of <span
+class="math inline">\(G\)</span> on <span
+class="math inline">\(X\)</span> is a map <span
+class="math inline">\(\ast : G \times X \to X\)</span> such that</p>
+<ol type="1">
+<li><span class="math inline">\(\ast(e, x) = x\)</span> for all <span
+class="math inline">\(x \in X\)</span>, where <span
+class="math inline">\(e\)</span> is the identity element of <span
+class="math inline">\(G\)</span>.</li>
+<li><span class="math inline">\(\ast(g_1, \ast(g_2, x)) = \ast(g_1g_2,
+x)\)</span> for all <span class="math inline">\(x \in X\)</span> and all
+<span class="math inline">\(g_1, g_2 \in G\)</span>.</li>
 </ol>
-<p>Under these conditions, $X$ is referreed to as a <strong>$G$-set</strong>. For convenience, we write $\ast(g, x)$ simply as $gx$.</p>
+<p>Under these conditions, <span class="math inline">\(X\)</span> is
+referreed to as a <strong><span
+class="math inline">\(G\)</span>-set</strong>. For convenience, we write
+<span class="math inline">\(\ast(g, x)\)</span> simply as <span
+class="math inline">\(gx\)</span>.</p>
 </blockquote>
 <p><strong>Proposition</strong></p>
 <blockquote>
-<p>Suppose that a group $G$ acts on a set $X$. Then for a given $g \in G$\</p>
-<ol>
-<li>If $gx_1 = gx_2$, then $x_1 = x_2$ (injective)</li>
-<li>For all $y \in X$, there exists $x \in X$ such that $gx = y$ (surjective)</li>
+<p>Suppose that a group <span class="math inline">\(G\)</span> acts on a
+set <span class="math inline">\(X\)</span>. Then for a given <span
+class="math inline">\(g \in G\)</span><br />
+</p>
+<ol type="1">
+<li>If <span class="math inline">\(gx_1 = gx_2\)</span>, then <span
+class="math inline">\(x_1 = x_2\)</span> (injective)</li>
+<li>For all <span class="math inline">\(y \in X\)</span>, there exists
+<span class="math inline">\(x \in X\)</span> such that <span
+class="math inline">\(gx = y\)</span> (surjective)</li>
 </ol>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
+<summary>
+<strong>Proof</strong>
+</summary>
 <blockquote>
-<ol>
-<li>Suppose that $gx_1 = gx_2$, then $g^{-1}gx_1 = g^{-1}gx_2$, hence $x_1 = x_2$.</li>
-<li>For all $y \in X$, let $x = g^{-1}y$. Then $gx = g(g^{-1}y) = (gg^{-1})y = ey = y$.</li>
+<ol type="1">
+<li>Suppose that <span class="math inline">\(gx_1 = gx_2\)</span>, then
+<span class="math inline">\(g^{-1}gx_1 = g^{-1}gx_2\)</span>, hence
+<span class="math inline">\(x_1 = x_2\)</span>.</li>
+<li>For all <span class="math inline">\(y \in X\)</span>, let <span
+class="math inline">\(x = g^{-1}y\)</span>. Then <span
+class="math inline">\(gx = g(g^{-1}y) = (gg^{-1})y = ey =
+y\)</span>.</li>
 </ol>
 </blockquote>
-</details><br>
+</details>
+<p><br></p>
 <p><strong>Remark</strong></p>
 <blockquote>
-<p>A group action $G$ on $X$ can be alternatively interpreted as follows. <br><br>
-Let $S_X$ be the set of permutations on $X$. A group action $\ast$ of $G$ on $X$ can be regarded as a group homomorphism $\rho : G \to S_X$ such that $$\ast (g, x) = \rho(g)x$$<br>
-This interpretation ensures that $\rho(g)$ is a permutation for all $g$ in $G$ and is a homomorphism. <br><br>
-In other words, $G$ acts on $X$ $\iff$ A group homomorphism from $G$ to $S_X$.</p>
+<p>A group action <span class="math inline">\(G\)</span> on <span
+class="math inline">\(X\)</span> can be alternatively interpreted as
+follows. <br> Let <span class="math inline">\(S_X\)</span> be the set of
+permutations on <span class="math inline">\(X\)</span>. A group action
+<span class="math inline">\(\ast\)</span> of <span
+class="math inline">\(G\)</span> on <span
+class="math inline">\(X\)</span> can be regarded as a group homomorphism
+<span class="math inline">\(\rho : G \to S_X\)</span> such that <span
+class="math display">\[\ast (g, x) = \rho(g)x\]</span> This
+interpretation ensures that <span class="math inline">\(\rho(g)\)</span>
+is a permutation for all <span class="math inline">\(g\)</span> in <span
+class="math inline">\(G\)</span> and is a homomorphism. <br> In other
+words, <span class="math inline">\(G\)</span> acts on <span
+class="math inline">\(X\)</span> <span
+class="math inline">\(\iff\)</span> A group homomorphism from <span
+class="math inline">\(G\)</span> to <span
+class="math inline">\(S_X\)</span>.</p>
 </blockquote>
 <p><strong>Examples of Group Action</strong></p>
 <blockquote>
-<ol>
-<li>Let $G$ be a group of symmetries of an object $X$. Then the action of $G$ on $X$ is a group action.</li>
-<li>Let $X = { 1, 2, \ldots, n }$. Then any subgroup of the symmetric group $S_n$ acts on $X$ by $\sigma x = \sigma(x)$</li>
-<li>Let $X = \mathbb{R}^n$. Then the group of all invertible $n \times n$ matrices ${\rm GL}(n, \mathbb{R})$, acts on $X$ by $(M, v) \mapsto Mv$ for all $M \in {\rm GL}(n, \mathbb{R})$ and $v \in X$.</li>
-<li>Let $G$ be a group. Then the map $(g, x) \mapsto gx$ from $G \times G$ to $G$ is a group action.</li>
-<li>Let $H$ be a subgroup of $G$ and $G/H$ be the set of all left cosets. Then $G$ acts on $G/H$ by $(g, aH) \mapsto (ga)H$.</li>
-<li>Let $X$ be a non-empty set and $n$ be a positive integer. Then any subgroup of the symmetric group $S_n$ acts on $X^n$ by $\left(\sigma, (x_1, \cdots, x_n)\right) \mapsto \left(x_{\sigma(1)}, \cdots, x_{\sigma(n)}\right)$</li>
+<ol type="1">
+<li>Let <span class="math inline">\(G\)</span> be a group of symmetries
+of an object <span class="math inline">\(X\)</span>. Then the action of
+<span class="math inline">\(G\)</span> on <span
+class="math inline">\(X\)</span> is a group action.</li>
+<li>Let <span class="math inline">\(X = \{ 1, 2, \ldots, n \}\)</span>.
+Then any subgroup of the symmetric group <span
+class="math inline">\(S_n\)</span> acts on <span
+class="math inline">\(X\)</span> by <span class="math inline">\(\sigma x
+= \sigma(x)\)</span></li>
+<li>Let <span class="math inline">\(X = \mathbb{R}^n\)</span>. Then the
+group of all invertible <span class="math inline">\(n \times n\)</span>
+matrices <span class="math inline">\({\rm GL}(n, \mathbb{R})\)</span>,
+acts on <span class="math inline">\(X\)</span> by <span
+class="math inline">\((M, v) \mapsto Mv\)</span> for all <span
+class="math inline">\(M \in {\rm GL}(n, \mathbb{R})\)</span> and <span
+class="math inline">\(v \in X\)</span>.</li>
+<li>Let <span class="math inline">\(G\)</span> be a group. Then the map
+<span class="math inline">\((g, x) \mapsto gx\)</span> from <span
+class="math inline">\(G \times G\)</span> to <span
+class="math inline">\(G\)</span> is a group action.</li>
+<li>Let <span class="math inline">\(H\)</span> be a subgroup of <span
+class="math inline">\(G\)</span> and <span
+class="math inline">\(G/H\)</span> be the set of all left cosets. Then
+<span class="math inline">\(G\)</span> acts on <span
+class="math inline">\(G/H\)</span> by <span class="math inline">\((g,
+aH) \mapsto (ga)H\)</span>.</li>
+<li>Let <span class="math inline">\(X\)</span> be a non-empty set and
+<span class="math inline">\(n\)</span> be a positive integer. Then any
+subgroup of the symmetric group <span class="math inline">\(S_n\)</span>
+acts on <span class="math inline">\(X^n\)</span> by <span
+class="math inline">\(\left(\sigma, (x_1, \cdots, x_n)\right) \mapsto
+\left(x_{\sigma(1)}, \cdots, x_{\sigma(n)}\right)\)</span></li>
 </ol>
 </blockquote>
-<h2 id="Conjugation-as-a-Group-Action">Conjugation as a Group Action</h2>
+<h2 id="conjugation-as-a-group-action">Conjugation as a Group
+Action</h2>
 <p><strong>Lemma</strong></p>
 <blockquote>
-<p>Let $G$ be a group and consider the set of all group isomorphisms of $G$,<br>
-$$Aut(G) = {\rho : G \to G \mid \text{$\rho$ is a group iosmorphism.}}$$<br>
-For any $g \in G$, the map $\rho_g : G \to G$ defined by $\rho_g(x) = gxg^{-1}$ is a group automorphism on $G$. <br><br>
-And this action $\rho$ is called <strong>conjugation</strong>. <br><br>
-The map $\rho : G \to {\rm Aut}(G)$ defined by $g \mapsto \rho_g$ is a group homomorphism, and its kernel is equal to the center of $G$.<br><br>
-As a result, the map $\ast : G \times G \to G$ given by $\ast(g, x) = gxg^{-1}$ is a group action.</p>
+<p>Let <span class="math inline">\(G\)</span> be a group and consider
+the set of all group isomorphisms of <span
+class="math inline">\(G\)</span>, <span class="math display">\[Aut(G) =
+\{\rho : G \to G \mid \text{$\rho$ is a group iosmorphism.}\}\]</span>
+For any <span class="math inline">\(g \in G\)</span>, the map <span
+class="math inline">\(\rho_g : G \to G\)</span> defined by <span
+class="math inline">\(\rho_g(x) = gxg^{-1}\)</span> is a group
+automorphism on <span class="math inline">\(G\)</span>. <br> And this
+action <span class="math inline">\(\rho\)</span> is called
+<strong>conjugation</strong>. <br> The map <span
+class="math inline">\(\rho : G \to {\rm Aut}(G)\)</span> defined by
+<span class="math inline">\(g \mapsto \rho_g\)</span> is a group
+homomorphism, and its kernel is equal to the center of <span
+class="math inline">\(G\)</span>.<br> As a result, the map <span
+class="math inline">\(\ast : G \times G \to G\)</span> given by <span
+class="math inline">\(\ast(g, x) = gxg^{-1}\)</span> is a group
+action.</p>
 </blockquote>
-<h2 id="Faithful-and-Transitive-Group-Actions">Faithful and Transitive Group Actions</h2>
+<h2 id="faithful-and-transitive-group-actions">Faithful and Transitive
+Group Actions</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>Let $X$ be a $G$-set. <br><br>
-$G$ acts on $X$ <strong>faithfully</strong> if the identity element is the only element in $G$ that leaves every element of $X$ unchanged. <br><br>
-$G$ acts on $X$ <strong>transitively</strong> if there is only one orbit in $X$. That is for all $x, y \in X$, exist $g \in G$ such that $gx = y$.</p>
+<p>Let <span class="math inline">\(X\)</span> be a <span
+class="math inline">\(G\)</span>-set. <br> <span
+class="math inline">\(G\)</span> acts on <span
+class="math inline">\(X\)</span> <strong>faithfully</strong> if the
+identity element is the only element in <span
+class="math inline">\(G\)</span> that leaves every element of <span
+class="math inline">\(X\)</span> unchanged. <br> <span
+class="math inline">\(G\)</span> acts on <span
+class="math inline">\(X\)</span> <strong>transitively</strong> if there
+is only one orbit in <span class="math inline">\(X\)</span>. That is for
+all <span class="math inline">\(x, y \in X\)</span>, exist <span
+class="math inline">\(g \in G\)</span> such that <span
+class="math inline">\(gx = y\)</span>.</p>
 </blockquote>
 
       </div>

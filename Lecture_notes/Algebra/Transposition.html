@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Back to content Transpostitions Defination  A cycle $(ij)$ of length $2$ is a transposition. If $j &#x3D; i \pm 1$, then it’s an adjacent transposition.  Lemma  Every transposition is a product of odd many">
+    <meta name="description" content="Back to content Transpostitions Defination  A cycle \((ij)\) of length \(2\) is a transposition. If \(j &#x3D; i \pm 1\), then it&#39;s an adjacent transposition.  Lemma  Every transposition is a product of od">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Transpositions">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Transposition.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Back to content Transpostitions Defination  A cycle $(ij)$ of length $2$ is a transposition. If $j &#x3D; i \pm 1$, then it’s an adjacent transposition.  Lemma  Every transposition is a product of odd many">
+<meta property="og:description" content="Back to content Transpostitions Defination  A cycle \((ij)\) of length \(2\) is a transposition. If \(j &#x3D; i \pm 1\), then it&#39;s an adjacent transposition.  Lemma  Every transposition is a product of od">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-11-07T12:20:37.184Z">
 <meta property="article:modified_time" content="2022-11-07T12:20:37.184Z">
@@ -105,7 +105,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Transpostitions"><span class="nav-number">1.</span> <span class="nav-text">Transpostitions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Generating-set-of-S-n"><span class="nav-number">2.</span> <span class="nav-text">Generating set of $S_n$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Inversion"><span class="nav-number">3.</span> <span class="nav-text">Inversion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sign-representation"><span class="nav-number">4.</span> <span class="nav-text">Sign representation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Alternative-group"><span class="nav-number">5.</span> <span class="nav-text">Alternative group</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#transpostitions"><span class="nav-number">1.</span> <span class="nav-text">Transpostitions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#generating-set-of-s_n"><span class="nav-number">2.</span> <span class="nav-text">Generating set of \(S_n\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#inversion"><span class="nav-number">3.</span> <span class="nav-text">Inversion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sign-representation"><span class="nav-number">4.</span> <span class="nav-text">Sign representation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#alternative-group"><span class="nav-number">5.</span> <span class="nav-text">Alternative group</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -162,69 +162,98 @@
       
       <div class="post-body">
           <p><a href="index">Back to content</a></p>
-<h2 id="Transpostitions">Transpostitions</h2>
+<h2 id="transpostitions">Transpostitions</h2>
 <p><strong>Defination</strong></p>
 <blockquote>
-<p>A cycle $(ij)$ of length $2$ is a <strong>transposition</strong>.<br>
-If $j = i \pm 1$, then it’s an <strong>adjacent transposition</strong>.</p>
+<p>A cycle <span class="math inline">\((ij)\)</span> of length <span
+class="math inline">\(2\)</span> is a <strong>transposition</strong>. If
+<span class="math inline">\(j = i \pm 1\)</span>, then it's an
+<strong>adjacent transposition</strong>.</p>
 </blockquote>
 <p><strong>Lemma</strong></p>
 <blockquote>
-<p>Every transposition is a product of odd many adjacent transpositions.</p>
+<p>Every transposition is a product of odd many adjacent
+transpositions.</p>
 </blockquote>
 <ul>
 <li>Example
 <ul>
-<li>$(13) = (23)(12)(23)$</li>
-<li>$(36) = (34)(45)(56)(45)(34)$</li>
-</ul>
-</li>
+<li><span class="math inline">\((13) = (23)(12)(23)\)</span></li>
+<li><span class="math inline">\((36) =
+(34)(45)(56)(45)(34)\)</span></li>
+</ul></li>
 </ul>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>Any permutation in $S_n$ with $n &gt; 2$ is a product of transpositions.</p>
+<p>Any permutation in <span class="math inline">\(S_n\)</span> with
+<span class="math inline">\(n &gt; 2\)</span> is a product of
+transpositions.</p>
 </blockquote>
-<h2 id="Generating-set-of-S-n">Generating set of $S_n$</h2>
+<h2 id="generating-set-of-s_n">Generating set of <span
+class="math inline">\(S_n\)</span></h2>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>For all $n \leq 2$,<br>
-$$<br>
-\begin{align}<br>
-S_n &amp;= \langle (ij) | 1 \leq i &lt;j \leq n \rangle \<br>
-&amp;= \langle (12), (13), \cdots , (1n) \rangle \<br>
-&amp;= \langle (12), (123 \cdots n) \rangle<br>
-\end{align}<br>
-$$</p>
+<p>For all <span class="math inline">\(n \leq 2\)</span>, <span
+class="math display">\[
+\begin{align}
+S_n &amp;= \langle (ij) | 1 \leq i &lt;j \leq n \rangle \\
+&amp;= \langle (12), (13), \cdots , (1n) \rangle \\
+&amp;= \langle (12), (123 \cdots n) \rangle
+\end{align}
+\]</span></p>
 </blockquote>
-<h2 id="Inversion">Inversion</h2>
+<h2 id="inversion">Inversion</h2>
 <p><strong>Defination</strong></p>
 <blockquote>
-<p>Given a permuation $\sigma \in S_n$. A pair $(i,j)$ wit $i &lt; j$ is called an <strong>inversion</strong> of $\sigma$ if $\sigma(i) &gt; \sigma(j)$.<br>
-Let $$C(\sigma) = #{(i,j) | 1 \leq i &lt; j \leq n, \sigma(i) &gt; \sigma(j)}$$,<br>
-$C(\sigma)$ is called <strong>the number of inversions</strong> of $\sigma$.<br>
-When $C(\sigma)$ is odd/even, $\sigma$ is called an odd/even permutation.</p>
+<p>Given a permuation <span class="math inline">\(\sigma \in
+S_n\)</span>. A pair <span class="math inline">\((i,j)\)</span> wit
+<span class="math inline">\(i &lt; j\)</span> is called an
+<strong>inversion</strong> of <span
+class="math inline">\(\sigma\)</span> if <span
+class="math inline">\(\sigma(i) &gt; \sigma(j)\)</span>. Let <span
+class="math display">\[C(\sigma) = \#\{(i,j) | 1 \leq i &lt; j \leq n,
+\sigma(i) &gt; \sigma(j)\}\]</span>, <span
+class="math inline">\(C(\sigma)\)</span> is called <strong>the number of
+inversions</strong> of <span class="math inline">\(\sigma\)</span>. When
+<span class="math inline">\(C(\sigma)\)</span> is odd/even, <span
+class="math inline">\(\sigma\)</span> is called an odd/even
+permutation.</p>
 </blockquote>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>For an adjacent transposition $\tau = (k, k+1)$ and a permutation $\sigma$ in $S_n$, $C(\tau \sigma) = C(\tau) \pm 1$.</p>
+<p>For an adjacent transposition <span class="math inline">\(\tau = (k,
+k+1)\)</span> and a permutation <span
+class="math inline">\(\sigma\)</span> in <span
+class="math inline">\(S_n\)</span>, <span class="math inline">\(C(\tau
+\sigma) = C(\tau) \pm 1\)</span>.</p>
 </blockquote>
-<h2 id="Sign-representation">Sign representation</h2>
+<h2 id="sign-representation">Sign representation</h2>
 <p><strong>Defination</strong></p>
 <blockquote>
-<p>Let $sgn : S_n \to {\pm 1}$, given by $sgn(\sigma) = (-1)^{C(\sigma)}$</p>
+<p>Let <span class="math inline">\(sgn : S_n \to \{\pm 1\}\)</span>,
+given by <span class="math inline">\(sgn(\sigma) =
+(-1)^{C(\sigma)}\)</span></p>
 </blockquote>
 <p><strong>Corollary</strong></p>
 <blockquote>
-<p>The map $sgn$ is homomorphism.</p>
+<p>The map <span class="math inline">\(sgn\)</span> is homomorphism.</p>
 </blockquote>
-<h2 id="Alternative-group">Alternative group</h2>
+<h2 id="alternative-group">Alternative group</h2>
 <p><strong>Theorem</strong></p>
 <blockquote>
-<p>If $n \geq 2$, then the set $A_n$ of all even permutations of ${1,2, \ldots,n}$ forms a subgroup of order $n!/2$ of $S_n$. <br></p>
+<p>If <span class="math inline">\(n \geq 2\)</span>, then the set <span
+class="math inline">\(A_n\)</span> of all even permutations of <span
+class="math inline">\(\{1,2, \ldots,n\}\)</span> forms a subgroup of
+order <span class="math inline">\(n!/2\)</span> of <span
+class="math inline">\(S_n\)</span>. <br></p>
 </blockquote>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>The subgroup of $S_n$ consisting of the even permutations of $n$ letters is the alternating group $A_n$ on $n$ letters.</p>
+<p>The subgroup of <span class="math inline">\(S_n\)</span> consisting
+of the even permutations of <span class="math inline">\(n\)</span>
+letters is the alternating group <span
+class="math inline">\(A_n\)</span> on <span
+class="math inline">\(n\)</span> letters.</p>
 </blockquote>
 
       </div>

@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Gauss’s Lemma Definition  Let $f(x) &#x3D; a_n x^n + \ldots + a_0$ be an integer polynomial. Content is ${\rm gcd}(a_0, \ldots, a_n)$, and denoted by ${\rm Con}(f)$. $f(x)$ is primitive if ${\rm Con}(f) &#x3D;">
+    <meta name="description" content="Gauss&#39;s Lemma Definition  Let \(f(x) &#x3D; a_n x^n + \ldots + a_0\) be an integer polynomial. Content is \({\rm gcd}(a_0, \ldots, a_n)\), and denoted by \({\rm Con}(f)\). \(f(x)\) is primitive if \({\rm C">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gauss&#39;s Lemma">
 <meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Gauss_Lemma.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Gauss’s Lemma Definition  Let $f(x) &#x3D; a_n x^n + \ldots + a_0$ be an integer polynomial. Content is ${\rm gcd}(a_0, \ldots, a_n)$, and denoted by ${\rm Con}(f)$. $f(x)$ is primitive if ${\rm Con}(f) &#x3D;">
+<meta property="og:description" content="Gauss&#39;s Lemma Definition  Let \(f(x) &#x3D; a_n x^n + \ldots + a_0\) be an integer polynomial. Content is \({\rm gcd}(a_0, \ldots, a_n)\), and denoted by \({\rm Con}(f)\). \(f(x)\) is primitive if \({\rm C">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-12-13T16:18:50.069Z">
 <meta property="article:modified_time" content="2022-12-13T16:18:50.069Z">
@@ -105,7 +105,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Gauss%E2%80%99s-Lemma"><span class="nav-number">1.</span> <span class="nav-text">Gauss’s Lemma</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#gausss-lemma"><span class="nav-number">1.</span> <span class="nav-text">Gauss&#39;s Lemma</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -161,27 +161,43 @@
       
       
       <div class="post-body">
-          <h2 id="Gauss’s-Lemma">Gauss’s Lemma</h2>
+          <h2 id="gausss-lemma">Gauss's Lemma</h2>
 <p><strong>Definition</strong></p>
 <blockquote>
-<p>Let $f(x) = a_n x^n + \ldots + a_0$ be an integer polynomial.<br>
-<strong>Content</strong> is ${\rm gcd}(a_0, \ldots, a_n)$, and denoted by ${\rm Con}(f)$.<br><br>
-$f(x)$ is <strong>primitive</strong> if ${\rm Con}(f) = 1$.</p>
+<p>Let <span class="math inline">\(f(x) = a_n x^n + \ldots +
+a_0\)</span> be an integer polynomial. <strong>Content</strong> is <span
+class="math inline">\({\rm gcd}(a_0, \ldots, a_n)\)</span>, and denoted
+by <span class="math inline">\({\rm Con}(f)\)</span>.<br> <span
+class="math inline">\(f(x)\)</span> is <strong>primitive</strong> if
+<span class="math inline">\({\rm Con}(f) = 1\)</span>.</p>
 </blockquote>
-<p><strong>Theorem – Gauss’s Lemma (primitivity)</strong></p>
+<p><strong>Theorem -- Gauss's Lemma (primitivity)</strong></p>
 <blockquote>
-<p>If $f(x)$ and $g(x)$ is primitive, then $f(x)g(x)$ is primitive.</p>
+<p>If <span class="math inline">\(f(x)\)</span> and <span
+class="math inline">\(g(x)\)</span> is primitive, then <span
+class="math inline">\(f(x)g(x)\)</span> is primitive.</p>
 </blockquote>
 <details>
-<summary> **Proof** </summary>
-</details><br>
+<summary>
+<strong>Proof</strong>
+</summary>
+</details>
+<p><br></p>
 <p><strong>Corollary</strong></p>
 <blockquote>
-<p>A primitive integer polunomial is irreducible over $\Bbb{Q}[x]$ if and only if it is irreducible over $\Bbb{Z}[x]$.</p>
+<p>A primitive integer polunomial is irreducible over <span
+class="math inline">\(\Bbb{Q}[x]\)</span> if and only if it is
+irreducible over <span class="math inline">\(\Bbb{Z}[x]\)</span>.</p>
 </blockquote>
 <p><strong>Corollary</strong></p>
 <blockquote>
-<p>Let $f(x) = a_0 + a_1 x + a_2 x^2 + \ldots + a_n x^n \in \Bbb{Z}[x]$ with $a_0 \neq 0$. If $f(x)$ has a zero in $\Bbb{Q}$, then the zero is equal to $\dfrac{a}{b}$ where $a \mid a_0$ and $b \mid a_n$.</p>
+<p>Let <span class="math inline">\(f(x) = a_0 + a_1 x + a_2 x^2 + \ldots
++ a_n x^n \in \Bbb{Z}[x]\)</span> with <span class="math inline">\(a_0
+\neq 0\)</span>. If <span class="math inline">\(f(x)\)</span> has a zero
+in <span class="math inline">\(\Bbb{Q}\)</span>, then the zero is equal
+to <span class="math inline">\(\dfrac{a}{b}\)</span> where <span
+class="math inline">\(a \mid a_0\)</span> and <span
+class="math inline">\(b \mid a_n\)</span>.</p>
 </blockquote>
 
       </div>

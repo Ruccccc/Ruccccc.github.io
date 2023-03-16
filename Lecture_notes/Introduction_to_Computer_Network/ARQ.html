@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Error  Detection  Parity check CRC   Error correction  Hamming code   Retransmission  ARQ (Automatic Repeat reQuest)    ARQ  Stop and wait Go back n Selective repeat  Assumptions  Receiver knows when">
+    <meta name="description" content="Error  Detection  Parity check CRC  Error correction  Hamming code  Retransmission  ARQ (Automatic Repeat reQuest)   ARQ  Stop and wait Go back n Selective repeat  Assumptions  Receiver knows when fra">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ARQ">
 <meta property="og:url" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/ARQ.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="Error  Detection  Parity check CRC   Error correction  Hamming code   Retransmission  ARQ (Automatic Repeat reQuest)    ARQ  Stop and wait Go back n Selective repeat  Assumptions  Receiver knows when">
+<meta property="og:description" content="Error  Detection  Parity check CRC  Error correction  Hamming code  Retransmission  ARQ (Automatic Repeat reQuest)   ARQ  Stop and wait Go back n Selective repeat  Assumptions  Receiver knows when fra">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/ARQ/Piggyback.jpeg">
 <meta property="og:image" content="http://example.com/Lecture_notes/Introduction_to_Computer_Network/Images/ARQ/Go_back_7.jpeg">
@@ -109,7 +109,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Error"><span class="nav-number">1.</span> <span class="nav-text">Error</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ARQ"><span class="nav-number">2.</span> <span class="nav-text">ARQ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Stop-and-Wait"><span class="nav-number">3.</span> <span class="nav-text">Stop and Wait</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Piggybacking"><span class="nav-number">4.</span> <span class="nav-text">Piggybacking</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Go-Back-N"><span class="nav-number">5.</span> <span class="nav-text">Go Back N</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Sliding-Widnow"><span class="nav-number">5.1.</span> <span class="nav-text">Sliding Widnow</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#error"><span class="nav-number">1.</span> <span class="nav-text">Error</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#arq"><span class="nav-number">2.</span> <span class="nav-text">ARQ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#stop-and-wait"><span class="nav-number">3.</span> <span class="nav-text">Stop and Wait</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#piggybacking"><span class="nav-number">4.</span> <span class="nav-text">Piggybacking</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#go-back-n"><span class="nav-number">5.</span> <span class="nav-text">Go Back N</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sliding-widnow"><span class="nav-number">5.1.</span> <span class="nav-text">Sliding Widnow</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -165,26 +165,23 @@
       
       
       <div class="post-body">
-          <h2 id="Error">Error</h2>
+          <h2 id="error">Error</h2>
 <ul>
 <li>Detection
 <ul>
 <li>Parity check</li>
 <li>CRC</li>
-</ul>
-</li>
+</ul></li>
 <li>Error correction
 <ul>
 <li>Hamming code</li>
-</ul>
-</li>
+</ul></li>
 <li>Retransmission
 <ul>
 <li>ARQ (Automatic Repeat reQuest)</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="ARQ">ARQ</h2>
+<h2 id="arq">ARQ</h2>
 <ul>
 <li>Stop and wait</li>
 <li>Go back n</li>
@@ -194,71 +191,91 @@
 <ul>
 <li>Receiver knows when frames start and end</li>
 <li>All errors are detected</li>
-<li>Each frame is delay an arbitary time before arrvin at the receiver.</li>
+<li>Each frame is delay an arbitary time before arrvin at the
+receiver.</li>
 <li>Frames might lost.</li>
 <li>Frames arrive in same order as transmitted.</li>
 </ul>
-<h2 id="Stop-and-Wait">Stop and Wait</h2>
+<h2 id="stop-and-wait">Stop and Wait</h2>
 <ul>
-<li>Ensure that the packet has been received before transmit the next packet.</li>
+<li>Ensure that the packet has been received before transmit the next
+packet.</li>
 <li>The receiver sends ack if frame is error-free, else sends nak.</li>
 <li>The transmitter sends next frame if ack is returned.</li>
-<li>The transmitter resend the old packet in new frame if nak is retruned or errors are detected in ack or nak.</li>
-<li>The transmitter will time-out and resend if no ack or nak returned after a period of time. (frame, ack or nak is lost)</li>
+<li>The transmitter resend the old packet in new frame if nak is
+retruned or errors are detected in ack or nak.</li>
+<li>The transmitter will time-out and resend if no ack or nak returned
+after a period of time. (frame, ack or nak is lost)</li>
 <li>Problem
 <ul>
 <li>Spending too many time waiting ack.</li>
-<li>Ack or nak might received by the transmitter after time-out. In this situation, the receiver can’t inditify the next frame is new or old one.</li>
+<li>Ack or nak might received by the transmitter after time-out. In this
+situation, the receiver can't inditify the next frame is new or old
+one.</li>
 <li>Solution : Uses a sequence number(SN) in the frame header.</li>
-<li>Same problem might occur for ack/nak, so ank and nak also need to use SN.
+<li>Same problem might occur for ack/nak, so ank and nak also need to
+use SN.
 <ul>
-<li>Return the number of packet just accepted or the next packet awaited.</li>
+<li>Return the number of packet just accepted or the next packet
+awaited.</li>
 <li>Can request the next awaited packet
 <ul>
 <li>Upon the receipt of each packet.</li>
 <li>At arbitrary time.</li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="Piggybacking">Piggybacking</h2>
-<p><img src="Images/ARQ/Piggyback.jpeg" alt="Piggyback"></p>
+<h2 id="piggybacking">Piggybacking</h2>
+<figure>
+<img src="Images/ARQ/Piggyback.jpeg" alt="Piggyback" />
+<figcaption aria-hidden="true">Piggyback</figcaption>
+</figure>
 <ul>
-<li>Usually, the transmition is binary, so that receiver can “piggyback” the request for new packets</li>
+<li>Usually, the transmition is binary, so that receiver can "piggyback"
+the request for new packets</li>
 <li>SN : sequence number</li>
 <li>RN : request number</li>
 <li>SN and RN might be large when time increasing.
 <ul>
 <li>Modulo some integer, 2 is enough if frames transmit in order.</li>
+</ul></li>
+<li><figure>
+<img src="" alt="Example" />
+<figcaption aria-hidden="true">Example</figcaption>
+</figure></li>
 </ul>
-</li>
-<li><img src="" alt="Example"></li>
-</ul>
-<h2 id="Go-Back-N">Go Back N</h2>
+<h2 id="go-back-n">Go Back N</h2>
 <ul>
 <li>Most widely used type of ARQ.</li>
-<li>It’s inefficient using the communication link since nothing is send while waiting for an ack.</li>
-<li>N packets can be sent without waiting for the requirement for next packet.
+<li>It's inefficient using the communication link since nothing is send
+while waiting for an ack.</li>
+<li>N packets can be sent without waiting for the requirement for next
+packet.
 <ul>
 <li>Allow to send i+n-1 packets when i-th packet is required.</li>
-</ul>
-</li>
-<li>After (i+n-1)-th packet is sent, send i-th packet after time-out.</li>
+</ul></li>
+<li>After (i+n-1)-th packet is sent, send i-th packet after
+time-out.</li>
 <li>If SN != RN, send same RN again.</li>
 <li>If ack error, ignore.</li>
 </ul>
-<h3 id="Sliding-Widnow">Sliding Widnow</h3>
+<h3 id="sliding-widnow">Sliding Widnow</h3>
 <ul>
-<li>Let i be the last RN. The window is the packets from i to i+n-1.</li>
+<li>Let i be the last RN. The window is the packets from i to
+i+n-1.</li>
 <li>The window slides upward as RN incresing.</li>
 </ul>
 <p><strong>Example</strong></p>
-<p><img src="Images/ARQ/Go_back_7.jpeg" alt="Go back 7"></p>
+<figure>
+<img src="Images/ARQ/Go_back_7.jpeg" alt="Go back 7" />
+<figcaption aria-hidden="true">Go back 7</figcaption>
+</figure>
 <p><strong>Example - after (i+n-1) packet is send</strong></p>
-<p><img src="Images/ARQ/Go_back_4.jpeg" alt="Go back 4"></p>
+<figure>
+<img src="Images/ARQ/Go_back_4.jpeg" alt="Go back 4" />
+<figcaption aria-hidden="true">Go back 4</figcaption>
+</figure>
 
       </div>
       

@@ -19,25 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Applicaions of Quaternions">
-<meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Applications_of_Quaternions.html">
+    <meta name="description" content="Hamiltonian Quaternions Definition  We defined a unital associative algebra \(\Bbb{H}\) over \(\Bbb{R}\) of 4 dimension, by the basis \({1, i, j ,k}\).  Their multiplication is defined as \(i^2 &#x3D; j^2">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quaternions">
+<meta property="og:url" content="http://example.com/Lecture_notes/Algebra/Quaternions.html">
 <meta property="og:site_name" content="Ruccccc">
+<meta property="og:description" content="Hamiltonian Quaternions Definition  We defined a unital associative algebra \(\Bbb{H}\) over \(\Bbb{R}\) of 4 dimension, by the basis \({1, i, j ,k}\).  Their multiplication is defined as \(i^2 &#x3D; j^2">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-03-15T09:03:19.700Z">
-<meta property="article:modified_time" content="2023-03-15T09:03:19.700Z">
+<meta property="article:published_time" content="2023-03-20T07:15:39.367Z">
+<meta property="article:modified_time" content="2023-03-20T07:15:39.367Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/Lecture_notes/Algebra/Applications_of_Quaternions">
+<link rel="canonical" href="http://example.com/Lecture_notes/Algebra/Quaternions">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Lecture_notes/Algebra/Applications_of_Quaternions.html","path":"Lecture_notes/Algebra/Applications_of_Quaternions.html","title":"Applicaions of Quaternions"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/Lecture_notes/Algebra/Quaternions.html","path":"Lecture_notes/Algebra/Quaternions.html","title":"Quaternions"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Applicaions of Quaternions | Ruccccc
+<title>Quaternions | Ruccccc
 </title>
   
 
@@ -90,7 +92,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -103,6 +105,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hamiltonian-quaternions"><span class="nav-number">1.</span> <span class="nav-text">Hamiltonian Quaternions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#quaternion-ratation"><span class="nav-number">2.</span> <span class="nav-text">Quaternion Ratation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#four-square-theorem"><span class="nav-number">3.</span> <span class="nav-text">Four Square Theorem</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -142,14 +145,14 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Applicaions of Quaternions
+<h1 class="post-title" itemprop="name headline">Quaternions
 </h1>
 
 <div class="post-meta-container">
   <ul class="breadcrumb">
             <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
             <li><a href="/Lecture_notes/Algebra/">ALGEBRA</a></li>
-            <li>APPLICATIONS_OF_QUATERNIONS</li>
+            <li>QUATERNIONS</li>
   </ul>
 </div>
 
@@ -158,7 +161,71 @@
       
       
       <div class="post-body">
-          
+          <h2 id="hamiltonian-quaternions">Hamiltonian Quaternions</h2>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>We defined a unital associative algebra <span
+class="math inline">\(\Bbb{H}\)</span> over <span
+class="math inline">\(\Bbb{R}\)</span> of 4 dimension, by the basis
+<span class="math inline">\({1, i, j ,k}\)</span>. <br> Their
+multiplication is defined as <span class="math inline">\(i^2 = j^2 = k^2
+= -1\)</span>, <span class="math inline">\(ij = k\)</span>, <span
+class="math inline">\(jk = i\)</span>, <span class="math inline">\(ki =
+j\)</span>, <span class="math inline">\(ji = -k\)</span>, <span
+class="math inline">\(kj = -i\)</span>, <span class="math inline">\(ik =
+-j\)</span>.</p>
+<p>The arbitrary element of <span class="math inline">\(\Bbb{H}\)</span>
+is of the form <span class="math display">\[a + bi + cj + dk \;\;\;
+\text{where}\;\;\; a, b, c, d \in \Bbb{R}\]</span></p>
+<p>The multiplication of elements in <span
+class="math inline">\(\Bbb{H}\)</span> is defined by <span
+class="math display">\[\begin{align}
+(a + bi + cj + dk)(w + xi + yj + zk) &amp; = (aw - bx - cy - dz) \\
+&amp; + (ax + bw + cz - dy)i \\
+&amp; + (ay + cw - bz + dx)j \\
+&amp; + (az + dw + by - cx)k \\
+\end{align} \]</span></p>
+<p>And the elements of <span class="math inline">\(\Bbb{H}\)</span> is
+called the <strong>Hamiltonian Quaternions</strong>.</p>
+</blockquote>
+<p><strong>Remark</strong></p>
+<blockquote>
+<p>Here we give another perspective of hamiltonian quaternion. <br> Let
+<span class="math inline">\(V\)</span> be the subspace of <span
+class="math inline">\(\Bbb{H}\)</span> spanned by the basis <span
+class="math inline">\(\{i, j, k\}\)</span>, and let <span
+class="math inline">\(\Bbb{R}\)</span> be a subspace of <span
+class="math inline">\(\Bbb{H}\)</span> spanning by the basis 1. <br>
+Then every element <span class="math inline">\(h \in \Bbb{H}\)</span>
+can be expressed a sum of a real scalar and and vector in <span
+class="math inline">\(V\)</span>, i.e., <span class="math inline">\(h =
+a + \vec{v}\)</span>, where <span class="math inline">\(a \in
+\Bbb{R}\)</span>, <span class="math inline">\(\vec{v} \in V\)</span>.
+<br> Equivalently, <span class="math inline">\(\Bbb{H}\)</span> is a
+direct sum of <span class="math inline">\(\Bbb{R}\)</span> and <span
+class="math inline">\(V\)</span>.</p>
+</blockquote>
+<p><strong>Theorem</strong></p>
+<blockquote>
+<p>Let <span class="math inline">\(\vec{u}, \vec{v} \in V\)</span>. Then
+we have <span class="math display">\[\vec{u}\vec{v} = - \vec{u} \cdot
+\vec{v} + \vec{u} \times \vec{v}\]</span> where <span
+class="math inline">\(\cdot\)</span> and <span
+class="math inline">\(\times\)</span> is the dot and cross product in
+<span class="math inline">\(\Bbb{R}^3\)</span>.</p>
+</blockquote>
+<h2 id="quaternion-ratation">Quaternion Ratation</h2>
+<blockquote>
+<p>To rotate a point <span class="math inline">\((a, b, c)\)</span>
+about the unit vector <span class="math inline">\(\vec{u}\)</span> as an
+axis by an angle <span class="math inline">\(\theta\)</span>. <br> We
+can define a quternion <span class="math inline">\(q = \cos
+\frac{\theta}{2} + \sin \frac{\theta}{2}\vec{u}\)</span> To rotate the
+3D point represented as a quternion <span class="math inline">\(\vec{v}
+= ai + bj + ck\)</span>, we compute <span
+class="math display">\[T(\vec{v}) = q\vec{v}\bar q\]</span></p>
+</blockquote>
+<h2 id="four-square-theorem">Four Square Theorem</h2>
 
       </div>
       
@@ -168,7 +235,7 @@
   <ul class="breadcrumb">
             <li><a href="/Lecture_notes/">LECTURE_NOTES</a></li>
             <li><a href="/Lecture_notes/Algebra/">ALGEBRA</a></li>
-            <li>APPLICATIONS_OF_QUATERNIONS</li>
+            <li>QUATERNIONS</li>
   </ul>
 
     

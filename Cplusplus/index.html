@@ -19,15 +19,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="c++相關的、雜七雜八的東西 Union 在同一union內的變數共用同一塊記憶體，以空間需求最大的變數型態的空間作為記憶體。  在C++中，union是類似struct與class的資料結構，可以定義建構函式、解構函式與 成員函式。而且不需要加上union在宣告變數的型態前面。但在使用上要注意的是union的member不可以為static、refrence，自訂型態成員不可以有建構函式、解構函">
+    <meta name="description" content="c++相關的、雜七雜八的東西 Union 在同一union內的變數共用同一塊記憶體，以空間需求最大的變數型態的空間作為記憶體大小。  在C++中，union是類似struct與class的資料結構，可以定義建構函式、解構函式與 成員函式。而且不需要加上union在宣告變數的型態前面。但在使用上要注意的是union的member不可以為static、refrence，自訂型態成員不可以有建構函式、解">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Cplusplus">
 <meta property="og:url" content="http://example.com/Cplusplus/index.html">
 <meta property="og:site_name" content="Ruccccc">
-<meta property="og:description" content="c++相關的、雜七雜八的東西 Union 在同一union內的變數共用同一塊記憶體，以空間需求最大的變數型態的空間作為記憶體。  在C++中，union是類似struct與class的資料結構，可以定義建構函式、解構函式與 成員函式。而且不需要加上union在宣告變數的型態前面。但在使用上要注意的是union的member不可以為static、refrence，自訂型態成員不可以有建構函式、解構函">
+<meta property="og:description" content="c++相關的、雜七雜八的東西 Union 在同一union內的變數共用同一塊記憶體，以空間需求最大的變數型態的空間作為記憶體大小。  在C++中，union是類似struct與class的資料結構，可以定義建構函式、解構函式與 成員函式。而且不需要加上union在宣告變數的型態前面。但在使用上要注意的是union的member不可以為static、refrence，自訂型態成員不可以有建構函式、解">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-03-10T07:46:57.810Z">
-<meta property="article:modified_time" content="2023-03-10T07:46:57.810Z">
+<meta property="article:published_time" content="2023-07-13T16:48:16.233Z">
+<meta property="article:modified_time" content="2023-07-13T16:48:16.233Z">
 <meta property="article:author" content="Ruc Kuo">
 <meta name="twitter:card" content="summary">
 
@@ -159,7 +159,7 @@ declaration 結構化鏈結</span></a><ol class="nav-child"><li class="nav-item 
       <div class="post-body">
           <p>c++相關的、雜七雜八的東西</p>
 <h2 id="union">Union</h2>
-<p>在同一union內的變數共用同一塊記憶體，以空間需求最大的變數型態的空間作為記憶體。
+<p>在同一union內的變數共用同一塊記憶體，以空間需求最大的變數型態的空間作為記憶體大小。
 <br>
 在C++中，union是類似struct與class的資料結構，可以定義建構函式、解構函式與
 成員函式。而且不需要加上union在宣告變數的型態前面。但在使用上要注意的是union的member不可以為static、refrence，自訂型態成員不可以有建構函式、解構函式或是複製指定運算子。<br>
@@ -172,6 +172,8 @@ declaration 結構化鏈結</h2>
 </ul>
 <h3 id="usage">Usage</h3>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[[attribute]] [[cv-qualifier]] auto [[ref-qulifier]] [variable-list] = &#123;expression&#125;;</span><br><span class="line">[[attribute]] [[cv-qualifier]] auto [[ref-qulifier]] [variable-list] &#123;expression&#125;;</span><br><span class="line">[[attribute]] [[cv-qualifier]] auto [[ref-qulifier]] [variable-list] (expression);</span><br></pre></td></tr></table></figure>
+<p>只可用在有定義<code>get()</code>的資料結構，例如<code>std::pair</code>或<code>std::tuple</code>。
+自定義的資料結構只需定義get()便可用。</p>
 <p><strong>Example</strong></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">std::tuple&lt;<span class="type">int</span>, <span class="type">char</span>, string&gt; t &#123;<span class="number">1</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&quot;345&quot;</span>&#125;;</span><br><span class="line"><span class="keyword">auto</span> [a, b, c] = t;</span><br><span class="line"><span class="keyword">auto</span> [d, e, f] &#123;t&#125;;</span><br><span class="line"><span class="keyword">auto</span> [g, h ,i] (t);</span><br></pre></td></tr></table></figure>
 <h2 id="雜項">雜項</h2>
